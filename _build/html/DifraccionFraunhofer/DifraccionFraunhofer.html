@@ -1,0 +1,753 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12. Difracción de Fraunhofer &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="13. Introduccion" href="../PoderDeResolucion/PoderDeResolucion.html" />
+    <link rel="prev" title="11. Tomografía de coherencia óptica. Puntos básicos." href="../InterferometroMichelson_OCT/OCT_2020.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/DifraccionFraunhofer/DifraccionFraunhofer.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FDifraccionFraunhofer/DifraccionFraunhofer.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/DifraccionFraunhofer/DifraccionFraunhofer.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#difraccion-de-fraunhofer-apertura-rectangular">
+   12.1. Difracción de Fraunhofer. Apertura rectangular.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#minimos-de-irradiancia">
+     12.1.1. Minimos de irradiancia
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#difraccion-de-fraunhofer-abertura-circular">
+   12.2. Difracción de Fraunhofer. Abertura circular
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Difracción de Fraunhofer</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#difraccion-de-fraunhofer-apertura-rectangular">
+   12.1. Difracción de Fraunhofer. Apertura rectangular.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#minimos-de-irradiancia">
+     12.1.1. Minimos de irradiancia
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#difraccion-de-fraunhofer-abertura-circular">
+   12.2. Difracción de Fraunhofer. Abertura circular
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="difraccion-de-fraunhofer">
+<h1><span class="section-number">12. </span>Difracción de Fraunhofer<a class="headerlink" href="#difraccion-de-fraunhofer" title="Permalink to this headline">¶</a></h1>
+<p>La difracción es la tendencia de toda onda a apartarse de la propagación rectilínea mientras se propaga o pasa a través de una apertura u obstáculo.</p>
+<p>Este efecto es básicamente resultado de procesos interferenciales y por lo tanto está íntimamente relacionado con la naturaleza ondulatoria de la luz.</p>
+<p>Para su estudio vamos a basarnos en el <strong>Principio de Huygens-Fresnel</strong>, el cual es necesario destacar que se trata de una aproximación. Para un tratamiento completo de la difracción debemos acudir a las ecuaciones de Maxwell. Sin embargo, el uso del principo de Huygens-Fresnel nos dará resultados más que suficientes. Dicho principio dice lo siguiente:</p>
+<div class="alert alert-block alert-info">
+<p><em>Cada punto del frente de onda se puede suponer como centro secundario emisor de ondas esféricas. La perturbación total que llega a otro punto posterior es el resultado de la interferencia de todas esas ondas secundarias.</em></p>
+</div><p>Vamos a considerar la siguiente situación: Una onda esférica monocromática procedente de un punto <span class="math notranslate nohighlight">\(P_0\)</span> llega a una apertura que denotaremos por <span class="math notranslate nohighlight">\(\Sigma\)</span>. Queremos ver cuál es la onda que llega a un punto <span class="math notranslate nohighlight">\(P\)</span> situado tras la apertura.</p>
+<center>
+<p><img alt="Dif. General" src="../_images/generaldiff.png" /></p>
+</center><p>El campo eléctrico en la apertura será el debido a la onda esférica incidente,</p>
+<div class="math notranslate nohighlight">
+\[E = \frac{E_0}{r} e^{i k r}\]</div>
+<p>Ahora para calcular el campo eléctrico en <span class="math notranslate nohighlight">\(P\)</span>, primero consideramos cada elemento de superficie <span class="math notranslate nohighlight">\(d\Sigma\)</span> de la apertura como un centro emisor de ondas esféricas, y después sumaremos (o dicho de otro modo, haremos interferir) las contribuciones de todos los elementos de superficie para obtener el campo eléctrico total . La contribución individual del elemento de superficie <span class="math notranslate nohighlight">\(d\Sigma\)</span> al campo total en <span class="math notranslate nohighlight">\(P\)</span> será,</p>
+<div class="math notranslate nohighlight">
+\[dE_p = \frac{E_0}{r} e^{i k r} \frac{e^{i k s}}{s} d\Sigma\]</div>
+<p>En la expresión anterior hemos simplemente escrito una onda esférica que se propaga una distancia <span class="math notranslate nohighlight">\(s\)</span> (de ahí el término <span class="math notranslate nohighlight">\(\frac{e^{i k s}}{s}\)</span>. Como la excitación de esta onda es debida a otra onda esférica incidente, su amplitud será <span class="math notranslate nohighlight">\(\frac{E_0}{r} e^{i k r} d\Sigma\)</span>, es decir, proporcional al elemento de superficie escogido.</p>
+<p>Ahora, el campo total lo calcularemos sumando todas las contribuciones de los elementos de superficie distribuidos por toda apertura. Es decir,</p>
+<div class="math notranslate nohighlight">
+\[E_p = \int_{\Sigma} \frac{E_0}{r s} e^{i k (r + s)} d\Sigma\]</div>
+<p>Resolver la anterior integral dependerá de la forma de la apertura, y de las distancia <span class="math notranslate nohighlight">\(s\)</span> y <span class="math notranslate nohighlight">\(r\)</span> entre la apertura y el punto <span class="math notranslate nohighlight">\(P\)</span> en el que queremos calcular el campo y el punto <span class="math notranslate nohighlight">\(P_0\)</span> fuente de la onda esférica incidente en la apertura. Nosotros no vamos a ver el cálculo general, sino que <strong>nos vamos a centrar en la aproximación conocida como régimen (o difracción) de Fraunhofer</strong>. Esta aproximación se corresponde con que la fuente <span class="math notranslate nohighlight">\(P_0\)</span> y el punto de observación <span class="math notranslate nohighlight">\(P\)</span> estén lo suficientemente alejados de la apertura. A partir de ahora nos referiremos a los puntos <span class="math notranslate nohighlight">\(P\)</span> y <span class="math notranslate nohighlight">\(P_0\)</span> por sus coordenadas cartesianas tomando como origen el plano de la apertura,las cuales llamaremos <span class="math notranslate nohighlight">\((x,y,z)\)</span> y <span class="math notranslate nohighlight">\((x_0,y_0,z_0)\)</span> respectivamente. Además, las coordenadas de un punto en la apertura las denotaremos por <span class="math notranslate nohighlight">\((\chi, \eta)\)</span>.</p>
+<p>Podemos demostrar que <strong>el régimen de Fraunhofer lo podemos obtener cuando se cumple</strong>,</p>
+<div class="math notranslate nohighlight">
+\[min(z,z_0) &gt; \frac{a^2}{\lambda}\]</div>
+<p>donde en la expresión anterior, <span class="math notranslate nohighlight">\(z\)</span> es la distancia entre la apertura y <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(z_0\)</span> la distancia entre <span class="math notranslate nohighlight">\(P_0\)</span> y la apertura, <span class="math notranslate nohighlight">\(a\)</span> es la dimensión de la apertura, y finalmente <span class="math notranslate nohighlight">\(\lambda\)</span> es la longitud de onda de la luz.</p>
+<p>Una forma de satisfacer el anterior requisito es situar la fuente <span class="math notranslate nohighlight">\(P_0\)</span> y el punto de observación <span class="math notranslate nohighlight">\(P\)</span> en el infinito de forma efectiva, es decir, en los planos focales de dos lentes situadas a ambos lados de la apertura.</p>
+<p>Bajo esta condición, se puede demostrar que el campo resultante en <span class="math notranslate nohighlight">\(P\)</span> viene dado por la siguiente expresión,</p>
+<div class="math notranslate nohighlight">
+\[E_P = C \int_{\Sigma} E_0(\chi, \eta) e^{i k (p \chi + q \eta)} d\chi d\eta\]</div>
+<p>donde recordamos que <span class="math notranslate nohighlight">\(\chi, \eta\)</span> son las variables cartesianas en el plano de la apertura (estamos sumando todas las contribuciones de los elementos de superficie en los que dividimos la apertura). Además,
+$<span class="math notranslate nohighlight">\(p = \frac{x_0}{z_0} + \frac{x}{z}\)</span><span class="math notranslate nohighlight">\(
+y
+\)</span><span class="math notranslate nohighlight">\(q = \frac{y_0}{z_0} + \frac{y}{z}\)</span>$</p>
+<p><strong>La expresión de <span class="math notranslate nohighlight">\(E_P\)</span> escrita de la manera anterior no es nada más que la transformada de Fourier del campo en la apertura <span class="math notranslate nohighlight">\(E_0(\chi, \eta)\)</span></strong>. Si la apertura tiene una cierta transmitancia <span class="math notranslate nohighlight">\(t(\chi,\eta)\)</span>, el campo inmediatamente después será <span class="math notranslate nohighlight">\(t(\chi, \eta)E_0(\chi,\eta)\)</span> y será este producto el que tengamos que introducir en la expresión de <span class="math notranslate nohighlight">\(E_P\)</span>.</p>
+<div class="section" id="difraccion-de-fraunhofer-apertura-rectangular">
+<h2><span class="section-number">12.1. </span>Difracción de Fraunhofer. Apertura rectangular.<a class="headerlink" href="#difraccion-de-fraunhofer-apertura-rectangular" title="Permalink to this headline">¶</a></h2>
+<center>
+<p><img alt="difrendija" src="../_images/difraccionrendijafig.png" /></p>
+</center>
+<p>En este caso, haciendo la integral anterior, el campo  resultante en <span class="math notranslate nohighlight">\(P\)</span> que se obtiene es,</p>
+<div class="math notranslate nohighlight">
+\[E_P(\theta) = E_0 \frac{sen(\beta)}{\beta} e^{i(k r_0 - \omega t)}\]</div>
+<p>y la irradiancia,</p>
+<div class="alert alert-block alert-success">
+<div class="math notranslate nohighlight">
+\[I_P(\theta) = I_0 (\frac{sen(\beta)}{\beta})^2 \]</div>
+</div>
+<p>donde en las anteriores expresiones, <span class="math notranslate nohighlight">\(\beta = k a sen(\theta) / 2\)</span>. Es decir, la  irradiancia únicamente depende del ángulo <span class="math notranslate nohighlight">\(\theta\)</span> que subtiende <span class="math notranslate nohighlight">\(P\)</span> visto desde el centro de la apertura.</p>
+<p>En el caso en el que el punto <span class="math notranslate nohighlight">\(P\)</span> esté en el plano focal de una lente con focal <span class="math notranslate nohighlight">\(f'\)</span>, <span class="math notranslate nohighlight">\(sen(\theta) \simeq y_P / f'\)</span> para ángulos pequeños y <span class="math notranslate nohighlight">\(\beta = k a y_P / 2 f'\)</span>  Si por el contrario, observamos en una pantalla a una distancia <span class="math notranslate nohighlight">\(D\)</span> mucho mayor que el tamaño de la apertura, <span class="math notranslate nohighlight">\(\beta = ka y_P /2 D\)</span>.</p>
+<p>Veamos qué forma tiene la anterior función. Para observar los cambios en la irradiancia con la anchura de la rendija u otros parámetros, se pueden modificar los parámetros del código que se presenta a continuación.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;bmh&#39;</span><span class="p">)</span>
+
+
+
+<span class="n">yp</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span> <span class="c1"># vector de posiciones en la pantalla en mm</span>
+<span class="n">I0</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># en mW/cm^2</span>
+<span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">]</span> <span class="o">=</span> <span class="n">meshgrid</span><span class="p">(</span><span class="n">yp</span><span class="p">,</span><span class="n">yp</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">difraccion</span><span class="p">(</span><span class="n">focal</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">Color</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">Color</span><span class="o">==</span><span class="s1">&#39;Azul (400nm)&#39;</span><span class="p">):</span>
+        <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">4e-4</span>
+        <span class="n">cmapchosen</span> <span class="o">=</span> <span class="s1">&#39;Blues&#39;</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">Color</span><span class="o">==</span><span class="s1">&#39;Verde (550 nm)&#39;</span><span class="p">):</span>
+        <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">5.5e-4</span>
+        <span class="n">cmapchosen</span> <span class="o">=</span> <span class="s1">&#39;Greens&#39;</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">Color</span><span class="o">==</span><span class="s1">&#39;Rojo (650 nm)&#39;</span><span class="p">):</span>
+        <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">6.5e-4</span>
+        <span class="n">cmapchosen</span> <span class="o">=</span> <span class="s1">&#39;Reds&#39;</span>
+    
+    <span class="n">k</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span>
+    <span class="n">beta</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">yp</span><span class="o">/</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">focal</span><span class="p">)</span>
+    <span class="n">IP</span> <span class="o">=</span> <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span><span class="o">/</span><span class="n">beta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+    <span class="c1"># En 2D</span>
+    <span class="n">beta2</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">X</span><span class="o">/</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">focal</span><span class="p">)</span>
+    <span class="n">IP2</span> <span class="o">=</span> <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">beta2</span><span class="p">)</span><span class="o">/</span><span class="n">beta2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+    <span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">yp</span><span class="p">,</span><span class="n">IP</span><span class="p">)</span>
+    <span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;y_P (mm)&quot;</span><span class="p">)</span>
+    <span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;I$_0$&#39;</span><span class="p">)</span>
+    <span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+    <span class="n">pcolormesh</span><span class="p">(</span><span class="n">yp</span><span class="p">,</span><span class="n">yp</span><span class="p">,</span><span class="n">IP2</span><span class="p">,</span><span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;hot&#39;</span><span class="p">);</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tanto la focal como la anchura de la rendija a se expresan en mm&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tanto la focal como la anchura de la rendija a se expresan en mm
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;bmh&#39;</span><span class="p">)</span>
+
+
+
+<span class="n">yp</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span> <span class="c1"># vector de posiciones en la pantalla en mm</span>
+<span class="n">I0</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># en mW/cm^2</span>
+<span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">]</span> <span class="o">=</span> <span class="n">meshgrid</span><span class="p">(</span><span class="n">yp</span><span class="p">,</span><span class="n">yp</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">difraccion</span><span class="p">(</span><span class="n">focal</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">Color</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">Color</span><span class="o">==</span><span class="s1">&#39;Azul (400nm)&#39;</span><span class="p">):</span>
+        <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">4e-4</span>
+        <span class="n">cmapchosen</span> <span class="o">=</span> <span class="s1">&#39;Blues&#39;</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">Color</span><span class="o">==</span><span class="s1">&#39;Verde (550 nm)&#39;</span><span class="p">):</span>
+        <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">5.5e-4</span>
+        <span class="n">cmapchosen</span> <span class="o">=</span> <span class="s1">&#39;Greens&#39;</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">Color</span><span class="o">==</span><span class="s1">&#39;Rojo (650 nm)&#39;</span><span class="p">):</span>
+        <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">6.5e-4</span>
+        <span class="n">cmapchosen</span> <span class="o">=</span> <span class="s1">&#39;Reds&#39;</span>
+    
+    <span class="n">k</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span>
+    <span class="n">beta</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">yp</span><span class="o">/</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">focal</span><span class="p">)</span>
+    <span class="n">IP</span> <span class="o">=</span> <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span><span class="o">/</span><span class="n">beta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+    <span class="c1"># En 2D</span>
+    <span class="n">beta2</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">X</span><span class="o">/</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">focal</span><span class="p">)</span>
+    <span class="n">IP2</span> <span class="o">=</span> <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">beta2</span><span class="p">)</span><span class="o">/</span><span class="n">beta2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+    <span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">yp</span><span class="p">,</span><span class="n">IP</span><span class="p">)</span>
+    <span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;y_P (mm)&quot;</span><span class="p">)</span>
+    <span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;I$_0$&#39;</span><span class="p">)</span>
+    <span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+    <span class="n">pcolormesh</span><span class="p">(</span><span class="n">yp</span><span class="p">,</span><span class="n">yp</span><span class="p">,</span><span class="n">IP2</span><span class="p">,</span><span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;hot&#39;</span><span class="p">);</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tanto la focal como la anchura de la rendija a se expresan en mm&#39;</span><span class="p">)</span>
+
+<span class="n">lambdawidgets</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Azul (400nm)&#39;</span><span class="p">,</span><span class="s1">&#39;Verde (550 nm)&#39;</span><span class="p">,</span><span class="s1">&#39;Rojo (650 nm)&#39;</span><span class="p">])</span>
+<span class="n">lambdawidgets</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">widgets</span><span class="o">.</span><span class="n">interact</span><span class="p">(</span><span class="n">difraccion</span><span class="p">,</span><span class="n">focal</span><span class="o">=</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">700</span><span class="p">,</span><span class="mi">50</span><span class="p">),</span><span class="n">a</span><span class="o">=</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.03</span><span class="p">),</span><span class="n">Color</span><span class="o">=</span><span class="n">lambdawidgets</span><span class="p">)</span><span class="c1">#widgets.fixed(5.5e-7))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tanto la focal como la anchura de la rendija a se expresan en mm
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "319049f61b9b4a74b28e3c9614877f31"}
+</script><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function __main__.difraccion(focal, a, Color)&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="minimos-de-irradiancia">
+<h3><span class="section-number">12.1.1. </span>Minimos de irradiancia<a class="headerlink" href="#minimos-de-irradiancia" title="Permalink to this headline">¶</a></h3>
+<p>Lo que observamos en la figura superior es que aparece un maximo central muy pronunciado y unos maximos y minimos laterales, cuyo espaciado depende de la anchura de la rendija. Veamos cuales son las posiciones de los minimos de irradiancia.Atendiendo a la expresion de la irradiancia en la pantalla, los minimos ocurriran en las posiciones que hagan nulo el numerador, es decir, cuando,</p>
+<div class="math notranslate nohighlight">
+\[\sin(k a y_P/2D) = 0 \Rightarrow \frac{k a y_P}{2D} = m \pi \;\; rad\]</div>
+<p>donde en la anterior expresion se ha supuesto que observamos el patron de irradiancia en una pantalla situada a una distancia <span class="math notranslate nohighlight">\(D\)</span> de la rendija. Despejando <span class="math notranslate nohighlight">\(y_P\)</span> obtendremos las posiciones en la pantalla (distancia al eje) que hacen nula la irradiancia. Estas distancias seran,</p>
+<div class="math notranslate nohighlight">
+\[y_P^{min} = \frac{m \lambda D}{a} \]</div>
+<p>En esta expresion hay que analizar en detalle que ocurre cuando <span class="math notranslate nohighlight">\(m = 0\)</span>. En este caso, el seno efectivamente es nulo,pero tambien lo es el denominador de la expresion de <span class="math notranslate nohighlight">\(I_P\)</span>, por lo que tenemos una indeterminacion. Si la resolvemos, observamos que la irradiancia en ese punto no es nula (minima) sino maxima. Es mas, es el maximo central mas alto de todos. Por tanto, las posiciones de los minimos hay que encontrarlas para <span class="math notranslate nohighlight">\(m = \pm 1, \pm 2, \pm 3 \ldots\)</span>.</p>
+<p>Hemos comentado anteriormente que la difracción de Fraunhofer no era más que la transformada de Fourier del campo en la apertura (mejor dicho, el campo es proporcional a la transformada de Fourier). Veamos esto.</p>
+<p>En el código que se presenta a continuación se calcula un campo en la apertura. Como suponemos que llega una onda plana, el campo en la apertura será nada más que un valor constante para los puntos dentro de la apertura y nulo en los puntos fuera de la apertura. En el código a este campo se le denomina <em>campoinc</em>. Posteriormente, el código usa la función <em>fft</em> estándar para calcular la transformada de Fourier de ese campo. Finalmente, representamos el cuadrado del valor absoluto de esa transformada, que, deberá ser proporcional a la irradiancia representada anteriormente.</p>
+<p>Podemos ver cómo la función obtenida es igual a la representada anteriormente. Aunque un análisis más detallado debería tener en cuenta la transformación entre las frecuencias utilizadas en el código y los valores de <em>y</em> en el plano de observación, no entraremos ahí. Nos basta por el momento con ejemplificar la relación entre la transformada de Fourier y la irradiancia obtenida en el régimen de Fraunhofer.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">&lt;</span><span class="mf">0.05</span><span class="o">/</span><span class="mi">2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mf">1.0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">0.0</span>
+    
+<span class="n">y</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">140</span><span class="p">)</span>
+<span class="n">funvec</span> <span class="o">=</span> <span class="n">vectorize</span><span class="p">(</span><span class="n">fun</span><span class="p">)</span>
+<span class="n">campoinc</span> <span class="o">=</span> <span class="n">funvec</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">scipy.fftpack</span> <span class="kn">import</span> <span class="n">fft</span><span class="p">,</span> <span class="n">fftfreq</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">freq</span> <span class="o">=</span> <span class="n">fftfreq</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">tfcampo</span> <span class="o">=</span> <span class="n">fft</span><span class="p">(</span><span class="n">campoinc</span><span class="p">)</span>
+<span class="n">tfcampo2</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">tfcampo</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="nb">max</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">tfcampo</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span><span class="nb">abs</span><span class="p">(</span><span class="n">fft</span><span class="p">(</span><span class="n">campoinc</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="nb">max</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">fft</span><span class="p">(</span><span class="n">campoinc</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;I&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;I&#39;)
+</pre></div>
+</div>
+<img alt="../_images/DifraccionFraunhofer_11_1.png" src="../_images/DifraccionFraunhofer_11_1.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="difraccion-de-fraunhofer-abertura-circular">
+<h2><span class="section-number">12.2. </span>Difracción de Fraunhofer. Abertura circular<a class="headerlink" href="#difraccion-de-fraunhofer-abertura-circular" title="Permalink to this headline">¶</a></h2>
+<p>En el caso de una apertura circular de diámetro <span class="math notranslate nohighlight">\(D_a\)</span>, la expresión del campo eléctrico en un punto <span class="math notranslate nohighlight">\(P\)</span> que subtiende un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> con el eje, y bajo la aproximación considerada en el régimen de Fraunhofer es la siguiente,</p>
+<div class="math notranslate nohighlight">
+\[ E(\theta) = C \frac{J_1(k \frac{D_a}{2} sen(\theta))}{k \frac{D_a}{2} sen(\theta)}\]</div>
+<p>y por tanto la irradiancia,</p>
+<div class="math notranslate nohighlight">
+\[ I(\theta) = I_0 \left(\frac{J_1(k \frac{D_a}{2} sen(\theta))}{k \frac{D_a}{2} sen(\theta)}\right)^2\]</div>
+<p>A esta función se le denomina <em>mancha de Airy</em> y es fundamental para comprender la formación de la imagen de sistemas ópticos incluyendo la naturaleza ondulatoria de la luz, así como su poder de resolución.</p>
+<p>Si observamos el patrón de difracción en una pantalla situada a una distancia <span class="math notranslate nohighlight">\(D\)</span> de la apertura, y llamamos <span class="math notranslate nohighlight">\(r\)</span> a la distancia del punto de observación <span class="math notranslate nohighlight">\(P\)</span> al eje del sistema óptico, tendremos que <span class="math notranslate nohighlight">\(tan(\theta) = r/D\)</span>. Por otro lado, si consideramos que el ángulo subtendido por el punto <span class="math notranslate nohighlight">\(P\)</span> es pequeño, <span class="math notranslate nohighlight">\(sen(\theta) \simeq tan(\theta) = r/D\)</span>, pudiendo sustituir el seno en las expresiones anteriores por este cociente.</p>
+<p>La forma de esta función la podemos ver en la siguiente figura.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;bmh&#39;</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">j1</span>
+
+<span class="c1">#Parámetros</span>
+<span class="c1">#############</span>
+<span class="n">Da</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># mm</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mi">2000</span> <span class="c1"># distancia entre la apertura y la pantalla de observacion</span>
+<span class="n">I0</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#mW/cm^2</span>
+<span class="c1">############</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">]</span> <span class="o">=</span> <span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+<span class="n">R</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">X</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">circ</span><span class="p">(</span><span class="n">D</span><span class="p">,</span><span class="n">Da</span><span class="p">,</span><span class="n">Color</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">Color</span><span class="o">==</span><span class="s1">&#39;Azul (400nm)&#39;</span><span class="p">):</span>
+        <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">4e-4</span>
+        <span class="n">cmapchosen</span> <span class="o">=</span> <span class="s1">&#39;Blues&#39;</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">Color</span><span class="o">==</span><span class="s1">&#39;Verde (550 nm)&#39;</span><span class="p">):</span>
+        <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">5.5e-4</span>
+        <span class="n">cmapchosen</span> <span class="o">=</span> <span class="s1">&#39;Greens&#39;</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">Color</span><span class="o">==</span><span class="s1">&#39;Rojo (650 nm)&#39;</span><span class="p">):</span>
+        <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">6.5e-4</span>
+        <span class="n">cmapchosen</span> <span class="o">=</span> <span class="s1">&#39;Reds&#39;</span>
+    
+    <span class="n">k</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span>
+    
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+    <span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+    <span class="n">Icirc</span> <span class="o">=</span> <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">j1</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="n">r</span><span class="o">/</span><span class="n">D</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="n">r</span><span class="o">/</span><span class="n">D</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">Icirc</span><span class="p">)</span>
+    <span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;r (mm)&quot;</span><span class="p">)</span>
+    <span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;I (u.a.)&quot;</span><span class="p">);</span>
+
+    <span class="c1">#En 2D</span>
+   
+    <span class="n">Icirc2</span> <span class="o">=</span>  <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">j1</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="n">D</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="n">D</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+    <span class="n">pcolormesh</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">Icirc2</span><span class="p">,</span><span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;hot&#39;</span><span class="p">)</span>
+    <span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x (mm)&#39;</span><span class="p">)</span>
+    <span class="n">xlim</span><span class="p">([</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">])</span>
+    <span class="n">ylim</span><span class="p">([</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">])</span>
+    <span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y (mm)&#39;</span><span class="p">)</span>
+    <span class="k">return</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tanto la focal como el diametro del circulo Da se expresan en mm&#39;</span><span class="p">)</span>
+
+<span class="n">lambdawidgets</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Azul (400nm)&#39;</span><span class="p">,</span><span class="s1">&#39;Verde (550 nm)&#39;</span><span class="p">,</span><span class="s1">&#39;Rojo (650 nm)&#39;</span><span class="p">])</span>
+<span class="n">lambdawidgets</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">widgets</span><span class="o">.</span><span class="n">interact</span><span class="p">(</span><span class="n">circ</span><span class="p">,</span><span class="n">D</span><span class="o">=</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="mi">3000</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span><span class="n">Da</span><span class="o">=</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.02</span><span class="p">),</span><span class="n">Color</span><span class="o">=</span><span class="n">lambdawidgets</span><span class="p">)</span><span class="c1">#widgets.fixed(5.5e-7))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tanto la focal como el diametro del circulo Da se expresan en mm
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "67dcf159745141c9af0ed1a15923775e"}
+</script><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function __main__.circ(D, Da, Color)&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Vemos que tiene simetría circular, y que los máximos secundarios son muchísimo menores en amplitud que el pico central, lo que quiere decir que prácticamente toda la energía se encuentra en el máximo central. Para observar cómo varía la forma de esta función con la dimensión de la apertura, modificar en el anterior código el parámetro <span class="math notranslate nohighlight">\(D_a\)</span> y volver a ejecutarlo.</p>
+<hr class="docutils" />
+<p>Como se puede observar en la figura superior, los maximos laterales tienen una altura mucho menor que el pico central, o lo que es lo mismo, el primer maximo contiene la mayor parte de la energia del haz. Es por ello que en esta distribucion de irradiancia toma mucha importancia el primer minimo, mas que los minimos de ordenes mas altos. Para hallarlo, tenemos que encontrar el primer minimo de la funcion de Bessel <span class="math notranslate nohighlight">\(J_1\)</span> del numerador en la expresion de la irradiancia en la pantalla. Estos minimos los podemos encontrar en cualquier libro de tablas, obteniendo que,</p>
+<div class="math notranslate nohighlight">
+\[ k \frac{D_a}{2} \sin(\theta) \sim 3.4 \Rightarrow \sin(theta) \simeq \frac{1.22 \lambda}{D_a}\]</div>
+<p>Este angulo asi hallado es el angulo que subtiende el primer minimo en la pantalla con el eje del sistema visto desde la apertura circular. Como normalmente es pequeno, tenemos que <span class="math notranslate nohighlight">\(\sin(\theta) \sim \theta \sim \tan(\theta) = r_1/D\)</span>, donde aqui <span class="math notranslate nohighlight">\(r_1\)</span> representa el radio de ese primer anillo oscuro y <span class="math notranslate nohighlight">\(D\)</span> la distancia entre la apertura y la pantalla de observacion. Tenemos por tanto, que el radio del primer anillo oscuro, es igual a,</p>
+<div class="math notranslate nohighlight">
+\[r_1 = \frac{1.22 \lambda D}{D_a}\]</div>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"383539a70ecf42feb7752874499948f8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5f54a0e4409c435f9ccf315627d358af": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "a3b9112413d149eca78598898e905547": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": ["Azul (400nm)", "Verde (550 nm)", "Rojo (650 nm)"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Color", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_383539a70ecf42feb7752874499948f8", "style": "IPY_MODEL_5f54a0e4409c435f9ccf315627d358af"}}, "701c19401c4a4c6bbf5e5df6742771e1": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "319049f61b9b4a74b28e3c9614877f31": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_479c9efba5b04bbaaa26fe92c63e5e4d", "IPY_MODEL_db5674c71f3b46cb97e13aad32993947", "IPY_MODEL_a3b9112413d149eca78598898e905547", "IPY_MODEL_5564c44191ba405d99df9a8af5ec8c2e"], "layout": "IPY_MODEL_701c19401c4a4c6bbf5e5df6742771e1"}}, "bd7d0e1143db4b81ae3406be6b9bc171": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d990bcba0e4e4e22873e52c23b49c893": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "479c9efba5b04bbaaa26fe92c63e5e4d": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "focal", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_bd7d0e1143db4b81ae3406be6b9bc171", "max": 700, "min": 300, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 50, "style": "IPY_MODEL_d990bcba0e4e4e22873e52c23b49c893", "value": 500}}, "523678ace4dc4c64a2e3c24f62454312": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3d49f00cce7a43f6b2f4898cc1ed1ea7": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "db5674c71f3b46cb97e13aad32993947": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": true, "description": "a", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_523678ace4dc4c64a2e3c24f62454312", "max": 0.2, "min": 0.01, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.03, "style": "IPY_MODEL_3d49f00cce7a43f6b2f4898cc1ed1ea7", "value": 0.09999999999999999}}, "ae1c86aeee3e41ccbc6908c1d392ebff": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5564c44191ba405d99df9a8af5ec8c2e": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_ae1c86aeee3e41ccbc6908c1d392ebff", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stderr", "text": "/home/edu/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:37: MatplotlibDeprecationWarning: Auto-removal of grids by pcolor() and pcolormesh() is deprecated since 3.5 and will be removed two minor releases later; please call grid(False) first.\n"}, {"output_type": "display_data", "metadata": {"needs_background": "light"}, "data": {"text/plain": "<Figure size 1152x360 with 2 Axes>", "image/png": "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\n"}}]}}, "abac3e359ed04fbb810c2fa0ca458528": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "29dcecdf46654069a63b1501a7ed2f56": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "d8ec21977de744e0b194266d91979564": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": ["Azul (400nm)", "Verde (550 nm)", "Rojo (650 nm)"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Color", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_abac3e359ed04fbb810c2fa0ca458528", "style": "IPY_MODEL_29dcecdf46654069a63b1501a7ed2f56"}}, "a7f8a59208914371997569f928434990": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "67dcf159745141c9af0ed1a15923775e": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_e9d032cf83364f1a9f073310cc9e5c59", "IPY_MODEL_dfcc7e7e9bee4dca9538ba1337b3b9c2", "IPY_MODEL_d8ec21977de744e0b194266d91979564", "IPY_MODEL_a0be7404913c44ec9df1b82170a64098"], "layout": "IPY_MODEL_a7f8a59208914371997569f928434990"}}, "988f87ef64a3411cb1d9d74e662416b5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "92671a898d024779968f891d91aa9546": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "e9d032cf83364f1a9f073310cc9e5c59": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "D", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_988f87ef64a3411cb1d9d74e662416b5", "max": 3000, "min": 500, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 100, "style": "IPY_MODEL_92671a898d024779968f891d91aa9546", "value": 1700}}, "8f8f5acdfb76476980e02dfce163444b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "289061a4c8554c659ac539f8576da2fd": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "dfcc7e7e9bee4dca9538ba1337b3b9c2": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": true, "description": "Da", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_8f8f5acdfb76476980e02dfce163444b", "max": 0.2, "min": 0.05, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.02, "style": "IPY_MODEL_289061a4c8554c659ac539f8576da2fd", "value": 0.11}}, "5dc94b2189c7453db5e22154f89e0b96": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a0be7404913c44ec9df1b82170a64098": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_5dc94b2189c7453db5e22154f89e0b96", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stderr", "text": "/home/edu/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:44: MatplotlibDeprecationWarning: Auto-removal of grids by pcolor() and pcolormesh() is deprecated since 3.5 and will be removed two minor releases later; please call grid(False) first.\n"}, {"output_type": "display_data", "metadata": {"needs_background": "light"}, "data": {"text/plain": "<Figure size 1008x504 with 2 Axes>", "image/png": "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\n"}}]}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./DifraccionFraunhofer"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../InterferometroMichelson_OCT/OCT_2020.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">11. </span>Tomografía de coherencia óptica. Puntos básicos.</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../PoderDeResolucion/PoderDeResolucion.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Introduccion</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

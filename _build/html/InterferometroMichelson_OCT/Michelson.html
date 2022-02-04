@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10. Interferometro de Michelson &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="11. Tomografía de coherencia óptica. Puntos básicos." href="OCT_2020.html" />
+    <link rel="prev" title="9. Anillos de Newton" href="../AnillosDeNewton_widgets/AnillosDeNewton.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/InterferometroMichelson_OCT/Michelson.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FInterferometroMichelson_OCT/Michelson.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/InterferometroMichelson_OCT/Michelson.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#de-que-se-compone">
+   10.1. De que se compone?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importancia-historica">
+   10.2. Importancia histórica
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relacion-con-franjas-de-igual-espesor-y-franjas-de-igual-inclinacion-patrones-que-se-observan">
+   10.3. Relación con franjas de igual espesor y franjas de igual inclinación. Patrones que se observan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aplicaciones">
+   10.4. Aplicaciones
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#medida-de-la-longitud-de-onda">
+     10.4.1. Medida de la longitud de onda
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion">
+   10.5. Medida de la longitud de coherencia de la radiacion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Interferometro de Michelson</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#de-que-se-compone">
+   10.1. De que se compone?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importancia-historica">
+   10.2. Importancia histórica
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relacion-con-franjas-de-igual-espesor-y-franjas-de-igual-inclinacion-patrones-que-se-observan">
+   10.3. Relación con franjas de igual espesor y franjas de igual inclinación. Patrones que se observan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aplicaciones">
+   10.4. Aplicaciones
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#medida-de-la-longitud-de-onda">
+     10.4.1. Medida de la longitud de onda
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion">
+   10.5. Medida de la longitud de coherencia de la radiacion
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="interferometro-de-michelson">
+<h1><span class="section-number">10. </span>Interferometro de Michelson<a class="headerlink" href="#interferometro-de-michelson" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="de-que-se-compone">
+<h2><span class="section-number">10.1. </span>De que se compone?<a class="headerlink" href="#de-que-se-compone" title="Permalink to this headline">¶</a></h2>
+<p>El esquema de un interferómetro de Michelson se ha dibujado a continuación.</p>
+<center>
+<img src=michelsonfiguretikz.jpg width=400px></img>
+</center>
+<p>Una fuente que puede ser extensa ilumina un divisor de haz, que puede ser una lamina plano-paralela de un material dieléctrico, aunque normalmente se aplica un tratamiento a una de las caras para aumentar la reflectividad de dicha cara e igualar las irradiancias de los dos haces que separa y que van a interferir. Tanto el haz reflejado como el transmitido por el divisor se reflejan en sendos espejos <span class="math notranslate nohighlight">\(M_1\)</span> y <span class="math notranslate nohighlight">\(M_2\)</span>, volviendo de nuevo al divisor. Parte de estos haces se reflejan de nuevo, yendo a un detector o al plano focal de una lente convergente, donde se observa la interferencia.</p>
+<p>En esta descripción falta aun el papel que juega la lamina compensadora <span class="math notranslate nohighlight">\(LC\)</span>. La presencia de esta lamina facilita la observación de interferencias con luz no monocromática ya que permite compensar la diferencia de camino que introduce el divisor de haz. Para entender el por que de su presencia, nos hemos de fijar en el camino total que realizan los rayos dentro de la lamina que sirve como divisor de haz. En nuestro caso, el haz marcado en azul recorre 3 veces el grosor de la lamina antes de llegar al detector, mientras que el haz marcado en rojo, lo recorrería 1 vez sin la presencia de la lamina compensadora. El doble paso por esta permite igualar los caminos ópticos de ambos haces cuando la distancia de los espejos al divisor del haz son iguales.</p>
+<p>Generalmente uno de los espejos es movil, lo que permite cambiar una de estas distancias, variando la diferencia de camino entre los haces que llegan al detector y por tanto, el carácter de la interferencia.</p>
+</div>
+<div class="section" id="importancia-historica">
+<h2><span class="section-number">10.2. </span>Importancia histórica<a class="headerlink" href="#importancia-historica" title="Permalink to this headline">¶</a></h2>
+<p>El interferómetro de Michelson es conocido por ser un elemento crucial en el desarrollo de la Teoría de la Relatividad Especial de Einstein. En el siglo XIX se consideraba que la luz no se podía propagar por el vacío, sino que, al igual que una onda en una cuerda o el sonido, necesita un medio por el que propagarse. A este medio, que debía ofrecer muy poca resistencia al movimiento (pues los planteas se mueven a través suyo) pero a la vez debía ser muy rígido (porque la luz se propaga a muy alta velocidad). A este medio se le llamaba <em>éter</em>. <a class="reference external" href="https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment">El experimento de Michelson-Morley</a> permitió establecer que el éter no existía y ser uno de los primeros resultados experimentales que llevaron finalmente a la Teoría de la Relatividad Especial.</p>
+</div>
+<div class="section" id="relacion-con-franjas-de-igual-espesor-y-franjas-de-igual-inclinacion-patrones-que-se-observan">
+<h2><span class="section-number">10.3. </span>Relación con franjas de igual espesor y franjas de igual inclinación. Patrones que se observan<a class="headerlink" href="#relacion-con-franjas-de-igual-espesor-y-franjas-de-igual-inclinacion-patrones-que-se-observan" title="Permalink to this headline">¶</a></h2>
+<p>Como se ha comentado anteriormente, la diferencia de camino <span class="math notranslate nohighlight">\(\Delta\)</span> entre los haces depende de las posiciones de los espejos con respecto al divisor de haz <span class="math notranslate nohighlight">\(DH\)</span>. Mas concretamente, y como se observa en la siguiente figura, si llamamos <span class="math notranslate nohighlight">\(d\)</span> a la diferencia de distancias entre los espejos y el divisor de haz (<span class="math notranslate nohighlight">\(\overline{DHM_1} - \overline{DHM_2}\)</span>), entonces, la diferencia de camino para los rayos dibujados es <span class="math notranslate nohighlight">\(\Delta = 2 d\)</span>, ya que debemos considerar tanto la ida como la vuelta desde los espejos <span class="math notranslate nohighlight">\(M_1\)</span> y <span class="math notranslate nohighlight">\(M_2\)</span>.</p>
+<center>
+<img src=michelsonfiguretikz2.jpg width=400px></img>
+</center>
+<p>Sin embargo, este valor de la diferencia de camino es valido únicamente para ese punto en el que se sitúa el detector, que se correspondería con el punto central del perfil transversal de los haces que interfieren. Para ver que patrón de interferencias tenemos cuando miramos otros rayos que no se propagan por el eje del sistema, podemos añadir una lente convergente y observar dicho patrón en su plano focal. En este caso, podemos hallar el patrón de interferencias si nos damos cuenta de que, desde este punto en el que observamos, nuestro sistema es equivalente a dos superficies planas con una distancia entre ellas y que reflejan los haces que van a interferir. Esta equivalencia la vemos si proyectamos el espejo <span class="math notranslate nohighlight">\(M_2\)</span> sobre el camino que lleva a <span class="math notranslate nohighlight">\(M_1\)</span>, lo cual seria observar la imagen <span class="math notranslate nohighlight">\(M'_2\)</span> de <span class="math notranslate nohighlight">\(M_2\)</span> dada por el divisor de haz y la lamina compensadora, como aparece en la figura anterior. Al hacerlo, vemos que las franjas que observemos en el plano focal de la lente convergente pueden ser de dos tipos:</p>
+<center>
+<img src=michelsonfiguretikzlineal.jpg width=400px></img>
+</center>
+<ol class="simple">
+<li><p>En el caso en el que las superficies de <span class="math notranslate nohighlight">\(M_1\)</span> y <span class="math notranslate nohighlight">\(M'_2\)</span> sean paralelas entre si el sistema es equivalente a una lamina planoparalela, observando anillos brillantes y oscuros, al igual que nos ocurría cuando estudiamos ese caso. A este tipo de franjas las denominamos <em>franjas de igual inclinación</em>.</p></li>
+<li><p>En el caso en el que las superficies de <span class="math notranslate nohighlight">\(M_1\)</span> y <span class="math notranslate nohighlight">\(M'_2\)</span> <strong>no</strong> sean paralelas entre si el sistema es equivalente a una cuña, observando franjas rectas equiespaciadas brillantes y oscuras. A este tipo de franjas las denominamos <em>franjas de igual espesor</em>.</p></li>
+</ol>
+<center>
+<img src = franjasmichelson.png width=300></img>
+</center></div>
+<div class="section" id="aplicaciones">
+<h2><span class="section-number">10.4. </span>Aplicaciones<a class="headerlink" href="#aplicaciones" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="medida-de-la-longitud-de-onda">
+<h3><span class="section-number">10.4.1. </span>Medida de la longitud de onda<a class="headerlink" href="#medida-de-la-longitud-de-onda" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/j-u3IEgcTiQ?start=33&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/IPython/core/display.py:717: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn(&quot;Consider using IPython.display.IFrame instead&quot;)
+</pre></div>
+</div>
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/j-u3IEgcTiQ?start=33" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+</div>
+<p>Como se ha indicado anteriormente, la diferencia de camino en el punto central del patron de interferencias es <span class="math notranslate nohighlight">\(\Delta = 2 d\)</span>. Eso implica que el desfase entre los haces es <span class="math notranslate nohighlight">\(\delta = k \Delta = \frac{4 \pi}{\lambda} d\)</span>. Si observamos las distancias <span class="math notranslate nohighlight">\(d\)</span> de uno de los espejos al divisor de haz que nos dan maximos y minimos, tendremos,</p>
+<ul class="simple">
+<li><p>Maximos: <span class="math notranslate nohighlight">\(\delta = 2 m \pi\)</span> rad <span class="math notranslate nohighlight">\(\Rightarrow d = m \lambda /2\)</span></p></li>
+<li><p>Minimos <span class="math notranslate nohighlight">\(\delta = (2 m +1) \pi\)</span> rad <span class="math notranslate nohighlight">\(\Rightarrow d = (2 m +1) \lambda /4\)</span></p></li>
+</ul>
+<p>En ambos casos, lo que debemos desplazar el espejo para pasar de un maximo/minimo al siguiente es <span class="math notranslate nohighlight">\(\Delta d = \lambda/2\)</span>. Por ello, una forma de medir la longitud de onda de la radiacion consiste en observar por cuantos minimos/maximos pasamos en el centro del patron de interferencias al desplazar un espejo una cierta cantidad <span class="math notranslate nohighlight">\(L\)</span>. Si llamamos a este numero de maximos/minimos <span class="math notranslate nohighlight">\(N\)</span>, de las relaciones anteriores se obtiene que,</p>
+<div class="math notranslate nohighlight">
+\[L = N \frac{\lambda}{2} \Rightarrow \lambda = \frac{2 L}{N}\]</div>
+<p>como aparece en el video anterior.</p>
+</div>
+</div>
+<div class="section" id="medida-de-la-longitud-de-coherencia-de-la-radiacion">
+<h2><span class="section-number">10.5. </span>Medida de la longitud de coherencia de la radiacion<a class="headerlink" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion" title="Permalink to this headline">¶</a></h2>
+<p>Quizas la aplicacion mas importante (dentro de la carrera de Optica y Optometria) del interferometro de Michelson es la OCT (Tomografia de Coherencia Optica), la cual se basa en el funcionamiento de un interferometro de Michelson bajo iluminacion por una fuente de muy baja longitud de coherencia (y por tanto, con una gran anchura espectral). Antes de ver la OCT, vamos a analizar lo que ocurre cuando iluminamos este interferometro con radiacion no monocromatica, y si podemos utilizarlo para medir, tanto la longitud de coherencia de la radiacion como la anchura espectral.</p>
+<p>En todo este apartado la presencia de la lamina compensadora resulta crucial, pues sin ella, la diferencia de camino entre los haces que van a los dos espejos seria desde el principio demasiado grande para observar interferencias (mayor que la longitud de coherencia de la radiacion).</p>
+<center>
+<img src=michelsonfiguretikzlc.jpg width=400px></img>
+</center>
+<p>En cualquier caso, si la longitud de coherencia es finita, habra una distancia del espejo movil que provocara que <span class="math notranslate nohighlight">\(\Delta = 2 d &gt; l_c\)</span> a partir de la cual no veremos interferencia. Por tanto, anotando la distancia <span class="math notranslate nohighlight">\(D_{max}\)</span> al divisor del haz del espejo movil a partir de la cual ya no se observan interferencias, y sabiendo la distancia <span class="math notranslate nohighlight">\(D_0\)</span> del espejo fijo, tendremos que,</p>
+<div class="math notranslate nohighlight">
+\[d_{max} = D_{max} - D_0\]</div>
+<div class="math notranslate nohighlight">
+\[l_c = d_{max}/2\]</div>
+<p>y sabiendo <span class="math notranslate nohighlight">\(l_c\)</span>, sabemos la anchura espectral <span class="math notranslate nohighlight">\(\Delta \lambda = \frac{\lambda_0^2}{l_c}\)</span>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./InterferometroMichelson_OCT"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../AnillosDeNewton_widgets/AnillosDeNewton.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">9. </span>Anillos de Newton</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="OCT_2020.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Tomografía de coherencia óptica. Puntos básicos.</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

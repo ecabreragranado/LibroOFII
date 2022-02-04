@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13. Introduccion &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="16. Red de difracción" href="../RedDeDifraccion/RedDeDifraccion.html" />
+    <link rel="prev" title="12. Difracción de Fraunhofer" href="../DifraccionFraunhofer/DifraccionFraunhofer.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/PoderDeResolucion/PoderDeResolucion.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FPoderDeResolucion/PoderDeResolucion.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/PoderDeResolucion/PoderDeResolucion.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limitacion-en-la-resolucion-de-dos-objetos-puntuales-cercanos">
+   14. Limitacion en la resolucion de dos objetos puntuales cercanos
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criterio-de-rayleigh">
+     14.1. Criterio de Rayleigh
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#angulo-minimo-de-resolucion">
+       14.1.1. Angulo minimo de resolucion
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestiones">
+   15. Cuestiones
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introduccion</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limitacion-en-la-resolucion-de-dos-objetos-puntuales-cercanos">
+   14. Limitacion en la resolucion de dos objetos puntuales cercanos
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criterio-de-rayleigh">
+     14.1. Criterio de Rayleigh
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#angulo-minimo-de-resolucion">
+       14.1.1. Angulo minimo de resolucion
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestiones">
+   15. Cuestiones
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduccion">
+<h1><span class="section-number">13. </span>Introduccion<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h1>
+<p>Hemos visto como la difraccion determina que la irradiancia en una pantalla situada tras una abertura, no tendra la distribucion espacial fijada por la sombra geometrica de dicha abertura. El haz se abre y presenta maximos y minimos en la pantalla. Esta observacion se puede interpretar aplicando el principio de Huygens-Fresnel, es decir, calculando la interferencia de las ondas secundarias emitidas por cada punto del frente de ondas que la abertura deja pasar.</p>
+<p>Tambien hemos visto anteriormente que en el caso particular de una abertura circular, la distribucion de irradiancia en la pantalla se conoce como mancha de Airy, caracterizada por un maximo central en donde se distribuye la mayor parte de la energia y lobulos laterales cada vez menos intensos. Debido a este perfil, el tamagno de la mancha de Airy se suele especificar dando el diametro (o radio) del primer anillo oscuro, o bien, el angulo subtendido con el eje optico por este minimo desde la abertura si se expresa el tamagno en unidades angulares.</p>
+<p>Este valor del angulo que da la posicion del primer minimo de la mancha de Airy sigue la expresion,</p>
+<div class="alert alert-block alert-success">
+<div class="math notranslate nohighlight">
+\[ \theta_1 = \frac{1.22 \lambda}{\Phi}\]</div>
+</div>
+<p>donde <span class="math notranslate nohighlight">\(\lambda\)</span> es la longitud de onda que ilumina el sistema y <span class="math notranslate nohighlight">\(\Phi\)</span> es el diametro de la abertura.</p>
+<center>
+<p><img alt="Funcion de Airy" src="../_images/airydisk.jpg" /></p>
+</center>
+----------
+<p>Esta distribucion de irradiancia provocada por una abertura circular toma gran importancia al introducir los efectos de la difraccion en la formacion de la imagen de un sistema optico. Efectivamente, todo sistema optico posee una dimension transversal finita, normalmente dada por el tamaño de las lentes o diafragmas incluidos. Este tamaño finito provoca que el haz procedente de un objeto del cual se quiera formar su imagen sea cortado en su entrada al sistema, apareciendo por tanto los efectos de la difracción comentados en este tema. El resultado es que la predicción realizada por la Optica Geometrica para un sistema optico perfecto por la cual la imagen de un punto es un punto deja de tener validez por la difracción. Al incluir sus efectos, la imagen de un punto será una mancha de difracción. Por otro lado, y dado que la mayoria de las lentes y diafragmas utilizados tienen forma circular, esta mancha sera la mancha de Airy comentada anteriormente.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="limitacion-en-la-resolucion-de-dos-objetos-puntuales-cercanos">
+<h1><span class="section-number">14. </span>Limitacion en la resolucion de dos objetos puntuales cercanos<a class="headerlink" href="#limitacion-en-la-resolucion-de-dos-objetos-puntuales-cercanos" title="Permalink to this headline">¶</a></h1>
+<center>
+<p><img alt="poderfig" src="../_images/poderresolucionfig.png" /></p>
+</center>
+<p>Podemos comprender facilmente que, si la imagen de un punto no es otro punto debido a la difraccion, sino que es una distribucion espacial de irradiancia con una cierta extension, las imagenes de dos puntos objetos cercanos pueden llegar a solaparse entre si en el plano imagen, resultando en una mancha un poco mas grande. De este modo, podemos llegar a no ser capaces de distinguir las imagenes de esos dos puntos cercanos. Dicho de otro modo, el hecho de que la difraccion imponga un cierto tamagno en la imagen de un punto objeto dada por un sistema optico, limita la capacidad del sistema de resolver dos puntos objeto cercanos.</p>
+<div class="section" id="criterio-de-rayleigh">
+<h2><span class="section-number">14.1. </span>Criterio de Rayleigh<a class="headerlink" href="#criterio-de-rayleigh" title="Permalink to this headline">¶</a></h2>
+<p>Aunque distinguir entre dos imagenes superpuestas puede ser algo subjetivo, se ha desarrollado un criterio para discriminar si dos imagenes se encuentran lo suficientemente separadas entre si para que podamos decir que el sistema resuelve esos dos puntos. Este criterio se denomina <strong>Criterio de Rayleigh</strong> y segun el</p>
+<div class-alert=info>
+<p><em>dos imagenes se encuentran resueltas si, al menos, la separacion entre los maximos de las manchas de Airy es igual al radio del primer minimo</em>.</p>
+</div>
+<div class="section" id="angulo-minimo-de-resolucion">
+<h3><span class="section-number">14.1.1. </span>Angulo minimo de resolucion<a class="headerlink" href="#angulo-minimo-de-resolucion" title="Permalink to this headline">¶</a></h3>
+<p>Una magnitud util para valorar el poder de resolucion de un sistema optico es el <em>angulo minimo de resolucion</em>, entendido como el minimo angulo que pueden subtender dos objetos puntuales, vistos desde mi sistema optico, de tal forma que sus imagenes esten resueltas segun el criterio de Rayleigh. Es decir, este angulo <span class="math notranslate nohighlight">\(\theta_{min}\)</span> hara que las imagenes se encuentren separadas de tal forma que el maximo de una de las manchas de Airy (correspondiente a una de las imagenes), se encuentre en el primer minimo de la otra (correspondiente a la imagen del otro punto objeto). Por tanto,</p>
+<div class="math notranslate nohighlight">
+\[\theta_{min} = \frac{1.22 \lambda}{D}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(D\)</span> es el diametro de la lente o pupila que limite el haz de entrada al sistema optico.</p>
+<p>Las anteriores consideraciones pueden tambien plantearse de la siguiente forma: Si llamamos <span class="math notranslate nohighlight">\(\theta\)</span> al angulo que subtienden dos puntos objeto cualesquiera desde el sistema optico, estos puntos objeto seran resueltos por el sistema si,</p>
+<div class="math notranslate nohighlight">
+\[\theta \ge \theta_{min}\]</div>
+<p>El siguiente codigo calcula las imagenes dadas por una lente de dos puntos objetos cercanos. La distancia entre dichos puntos, la longitud de onda, la focal de la lente o la distancia a la lente se pueden modificar. En la figura, se muestra un perfil de la irradiancia en el plano imagen junto a la referencia que marca la separacion impuesta por el criterio de Rayleigh para que dos puntos esten resueltos. Tambien se muestra a la derecha la imagen 2D de lo que observariamos en la pantalla.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">j1</span>
+
+<span class="c1">#Parámetros</span>
+<span class="c1">############</span>
+<span class="n">fprima</span> <span class="o">=</span> <span class="mi">300</span> <span class="c1"># focal de la lente</span>
+<span class="n">Da</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1"># mm</span>
+<span class="n">Dobj</span> <span class="o">=</span> <span class="mi">2000</span> <span class="c1"># distancia desde la lente a los dos puntos objetos</span>
+<span class="n">d</span> <span class="o">=</span><span class="mf">0.2</span> <span class="c1">#separacion entre los puntos objetos</span>
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mf">5.5e-4</span>
+
+<span class="c1">################</span>
+<span class="c1"># Calculos</span>
+<span class="c1">###############</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">d</span><span class="o">/</span><span class="n">Dobj</span><span class="p">)</span>
+<span class="n">sprima</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">Dobj</span><span class="o">*</span><span class="n">fprima</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="o">-</span><span class="n">Dobj</span> <span class="o">+</span> <span class="n">fprima</span><span class="p">)</span> <span class="c1"># distancia lente-pantalla</span>
+<span class="n">x0</span> <span class="o">=</span> <span class="n">sprima</span><span class="o">*</span><span class="p">(</span><span class="n">d</span><span class="o">/</span><span class="n">Dobj</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">x0</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">x0</span><span class="p">,</span><span class="mi">350</span><span class="p">)</span> <span class="c1"># distancia al eje en la pantalla</span>
+
+
+<span class="c1">#Corte en 1D</span>
+<span class="n">I0</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#mW/cm^2</span>
+<span class="n">Icirc1</span> <span class="o">=</span> <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">j1</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">x0</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">sprima</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">x0</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">sprima</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">Icirc2</span> <span class="o">=</span> <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">j1</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">x0</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">sprima</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">x0</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">sprima</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">Icirc</span> <span class="o">=</span> <span class="n">Icirc1</span> <span class="o">+</span> <span class="n">Icirc2</span>
+<span class="n">rayleigh</span> <span class="o">=</span> <span class="mf">1.22</span><span class="o">*</span><span class="n">sprima</span><span class="o">*</span><span class="n">Lambda</span><span class="o">/</span><span class="n">Da</span> <span class="o">-</span> <span class="n">x0</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Icirc1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Imagen 1&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Icirc2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Imagen 2&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Icirc</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Total&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">vlines</span><span class="p">(</span><span class="n">rayleigh</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">Icirc</span><span class="p">),</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Separ min Rayleigh&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x (mm)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;I (u.a.)&quot;</span><span class="p">);</span>
+
+
+<span class="c1">#En 2D</span>
+<span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+<span class="n">R1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">X</span><span class="o">+</span><span class="n">x0</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">R2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">X</span><span class="o">-</span><span class="n">x0</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">Icirc1</span> <span class="o">=</span>  <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">j1</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="n">R1</span><span class="o">/</span><span class="n">sprima</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="n">R1</span><span class="o">/</span><span class="n">sprima</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">Icirc2</span> <span class="o">=</span>  <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">j1</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="n">R2</span><span class="o">/</span><span class="n">sprima</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">Da</span><span class="o">*</span><span class="n">R2</span><span class="o">/</span><span class="n">sprima</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">Icirctot</span> <span class="o">=</span> <span class="n">Icirc1</span> <span class="o">+</span> <span class="n">Icirc2</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">Icirctot</span><span class="p">,</span><span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;hot&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x (mm)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y (mm)&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/PoderDeResolucion_2_0.png" src="../_images/PoderDeResolucion_2_0.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="cuestiones">
+<h1><span class="section-number">15. </span>Cuestiones<a class="headerlink" href="#cuestiones" title="Permalink to this headline">¶</a></h1>
+<p>Modificar los parametros del codigo anterior, volviendo a ejecutar la celda para contestar a las siguientes cuestiones:</p>
+<ol class="simple">
+<li><p>Modificar la separacion entre los puntos objetos para observar una situacion en la que los puntos no sean resueltos por la lente y otra en la que si lo sean.</p></li>
+<li><p>Si partimos de una situacion en la que no se resuelvan dos puntos objetos, como tendriamos que modificar <span class="math notranslate nohighlight">\(\lambda\)</span> para conseguir que si se resolvieran?</p></li>
+<li><p>Podriamos conseguir pasar de una situacion en la que no se resuelvan dos puntos objeto a otra en la que si se resuelvan variando unicamente la focal de lente</p></li>
+<li><p>Como cambiaria el codigo si en vez de una lente en aire consideraramos que detras de la lente se encuentra un medio con un cierto indice de refraccion?</p></li>
+</ol>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./PoderDeResolucion"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../DifraccionFraunhofer/DifraccionFraunhofer.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">12. </span>Difracción de Fraunhofer</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../RedDeDifraccion/RedDeDifraccion.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">16. </span>Red de difracción</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

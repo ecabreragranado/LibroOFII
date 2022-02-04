@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6. Tratamientos Antirreflejantes &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="7. Interferencia por haces múltiples. Filtros interferenciales." href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html" />
+    <link rel="prev" title="5. Biprisma de Fresnel" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/TratamientoAntirreflejante/TratamientosAntirreflejantes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FTratamientoAntirreflejante/TratamientosAntirreflejantes.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/TratamientoAntirreflejante/TratamientosAntirreflejantes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estrategia-para-reducir-las-perdidas-por-reflexion-tratamientos-antirreflejantes">
+   6.1. Estrategia para reducir las pérdidas por reflexión. Tratamientos antirreflejantes.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eleccion-del-grosor-del-tratamiento">
+   6.2. Elección del grosor del tratamiento.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestiones">
+   6.3. Cuestiones
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eleccion-del-material-del-tratamiento">
+   6.4. Elección del material del tratamiento
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   6.5. Cuestiones:
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tratamientos Antirreflejantes</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estrategia-para-reducir-las-perdidas-por-reflexion-tratamientos-antirreflejantes">
+   6.1. Estrategia para reducir las pérdidas por reflexión. Tratamientos antirreflejantes.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eleccion-del-grosor-del-tratamiento">
+   6.2. Elección del grosor del tratamiento.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestiones">
+   6.3. Cuestiones
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eleccion-del-material-del-tratamiento">
+   6.4. Elección del material del tratamiento
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   6.5. Cuestiones:
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="tratamientos-antirreflejantes">
+<h1><span class="section-number">6. </span>Tratamientos Antirreflejantes<a class="headerlink" href="#tratamientos-antirreflejantes" title="Permalink to this headline">¶</a></h1>
+<p>Los tratamientos antirreflejantes responden a la cuestión de si podemos reducir las pérdidas que se producen por reflexiones en las superficies ópticas. A su vez, los tratamientos antirreflejantes sirven a su vez para eliminar
+reflejos molestos en, por ejemplo, gafas con cristales de alto índice.</p>
+<p>En primer lugar, veamos una estimación de la magntiud de estas pérdidas. Para ello supondremos un haz de luz blanca que ilumina un elemento óptico con índice <span class="math notranslate nohighlight">\(n_v = 1.8\)</span>, como puede ser una lente oftálmica, lo suficientemente grueso como para que no se produzca interferencia entre las ondas reflejadas en su primera y segunda cara (recordar que si el elemento óptico lo podemos aproximar por una lámina planoparalela, la diferencia de camino óptico entre estas ondas es proporcional a su grosor. Si éste es lo suficientemente grande, dicha diferencia de camino será mayor que la longitud de coherencia de la fuente). ¿Qué valor de la reflectancia tendremos?</p>
+<p>La reflectancia se define como el cociente entre la irradiancia reflejada y la incidente, es decir, <span class="math notranslate nohighlight">\(R = \frac{I_R}{I_i}\)</span>. Por otro lado,  <span class="math notranslate nohighlight">\(I_r = I_1 + I_2\)</span>, siendo <span class="math notranslate nohighlight">\(I_1\)</span> la irradiancia reflejada en la primera cara del elemento óptico que estamos considerando e <span class="math notranslate nohighlight">\(I_2\)</span> la irradiancia reflejada en la segunda cara. Además, llamando <span class="math notranslate nohighlight">\(r_{1,2}\)</span> a los coeficientes de reflexión en la primera o segunda cara respectivamente, y <span class="math notranslate nohighlight">\(t_1/t'_1\)</span> a los coeficientes de transmisión en la primera cara cuando el haz incide desde el aire o desde dentro del material, tendremos que,</p>
+<div class="math notranslate nohighlight">
+\[I_1 = r_1^2 I_i\]</div>
+<div class="math notranslate nohighlight">
+\[I_2 = (t_1 r_2 t'_1)^2 I_i\]</div>
+<p>y por tanto,</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}R = r_1^2 + (t_1 r_2 t'_1)^2$$.\\Ahora de los coeficientes de Fresnel, \\$$r_1 = \frac{1 - n_v}{1+n_v}\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight">
+\[r_2 = \frac{n_v -1}{1+n_v}\]</div>
+<div class="math notranslate nohighlight">
+\[t_1 = \frac{2}{1+n_v}\]</div>
+<div class="math notranslate nohighlight">
+\[t'_1 = \frac{2 n_v}{1+n_v}\]</div>
+<p>Tomando un valor de <span class="math notranslate nohighlight">\(n_v \sim 1.8\)</span>, el valor de la reflectancia es <span class="math notranslate nohighlight">\(R \sim 0.08\)</span>, es decir, estas pérdidas por reflexión suponen, aproximadamente, un <span class="math notranslate nohighlight">\(\sim\)</span> 8% en este elemento óptico. Si tenemos más de un elemento óptico en nuestro sistema, estas pérdidas representan un problema para tener suficiente energía al final de nuestro sistema.</p>
+<div class="section" id="estrategia-para-reducir-las-perdidas-por-reflexion-tratamientos-antirreflejantes">
+<h2><span class="section-number">6.1. </span>Estrategia para reducir las pérdidas por reflexión. Tratamientos antirreflejantes.<a class="headerlink" href="#estrategia-para-reducir-las-perdidas-por-reflexion-tratamientos-antirreflejantes" title="Permalink to this headline">¶</a></h2>
+<p>Para evitar estas pérdidas, podemos depositar una lámina <strong>delgada</strong> de un material dieléctrico, con el objetivo de <strong>producir interferencia destructiva en reflexión</strong> en esta capa. Es conveniente insistir en que, dado que normalmente la iluminación se va a producir con luz blanca, esta capa que depositamos sobre la superficie del elemento óptico ha de ser lo suficientemente delgada como para que la diferencia de camino entre las ondas reflejadas en su primera y segunda cara no sea mayor que la longitud de coherencia de la radiación que lo ilumina. Si no es así, no se producirá interferencia, y el tratamiento pierde su función.</p>
+<p>Teniendo en cuenta que la longitud de coherencia de un haz de luz blanca es del orden de <span class="math notranslate nohighlight">\(\sim 2 \mu\)</span>m, y que la diferencia de camino entre estas ondas, suponiendo incidencia normal es <span class="math notranslate nohighlight">\(\Delta = 2 n_c h\)</span>, el grosor máximo del tratamiento será del orden de <span class="math notranslate nohighlight">\(1/n_c \mu\)</span>m.</p>
+<hr class="docutils" />
+<center>
+<p><img alt="AR" src="../_images/antirreflectingcoating.gif" /></p>
+</center>
+Si queremos producir interferencia destructiva entre las ondas reflejadas en la primera y la segunda cara, sabemos que el desfase entre estas ondas ha de ser igual a $(2 m +1)\pi$ rad. La expresión exacta del desfase depende de la relación de índices entre el material del tratamiento y el material sobre el que se deposita. Como es lo más habitual, supondremos que la luz incide desde el aire en incidencia normal, y que el índice del material que forma el tratamiento, $n_c$ es menor que el índice del material del elemento óptico sobre el que se deposita $n_v$. En este caso, tendremos como condición para producir interferencia destructiva, 
+<div class="math notranslate nohighlight">
+\[\delta = \frac{4\pi}{\lambda}n_c h = (2 m +1)\pi\]</div>
+<p>Esta condición nos establece que para diseñar nuestro tratamiento antirreflejante debemos fijar dos parámetros: el grosor <span class="math notranslate nohighlight">\(h\)</span> del tratamiento y el índice del material que lo compone <span class="math notranslate nohighlight">\(n_c\)</span> (Hay que notar que hemos fijado el valor de <span class="math notranslate nohighlight">\(\lambda\)</span> y del ángulo de incidencia. Si los cambiamos, cambia la condición de interferencia destructiva). Vamos a ver a continuación cómo elegirlo para reducir al máximo la energía reflejada (y aumentar por tanto la energía transmitida).</p>
+</div>
+<div class="section" id="eleccion-del-grosor-del-tratamiento">
+<h2><span class="section-number">6.2. </span>Elección del grosor del tratamiento.<a class="headerlink" href="#eleccion-del-grosor-del-tratamiento" title="Permalink to this headline">¶</a></h2>
+<p>De la expresión anterior, podemos despejar el valor del grosor <span class="math notranslate nohighlight">\(h\)</span> del tratamiento, obteniendo</p>
+<div class="math notranslate nohighlight">
+\[h = \frac{ (2 m +1) \lambda}{4 n_c}\]</div>
+<p>En primer lugar, vemos que el grosor depende del índice de refracción <span class="math notranslate nohighlight">\(n_c\)</span>. Este parámetro vamos a fijarlo un poco más adelante. También vemos que esta condición no nos da un único valor del grosor. El número <span class="math notranslate nohighlight">\(m\)</span> puede tomar cualquier valor entero (nulo o positivo, ya que un grosor negativo no tendría sentido). Recuperando la discusión realizada anteriormente, existe un valor máximo del grosor para que el tratamiento sea efectivo, pero aun así, hay varios valores posibles. ¿Cuál es, dentro de estos valores, el que puede resultar óptimo?.</p>
+<p>Si nos fijamos únicamente en la condición de mínimo de reflectancia (condición de interferencia destructiva), no tenemos ningún argumento para elegir entre uno u otro espesor. <strong>Todos ellos dan la misma reflectancia en el mínimo</strong>. Para poder discriminar cuál es el óptimo para un tratamiento antirreflejante, tenemos que ampliar nuestro estudio. Tenemos que mirar a otras longitudes de onda, <strong>fuera de aquella para la que se produce la condición de mínimo</strong> (y que aparece en la expresión anterior del grosor).</p>
+<p>La siguiente figura muestra cómo es la curva de reflectancia en función de la longitud de onda para diferentes grosores que cumplen la condición anterior, es decir, diferentes grosores que obtenemos dando diferentes valores a <span class="math notranslate nohighlight">\(m\)</span>. De la figura se pueden extraer varias conclusiones:</p>
+<ol class="simple">
+<li><p>El valor mínimo se obtiene, en todos los espesores, a la misma longitud de onda y nos da el mismo valor de la reflectancia. Es decir, para esa longitud de onda, no hay diferencia entre los distintos espesores mostrados, como hemos comentado anterioremente.</p></li>
+<li><p>Fuera del mínimo, el grosor más pequeño da un comportamiento más suave y con valores menores de la reflectancia, comparado con lo obtenido con espesores mayores, en donde pueden aparecer incluso máximos en la reflectancia para longitudes de onda cercanas al mínimo.</p></li>
+<li><p>Como normalmente vamos a desear minimizar la reflectancia en un rango grande de longitudes de onda (por ejemplo el rango del espectro visible en el caso de luz blanca), no sólo nos importa lo que ocurra en el mínimo, sino para otras longitudes de onda cercanas. Observando los dos puntos anteriores, podemos llegar a la conclusión de que <strong>el espesor óptimo para el tratamiento es el menor de todos aquellos que dan interferencia destructiva</strong>, es decir,</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[h = \frac{\lambda}{4 n_c}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\lambda\)</span> es la longitud de onda a la que minimizamos la reflectancia. Normalmente, la escogeremos como aquella en el punto medio del rango en el que queremos minimizar la reflectancia.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+
+<span class="c1"># MODIFICAR LOS PARAMETROS. LUEGO EJECUTAR</span>
+<span class="c1">########################################################</span>
+<span class="n">nc</span> <span class="o">=</span> <span class="mf">1.38</span> <span class="c1"># Índice de la monocapa (MgF2)</span>
+<span class="n">nL</span> <span class="o">=</span> <span class="mf">1.8</span> <span class="c1"># Índice del elemento óptico (lente de alto índice)</span>
+<span class="n">l0</span> <span class="o">=</span> <span class="mi">550</span> <span class="c1"># Longitud de onda a la que se optimiza el tratamiento.</span>
+<span class="n">espesor1</span> <span class="o">=</span> <span class="n">l0</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">nc</span><span class="p">)</span>
+<span class="n">espesor2</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">l0</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">nc</span><span class="p">)</span>  <span class="c1"># Incluir el valor del segundo espesor más pequeño de la monocapa (en nm)</span>
+
+<span class="n">espesor3</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="n">l0</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">nc</span><span class="p">)</span>  <span class="c1"># Incluir el valor del tercer espesor más pequeño de la monocapa (en nm)</span>
+
+<span class="c1"># DESDE AQUÍ NO TOCAR. </span>
+<span class="c1">##############################################################################################################################</span>
+
+<span class="n">longitud_de_onda</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="mi">750</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># Crea los valores de las longitudes de onda en el visible (en nm)</span>
+
+<span class="c1"># Coeficientes de reflexion y transmision</span>
+<span class="n">rA</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">nc</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">nc</span><span class="p">)</span>  <span class="c1"># Coeficiente de reflexión aire --&gt; monocapa</span>
+<span class="n">tA</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">nc</span><span class="p">)</span>     <span class="c1"># Coeficiente de transmisión aire --&gt; monocapa</span>
+<span class="n">rB</span> <span class="o">=</span> <span class="p">(</span><span class="n">nc</span><span class="o">-</span><span class="n">nL</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">nc</span><span class="o">+</span><span class="n">nL</span><span class="p">)</span> <span class="c1"># Coeficiente de reflexión monocapa --&gt; lente</span>
+<span class="n">tC</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">nc</span><span class="o">/</span><span class="p">(</span><span class="n">nc</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>     <span class="c1"># Coeficiente de transmissión monocapa --&gt; aire</span>
+
+<span class="c1"># Desfase y Reflectancia para el espesor mínimo</span>
+<span class="n">desfase1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">longitud_de_onda</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">nc</span><span class="o">*</span><span class="n">espesor1</span> <span class="o">+</span> <span class="mi">0</span><span class="o">*</span><span class="n">pi</span> <span class="c1"># desfase geométrico + desfase debido a las reflexiones</span>
+<span class="n">Reflectancia_tratamiento1</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span> <span class="n">rA</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">tA</span><span class="o">*</span><span class="n">rB</span><span class="o">*</span><span class="n">tC</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span> <span class="p">(</span><span class="n">rA</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">tA</span><span class="o">*</span><span class="n">rB</span><span class="o">*</span><span class="n">tC</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">desfase1</span><span class="p">)</span> <span class="p">)</span> <span class="c1"># Reflectancia (%) </span>
+
+<span class="c1"># Desfase y Reflectancia para el segundo espesor mínimo</span>
+<span class="n">desfase2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">longitud_de_onda</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">nc</span><span class="o">*</span><span class="n">espesor2</span> <span class="o">+</span> <span class="mi">0</span><span class="o">*</span><span class="n">pi</span> <span class="c1"># desfase geométrico + desfase debido a las reflexiones</span>
+<span class="n">Reflectancia_tratamiento2</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span> <span class="n">rA</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">tA</span><span class="o">*</span><span class="n">rB</span><span class="o">*</span><span class="n">tC</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span> <span class="p">(</span><span class="n">rA</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">tA</span><span class="o">*</span><span class="n">rB</span><span class="o">*</span><span class="n">tC</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">desfase2</span><span class="p">)</span> <span class="p">)</span> <span class="c1"># Reflectancia (%) </span>
+
+<span class="c1"># Desfase y Reflectancia para el segundo espesor mínimo</span>
+<span class="n">desfase3</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">longitud_de_onda</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">nc</span><span class="o">*</span><span class="n">espesor3</span> <span class="o">+</span> <span class="mi">0</span><span class="o">*</span><span class="n">pi</span> <span class="c1"># desfase geométrico + desfase debido a las reflexiones</span>
+<span class="n">Reflectancia_tratamiento3</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span> <span class="n">rA</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">tA</span><span class="o">*</span><span class="n">rB</span><span class="o">*</span><span class="n">tC</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span> <span class="p">(</span><span class="n">rA</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">tA</span><span class="o">*</span><span class="n">rB</span><span class="o">*</span><span class="n">tC</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">desfase3</span><span class="p">)</span> <span class="p">)</span> <span class="c1"># Reflectancia (%) </span>
+
+<span class="c1"># Dibujamos la reflectancia en función de la longitud de onda</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">longitud_de_onda</span><span class="p">,</span><span class="n">Reflectancia_tratamiento1</span><span class="p">,</span><span class="n">longitud_de_onda</span><span class="p">,</span><span class="n">Reflectancia_tratamiento2</span><span class="p">,</span><span class="n">longitud_de_onda</span><span class="p">,</span><span class="n">Reflectancia_tratamiento3</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># Pintamos la reflectancia</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$\lambda$ (nm)&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">);</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Reflectancia (%)&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span> <span class="c1"># Escribimos los nombres de los ejes ç</span>
+<span class="n">legend</span><span class="p">((</span><span class="s1">&#39;espesor1&#39;</span><span class="p">,</span><span class="s1">&#39;espesor2&#39;</span><span class="p">,</span><span class="s1">&#39;espesor3&#39;</span><span class="p">),</span><span class="n">loc</span> <span class="o">=</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># Escribimos la leyenda;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f7a12a13150&gt;
+</pre></div>
+</div>
+<img alt="../_images/TratamientosAntirreflejantes_7_1.png" src="../_images/TratamientosAntirreflejantes_7_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="cuestiones">
+<h2><span class="section-number">6.3. </span>Cuestiones<a class="headerlink" href="#cuestiones" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Cambiar el valor del parámetro <code class="docutils literal notranslate"><span class="pre">l0</span></code> en el código (longitud de onda en la que se optimiza el tratamiento). ¿Cómo cambia la figura?</p></li>
+<li><p>Calcular el valor de los espesores utilizados para generar la gráfica y compararlos con la longitud de coherencia de un haz de luz blanca. ¿En alguno de ellos la diferencia de camino sería mayor que la longitud de coherencia?. ¿Qué consecuencias tendría si fuera así?.</p></li>
+<li><p>¿Qué colores se observarían en reflexión si ilumináramos con luz blanca un tratamiento con el espesor3?</p></li>
+</ul>
+</div>
+<div class="section" id="eleccion-del-material-del-tratamiento">
+<h2><span class="section-number">6.4. </span>Elección del material del tratamiento<a class="headerlink" href="#eleccion-del-material-del-tratamiento" title="Permalink to this headline">¶</a></h2>
+<p>Hemos visto que el espesor óptimo para el tratamiento es el más pequeño entre aquellos que provocan interferencia destructiva en reflexión. Sin embargo, no hemos fijado aún el valor del índice de refracción que tenemos que utilizar para el tratamiento. Para ello, vamos a recordar cómo es la irradiancia en reflexión <strong>en el mínimo</strong> de reflectancia. Su valor será:</p>
+<div class="math notranslate nohighlight">
+\[I_r = I_1 + I_2 - 2\sqrt{I_1 I_2}\]</div>
+<p>Este valor de la irradiancia en reflexión no puede ser nulo ya que <span class="math notranslate nohighlight">\(I_1\)</span> es mayor que <span class="math notranslate nohighlight">\(I_2\)</span>, como se puede observar de sus expresiones y de los valores de los coeficientes de Fresnel. O dicho de otro modo, el contraste no puede ser igual a 1 cuando consideramos la interferencia de las dos primeras ondas en reflexión, como es nuestro caso. Sin embargo, podemos intentar que las irradiancias sean lo más parecidas posibles. De este modo conseguimos un valor de <span class="math notranslate nohighlight">\(I_r\)</span> muy próximo a 0 en el mínimo. ¿Cómo conseguir este resultado?. ¿Cómo hacer que las irradiancias <span class="math notranslate nohighlight">\(I_1\)</span> e <span class="math notranslate nohighlight">\(I_2\)</span> sean lo más parecidas posibles?.</p>
+<p>Lo que tenemos que conseguir es <span class="math notranslate nohighlight">\(I_1 \simeq I_2\)</span>. O si escribimos las expresiones de estas irradiancias en función de los coeficientes de Fresnel,</p>
+<div class="math notranslate nohighlight">
+\[ r_1^2 I_0 \simeq (t_1 r_2 t'_1)^2 I_0 \Rightarrow r_1^2 \simeq (t_1 r_2 t'_1)^2 \]</div>
+<p>Sabemos que no son iguales, pero si el tratamiento lo forma un material dieléctrico con <span class="math notranslate nohighlight">\(r_1\)</span> “pequeño” , <span class="math notranslate nohighlight">\(t_1 t'_1 \sim 1\)</span> (ya que si hay poca reflexión, la transmisión será grande). Haciendo esta aproximación, la ecuación anterior nos queda:</p>
+<div class="math notranslate nohighlight">
+\[ r_1 = r_2 \Rightarrow \frac{1 - n_c}{1+n_c} = \frac{n_c - n_v}{n_c + n_v}\]</div>
+<p>donde se han simplificado los cuadrados y se ha tomado ya el signo “=” en vez de <span class="math notranslate nohighlight">\(\simeq\)</span>. Resolviendo esta ecuación, tenemos que el índice del tratamiento <span class="math notranslate nohighlight">\(n_c\)</span> ha de cumplir la siguiente condición para que el mínimo de reflectancia sea lo más bajo posible:</p>
+<div class="math notranslate nohighlight">
+\[n_c = \sqrt{ n_v}\]</div>
+<p>Nota antes de seguir: El valor del espesor óptimo se ha tomado para reducir la reflectancia <em>fuera</em> del mínimo. El valor del índice de refracción óptimo se ha tomado para que el valor de la reflectancia en el mínimo sea lo más pequeño posible (imponiendo la condición de que las irradiancias de las ondas que interfieren sean lo más parecidas posibles.)</p>
+<p>En la siguiente figura se puede variar el valor del índice de la capa utilizada como tratamiento antirreflejante para un índice de la lente sobre el que lo depositvamos igual a 1.8. Observar cómo cambia el valor de la reflectancia con dicho índice del tratamiento. El valor óptimo se encuentra en torno a 1.35. Es por ello que un material común para utilizar como tratamiento antirreflejante es el Fluoruro de Magnesio (MgF<span class="math notranslate nohighlight">\(_2\)</span>) pues su índice es igual a 1.38 en el visible, muy cerca del valor óptimo. Además, este material permite realizar tratamientos con gran durabilidad.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">wg</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1">##################################################################################################</span>
+<span class="n">nL</span> <span class="o">=</span> <span class="mf">1.8</span>
+<span class="c1"># Desfase y Reflectancia para el espesor mínimo</span>
+<span class="k">def</span> <span class="nf">reflecindice</span><span class="p">(</span><span class="n">nc</span><span class="p">):</span>
+    <span class="n">espesor</span> <span class="o">=</span> <span class="mi">550</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">nc</span><span class="p">)</span>
+    <span class="n">longitud_de_onda</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="mi">750</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># Crea los valores de las longitudes de onda en el visible (en nm)</span>
+
+    <span class="c1"># Coeficientes de reflexion y transmision</span>
+    <span class="n">rA</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">nc</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">nc</span><span class="p">)</span>  <span class="c1"># Coeficiente de reflexión aire --&gt; monocapa</span>
+    <span class="n">tA</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">nc</span><span class="p">)</span>     <span class="c1"># Coeficiente de transmisión aire --&gt; monocapa</span>
+    <span class="n">rB</span> <span class="o">=</span> <span class="p">(</span><span class="n">nc</span><span class="o">-</span><span class="n">nL</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">nc</span><span class="o">+</span><span class="n">nL</span><span class="p">)</span> <span class="c1"># Coeficiente de reflexión monocapa --&gt; lente</span>
+    <span class="n">tC</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">nc</span><span class="o">/</span><span class="p">(</span><span class="n">nc</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>     <span class="c1"># Coeficiente de transmissión monocapa --&gt; aire</span>
+
+    <span class="n">desfase</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">longitud_de_onda</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">nc</span><span class="o">*</span><span class="n">espesor</span> <span class="o">+</span> <span class="mi">0</span><span class="o">*</span><span class="n">pi</span> <span class="c1"># desfase geométrico + desfase debido a las reflexiones</span>
+    <span class="n">Reflectancia_tratamiento</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span> <span class="n">rA</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">tA</span><span class="o">*</span><span class="n">rB</span><span class="o">*</span><span class="n">tC</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span> <span class="p">(</span><span class="n">rA</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">tA</span><span class="o">*</span><span class="n">rB</span><span class="o">*</span><span class="n">tC</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">desfase</span><span class="p">)</span> <span class="p">)</span> <span class="c1"># Reflectancia (%) </span>
+    <span class="c1"># Dibujamos la reflectancia en función de la longitud de onda</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">longitud_de_onda</span><span class="p">,</span><span class="n">Reflectancia_tratamiento</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># Pintamos la reflectancia</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;$\lambda$ (nm)&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">);</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Reflectancia (%)&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span> <span class="c1"># Escribimos los nombres de los ejes</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+    <span class="k">return</span>
+    
+<span class="n">wg</span><span class="o">.</span><span class="n">interact</span><span class="p">(</span><span class="n">reflecindice</span><span class="p">,</span> <span class="n">nc</span><span class="o">=</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span><span class="mf">1.8</span><span class="p">,</span><span class="mf">0.05</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "bebe170f9d54446e91c823d0c9ee248d"}
+</script><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function __main__.reflecindice(nc)&gt;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">6.5. </span>Cuestiones:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Todo el análisis anterior se basa en que la luz incide normalmente (ángulo de incidencia nulo) al tratamiento. Reflexionar sobre qué cambiaría si fijáramos el tratamiento para que funcionara a un ángulo de incidencia distinto. ¿Qué termino habría que añadir al desfase?. ¿Cómo cambiaría el espesor óptimo?.</p></li>
+</ul>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"f7aba6b602c746e4b31ac77e11bffaf2": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "bebe170f9d54446e91c823d0c9ee248d": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_f3faf3d87cd940569bca7539cdbc12ba", "IPY_MODEL_f609dd52793142e5a8cb3ad2476fda27"], "layout": "IPY_MODEL_f7aba6b602c746e4b31ac77e11bffaf2"}}, "b9b40e6be3554d988e07640e37a55775": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "68c36ea9254d47c0ae1fcf230daa0608": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "f3faf3d87cd940569bca7539cdbc12ba": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": true, "description": "nc", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_b9b40e6be3554d988e07640e37a55775", "max": 1.8, "min": 1.2, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.05, "style": "IPY_MODEL_68c36ea9254d47c0ae1fcf230daa0608", "value": 1.5}}, "66674f53d45947b8b53d3e7021d97316": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f609dd52793142e5a8cb3ad2476fda27": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_66674f53d45947b8b53d3e7021d97316", "msg_id": "", "outputs": [{"output_type": "display_data", "metadata": {"needs_background": "light"}, "data": {"text/plain": "<Figure size 504x432 with 1 Axes>", "image/png": "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\n"}}]}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./TratamientoAntirreflejante"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">5. </span>Biprisma de Fresnel</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Interferencia por haces múltiples. Filtros interferenciales.</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

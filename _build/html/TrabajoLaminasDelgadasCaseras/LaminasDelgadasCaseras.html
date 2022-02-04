@@ -1,0 +1,741 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24. Láminas delgadas caseras. Trabajo en Grupo. &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="25. Resolución limitada por difracción. Trabajo en Grupo." href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html" />
+    <link rel="prev" title="23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FTrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestion-1">
+   24.1. Cuestión 1
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-1">
+     24.1.1. Lámina delgada 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-2">
+     24.1.2. Lámina delgada 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-3">
+     24.1.3. Lámina delgada 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-4">
+     24.1.4. Lámina delgada 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-5">
+     24.1.5. Lámina delgada 5
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestion-2">
+   24.2. Cuestión 2
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Láminas delgadas caseras. Trabajo en Grupo.</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestion-1">
+   24.1. Cuestión 1
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-1">
+     24.1.1. Lámina delgada 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-2">
+     24.1.2. Lámina delgada 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-3">
+     24.1.3. Lámina delgada 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-4">
+     24.1.4. Lámina delgada 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lamina-delgada-5">
+     24.1.5. Lámina delgada 5
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestion-2">
+   24.2. Cuestión 2
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="laminas-delgadas-caseras-trabajo-en-grupo">
+<h1><span class="section-number">24. </span>Láminas delgadas caseras. Trabajo en Grupo.<a class="headerlink" href="#laminas-delgadas-caseras-trabajo-en-grupo" title="Permalink to this headline">¶</a></h1>
+<p>El trabajo consiste en realizar láminas delgadas caseras. Para ello se pone una gota de esmalte de uñas transparente sobre un recipiente con agua y rápidamente recogeremos la lámina delgada sumergiendo una cartulina negra que al levantarla recoja la lámina.</p>
+<p>Antes de empezar podéis ver las páginas web (o buscar otras):</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://sciencenotes.org/rainbow-paper-thin-film-science-project/">https://sciencenotes.org/rainbow-paper-thin-film-science-project/</a></p></li>
+<li><p><a class="reference external" href="https://www.kiwico.com/diy/Science-Projects-for-Kids/3/project/Rainbow-Paper-Experiment/2583">https://www.kiwico.com/diy/Science-Projects-for-Kids/3/project/Rainbow-Paper-Experiment/2583</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=39XelPRc6ds">https://www.youtube.com/watch?v=39XelPRc6ds</a></p></li>
+</ul>
+<p>Material necesario.</p>
+<ul class="simple">
+<li><p>Esmalte de uñas transparente</p></li>
+<li><p>Un recipiente para el agua tipo bol o tupper</p></li>
+<li><p>Cartulina negra y tijeras.</p></li>
+</ul>
+<p>Tenéis que grabar vídeos del proceso. Dejar secar la lámina y hacer fotos del resultado final. <strong>Más de la mitad de los miembros del grupo</strong> tienen que realizar las láminas y subir sus vídeos donde se os vea claramente en algún momento.</p>
+<p>Para subir las fotos y los vídeos hay que pinchar en New (ver parte superior izquierda) y arrastrar los archivos a la zona que aparece debajo.</p>
+<div class="section" id="cuestion-1">
+<h2><span class="section-number">24.1. </span>Cuestión 1<a class="headerlink" href="#cuestion-1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Más de la mitad de los miembros del grupo</strong> deberán realizar las siguientes tareas:</p>
+<p>Grabar un vídeo que muestre lo siguiente:</p>
+<ul class="simple">
+<li><p>Los materiales empleados, explicación.</p></li>
+<li><p>El proceso de formación mientras se explica.</p></li>
+<li><p>En algún momento del video deberá verse al alumno.</p></li>
+</ul>
+<p>Dejamos secar la lámina y posteriormente hacemos dos fotos del resultado:</p>
+<ul class="simple">
+<li><p>Una de cerca donde se vea bien la lámina</p></li>
+<li><p>Otra donde aparezca el alumno junto a dicha lámina.</p></li>
+</ul>
+<p>Los vídeos y fotos se subirán a CoCalc, en la misma carpeta que el presente trabajo. Esta subida se puede realizar pinchando en “Files” (icono de carpeta), al lado de “+New”, en la parte superior izquierda de la página, y a continuación en “Upload”.</p>
+<p>Una vez subidos, editar las siguientes celdas escribiendo entre las comillas los nombres de los vídeos y la fotos (incluyendo la extensión).</p>
+<div class="section" id="lamina-delgada-1">
+<h3><span class="section-number">24.1.1. </span>Lámina delgada 1<a class="headerlink" href="#lamina-delgada-1" title="Permalink to this headline">¶</a></h3>
+<p><strong>Vídeo 1</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;polariscopiolineal.mkv&quot;</span> <span class="c1">#escribir entre las comillas el nombre del archivo</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
+<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">fba80090aa03</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1">#NO TOCAR</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
+
+<span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">__init__</span><span class="nt">(self, data, url, filename, embed, mimetype, width, height, html_attributes)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1401</span>                 <span class="s2">&quot;Consider passing Video(url=&#39;...&#39;)&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1402</span>             <span class="p">])</span>
+<span class="ne">-&gt; </span><span class="mi">1403</span>             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1404</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1405</span>         <span class="bp">self</span><span class="o">.</span><span class="n">mimetype</span> <span class="o">=</span> <span class="n">mimetype</span>
+
+<span class="ne">ValueError</span>: To embed videos, you must pass embed=True (this may make your notebook files huge)
+<span class="n">Consider</span> <span class="n">passing</span> <span class="n">Video</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;...&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina 1</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina y alumno 1</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lamina-delgada-2">
+<h3><span class="section-number">24.1.2. </span>Lámina delgada 2<a class="headerlink" href="#lamina-delgada-2" title="Permalink to this headline">¶</a></h3>
+<p><strong>Vídeo 2</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;polariscopiolineal.mkv&quot;</span> <span class="c1">#escribir entre las comillas el nombre del archivo</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
+<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina 2</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina y alumno 2</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lamina-delgada-3">
+<h3><span class="section-number">24.1.3. </span>Lámina delgada 3<a class="headerlink" href="#lamina-delgada-3" title="Permalink to this headline">¶</a></h3>
+<p><strong>Vídeo 3</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;polariscopiolineal.mkv&quot;</span> <span class="c1">#escribir entre las comillas el nombre del archivo</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
+<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina 3</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina y alumno 3</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lamina-delgada-4">
+<h3><span class="section-number">24.1.4. </span>Lámina delgada 4<a class="headerlink" href="#lamina-delgada-4" title="Permalink to this headline">¶</a></h3>
+<p><strong>Vídeo 4</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;polariscopiolineal.mkv&quot;</span> <span class="c1">#escribir entre las comillas el nombre del archivo</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
+<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina 4</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina y alumno 4</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lamina-delgada-5">
+<h3><span class="section-number">24.1.5. </span>Lámina delgada 5<a class="headerlink" href="#lamina-delgada-5" title="Permalink to this headline">¶</a></h3>
+<p><strong>Vídeo 5</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;polariscopiolineal.mkv&quot;</span> <span class="c1">#escribir entre las comillas el nombre del archivo</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
+<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina 5</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Foto lámina y alumno 5</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
+<span class="c1">#NO TOCAR</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="cuestion-2">
+<h2><span class="section-number">24.2. </span>Cuestión 2<a class="headerlink" href="#cuestion-2" title="Permalink to this headline">¶</a></h2>
+<p><strong>Pregunta 2.1</strong> Dar con detalle una explicación de cómo se forman los colores observados.</p>
+<p><em>Editar esta línea haciendo doble click en ella para contestar a la pregunta</em></p>
+<p><strong>Pregunta 2.2</strong> ¿Qué tipo de franjas se observan (de igual espesor, de igual inclinación)? Justificar la respuesta</p>
+<p><em>Editar esta línea haciendo doble click en ella para contestar a la pregunta</em></p>
+<p><strong>Pregunta 2.3</strong> ¿Por qué se emplea una cartulina de color negra? Justificar la respuesta</p>
+<p><em>Editar esta línea haciendo doble click en ella para contestar a la pregunta</em></p>
+<p><strong>Pregunta 2.4</strong> ¿Qué espesor aproximadamente tienen las láminas? Justificar la respuesta</p>
+<p><em>Editar esta línea haciendo doble click en ella para contestar a la pregunta</em></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./TrabajoLaminasDelgadasCaseras"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">23. </span>Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">25. </span>Resolución limitada por difracción. Trabajo en Grupo.</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

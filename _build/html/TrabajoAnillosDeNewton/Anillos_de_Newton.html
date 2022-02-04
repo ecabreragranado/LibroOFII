@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="24. Láminas delgadas caseras. Trabajo en Grupo." href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html" />
+    <link rel="prev" title="22. Filtro interferencial para evitar el daño ocular causado por un puntero láser" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/TrabajoAnillosDeNewton/Anillos_de_Newton.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FTrabajoAnillosDeNewton/Anillos_de_Newton.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/TrabajoAnillosDeNewton/Anillos_de_Newton.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#consultar-el-manual-de-uso-de-los-cuadernos-interactivos-notebooks-que-se-encuentra-disponible-en-el-campus-virtual">
+   23.1. Consultar el manual de uso de los cuadernos interactivos (notebooks) que se encuentra disponible en  el Campus Virtual
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grupo-de-trabajo">
+   23.2. Grupo de trabajo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-1-figura-con-el-patron-de-interferencias-anillo-de-newton">
+   23.3. Tarea 1. Figura con el patrón de interferencias (Anillo de Newton)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-2-determinar-el-radio-de-los-anillos-oscuros">
+   23.4. Tarea 2. Determinar el radio de los anillos oscuros
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-3-analisis-de-los-datos-ajuste-lineal-de-los-radios-de-los-anillos-oscuros">
+   23.5. Tarea 3. Análisis de los datos. Ajuste lineal de los radios de los anillos oscuros
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#consultar-el-manual-de-uso-de-los-cuadernos-interactivos-notebooks-que-se-encuentra-disponible-en-el-campus-virtual">
+   23.1. Consultar el manual de uso de los cuadernos interactivos (notebooks) que se encuentra disponible en  el Campus Virtual
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grupo-de-trabajo">
+   23.2. Grupo de trabajo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-1-figura-con-el-patron-de-interferencias-anillo-de-newton">
+   23.3. Tarea 1. Figura con el patrón de interferencias (Anillo de Newton)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-2-determinar-el-radio-de-los-anillos-oscuros">
+   23.4. Tarea 2. Determinar el radio de los anillos oscuros
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-3-analisis-de-los-datos-ajuste-lineal-de-los-radios-de-los-anillos-oscuros">
+   23.5. Tarea 3. Análisis de los datos. Ajuste lineal de los radios de los anillos oscuros
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="caracterizacion-de-una-lente-oftalmica-mediante-la-tecnica-de-los-anillos-de-newton">
+<h1><span class="section-number">23. </span>Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton<a class="headerlink" href="#caracterizacion-de-una-lente-oftalmica-mediante-la-tecnica-de-los-anillos-de-newton" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="consultar-el-manual-de-uso-de-los-cuadernos-interactivos-notebooks-que-se-encuentra-disponible-en-el-campus-virtual">
+<h2><span class="section-number">23.1. </span>Consultar el manual de uso de los cuadernos interactivos (notebooks) que se encuentra disponible en  el Campus Virtual<a class="headerlink" href="#consultar-el-manual-de-uso-de-los-cuadernos-interactivos-notebooks-que-se-encuentra-disponible-en-el-campus-virtual" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="grupo-de-trabajo">
+<h2><span class="section-number">23.2. </span>Grupo de trabajo<a class="headerlink" href="#grupo-de-trabajo" title="Permalink to this headline">¶</a></h2>
+<p>En esta celda los integrantes del grupo: <em>modificar el texto</em></p>
+<ul class="simple">
+<li><p>Juan Antonio Fernández</p></li>
+<li><p>Alberto Pérez</p></li>
+<li><p>Juan</p></li>
+</ul>
+<p>Incluir la dirección de correo electrónico del responsable del grupo</p>
+</div>
+<div class="section" id="tarea-1-figura-con-el-patron-de-interferencias-anillo-de-newton">
+<h2><span class="section-number">23.3. </span>Tarea 1. Figura con el patrón de interferencias (Anillo de Newton)<a class="headerlink" href="#tarea-1-figura-con-el-patron-de-interferencias-anillo-de-newton" title="Permalink to this headline">¶</a></h2>
+<p>Estudiaremos como se determina el radio de curvatura de un lente plano-convexa empleando la técnica interferométrica conocida como Anillos de Newton. Para ello vamos a simular nuestra lente plano-convexa empleando el sistema de dos superficies proporcionado por el profesor.</p>
+<p>Vamos a mostrar la imagen con el patrón de interferencias medido. Para ello es necesario subir a vuestra cuenta de SageMath la imagen que habéis tomado. Si pincháis en “New” (en la parte superior izquierda de la página), podeís arrastrar directamente vuestra imagen al “Drop Files”.</p>
+<p>En la siguiente celda de código escribir el nombre de la imagen para que se pueda mostrar. El texto que aparece después del símbolo # son comentarios. Una vez ejecutada vuestra imagen debe aparecer a continuación. Si no es así, por favor contactad con el profesor.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># MODIFICAR EL NOMBRE DEL FICHERO IMAGEN. LUEGO EJECUTAR</span>
+<span class="c1">########################################################</span>
+
+<span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;prueba.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas                </span>
+
+<span class="c1"># DESDE AQUÍ NO TOCAR </span>
+<span class="c1">##############################################################################################################################</span>
+<span class="o">%</span><span class="k">pylab</span> inline
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Populating the interactive namespace from numpy and matplotlib
+</pre></div>
+</div>
+<img alt="../_images/Anillos_de_Newton_6_1.jpg" src="../_images/Anillos_de_Newton_6_1.jpg" />
+</div>
+</div>
+</div>
+<div class="section" id="tarea-2-determinar-el-radio-de-los-anillos-oscuros">
+<h2><span class="section-number">23.4. </span>Tarea 2. Determinar el radio de los anillos oscuros<a class="headerlink" href="#tarea-2-determinar-el-radio-de-los-anillos-oscuros" title="Permalink to this headline">¶</a></h2>
+<p>Empleando la imagen anterior vamos a medir el diámetro de los anillos oscuros. Se pueden medir directamente en la pantalla del ordenador o imprimiendo la figura en una hoja de papel. Escribir en la siguiente tabla el diámetro de los anillos oscuros en las unidades indicadas (<strong>añadir tantas filas como sean necesarias manteniendo el formato</strong>) y explicar como se han medido (pantalla del ordenador, papel).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Número del anillo</p></th>
+<th class="head"><p>Diámetro del anillo (mm)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>3.6</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>–</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>–</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>–</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Explicación del proceso</p></li>
+</ul>
+<p>(Escribir aquí la explicación del proceso)</p>
+<hr class="docutils" />
+<p>Estos diámetros tienen el aumento <span class="math notranslate nohighlight">\(\beta\)</span> correspondiente al sistema óptico de medida y al tamaño de la figura en la pantalla del ordenador o en la hoja de papel. Teniendo en cuenta la escala de referencia que aparece en la figura calcular el aumento <span class="math notranslate nohighlight">\(\beta\)</span> de los diámetros medidos (<em>escribir el valor</em>). Esta medida debe realizarse en las mismas condiciones que las de los diámetros.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> =</p></li>
+</ul>
+<p>Usando dicho aumento podemos obtener el radio real de los anillos oscuros.</p>
+<p>Radio = (Diámetro / 2) / <span class="math notranslate nohighlight">\(\beta\)</span></p>
+<p>Escribir otra tabla con los valores finales de los radios de los anillos oscuros en las unidades indicadas (como en la tabla anterior, añadir tantas filas como sean necesarias mantiendo el formato).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Número</p></th>
+<th class="head"><p>Radio real (mm)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>–</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>–</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>–</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tarea-3-analisis-de-los-datos-ajuste-lineal-de-los-radios-de-los-anillos-oscuros">
+<h2><span class="section-number">23.5. </span>Tarea 3. Análisis de los datos. Ajuste lineal de los radios de los anillos oscuros<a class="headerlink" href="#tarea-3-analisis-de-los-datos-ajuste-lineal-de-los-radios-de-los-anillos-oscuros" title="Permalink to this headline">¶</a></h2>
+<p>Empleando los radios de los anillos oscuros vamos a representar gráficamente el radio al cuadrado en función del número del anillo oscuro. Dicha representación debería darnos una dependencia lineal cuya pendiente es el radio de curvatura multiplicado por la longitud de onda de la luz empleada en el experimento, es decir,</p>
+<div class="math notranslate nohighlight">
+\[\text{pendiente} =  \lambda  \text{R }\]</div>
+<p>Como hemos empleando luz blanca para realizar el experimento vamos a emplear una longitud de onda central del visible: <span class="math notranslate nohighlight">\(\lambda\)</span>=550 nm.</p>
+<p>En la siguiente celda de código se introducen los radios de los anillos oscuros obtenidos en el apartado anterior (en milímetros). Introducir los valores separados por comas. El código permite representar los datos y realizar un ajuste lineal para obtener el valor de la pendiente (aparece escrito en la figura). Dicho valor tendrá las unidades de los radios al cuadrado, es decir, mm<span class="math notranslate nohighlight">\(^2\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># MODIFICAR LOS RADIOS DE LOS ANILLOS OSCUROS. LUEGO EJECUTAR</span>
+<span class="c1">########################################################</span>
+
+<span class="n">radio</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>  <span class="c1"># separar los valores con comas (usar el punto como símbolo decimal)</span>
+
+<span class="c1"># DESDE AQUÍ NO TOCAR</span>
+<span class="c1">##############################################################################################################################</span>
+<span class="o">%</span><span class="k">pylab</span> inline
+<span class="n">m</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">size</span><span class="p">(</span><span class="n">radio</span><span class="p">),</span><span class="n">size</span><span class="p">(</span><span class="n">radio</span><span class="p">))</span> <span class="c1"># Vector con los números de los anillos</span>
+<span class="n">radio2</span><span class="o">=</span><span class="n">radio</span><span class="o">*</span><span class="n">radio</span> <span class="c1"># Vector con los radios de los anillos al cuadrado</span>
+<span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="n">polyfit</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">radio2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Ajuste de los datos a una recta donde a es la pendiente y b la ordenada en el origen</span>
+
+<span class="n">plot</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">radio2</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">a</span><span class="o">*</span><span class="n">m</span><span class="o">+</span><span class="n">b</span><span class="p">,</span><span class="s1">&#39;-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> 
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Numero del anillo&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Radio$^2$ (mm$^2$)&#39;</span><span class="p">)</span> <span class="c1"># Escribimos los nombres de los ejes</span>
+<span class="n">te</span> <span class="o">=</span> <span class="s2">&quot;pendiente = </span><span class="si">%f</span><span class="s2"> mm$^2$&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="p">;</span><span class="n">title</span><span class="p">(</span><span class="n">te</span><span class="p">);</span> <span class="c1"># Se muestra el valor de la pendiente;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Populating the interactive namespace from numpy and matplotlib
+</pre></div>
+</div>
+<img alt="../_images/Anillos_de_Newton_11_1.png" src="../_images/Anillos_de_Newton_11_1.png" />
+</div>
+</div>
+<p>Empleando el valor de la pendiente y la longitud de onda calcular el radio de curvatura de la lente</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(R\)</span>=  (<em>incluir las unidades</em>)</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./TrabajoAnillosDeNewton"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">22. </span>Filtro interferencial para evitar el daño ocular causado por un puntero láser</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">24. </span>Láminas delgadas caseras. Trabajo en Grupo.</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

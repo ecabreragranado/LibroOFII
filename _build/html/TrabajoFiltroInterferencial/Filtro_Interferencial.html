@@ -1,0 +1,636 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22. Filtro interferencial para evitar el daño ocular causado por un puntero láser &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html" />
+    <link rel="prev" title="21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/TrabajoFiltroInterferencial/Filtro_Interferencial.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FTrabajoFiltroInterferencial/Filtro_Interferencial.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/TrabajoFiltroInterferencial/Filtro_Interferencial.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduccion">
+   22.1. Introducción
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-1-exposicion-maxima-permisible-mpe">
+   22.2. Tarea 1. Exposición máxima permisible (MPE)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tarea-1-a-irradiancia-maxima">
+     22.2.1. Tarea 1 (a). Irradiancia máxima
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tarea-1-b-potencia-maxima">
+     22.2.2. Tarea 1 (b). Potencia máxima
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-2-eleccion-del-puntero-laser">
+   22.3. Tarea 2. Elección del puntero láser
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-3-eleccion-del-filtro-interferencial">
+   22.4. Tarea 3. Elección del filtro interferencial
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tarea-3-a-busqueda-e-informacion-del-filtro-interferencial">
+     22.4.1. Tarea 3 (a). Busqueda e información del filtro interferencial
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tarea-3-b-verificacion-del-filtro">
+     22.4.2. Tarea 3 (b). Verificación del filtro
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Filtro interferencial para evitar el daño ocular causado por un puntero láser</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduccion">
+   22.1. Introducción
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-1-exposicion-maxima-permisible-mpe">
+   22.2. Tarea 1. Exposición máxima permisible (MPE)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tarea-1-a-irradiancia-maxima">
+     22.2.1. Tarea 1 (a). Irradiancia máxima
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tarea-1-b-potencia-maxima">
+     22.2.2. Tarea 1 (b). Potencia máxima
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-2-eleccion-del-puntero-laser">
+   22.3. Tarea 2. Elección del puntero láser
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarea-3-eleccion-del-filtro-interferencial">
+   22.4. Tarea 3. Elección del filtro interferencial
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tarea-3-a-busqueda-e-informacion-del-filtro-interferencial">
+     22.4.1. Tarea 3 (a). Busqueda e información del filtro interferencial
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tarea-3-b-verificacion-del-filtro">
+     22.4.2. Tarea 3 (b). Verificación del filtro
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="filtro-interferencial-para-evitar-el-dano-ocular-causado-por-un-puntero-laser">
+<h1><span class="section-number">22. </span>Filtro interferencial para evitar el daño ocular causado por un puntero láser<a class="headerlink" href="#filtro-interferencial-para-evitar-el-dano-ocular-causado-por-un-puntero-laser" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduccion">
+<h2><span class="section-number">22.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h2>
+<p>Desgraciadamente es fácil encontrar noticas sobre daño ocular causado por punteros láser. Vemos varias noticas en periódicos nacionales:</p>
+<p><a class="reference external" href="https://sevilla.abc.es/andalucia/cordoba/sevi-puntero-laser-causa-danos-irreparables-ojos-menor-12-anos-cordoba-202002011319_video.html">https://sevilla.abc.es/andalucia/cordoba/sevi-puntero-laser-causa-danos-irreparables-ojos-menor-12-anos-cordoba-202002011319_video.html</a></p>
+<p><a class="reference external" href="https://www.lavanguardia.com/vida/20131113/54394039426/alerta-lesiones-retina-punteros-laser.html">https://www.lavanguardia.com/vida/20131113/54394039426/alerta-lesiones-retina-punteros-laser.html</a></p>
+<p><a class="reference external" href="https://www.elperiodico.com/es/sociedad/20161105/alertan-del-uso-de-los-punteros-laser-porque-ya-ha-provocado-cegueras-5610137">https://www.elperiodico.com/es/sociedad/20161105/alertan-del-uso-de-los-punteros-laser-porque-ya-ha-provocado-cegueras-5610137</a></p>
+<p>Aquí vemos varios trabajos sobre el tema en revistas de investigación:</p>
+<p><a class="reference external" href="https://www.nature.com/articles/s41433-018-0276-z">https://www.nature.com/articles/s41433-018-0276-z</a></p>
+<p><a class="reference external" href="https://link.springer.com/article/10.1007/s10792-012-9555-z">https://link.springer.com/article/10.1007/s10792-012-9555-z</a></p>
+<hr class="docutils" />
+<p>El trabajo consiste en encontrar un filtro interferencial comercial que sirva para
+proteger el ojo de la radiación visible de un puntero láser de alta potencia. El trabajo
+se divide en las siguientes tareas:</p>
+</div>
+<div class="section" id="tarea-1-exposicion-maxima-permisible-mpe">
+<h2><span class="section-number">22.2. </span>Tarea 1. Exposición máxima permisible (MPE)<a class="headerlink" href="#tarea-1-exposicion-maxima-permisible-mpe" title="Permalink to this headline">¶</a></h2>
+<p>La exposicióm máxima permisible (MPE <em>maximum permissible exposure</em>) es la máxima densidad de potencia
+o de energía (W/cm<span class="math notranslate nohighlight">\(^2\)</span> o J/cm<span class="math notranslate nohighlight">\(^2\)</span>) de un haz de luz que puede alcanzar el ojo humano sin producir daño.
+La MPE se mide en la córnea, y depende de la longitud de onda de la radiación y del tiempo de exposición.
+En la siguiente figura se muestra la MPE en la córnea (en unidades de irradiancia (W/cm<span class="math notranslate nohighlight">\(^2\)</span>)) en función
+del tiempo de exposición para distintos rangos del espectro electromagnético.
+Figura de <a class="reference external" href="http://en.wikipedia.org/wiki/Laser_safety">http://en.wikipedia.org/wiki/Laser_safety</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">display</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s2">&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/2/28/IEC60825_MPE_W_s.png/640px-IEC60825_MPE_W_s.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/28/IEC60825_MPE_W_s.png/640px-IEC60825_MPE_W_s.png"/></div></div>
+</div>
+<div class="section" id="tarea-1-a-irradiancia-maxima">
+<h3><span class="section-number">22.2.1. </span>Tarea 1 (a). Irradiancia máxima<a class="headerlink" href="#tarea-1-a-irradiancia-maxima" title="Permalink to this headline">¶</a></h3>
+<p>Como estamos considerando el haz láser de un puntero que emite en el visible, nos fijaremos en la curva corresponsidente al rango visible. El tiempo de exposición será el tiempo que tardemos en cerrar el ojo al ser iluminado. Así con este tiempo de exposición obtener de la gráfica la irradiancia máxima que puede alcanzar el ojo.</p>
+<p>Escribir el tiempo de exposición empleado y el correspondiente valor de la irradiancia.</p>
+<ul class="simple">
+<li><p>Tiempo de exposición =  s</p></li>
+<li><p>Irradiancia máxima permisible =   W/cm<span class="math notranslate nohighlight">\(^2\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="tarea-1-b-potencia-maxima">
+<h3><span class="section-number">22.2.2. </span>Tarea 1 (b). Potencia máxima<a class="headerlink" href="#tarea-1-b-potencia-maxima" title="Permalink to this headline">¶</a></h3>
+<p>Empleando el valor de la irradiancia anterior, y considerando que el haz que alcanza nuestro ojo está colimado
+con un tamaño equivalente al de nuestra pupila, calcular la potencia máxima que puede alcanzar nuestro ojo
+sin provocar daño (relacionar potencia e irradiancia).</p>
+<p>Escribir el tamaño de la pupila, las operaciones y el resultado final de la potencia (en mW)</p>
+<ul class="simple">
+<li><p>Diámetro de la pupila  = mm</p></li>
+<li><p>Cálculos intermedios</p></li>
+<li><p>Potencia máxima permisible = mW</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tarea-2-eleccion-del-puntero-laser">
+<h2><span class="section-number">22.3. </span>Tarea 2. Elección del puntero láser<a class="headerlink" href="#tarea-2-eleccion-del-puntero-laser" title="Permalink to this headline">¶</a></h2>
+<p>Buscar en internet información sobre un
+puntero láser visible que sea de alta potencia.
+Verificar que dicho puntero láser puede provocar daño ocular (teniendo en cuenta el resultado de la <strong>Tarea 1 (b)</strong>)</p>
+<p>Escribir aquí las características técnicas de dicho láser</p>
+<ul class="simple">
+<li><p>potencia</p></li>
+<li><p>longitud de onda</p></li>
+<li><p>precio</p></li>
+<li><p>otras características</p></li>
+<li><p>página web <a class="reference external" href="http://www.ucm.es">http://www.ucm.es</a></p></li>
+</ul>
+</div>
+<div class="section" id="tarea-3-eleccion-del-filtro-interferencial">
+<h2><span class="section-number">22.4. </span>Tarea 3. Elección del filtro interferencial<a class="headerlink" href="#tarea-3-eleccion-del-filtro-interferencial" title="Permalink to this headline">¶</a></h2>
+<p>Vamos a buscar en internet un filtro interferencial
+comercial que permita evitar el riesgo de daño ocular para el
+puntero láser seleccionado y que a su vez nos permita seguir viendo lo mejor posible.
+Se tratará de un filtro que bloquee
+la longitud de onda del puntero láser.</p>
+<div class="section" id="tarea-3-a-busqueda-e-informacion-del-filtro-interferencial">
+<h3><span class="section-number">22.4.1. </span>Tarea 3 (a). Busqueda e información del filtro interferencial<a class="headerlink" href="#tarea-3-a-busqueda-e-informacion-del-filtro-interferencial" title="Permalink to this headline">¶</a></h3>
+<p>Vamos a emplear la información accesible en la casa <strong>Semrock</strong> ( <a class="reference external" href="https://www.semrock.com/filters.aspx">https://www.semrock.com/filters.aspx</a> )</p>
+<p>Seleccionar en esta página web un filtro adecuado. En el menú de la izquierda se puede seleccionar el tipo de filtro: pasa banda (bandpass), pasa alta y pasa baja (long-pass and short-pass), filtro suprime banda (notch). Pinchar sobre cada filtro (sobre la curva de transmitancia, sobre el <em>Part Number</em>, o sobre <em>Show Product Detail</em>) para obtener más información. Escribir aquí las características más relevantes del filtro seleccionado:</p>
+<ul class="simple">
+<li><p>Nombre del filtro (<em>Part Number</em>)</p></li>
+<li><p>transmitancia T o densidad óptica OD</p></li>
+<li><p>rango de longitudes de onda</p></li>
+<li><p>precio</p></li>
+<li><p>página web del filtro seleccionado (cambiar la siguiente dirección) <a class="reference external" href="https://www.semrock.com/FilterDetails.aspx?id=LP02-224R-25">https://www.semrock.com/FilterDetails.aspx?id=LP02-224R-25</a></p></li>
+</ul>
+<p><a class="reference external" href="https://www.semrock.com/FilterDetails.aspx?id=LP02-244RS-25">https://www.semrock.com/FilterDetails.aspx?id=LP02-244RS-25</a></p>
+</div>
+<div class="section" id="tarea-3-b-verificacion-del-filtro">
+<h3><span class="section-number">22.4.2. </span>Tarea 3 (b). Verificación del filtro<a class="headerlink" href="#tarea-3-b-verificacion-del-filtro" title="Permalink to this headline">¶</a></h3>
+<p>Empleando el dato de la transmitancia (T) a la longitud de onda del
+puntero láser comprobar que dicho filtro evitará el riesgo de
+lesión.</p>
+<p>Para ello vamos a consultar los datos de la transmitancia del filtro seleccionado que aparecen en la página web de Semrock. Seguimos los siguientes pasos:</p>
+<ol class="simple">
+<li><p>Pinchar con el ratón en la página web del filtro seleccionado sobre <strong>ASCII Data</strong>, que se encuentra en la leyenda de la figura (derecha).</p></li>
+<li><p>Aparecerán los valores experimentales de la transmitancia. La columna de la izquierda es la longitud de onda en nm y la columna de la derecha es la transmitancia de 0 a 1.</p></li>
+<li><p>Desplazarse hasta encontrar el valor de la transmitancia a la longitud de onda del puntero láser.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;ejemplofiltro.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/Filtro_Interferencial_18_0.png" src="../_images/Filtro_Interferencial_18_0.png" />
+</div>
+</div>
+<p>Apunta el valor de la transmitancia a la longitud de onda seleccionada</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\lambda\)</span>  =</p></li>
+<li><p><strong>T</strong> =</p></li>
+</ul>
+<p>Empleando el valor de la transmitancia del filtro a la longitud de onda del puntero láser verificar
+que el filtro evitará el riesgo de daño ocular. Escribir a continuación la estimación realizada.</p>
+<ul class="simple">
+<li><p>Estimación de la potencia que alcanzará el ojo con el filtro:</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./TrabajoFiltroInterferencial"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">21. </span>Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">23. </span>Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

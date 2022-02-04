@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>16. Red de difracción &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="17. Poder de Resolucion de la Red de difraccion" href="PoderResolucionRed.html" />
+    <link rel="prev" title="13. Introduccion" href="../PoderDeResolucion/PoderDeResolucion.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/RedDeDifraccion/RedDeDifraccion.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FRedDeDifraccion/RedDeDifraccion.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/RedDeDifraccion/RedDeDifraccion.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#campo-producido-por-una-red-de-difraccion-en-regimen-de-fraunhofer">
+   16.1. Campo producido por una red de difracción en régimen de Fraunhofer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestiones">
+   16.2. Cuestiones
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Red de difracción</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#campo-producido-por-una-red-de-difraccion-en-regimen-de-fraunhofer">
+   16.1. Campo producido por una red de difracción en régimen de Fraunhofer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuestiones">
+   16.2. Cuestiones
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="red-de-difraccion">
+<h1><span class="section-number">16. </span>Red de difracción<a class="headerlink" href="#red-de-difraccion" title="Permalink to this headline">¶</a></h1>
+<p>En el estudio de los efectos de difracción, hemos considerado anteriormente qué ocurre cuando una onda electromagnética incide sobre una abertura de cierto tamaño. Vamos ahora a deducir la irradiancia que observaríamos si en vez de una única abertura, tuviésemos un número muy grande <span class="math notranslate nohighlight">\(N\)</span> de ellas. En lo que sigue vamos a considerar por tanto que tenemos un haz plano monocromático, de longitud de onda <span class="math notranslate nohighlight">\(\lambda\)</span>, que incide perpendicularmente a un conjunto de rendijas con un cierto tamaño <span class="math notranslate nohighlight">\(b\)</span> y una separación entre ellas <span class="math notranslate nohighlight">\(d\)</span>. A este último parámetro le denominaremos <em>paso de la red</em>.</p>
+<center>
+<p><img src ='RedDif_general.png' width=300px></img></p>
+</center>
+<p>Antes de deducir las expresiones del campo y la irradiancia para este caso, vamos a intentar averiguar qué podríamos esperar en este caso. Si tenemos un cierto número de rendijas sobre las que incide una onda plana, cada una de ellas, producirá un campo eléctrico en un punto <span class="math notranslate nohighlight">\(P\)</span> suficientemente alejado de la rendija (es decir, trabajamos en el régimen de Fraunhofer), el cual sabemos cuál es su expresión.</p>
+<p>Como en vez de una única rendija, tenemos en esta ocasión <span class="math notranslate nohighlight">\(N\)</span> de ellas, los campos producidos por cada una de las rendijas se sumarán (o dicho de otro modo, interferirán) en <span class="math notranslate nohighlight">\(P\)</span>, con una diferencia de fase entre ellos dada por la diferencia de camino que tienen que recorrer para llegar a <span class="math notranslate nohighlight">\(P\)</span>. Por tanto, obtendremos máximos de irradiancia cuando todas estas ondas emitidas por cada una de las rendijas lleguen en fase entre sí, o lo que es lo mismo, cuando la diferencia de camino entre dos de ellas sea un múltiplo entero de <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ \Delta = m \lambda\]</div>
+<p>Si observamos la figura, vemos que esta diferencia de camino <span class="math notranslate nohighlight">\(\Delta\)</span> es igual a <span class="math notranslate nohighlight">\(d sen(\theta)\)</span> donde <span class="math notranslate nohighlight">\(d\)</span> hemos ya mencionado que es el paso de la red, y <span class="math notranslate nohighlight">\(\theta\)</span> es el ángulo subtendido por <span class="math notranslate nohighlight">\(P\)</span> con el eje del sistema visto desde la red.</p>
+<p>Vemos por tanto, que los máximos de irradiancia se deben encontrar en aquellas direcciones para las cuales se cumpla la condicion de interferencia constructiva <span class="math notranslate nohighlight">\(\Delta = m\lambda\)</span>, o bien,</p>
+<div class="alert alert-success">
+<div class="math notranslate nohighlight">
+\[d \sin(\theta) = m \lambda\]</div>
+</div>
+<p>Esta ecuación se denomina <strong>Ecuación de la red</strong>. En función del valor de <span class="math notranslate nohighlight">\(m\)</span> tendremos diferentes máximos de irradiancia. A estos máximos se les denomina <em>órdenes de difracción de la red</em>. El ángulo <span class="math notranslate nohighlight">\(\theta\)</span> nos da la dirección en la que ocurre el máximo de orden <span class="math notranslate nohighlight">\(m\)</span>. A mayor ángulo, el máximo estará más alejado con respecto al eje del sistema. De esta ecuación podemos extraer algunas conlusiones:</p>
+<ul class="simple">
+<li><p>Los órdenes más altos (<span class="math notranslate nohighlight">\(m\)</span> mayor) tienen ángulos más altos.</p></li>
+<li><p>Si la red se ilumina por radiación monocromática, lo que veremos en la pantalla serán distintos máximos en función del valor de <span class="math notranslate nohighlight">\(m\)</span>, a uno y otro lado del eje (<span class="math notranslate nohighlight">\(m\)</span> positivo o negativo).</p></li>
+<li><p>Si la red se ilumina por radiación policromática, cada longitud de onda dará, para el mismo valor de <span class="math notranslate nohighlight">\(m\)</span>, máximos a distintos ángulos, y por tanto, en distintas posiciones en la pantalla de observación. Cuanto mayor sea <span class="math notranslate nohighlight">\(\lambda\)</span>, el máximo correspondiente tendrá un ángulo mayor, y por tanto estará más alejado del eje. Tendremos por tanto, para un mismo valor de <span class="math notranslate nohighlight">\(m\)</span> (para un mismo orden de difracción) un <em>paquete</em> de máximos correspondientes a las distintas longitudes de onda que componen el espectro del haz incidente. La red separa espacialmente el espectro de la radiación, permitiendo, entre otros usos, caracterizarlo (en un experimento podríamos medir <span class="math notranslate nohighlight">\(\theta\)</span> y de este modo, obtener <span class="math notranslate nohighlight">\(\lambda\)</span>) de cada máximo.</p></li>
+</ul>
+<p>La deducción de la ecuación de la red anterior se basa en determinar las direcciones en las que se cumple la condición de interferencia constructiva. Es un argumento simple, pero no permite ir más allá. De él no se puede determinar la expresión de la irradiancia en la pantalla, ni, por ejemplo, la anchura de esos máximos. La expresión de la irradiancia en la pantalla de observación la obtendremos más adelante al sumar los campos eléctricos producidos por cada una de las rendijas.
+Sin embargo, podemos analizar cualitativamente cómo van a ser esos máximos. Al igual que ocurría en la interferencia en una lámina planoparalela cuando considerábamos muchas reflexiones internas, la interferencia por múltiples ondas tiene como resultado máximos muy localizados. Esto es debido a que la condición de interferencia constructiva para <strong>todas</strong> las ondas es muy restrictiva. En la red, al aumentar el número de rendijas, únicamente se cumple la condición de interferencia constructiva en direcciones muy concretas. Cuanto mayor sea el número <span class="math notranslate nohighlight">\(N\)</span> de rendijas, más estrechos serán los máximos de irradiancia (esta característica se puede comprobar en el programa que se presenta al final de este documento).</p>
+<p>La ecuacion de la red planteada es valida si la incidencia del haz de entrada a la lente es normal a la misma (angulo de incidencia igual a cero). Sin embargo, si el haz incide con un cierto angulo <span class="math notranslate nohighlight">\(\varepsilon\)</span> como se indica en la figura, </center></p>
+<center>
+<p><img alt="figangulo" src="../_images/figredangulo.png" /></p>
+</center>    
+<p>la ecuacion de la red se modifica para tener en cuenta que existe un desfase inicial entre las ondas que emergen de cada rendija. Dicho de otro modo, si el haz entra con un cierto angulo, no llega a todas las rendijas por igual, encontrando una diferencia de camino inicial entre las ondas que interfieren tras la red. Esta diferencia de camino inicial es igual a <span class="math notranslate nohighlight">\(\Delta_0 = - d\sin(\varepsilon)\)</span>. La condicion de interferencia constructiva se transforma entonces en <span class="math notranslate nohighlight">\(\Delta_0 + \Delta = m\lambda\)</span> y la ecuacion de la red toma por tanto la siguiente expresion,</p>
+<div class="alert alert-success">
+<div class="math notranslate nohighlight">
+\[d (\sin(\theta) - \sin(\varepsilon))  = m \lambda\]</div>
+</div>
+<p>El anterior análisis se ha basado únicamente en la interferencia entre las ondas emitidas por cada rendija. Vamos a continuación a hacer una deducción más completa de las expresiones que rigen el campo y la irradiancia en función de la posición del punto <span class="math notranslate nohighlight">\(P\)</span> de observación.</p>
+<div class="section" id="campo-producido-por-una-red-de-difraccion-en-regimen-de-fraunhofer">
+<h2><span class="section-number">16.1. </span>Campo producido por una red de difracción en régimen de Fraunhofer<a class="headerlink" href="#campo-producido-por-una-red-de-difraccion-en-regimen-de-fraunhofer" title="Permalink to this headline">¶</a></h2>
+<p>Para obtener la irradiancia en la pantalla primero calcularemos el campo eléctrico en un punto <span class="math notranslate nohighlight">\(P\)</span> arbitrario. Este campo será el resultado de la interferencia de todas las ondas procedentes de las rendijas que componen la red, o dicho de otro modo, será la suma de dichos campos. El campo producido por una única rendija en un punto <span class="math notranslate nohighlight">\(P\)</span> que subtiende un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> con el eje del sistema se ha visto anteriormente, y toma la siguiente expresión,</p>
+<div class="math notranslate nohighlight">
+\[E(\theta) = \left( \frac{E_0}{N} \right) \frac{sen(\beta)}{\beta} e^{i (k r - \omega t)}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\beta = \pi b sen(\theta) / \lambda\)</span>, y <span class="math notranslate nohighlight">\(r\)</span> es la distancia entre la rendija seleccionada y el puno <span class="math notranslate nohighlight">\(P\)</span> de observación. Si ahora vemos el campo producido por otra rendija contigua separada por una distancia <span class="math notranslate nohighlight">\(d\)</span>, la única diferencia vendrá justo en esta distancia. Ahora, el campo tendrá que recorrer una distancia <span class="math notranslate nohighlight">\(r + \Delta\)</span> en vez de <span class="math notranslate nohighlight">\(r\)</span> únicamente. Aquí, <span class="math notranslate nohighlight">\(\Delta = d sen(\theta)\)</span>. Es decir,</p>
+<div class="math notranslate nohighlight">
+\[E(\theta) = \left( \frac{E_0}{N} \right) \frac{sen(\beta)}{\beta} e^{i (k (r + \Delta) - \omega t)}\]</div>
+<p>El campo total en el punto <span class="math notranslate nohighlight">\(P\)</span> vendrá dado por la suma de todos los campos individuales,</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = \sum_i E_i(\theta)\]</div>
+<p>o lo que es lo mismo,</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = \frac{E_0}{N} \frac{sen(\beta)}{\beta}\left[e^{i (k r - \omega t)} +  e^{i (k (r + \Delta) - \omega t)} +  e^{i (k (r + 2 \Delta) - \omega t)}+ \ldots +  e^{i (k (r + (N-1) \Delta) - \omega t)} \;\;\right]\]</div>
+<p>Esta suma se puede hacer más facilmente si la anterior expresión se escribe de la siguiente forma,</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = \frac{E_0}{N} \frac{sen(\beta)}{\beta} e^{i (k r - \omega t)} \left[1 +  e^{i k \Delta} + e^{i k 2 \Delta}+ \ldots + e^{i k (N-1) \Delta} \;\;\right]\]</div>
+<p>Para hacer la suma que se muestra entre corchetes, podemos darnos cuenta de que es una progresión geométrica de razón <span class="math notranslate nohighlight">\(e^{ik\Delta}\)</span>, y por tanto, la podemos poner como,</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = \frac{E_0}{N} \frac{sen(\beta)}{\beta} e^{i (k r - \omega t)} \left[ \frac{e^{i k N \Delta} -1}{e^{i k \Delta} -1} \right]\]</div>
+<p>o mejor,</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = \frac{E_0}{N} \frac{sen(\beta)}{\beta} e^{i (k r - \omega t + k \Delta (N +1)/2)} \;\;\left[ \frac{sen(N k \Delta /2)}{sen(k \Delta /2} \;\;\right]\]</div>
+<p>Finalmente, la irradiancia total en el punto <span class="math notranslate nohighlight">\(P\)</span>, caracterizado por el valor del ángulo <span class="math notranslate nohighlight">\(\theta\)</span> será proporcional al módulo al cuadrado del campo,</p>
+<div class=alert-info>
+<div class="math notranslate nohighlight">
+\[I(\theta) = \frac{I_0}{N^2} \left[\frac{sen(\beta)}{\beta}\;\;\right]^2 \left[\frac{sen(N \alpha)}{sen(\alpha)} \;\;\right]^2\]</div>
+</div>    
+<p>donde <span class="math notranslate nohighlight">\(\alpha = k \Delta /2 = \pi d \sin(\theta) / \lambda \;\;\;\;\)</span> y <span class="math notranslate nohighlight">\(\beta = \pi b \sin(\theta) / \lambda \;\;\;\)</span>. Es decir, el parámetro <span class="math notranslate nohighlight">\(\alpha\)</span> tiene en cuenta la separación entre rendijas, mientras que <span class="math notranslate nohighlight">\(\beta\)</span> tiene en cuenta el tamaño de una rendija. <strong>El primer término por tanto incluye los efectos de la difracción de una única rendija, mientras que el segundo término incluye los efectos de la interferencia entre las ondas emitidas por todas las rendijas</strong>.</p>
+<p>Vamos a analizar ambos términos por separado.</p>
+<ul class="simple">
+<li><p>En primer lugar nos centraremos en el término interferencial,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ I_N(\theta) = \left[\frac{sen(N \alpha)}{sen(\alpha)} \;\;\right]^2\]</div>
+<p>Esta expresión nos da unos máximos muy pronunciados cuando tanto el numerador como el denominador se anulan (al igual que ocurría en el máximo central de la difracción producida por una rendija) <span class="math notranslate nohighlight">\(\alpha = m \pi\)</span>, es decir, cuando <span class="math notranslate nohighlight">\(\pi d sen(\theta) / \lambda = m \pi\)</span>. Reescribiendo esta ecuación, llegamos de nuevo a la ecuación de la red, anteriormente deducida,</p>
+<div class="math notranslate nohighlight">
+\[d sen(\theta) = m \lambda\]</div>
+<p>Entre cada uno de estos máximos, encontramos <span class="math notranslate nohighlight">\((N-1)\;\;\)</span> valores de <span class="math notranslate nohighlight">\(\alpha\)</span> que anulan el numerador, es decir, cuando <span class="math notranslate nohighlight">\(\alpha = m \pi / N \;\;\)</span> con <span class="math notranslate nohighlight">\(m = 1 \ldots N -1 \;\;\)</span>. Estos valores darán mínimos de irradiancia. De ellos podemos extraer la anchura de los máximos principales,</p>
+<div class="math notranslate nohighlight">
+\[\Delta \alpha = \frac{2 \pi}{N}\]</div>
+<p>es decir,</p>
+<div class="math notranslate nohighlight">
+\[\Delta(sen(\theta) = \frac{2 \lambda}{ N d} \Rightarrow \Delta \theta = \frac{2 \lambda}{ N d \cos(\theta)} \simeq   \frac{2 \lambda}{ N d}\]</div>
+<p>donde en el último paso se ha hecho la aproximación <span class="math notranslate nohighlight">\(\cos(\theta) \simeq 1\)</span> asumiendo que el ángulo <span class="math notranslate nohighlight">\(\theta\)</span> es relativamente pequeño. Vemos que <strong>la anchura de los máximos depende del número de rendijas iluminadas, del paso de la red y de la longitud de onda de la radiación</strong> siendo más estrechos cuanto mayor sea <span class="math notranslate nohighlight">\(N\)</span>, es decir, cuanto mayor sea el número de rendijas iluminadas.</p>
+<ul class="simple">
+<li><p>En segundo lugar, el término difraccional,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ I_d(\theta) = \left[\frac{sen(\beta)}{\beta}\;\;\right]^2 \]</div>
+<p>Como vemos, la expresión se asemeja bastante a la anterior, y también da un máximo más pronunciado cuando <span class="math notranslate nohighlight">\(\beta = 0\)</span>. Pero el primer mímino nos da información del papel que juega este término. Este primer mínimo se obtiene cuando <span class="math notranslate nohighlight">\(\beta = \pi\)</span>, o escribiendo la expresiónd e <span class="math notranslate nohighlight">\(\beta\)</span>, cuando <span class="math notranslate nohighlight">\(\pi b \sin(\theta)/\lambda = \pi\)</span>. Es decir, se obtiene cuando el ángulo cumple que <span class="math notranslate nohighlight">\(\sin(\theta) = \lambda/b\)</span>. Este valor determina por tanto la anchura del primer máximo dado por este término. Desde un ángulo igual a cero hasta el ángulo dado por esta ecuación, el término difraccional disminuye gradualmente. Al ser <span class="math notranslate nohighlight">\(b\)</span> el tamaño de una rendija individual, y ser éstas muy estrechas, el ángulo en el que se obtiene el primer mínimo es, en general, muy grande, mayor que los ángulos para los que se obtienen los máximos de irradiancia dados por el término interferencial por lo que estos se encuentran dentro de este primer máximo del término difraccional.</p>
+<p>El efecto del término difraccional es pues producir una modulación de la altura de los máximos dados por la ecuación de la red, siendo esta altura mayor para los máximos más cercanos al eje (de órdenes bajos).</p>
+<p>El siguiente programa permite visualizar la irradiancia obtenida por una red de difracción así como el término difraccional para observar cómo modula la altura de los máximos. Se pueden modificar los parámetros de anchura de la rendija, número de rendijas, distancia entre ellas y longitud de onda.</p>
+</div>
+<div class="section" id="cuestiones">
+<h2><span class="section-number">16.2. </span>Cuestiones<a class="headerlink" href="#cuestiones" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Cómo varía la amplitud de los diferentes órdenes?. Al aumentar el valor de <span class="math notranslate nohighlight">\(m\)</span>, aumenta la amplitud o disminuye?.Cambiar el valor de la anchura de una rendija <span class="math notranslate nohighlight">\(b\)</span> a, por ejemplo <code class="docutils literal notranslate"><span class="pre">1e-3</span></code> (0.001) para observar mejor la modulación producida por el término difraccional</p></li>
+<li><p>Cómo afecta el número de rendijas iluminadas <span class="math notranslate nohighlight">\(N\)</span> a la anchura de cada máximo?</p></li>
+<li><p>Qué ocurre con la posición de un máximo particular al incrementar la longitud de onda (variable Lambda)? (Relacionarlo con la ecuación de la red)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parametros que se pueden modificar</span>
+<span class="c1">##########################</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">7e-4</span> <span class="c1"># anchura de cada rendija en mm</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="mi">200</span> <span class="c1"># paso de la red</span>
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mf">555e-6</span> <span class="c1"># longitud de onda en mm</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># Numero de rendijas iluminadas</span>
+<span class="c1">#################3</span>
+
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="n">k</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">9200</span><span class="p">)</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">pi</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">/</span><span class="n">Lambda</span>
+<span class="n">E0</span> <span class="o">=</span> <span class="mf">100.0</span> <span class="c1"># Amplitud del campo incidente</span>
+<span class="n">E1</span> <span class="o">=</span> <span class="p">(</span><span class="n">E0</span><span class="o">/</span><span class="n">N</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span><span class="o">/</span><span class="n">beta</span><span class="p">)</span>
+<span class="n">Delta</span> <span class="o">=</span> <span class="n">d</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+<span class="n">fases</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(((</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">theta</span><span class="p">)),</span><span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fases</span><span class="p">)):</span>
+    <span class="n">fases</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="n">Delta</span>
+<span class="n">Etotal</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">fases</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="n">E1</span>
+<span class="n">Itotal</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Etotal</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="c1">#subplot(121)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">pi</span><span class="p">,</span><span class="n">Itotal</span><span class="o">/</span><span class="n">Itotal</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+<span class="n">Id</span> <span class="o">=</span> <span class="n">E1</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">pi</span><span class="p">,</span><span class="n">Id</span><span class="o">/</span><span class="n">Id</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span><span class="s1">&#39;g--&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angulo (grados)&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Irradiancia&#39;</span><span class="p">);</span>
+<span class="n">legend</span><span class="p">((</span><span class="s1">&#39;Itotal&#39;</span><span class="p">,</span><span class="s1">&#39;Idif&#39;</span><span class="p">),</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+
+<span class="k">del</span><span class="p">(</span><span class="n">fases</span><span class="p">)</span>
+<span class="k">del</span><span class="p">(</span><span class="n">Delta</span><span class="p">)</span>
+<span class="k">del</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/RedDeDifraccion_6_0.png" src="../_images/RedDeDifraccion_6_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./RedDeDifraccion"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../PoderDeResolucion/PoderDeResolucion.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">13. </span>Introduccion</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="PoderResolucionRed.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">17. </span>Poder de Resolucion de la Red de difraccion</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

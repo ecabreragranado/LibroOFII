@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4. Experimento de Young con trenes de ondas &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. Biprisma de Fresnel" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html" />
+    <link rel="prev" title="3. Experimento de Young" href="ExperimentoYoung.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Experimento_Young/TrenesDeOnda.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FExperimento_Young/TrenesDeOnda.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/Experimento_Young/TrenesDeOnda.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#consideraciones-iniciales">
+   4.1. Consideraciones iniciales
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#trenes-de-onda">
+   4.2. Trenes de onda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#longitud-de-coherencia">
+   4.3. Longitud de coherencia
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#anchura-espectral">
+   4.4. Anchura espectral
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-ocurre-si-iluminamos-el-experimento-de-young-con-este-tipo-de-radiacion">
+   4.5. ¿Qué ocurre si iluminamos el experimento de Young con este tipo de radiación?
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Experimento de Young con trenes de ondas</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#consideraciones-iniciales">
+   4.1. Consideraciones iniciales
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#trenes-de-onda">
+   4.2. Trenes de onda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#longitud-de-coherencia">
+   4.3. Longitud de coherencia
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#anchura-espectral">
+   4.4. Anchura espectral
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-ocurre-si-iluminamos-el-experimento-de-young-con-este-tipo-de-radiacion">
+   4.5. ¿Qué ocurre si iluminamos el experimento de Young con este tipo de radiación?
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="experimento-de-young-con-trenes-de-ondas">
+<h1><span class="section-number">4. </span>Experimento de Young con trenes de ondas<a class="headerlink" href="#experimento-de-young-con-trenes-de-ondas" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="consideraciones-iniciales">
+<h2><span class="section-number">4.1. </span>Consideraciones iniciales<a class="headerlink" href="#consideraciones-iniciales" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;ExperimentoYoung.jpg&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/TrenesDeOnda_2_0.jpg" src="../_images/TrenesDeOnda_2_0.jpg" />
+</div>
+</div>
+<p>Cuando estudiamos el experimento de Young, asumimos que iluminábamos con radiación monocromática. En este caso, la posición de los máximos y mínimos de irradiancia venían dados por,</p>
+<div class="alert alert-error">
+Máximos de irradiancia.  $\delta = 2 m \pi \implies \frac{a x}{D} = m \lambda \implies$
+<div class="math notranslate nohighlight">
+\[x_{max} = \frac{m \lambda D}{a}\]</div>
+</div>
+<div class="alert alert-error">
+Mínimos de irradiancia.  $\delta = (2 m + 1)\pi \implies \frac{a x}{D} = (m +1/2) \lambda \implies$
+<div class="math notranslate nohighlight">
+\[x_{min} = \frac{(m + 1/2) \lambda D}{a}\]</div>
+</div>
+<p>Como vemos en las fórmulas anteriores, la posición de los máximos y mínimos dependen de la longitud de onda <span class="math notranslate nohighlight">\(\lambda\)</span>. Cuando iluminamos el mismo experimento con radiación no monocromática, podemos considerar que cada longitud de onda que compone el espectro de la radiación forma su patrón de interferencias. Pero cada patrón de interferencias tendrá los máximos en posiciones ligeramente distintas. Esto va a llevar a una reducción del constraste y finalmente, a la desaparición de las franjas de interferencia. Vamos a estudiar este proceso con más detalle, viendo primero una mejor aproximación que una onda monocromática a la radiación que emiten la fuentes de luz reales, y posteriormente, cómo afecta este tipo de radiación a las interferencias en un experimento de Young</p>
+</div>
+<div class="section" id="trenes-de-onda">
+<h2><span class="section-number">4.2. </span>Trenes de onda<a class="headerlink" href="#trenes-de-onda" title="Permalink to this headline">¶</a></h2>
+<p>Aunque la abstracción de tratar una onda monocromática es extremadamente útil, las fuentes de luz reales no emiten tal radiación. La razón es sencilla: una onda monocromática pura (es decir, un seno o un coseno) no tiene ni principio ni final, por lo que para emitir una onda de este tipo se necesitaría energía infinita.</p>
+<p>Lo más próximo que podemos obtener a una onda monocromática es una sucesión de trenes de ondas armónicos separados unos de otros por saltos aleatorios en la fase de la onda.</p>
+<p>El siguiente código muestra un ejemplo de este tipo de trenes de onda.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
+<span class="c1">#import ipywidgets as widg</span>
+<span class="c1">#from IPython.display import display</span>
+
+<span class="c1">#####</span>
+<span class="c1">#PARÁMETROS QUE SE PUEDEN MODIFICAR</span>
+<span class="c1">#####</span>
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mf">5e-7</span>
+<span class="n">c0</span> <span class="o">=</span> <span class="mf">3e8</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">c0</span><span class="o">/</span><span class="n">Lambda</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">omega</span>
+<span class="n">tau</span> <span class="o">=</span> <span class="mf">1.5</span><span class="o">*</span><span class="n">T</span>
+<span class="c1">###########</span>
+
+<span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">18</span><span class="o">*</span><span class="n">T</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">campo</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">tau0</span><span class="p">):</span>
+    <span class="n">numsaltos</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">)(</span><span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">tau0</span><span class="p">))</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">numsaltos</span><span class="p">)</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+    <span class="n">phi_aux</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="nb">int</span><span class="p">)(</span><span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">/</span><span class="n">numsaltos</span><span class="p">)))</span><span class="o">*</span><span class="n">phi</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numsaltos</span><span class="p">)])</span>
+    <span class="n">phi_t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">phi_aux</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">phi_aux</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">phi_aux</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">phi_t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pad</span><span class="p">(</span><span class="n">phi_t</span><span class="p">,(</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">phi_t</span><span class="p">),</span><span class="mi">0</span><span class="p">),</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">)</span>
+    <span class="n">e1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">t</span> <span class="o">+</span> <span class="n">phi_t</span><span class="p">)</span>
+    <span class="n">fig</span><span class="p">,</span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">e1</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Tiempo (s)&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Campo (u.a.)&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">None</span>
+
+<span class="n">campo</span><span class="p">(</span><span class="n">time</span><span class="p">,</span><span class="n">omega</span><span class="p">,</span><span class="n">tau</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/TrenesDeOnda_6_0.png" src="../_images/TrenesDeOnda_6_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="longitud-de-coherencia">
+<h2><span class="section-number">4.3. </span>Longitud de coherencia<a class="headerlink" href="#longitud-de-coherencia" title="Permalink to this headline">¶</a></h2>
+<p>El tiempo en el que la fase de la onda permanece constante (tiempo entre saltos consecutivos) se llama <strong>tiempo de coherencia</strong> y nosotros lo denominaremos <span class="math notranslate nohighlight">\(t_c\)</span>.</p>
+<p>Si observamos el tren de ondas espacialmente, veremos una figura similar a la anterior, es decir, una figura sinusoidal con un periodo igual a la longitud de onda <span class="math notranslate nohighlight">\(\lambda\)</span> y con saltos de fase cada cierta distancia. A esta distancia se le denomina <strong>longitud de coherencia</strong> (<span class="math notranslate nohighlight">\(l_c\)</span>) y se relaciona con el tiempo de coherencia mediante la relación,</p>
+<div class="math notranslate nohighlight">
+\[l_c = c t_c\]</div>
+<p>donde <span class="math notranslate nohighlight">\(c\)</span> es la velocidad de la luz.</p>
+</div>
+<div class="section" id="anchura-espectral">
+<h2><span class="section-number">4.4. </span>Anchura espectral<a class="headerlink" href="#anchura-espectral" title="Permalink to this headline">¶</a></h2>
+<p>Un tren de ondas deja de ser una radiación completamente monocromática, es decir, con una única longitud de onda o frecuencia, pasando a tener una cierta anchura espectral. Lo podemos entender observando que un tren de ondas deja de ser un coseno o un seno debido a esos saltos de fase aleatorios, pasando a tener una evolución temporal más compleja.</p>
+<p>La anchura en frecuencias (o longitudes de onda) de un tren de ondas la podemos hallar mediante la transformada de Fourier. Este análisis queda fuera del objeto de este curso pero sí nos vas a resultar útil un resultado que emerge de esta transformada: la relación entre anchura espectral (rango de frecuencias presentes en la radiación <span class="math notranslate nohighlight">\(\Delta \nu\)</span>) y tiempo de coherencia. Esta relación es,</p>
+<div class="math notranslate nohighlight">
+\[t_c \simeq \frac{1}{\Delta \nu}\]</div>
+<p>Teniendo en cuenta que <span class="math notranslate nohighlight">\(\nu = c/\lambda\)</span> podemos llegar a la relación entre la longitud de coherencia y la anchura espectral expresada en longitudes de onda,</p>
+<div class="alert alert-success">
+$$l_c \simeq \frac{\lambda^2}{\Delta \lambda}$$
+</div>
+La anterior relación nos dice que a mayor longitud de coherencia, menor anchura espectral de la radiación, o lo que es lo mismo, más monocromática será o más coherente. <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widg</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
+
+<span class="c1">#####</span>
+<span class="c1">#PARÁMETROS QUE SE PUEDEN MODIFICAR</span>
+<span class="c1">#####</span>
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mf">5e-7</span>
+<span class="n">c0</span> <span class="o">=</span> <span class="mf">3e8</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">c0</span><span class="o">/</span><span class="n">Lambda</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">omega</span>
+<span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="o">*</span><span class="n">T</span><span class="p">,</span><span class="mi">1500</span><span class="p">)</span>
+<span class="n">tau</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">T</span>
+<span class="c1">###########</span>
+<span class="k">def</span> <span class="nf">campofft</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">tau0</span><span class="p">):</span>
+    <span class="n">numsaltos</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">)(</span><span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">tau0</span><span class="p">))</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">numsaltos</span><span class="p">)</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+    <span class="n">phi_aux</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="nb">int</span><span class="p">)(</span><span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">/</span><span class="n">numsaltos</span><span class="p">)))</span><span class="o">*</span><span class="n">phi</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numsaltos</span><span class="p">)])</span>
+    <span class="n">phi_t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">phi_aux</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">phi_aux</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">phi_aux</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">phi_t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pad</span><span class="p">(</span><span class="n">phi_t</span><span class="p">,(</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">phi_t</span><span class="p">),</span><span class="mi">0</span><span class="p">),</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">)</span>
+    <span class="n">e1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">t</span> <span class="o">+</span> <span class="n">phi_t</span><span class="p">)</span>
+    <span class="n">fig1</span><span class="p">,</span><span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+    <span class="n">ax1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">e1</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Campo&#39;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;tiempo (s)&#39;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;E(t)&#39;</span><span class="p">)</span>
+    <span class="n">freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fftfreq</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">e1fft</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">e1</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">e1fft</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1e16</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Espectro del campo&#39;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">vlines</span><span class="p">(</span><span class="n">omega</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">e1fft</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+    <span class="k">return</span> 
+
+<span class="n">campofft</span><span class="p">(</span><span class="n">time</span><span class="p">,</span><span class="n">omega</span><span class="p">,</span><span class="n">tau</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/TrenesDeOnda_9_0.png" src="../_images/TrenesDeOnda_9_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="que-ocurre-si-iluminamos-el-experimento-de-young-con-este-tipo-de-radiacion">
+<h2><span class="section-number">4.5. </span>¿Qué ocurre si iluminamos el experimento de Young con este tipo de radiación?<a class="headerlink" href="#que-ocurre-si-iluminamos-el-experimento-de-young-con-este-tipo-de-radiacion" title="Permalink to this headline">¶</a></h2>
+<p>Si iluminamos una doble rendija con un tren de ondas como el representado anteriormente, tendremos dos ondas llegando a un cierto punto de la pantalla con la misma evolución temporal pero una de ellas retrasada con respecto a la otra. Esto es debido a la diferencia de camino óptico recorrido por cada tren de onda.</p>
+<p>Cuando superponemos ambos trenes (uno con un cierto retraso con respecto al otro), la diferencia entre las fases iniciales de cada onda dependerá del tiempo. Además, como los saltos de fase en el tren de ondas son aleatorios, esa diferencia de fase cambiara a su vez aleatoriamente.</p>
+<p>Esta diferencia aleatoria tiene un gran efecto en la irradiancia total del patron de interferencias.</p>
+<p>Recordemos que la intensidad total viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[ I_t  = I_1 + I_2 + \epsilon_0 c n &lt; E_1 E_2&gt;_{\tau}\]</div>
+<p>En la anterior expresion hemos dejado explícitamente en el término interferencial el promedio sobre el producto escalar de los campos que interfieren. Este producto escalar nos da lugar a,</p>
+<div class="math notranslate nohighlight">
+\[\int_0^\tau \cos(k_1 r - \omega t + \phi_1) \cos(k_2 r - \omega t + \phi_2) dt\]</div>
+<p>que podemos escribir en función de la diferencia de fases iniciales  <span class="math notranslate nohighlight">\(\phi_1 - \phi_2\)</span>. Si esta diferencia varía aleatoriamente durante el intervalo de tiempo <span class="math notranslate nohighlight">\(\tau\)</span>, su promedio sera nulo y el termino interferencial tambien lo sera. Por tanto la irradiancia total sera,</p>
+<div class="math notranslate nohighlight">
+\[I_t = I_1 + I_2\]</div>
+<p>Es decir, se pierden las franjas de interferencia. Esta situación ocurrirá cuando la diferencia de camino sea suficiente como para que no se solapen las zonas de los trenes de ondas que interfieren con la misma fase. Desde el centro de la pantalla (diferencia de fase igual a cero entre las ondas que interfieren) veremos entonces cómo las franjas se van perdiendo gradualmente a medida que nos alejamos a puntos exteriores (el contraste disminuye progresivamente) hasta que se pierden por completo (contraste igual a cero). En este punto, la irradiancia total será simplemente la suma de las irradiancias de los haces que interfieren.</p>
+<p>El punto en el que las franjas se pierden por completo será, como se ha comentado, aquel que haga que no haya solapamiento entre las zonas de los trenes de ondas con la misma fase. Es decir, la diferencia de camino ha de ser mayor que la distancia característica de cada una de estas zonas. Esta distancia es simplemente la longitud de coherencia. Por tanto, perderemos la interferencia si,</p>
+<div class="alert alert-success">
+$$\Delta > l_c$$
+</div>
+donde $\Delta$ denota la diferencia de camino entre los haces.
+<p>El siguiente código muestra el patrón de interferencias cuando iluminamos el experimento de Young con un tren de ondas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
+
+<span class="c1">#####</span>
+<span class="c1">#PARÁMETROS QUE SE PUEDEN MODIFICAR</span>
+<span class="c1">#####</span>
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mf">5e-7</span> <span class="c1"># longitud de onda de la radiación de 500 nm</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mf">3.5</span><span class="c1"># en metros</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">0.003</span> <span class="c1"># separación entre fuentes de 3 mm</span>
+<span class="n">DeltaLambda</span> <span class="o">=</span> <span class="mf">10e-8</span> <span class="c1"># anchura espectral</span>
+<span class="c1">###########</span>
+
+<span class="n">lc</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lambda</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">DeltaLambda</span>
+<span class="n">interfranja</span> <span class="o">=</span> <span class="n">Lambda</span><span class="o">*</span><span class="n">D</span><span class="o">/</span><span class="n">a</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;interfranja&quot;</span><span class="p">,</span><span class="n">interfranja</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span> <span class="s2">&quot;(mm)&quot;</span><span class="p">)</span> <span class="c1"># muestra el valor de la interfranja en mm</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;longitud de coherencia&quot;</span><span class="p">,</span> <span class="n">lc</span><span class="o">*</span><span class="mf">1e6</span><span class="p">,</span> <span class="s2">&quot;(um)&quot;</span><span class="p">)</span> <span class="c1">#muestra el valor de la long. de coherencia en um</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="o">*</span><span class="n">interfranja</span><span class="p">,</span><span class="mi">10</span><span class="o">*</span><span class="n">interfranja</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+<span class="n">I1</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># Consideramos irradiancias normalizadas a un cierto valor.</span>
+<span class="n">I2</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">X</span><span class="p">,</span><span class="n">Y</span> <span class="o">=</span> <span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+<span class="n">Delta</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">X</span><span class="o">/</span><span class="n">D</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="n">Delta</span>
+
+<span class="n">gamma12</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">Delta</span><span class="p">)</span><span class="o">/</span><span class="n">lc</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">Delta</span><span class="p">)</span><span class="o">&lt;</span><span class="n">lc</span><span class="p">)</span>
+<span class="n">Itotal</span> <span class="o">=</span> <span class="n">I1</span> <span class="o">+</span> <span class="n">I2</span> <span class="o">+</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">I1</span><span class="o">*</span><span class="n">I2</span><span class="p">)</span><span class="o">*</span><span class="n">gamma12</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span>
+
+<span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="n">pcolormesh</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="n">x</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="n">Itotal</span><span class="p">,</span><span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span><span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">vmax</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">shading</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x (mm)&quot;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;y (mm)&quot;</span><span class="p">)</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="n">Itotal</span><span class="p">[(</span><span class="nb">int</span><span class="p">)(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">),:])</span>
+<span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x (mm)&quot;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Irradiancia total normalizada&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>interfranja 0.5833333333333333 (mm)
+longitud de coherencia 2.5 (um)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:34: MatplotlibDeprecationWarning: Auto-removal of grids by pcolor() and pcolormesh() is deprecated since 3.5 and will be removed two minor releases later; please call grid(False) first.
+</pre></div>
+</div>
+<img alt="../_images/TrenesDeOnda_12_2.png" src="../_images/TrenesDeOnda_12_2.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Experimento_Young"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ExperimentoYoung.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">3. </span>Experimento de Young</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Biprisma de Fresnel</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,673 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3. Experimento de Young &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Experimento de Young con trenes de ondas" href="TrenesDeOnda.html" />
+    <link rel="prev" title="2. Interferencia de dos ondas de luz" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Experimento_Young/ExperimentoYoung.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FExperimento_Young/ExperimentoYoung.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/Experimento_Young/ExperimentoYoung.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#teoria">
+   3.1. Teoría
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#distribucion-de-luz-patron-de-interferencias">
+     3.1.1. Distribución de luz. Patrón de interferencias
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preguntas-y-cuestiones">
+   3.2. Preguntas y Cuestiones
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#que-diferencia-habria-si-en-vez-de-iluminar-con-luz-monocromatica-iluminamos-con-luz-blanca">
+     3.2.1. ¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#otros-recursos">
+   3.3. Otros recursos
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Experimento de Young</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#teoria">
+   3.1. Teoría
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#distribucion-de-luz-patron-de-interferencias">
+     3.1.1. Distribución de luz. Patrón de interferencias
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preguntas-y-cuestiones">
+   3.2. Preguntas y Cuestiones
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#que-diferencia-habria-si-en-vez-de-iluminar-con-luz-monocromatica-iluminamos-con-luz-blanca">
+     3.2.1. ¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#otros-recursos">
+   3.3. Otros recursos
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="experimento-de-young">
+<h1><span class="section-number">3. </span>Experimento de Young<a class="headerlink" href="#experimento-de-young" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;YoungTwoSlitExperiment.JPG&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/ExperimentoYoung_1_0.jpg" src="../_images/ExperimentoYoung_1_0.jpg" />
+</div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;&#39;The experiments I am about to relate ... may be repeated with great ease, 
+whenever the sun shines, and without any other apparatus than is at hand to everyone [1]&#39;&#39;
+</pre></div>
+</div>
+<p>Así comenzó Thomas Young su famoso experimento el 24 de noviembre de 1803 en la Real Sociedad de Londres. Ante una audencia mayoritariamente defensora de la teoría corpuscular de la luz (apoyada por Isaac Newton), Thomas Young llevó a cabo el primer experimento de interferencias de luz, demostrando la naturaleza ondulatoria de la luz. Dejó pasar un rayo de sol por un pequeño orificio de la ventana de la habitación e hizo incidir el haz de luz sobre el canto de una tarjeta diviendo el haz en dos. Estos dos haces al solaparse en una pantalla generaban unas franjas oscuras y brillantes de luz.</p>
+<p>[1] Thomas Young, “Experimental Demonstration of the General Law of the Interference of Light”, Philosophical Transactions of the Royal Society of London vol. 94 (1804).</p>
+<div class="section" id="teoria">
+<h2><span class="section-number">3.1. </span>Teoría<a class="headerlink" href="#teoria" title="Permalink to this headline">¶</a></h2>
+<p>Normalmente el experimento de Young se representa con una doble rendija, tal y como aparece en la figura anterior. Una onda esférica (o bien una onda plana, el tratamiento es equivalente), incide en una pantalla sobre la cual se han realizado dos aperturas <span class="math notranslate nohighlight">\(S_1\)</span> y <span class="math notranslate nohighlight">\(S_2\)</span> muy próximas entre sí (llamaremos a la distancia entre ellas <span class="math notranslate nohighlight">\(a\)</span>). Estas aperturas actúan como dos fuentes secundarias de radiación, generando a su vez dos ondas esféricas que se superponen en el espacio que hay detrás de ellas. Si observamos la distribución de irradiancia en una pantalla situada a una cierta distancia <span class="math notranslate nohighlight">\(D\)</span>, ¿qué nos encontraremos?.</p>
+<p>Las dos ondas que se generan en <span class="math notranslate nohighlight">\(S_1\)</span> y <span class="math notranslate nohighlight">\(S_2\)</span> pueden escribirse como:</p>
+<div class="math notranslate nohighlight">
+\[\vec{E_1} = \vec{e_1} \; E_{01} \;  \; \cos\left( k r_1 - \omega t + \phi_1\right)\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{E_2} = \vec{e_2} \; E_{02} \;  \; \cos\left( k r_2 - \omega t + \phi_2\right)\]</div>
+<p><span class="math notranslate nohighlight">\(E_{0j}\)</span>  es la amplitud de la onda, <span class="math notranslate nohighlight">\(\vec{e_j}\)</span>  es la dirección de vibración y <span class="math notranslate nohighlight">\(\phi_j\)</span> es la fase inicial.  <span class="math notranslate nohighlight">\(r_1\)</span> (<span class="math notranslate nohighlight">\(r_2\)</span>) es el camino que recorre la onda desde <span class="math notranslate nohighlight">\(S_1\)</span> (<span class="math notranslate nohighlight">\(S_2\)</span>) hasta el punto de observación P. Ambas ondas tienen la misma longitud de onda.</p>
+<p>La superposición de estas dos ondas, nos dará la expresión de la irradiancia ya conocida,</p>
+<div class="math notranslate nohighlight">
+\[I_T = I_1 + I_2 + 2 \sqrt{I_1 I_2} \; (\vec{e_ 1}\cdot\vec{e_ 2}) \; cos(\delta)\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\delta = k (r_2 - r_1) + \phi_2 - \phi_1\)</span> es el desfase (o la diferencia de fase) entre las dos ondas.</p>
+<p>En esta expresión podemos hacer alguna que otra simplificación,</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{e_ 1} \cdot \vec{e_ 2}=1\)</span> porque las ondas las consideramos polarizadas linealmente en la misma dirección.</p></li>
+<li><p><span class="math notranslate nohighlight">\(I_1 = I_2\)</span> en caso de que no haya ningún filtro en <span class="math notranslate nohighlight">\(S_1\)</span> ó <span class="math notranslate nohighlight">\(S_2\)</span>, las dos ondas tienen la misma amplitud.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\phi_2 - \phi_1 = 0\)</span> ya que el frente de ondas llega simultáneamente a <span class="math notranslate nohighlight">\(S_1\)</span> y <span class="math notranslate nohighlight">\(S_2\)</span>. Nótese que si colocásemos por ejemplo una pieza de un material transparente antes de una de las dos aperturas, tendríamos un desfase adicional en una de las dos ondas y esta diferencia ya no sería nula. Esto ocurriría porque una de las ondas viajaría a través del material mientras la otra onda lo haría en aire.</p></li>
+</ul>
+<p>Así la irradiancia total queda</p>
+<div class="math notranslate nohighlight">
+\[I_T = 2 I_1 \left( 1 + cos(\delta) \; \right)\]</div>
+<p>con <span class="math notranslate nohighlight">\(\delta = k (r_2 - r_1)\)</span></p>
+<p>Como vemos, <strong>es la diferencia de caminos <span class="math notranslate nohighlight">\(\Delta = r_2 - r_1\)</span> la que determina el valor de la irradiancia final en el punto P</strong>. Vamos a calcularla.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;ExperimentoYoung.jpg&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/ExperimentoYoung_4_0.jpg" src="../_images/ExperimentoYoung_4_0.jpg" />
+</div>
+</div>
+<p>Según la figura, <span class="math notranslate nohighlight">\(\Delta = r_2 - r_1\)</span> lo podemos escribir como <span class="math notranslate nohighlight">\(\Delta = a sen(\theta)\)</span>, siendo <span class="math notranslate nohighlight">\(a\)</span> la separación entre las rendijas. Si éste ángulo es pequeño (lo que significa que la distancia entre las fuentes y la pantalla de observación sea grande comparada con la separación entre las fuentes, <span class="math notranslate nohighlight">\(D \gg a\)</span>), esta expresión la podemos simplificar,</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned} \Delta = a \; sen(\theta) \simeq a \; tan(\theta) = a \frac{x}{D}$$.\\Y por tanto, \\$$\delta = k \frac{a x }{D} = \frac{2 \pi a x}{\lambda D}\end{aligned}\end{align} \]</div>
+<p>En estas expresiones, <span class="math notranslate nohighlight">\(x\)</span> es la distancia del punto P de observación al eje mientras que <span class="math notranslate nohighlight">\(D\)</span> es la distancia entre el plano
+que contiene a las fuentes y la pantalla de observación, donde se encuentra P. Podemos reescribir la irradiancia total en la pantalla empleando la expresión calculada del desfase</p>
+<div class="alert alert-success">
+$$I_T = 2 I_1 \left( 1 + cos\left( \frac{2 \pi a x}{\lambda D} \right) \; \right)$$
+</div><div class="section" id="distribucion-de-luz-patron-de-interferencias">
+<h3><span class="section-number">3.1.1. </span>Distribución de luz. Patrón de interferencias<a class="headerlink" href="#distribucion-de-luz-patron-de-interferencias" title="Permalink to this headline">¶</a></h3>
+<p>Ahora estamos en disposición de contestar a la pregunta que nos planteábamos antes, ¿cómo es la distribución de irradiancia en la pantalla de observación?. Vemos que el desfase depende de la altura en la pantalla <span class="math notranslate nohighlight">\(x\)</span>, por tanto al movernos en esa dirección el valor de la irradiancia cambiará. En particular el término que provoca esa variación es del tipo cosenoidal <span class="math notranslate nohighlight">\(cos( \frac{2 \pi a x}{\lambda D})\)</span> por lo que veremos en la pantalla una distribución cosenoidal, con máximos de irradiancia cuando <span class="math notranslate nohighlight">\(\delta = 2 m \pi\)</span>, con <span class="math notranslate nohighlight">\(m = 0, \pm 1, \pm 2 ...\)</span> y mínimos de irradiancia cuando <span class="math notranslate nohighlight">\(\delta = (2 m + 1) \pi\)</span>, con <span class="math notranslate nohighlight">\(m = 0, \pm 1, \pm 2 ...\)</span>. Las posiciones <span class="math notranslate nohighlight">\(x\)</span> a las que corresponden estas condiciones serán,</p>
+<p>Máximos de irradiancia.  <span class="math notranslate nohighlight">\(\delta = 2 m \pi rad \implies \Delta = m \lambda \implies\)</span>
+$<span class="math notranslate nohighlight">\(x^{max}_m = \frac{m \lambda D}{a}\)</span>$</p>
+<p>Mínimos de irradiancia.  <span class="math notranslate nohighlight">\(\delta = (2 m + 1)\pi \implies \Delta = \frac{(2m +1) \lambda}{2} \implies\)</span>
+$<span class="math notranslate nohighlight">\(x^{min}_m = \frac{(2m + 1) \lambda D}{2a}\)</span>$</p>
+<p>Vamos a dibujar la distribución de irradiancia en la pantalla y un corte a lo largo del eje X (ejecutar la siguiente celda de código).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">###################################################################################</span>
+<span class="c1"># PARÁMETROS. SE PUEDEN MODIFICAR SUS VALORES</span>
+<span class="c1">###################################################################################</span>
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mf">700e-9</span> <span class="c1"># en metros, longitud de onda de la radiación</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mf">14.5</span>  <span class="c1"># en metros, distancia entre el plano que contiene las fuentes y la pantalla de observación</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">0.01</span> <span class="c1"># en metros, separación entre fuentes de Young</span>
+<span class="n">I1</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># Consideramos irradiancias normalizadas a un cierto valor.</span>
+<span class="n">I2</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="c1">###################################################################################</span>
+
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
+
+<span class="n">interfranja</span><span class="o">=</span><span class="n">Lambda</span><span class="o">*</span><span class="n">D</span><span class="o">/</span><span class="n">a</span> <span class="c1"># cálculo de la interfranja</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="o">*</span><span class="n">interfranja</span><span class="p">,</span><span class="mi">5</span><span class="o">*</span><span class="n">interfranja</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+<span class="n">X</span><span class="p">,</span><span class="n">Y</span> <span class="o">=</span> <span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">X</span><span class="o">/</span><span class="n">D</span>
+<span class="n">Itotal</span> <span class="o">=</span> <span class="n">I1</span> <span class="o">+</span> <span class="n">I2</span> <span class="o">+</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">I1</span><span class="o">*</span><span class="n">I2</span><span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span>
+<span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="n">pcolormesh</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="n">x</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="n">Itotal</span><span class="p">,</span><span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span><span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">vmax</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x (mm)&quot;</span><span class="p">);</span> <span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;y (mm)&quot;</span><span class="p">)</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="n">Itotal</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">),:])</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x (mm)&quot;</span><span class="p">);</span> <span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Irradiancia total normalizada&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:24: MatplotlibDeprecationWarning: Auto-removal of grids by pcolor() and pcolormesh() is deprecated since 3.5 and will be removed two minor releases later; please call grid(False) first.
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Irradiancia total normalizada&#39;)
+</pre></div>
+</div>
+<img alt="../_images/ExperimentoYoung_7_2.png" src="../_images/ExperimentoYoung_7_2.png" />
+</div>
+</div>
+<p>Como podemos ver, los máximos están equiespaciados (lo mismo sucede con los míminos), siendo la distancia entre dos máximos consecutivos
+$<span class="math notranslate nohighlight">\( \text{Interfranja} = \frac{\lambda D}{a} \)</span><span class="math notranslate nohighlight">\(
+Dicha magnitud se conoce con el nombre de interfranja y nos da información sobre el tamaño característico del patrón de franjas. 
+Además del tamaño, para poder observar con claridad las franjas es necesario que estén bien contrastadas. Para ello se define el contraste o visibilidad de las franjas
+\)</span><span class="math notranslate nohighlight">\( C = \frac{I_T^{max}-I_T^{min}}{I_T^{max}+I_T^{min}}\)</span>$
+que nos dice cuanto están separados los máximos de luz respecto de los mínimos.</p>
+<p>El valor de estas dos magnitudes para el caso representado en la figura anterior se muestra en la siguiente celda (ejecutar dicha celda después de haber ejecutado la anterior celda de código)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interfranja</span><span class="o">=</span><span class="n">Lambda</span><span class="o">*</span><span class="n">D</span><span class="o">/</span><span class="n">a</span> <span class="c1"># cálculo de la interfranja</span>
+<span class="n">C</span> <span class="o">=</span> <span class="p">(</span><span class="n">Itotal</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">Itotal</span><span class="o">.</span><span class="n">min</span><span class="p">())</span><span class="o">/</span><span class="p">(</span><span class="n">Itotal</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="n">Itotal</span><span class="o">.</span><span class="n">min</span><span class="p">())</span> <span class="c1"># cálculo del contraste</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;a=&quot;</span><span class="p">,</span><span class="n">a</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="s2">&quot;mm   &quot;</span><span class="p">,</span><span class="s2">&quot;D=&quot;</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="s2">&quot;m   &quot;</span><span class="p">,</span><span class="s2">&quot;Longitud de onda=&quot;</span><span class="p">,</span><span class="n">Lambda</span><span class="o">*</span><span class="mf">1e9</span><span class="p">,</span><span class="s2">&quot;nm&quot;</span><span class="p">)</span> <span class="c1"># valores de los parámetros</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Interfranja=&quot;</span><span class="p">,</span><span class="n">interfranja</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="s2">&quot;mm&quot;</span><span class="p">)</span> <span class="c1"># muestra el valor de la interfranja en mm</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Contraste=&#39;</span><span class="p">,</span><span class="n">C</span><span class="p">)</span> <span class="c1"># muestra el valor del contraste</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a= 10.0 mm    D= 14.5 m    Longitud de onda= 700.0 nm
+Interfranja= 1.015 mm
+Contraste= 0.5749506014973972
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="preguntas-y-cuestiones">
+<h2><span class="section-number">3.2. </span>Preguntas y Cuestiones<a class="headerlink" href="#preguntas-y-cuestiones" title="Permalink to this headline">¶</a></h2>
+<p>Emplear las dos celdas de código anteriores para analizar las siguientes cuestiones.</p>
+<ul class="simple">
+<li><p>Prueba a cambiar el valor de los parámetros <span class="math notranslate nohighlight">\(\lambda\)</span>, <span class="math notranslate nohighlight">\(D\)</span> y <span class="math notranslate nohighlight">\(a\)</span> (de uno en uno) y observa cómo cambia la distribución de luz. Observa como se modifica el valor de la interfranja y del contraste.</p></li>
+<li><p>Disminuye el valor de <span class="math notranslate nohighlight">\(I_1\)</span> o <span class="math notranslate nohighlight">\(I_2\)</span> y observa cómo cambia el patrón de interferencias. ¿Cómo cambia el valor de la interfranja y del contraste?</p></li>
+</ul>
+<div class="section" id="que-diferencia-habria-si-en-vez-de-iluminar-con-luz-monocromatica-iluminamos-con-luz-blanca">
+<h3><span class="section-number">3.2.1. </span>¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?<a class="headerlink" href="#que-diferencia-habria-si-en-vez-de-iluminar-con-luz-monocromatica-iluminamos-con-luz-blanca" title="Permalink to this headline">¶</a></h3>
+<p>Podemos verlo en la siguiente imagen</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;FranjasYoungWhiteLight.jpg&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/ExperimentoYoung_12_0.jpg" src="../_images/ExperimentoYoung_12_0.jpg" />
+</div>
+</div>
+<p>Como se puede observar, en el caso de luz blanca, cada una de las longitudes de onda que la componen forma un sistema de franjas con los máximos situados en posiciones distintas y con una interfranja diferente. Esto dificulta enormemente la visualización de la interferencia y nos llevará a definir el concepto de luz coherente e incoherente.</p>
+</div>
+</div>
+<div class="section" id="otros-recursos">
+<h2><span class="section-number">3.3. </span>Otros recursos<a class="headerlink" href="#otros-recursos" title="Permalink to this headline">¶</a></h2>
+<p>Los siguientes videos de Kahn Academy explican de una manera sencilla la interferencia de las ondas en el experimento de Young. Puedes ver el video dentro de la celda o pinchar en YouTube para abrir otra ventana del navegador</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/F5uuAQprw84?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/IPython/core/display.py:717: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn(&quot;Consider using IPython.display.IFrame instead&quot;)
+</pre></div>
+</div>
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/F5uuAQprw84?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Y7peakctWdc?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/Y7peakctWdc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Experimento_Young"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">2. </span>Interferencia de dos ondas de luz</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="TrenesDeOnda.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Experimento de Young con trenes de ondas</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

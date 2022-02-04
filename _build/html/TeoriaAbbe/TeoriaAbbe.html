@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18. Teoría difraccional de la imagen. Teoría de Abbe de la formación de la imagen con iluminación coherente &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="19. Experimento de Young. Trabajo en Grupo." href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html" />
+    <link rel="prev" title="17. Poder de Resolucion de la Red de difraccion" href="../RedDeDifraccion/PoderResolucionRed.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   6. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   7. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
+   8. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   9. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   10. Interferometro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   11. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   12. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   13. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   16. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   17. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   19. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   20. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   24. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   25. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/TeoriaAbbe/TeoriaAbbe.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FTeoriaAbbe/TeoriaAbbe.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/TeoriaAbbe/TeoriaAbbe.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metodo-de-contraste-de-fase">
+   18.1. Método de Contraste de Fase.
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metodo-de-contraste-de-fase">
+   18.1. Método de Contraste de Fase.
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="teoria-difraccional-de-la-imagen-teoria-de-abbe-de-la-formacion-de-la-imagen-con-iluminacion-coherente">
+<h1><span class="section-number">18. </span>Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente<a class="headerlink" href="#teoria-difraccional-de-la-imagen-teoria-de-abbe-de-la-formacion-de-la-imagen-con-iluminacion-coherente" title="Permalink to this headline">¶</a></h1>
+<p>Durante el estudio de los efectos de la difracción, hemos visto que la presencia de una apertura con una cierta anchura modifica la irradiancia observada en una pantalla situada detrás de dicha apertura. Cuanto menor sea su tamaño, el frente de ondas de la luz incidente se verá más cortado, y el haz se alejará más de la propagación rectilínea. Más concretamente, si tenemos una apertura circular, el tamaño de la mancha de Airy en la pantalla será mayor cuando menor sea la apertura.</p>
+<p>Si trasladamos estas observaciones a la formación de la imagen por parte de un sistema óptico, podemos suponer ya que los efectos de la difracción jugarán un papel importante. Dado que todo sistema óptico, ya sea por la presencia de diafragmas o bien por la propia montura de las lentes, limita la extensión del haz que entra en él, la imagen de un punto no será otro punto tal y como predice la Óptica Geométrica para sistemas perfectos, sino una mancha de cierta extensión.</p>
+<p>En el presente notebook vamos a describir la teoría de Abbe de la formación de la imagen cuando el objeto es iluminado con luz coherente. Este caso se da especialmente en la visualización de objetos pequeños a través de un microscopio. De acuerdo con Abbe, el objeto actúa como una red de difracción, por lo que tenemos que tener en cuenta la interferencia entre las ondas secundarias emitidas por cada punto del objeto.</p>
+<p><a class="reference external" href="http://www.osa-opn.org/home/articles/volume_18/issue_2/features/ernst_abbe_and_the_foundation_of_scientific_micros/#.UZILjaq0V4c">Más sobre la vida y logros de Abbe</a></p>
+<p>Para ilustrar esta teoría, vamos a analizar el caso en el que el objeto es propiamente una red de difracción con paso <span class="math notranslate nohighlight">\(d\)</span> y que se encuentra iluminada por una onda plana monocromática que incide perpendicularmente a la red. Si nos centramos en lo que obtenemos en el plano focal imagen del sistema óptico, ya sabemos que en dicho plano tendremos los distintos órdenes de difracción dados por la ecuación de la red</p>
+<div class="math notranslate nohighlight">
+\[d sen(\theta) = m \lambda\]</div>
+<p>Teniendo en cuenta que <span class="math notranslate nohighlight">\(tan(\theta) = y/f'\)</span>, donde <span class="math notranslate nohighlight">\(y\)</span> es la distancia al eje de un punto en el plano focal, podemos saber dónde tendremos los máximos de irradiancia correspondientes a cada orden de difracción,</p>
+<div class="math notranslate nohighlight">
+\[y = \frac{ m \lambda f'}{d} \]</div>
+<p>donde en esta última expresión se ha realizado la aproximación <span class="math notranslate nohighlight">\(sen(\theta) \sim tan(\theta) = y/f'\)</span>.</p>
+<p>Cada uno de estos puntos podemos considerarlo como centro emisor de ondas secundarias, cuya amplitud dependerá de la amplitud de ese orden de difracción. Estas ondas secundarias interferirán unas con otras, dando lugar a la imagen de la red en el plano predicho por la Óptica Geométrica. Para tener una imagen fiel de la red, tendremos que sumar las contribuciones de todos los órdenes de difracción, ya que todos ellos llevan información de la forma de la red. Sin embargo, el tamaño finito de la apertura del sistema va a tener como consecuencia que podamos cortar los órdenes de difracción más altos, y por tanto modificamos la imagen final. Este problema se ve paliado en parte por la disminución de la amplitud que sufren los órdenes más altos, y por tanto, su contribución a la imagen será también menor.</p>
+<p>Vamos a verlo con el siguiente código. En él se halla la distancia <code class="docutils literal notranslate"><span class="pre">D</span></code> entre el plano imagen y el plano focal del sistema, la posición en este plano de los órdenes de difracción (<code class="docutils literal notranslate"><span class="pre">yfoc</span></code> en el código) y se suman las ondas emitidas por cada uno de estos puntos con el correspondiente desfase entre ellas debido a la diferencia de cámino óptico (este punto es similar a cómo hallamos la irradiancia dada por una red de difracción en una pantalla a una cierta distancia). Finalmente el parámetro <code class="docutils literal notranslate"><span class="pre">norden</span></code> nos da el número de órdenes que incluimos en la suma.</p>
+<ul class="simple">
+<li><p>Propuesta: Cambiar el número <code class="docutils literal notranslate"><span class="pre">norden</span></code> para limitar el número de órdenes de difracción que contribuyen a la imagen final. Ver cómo afecta a la imagen final este cambio.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">pylab</span> inline
+<span class="c1"># No se tiene en cuenta la diferente energía que lleva cada orden de difracción</span>
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mf">555e-6</span> <span class="c1"># longitud de onda en mm</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span>
+<span class="n">focal</span> <span class="o">=</span> <span class="mf">200.0</span> <span class="c1"># mm</span>
+<span class="n">sobj</span> <span class="o">=</span> <span class="o">-</span><span class="mf">300.0</span> <span class="c1"># mm</span>
+<span class="n">sim</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="n">focal</span> <span class="o">+</span> <span class="mf">1.0</span><span class="o">/</span><span class="n">sobj</span><span class="p">)</span>
+<span class="n">D</span> <span class="o">=</span> <span class="n">sim</span> <span class="o">-</span> <span class="n">focal</span>
+<span class="n">norden</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">m_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">norden</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="n">norden</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="mi">100</span> <span class="c1"># paso de la red en mm</span>
+<span class="n">theta_m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span><span class="n">Lambda</span><span class="o">*</span><span class="n">m_vec</span><span class="o">/</span><span class="n">d</span><span class="p">)</span>
+<span class="n">yfoc</span> <span class="o">=</span> <span class="n">focal</span><span class="o">*</span><span class="n">tan</span><span class="p">(</span><span class="n">theta_m</span><span class="p">)</span>
+
+<span class="n">x_p</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">0.06</span><span class="p">,</span><span class="mf">.06</span><span class="p">,</span><span class="mi">5000</span><span class="p">)</span>
+<span class="n">Delta</span> <span class="o">=</span> <span class="p">(</span><span class="n">yfoc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">yfoc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">x_p</span><span class="o">/</span><span class="n">D</span>
+<span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">m_vec</span><span class="p">)</span>
+<span class="n">E0</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">fases</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(((</span><span class="n">N</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">x_p</span><span class="p">)),</span><span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fases</span><span class="p">)):</span>
+    <span class="n">fases</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="n">Delta</span>
+<span class="n">Etotal</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">fases</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="n">E0</span>
+<span class="n">Itotal</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Etotal</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">plot</span><span class="p">(</span><span class="n">x_p</span><span class="p">,</span><span class="n">Itotal</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Populating the interactive namespace from numpy and matplotlib
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0296f74190&gt;]
+</pre></div>
+</div>
+<img alt="../_images/TeoriaAbbe_2_2.png" src="../_images/TeoriaAbbe_2_2.png" />
+</div>
+</div>
+<p>Hemos visto anteriormente que el diámetro finito del sistema puede limitar los órdenes más altos, lo que puede conllevar una pérdida de fidelidad de la imagen final ya que la interferencia se realiza con un número menor de ondas. Sin embargo podemos también utilizar este enfoque para estudiar la formación de la imagen con iluminación coherente para modificar a nuestra voluntad la imagen final. Es decir, ¿qué ocurre por ejemplo si bloqueamos el orden 0 y mantenemos únicamente el orden 1 y -1?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">norden</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">m_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">norden</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="n">norden</span>
+<span class="n">theta_m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span><span class="n">Lambda</span><span class="o">*</span><span class="n">m_vec</span><span class="o">/</span><span class="n">d</span><span class="p">)</span>
+<span class="n">yfoc</span> <span class="o">=</span> <span class="n">focal</span><span class="o">*</span><span class="n">tan</span><span class="p">(</span><span class="n">theta_m</span><span class="p">)</span>
+
+
+<span class="n">Delta</span> <span class="o">=</span> <span class="p">(</span><span class="n">yfoc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">yfoc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">x_p</span><span class="o">/</span><span class="n">D</span>
+<span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">m_vec</span><span class="p">)</span>
+<span class="n">E0</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">fases</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(((</span><span class="n">N</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">x_p</span><span class="p">)),</span><span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fases</span><span class="p">)):</span>
+    <span class="n">fases</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="n">Delta</span>
+<span class="n">Etotal</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">fases</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="n">E0</span>
+<span class="c1">#remove contribution from zero order</span>
+<span class="n">indzero</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">m_vec</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">Etotal</span> <span class="o">=</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">fases</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">-</span><span class="n">exp</span><span class="p">(</span><span class="n">fases</span><span class="p">[</span><span class="n">indzero</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],:]))</span><span class="o">*</span><span class="n">E0</span>
+<span class="n">Itotal</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Etotal</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">x_p</span><span class="p">,</span><span class="n">Itotal</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f029658a210&gt;]
+</pre></div>
+</div>
+<img alt="../_images/TeoriaAbbe_4_1.png" src="../_images/TeoriaAbbe_4_1.png" />
+</div>
+</div>
+<p>Vemos que obtenemos una imagen de forma cosenoidal, es decir, franjas de interferencia. Este resultado era previsible ya que según la disposición que hemos fijado, tenemos dos fuentes puntuales separadas por una cierta distancia, es decir, un caso análogo al experimento de Young. La separación entre máximos (interfranja) se puede observar que es igual a <span class="math notranslate nohighlight">\(0.01 \;\;\)</span> mm. Hay que hacer notar que esta separación no es el periodo espacial esperable de la imagen final. Este periodo vendrá modificado por el aumento lateral del sistema y vendrá dado por <span class="math notranslate nohighlight">\(d' = \beta d\)</span>, donde <span class="math notranslate nohighlight">\(\beta = s' / s\)</span>. En nuestro caso, eso nos da un periodo espacial de la imagen <span class="math notranslate nohighlight">\(d' = 0.02\;\;\)</span> mm</p>
+<div class="section" id="metodo-de-contraste-de-fase">
+<h2><span class="section-number">18.1. </span>Método de Contraste de Fase.<a class="headerlink" href="#metodo-de-contraste-de-fase" title="Permalink to this headline">¶</a></h2>
+<p>Aunque el ejemplo anterior nos permite adivinar que actuando en el plano focal de la lente podemos modificar la imagen final, no da una idea clara de las aplicaciones que este procedimiento podría tener. Para ejemplificar estas aplicaciones vamos a ver muy brevemente en qué consiste el método de contraste de fase. Este método de observación fue introducido por Zernike y por él le fue otorgado el premio Nobel en 1953.</p>
+<p>El método de contraste de fase nos permite visualizar objetos transparentes en donde por tanto no hay cambios en la amplitud de la onda transmitida a través de ellos, aunque sí lo hay en la fase de dicha onda, debido a la diferencia de camino óptico que ha de recorrer al atravesar el objeto. Objetos de este tipo se encuentran frecuentemente en biología o cristalografía y debido a que no cambian hay cambios en la amplitud de la onda, no es posible observarlos con técnicas de microscopía tradicionales.</p>
+<p>En lo que consiste este método es en actuar en el plano focal imagen del sistema óptico para transformar esos cambios de fase en el objeto en cambios en la irradiancia en el plano imagen. Más concretamente, situamos una lámina delgada en el plano focal imagen de modo que introducimos un desfase de <span class="math notranslate nohighlight">\(\pi /2\)</span> en el orden cero de difracción situado en el eje. Se puede demostrar que este cambio en la fase del orden cero, provoca que los cambios de fase introducidos por el objeto se transformen en cambios en la irradiancia en la imagen final, permitiendo visualizar de este modo el objeto.</p>
+<p>Veamos esto brevemente. Si el objeto produce una variación unidimensional de la fase <span class="math notranslate nohighlight">\(\phi(x) \;\;\)</span>, la función de transmisión del objeto será <span class="math notranslate nohighlight">\(F(x) = e^{i \phi(x)} \;\;\)</span>, que si la variación de fase es pequeña, se puede aproximar por <span class="math notranslate nohighlight">\(F(x) \simeq 1 + i \phi(x) \;\;\)</span>. El sistema óptico por tanto dará una imagen con una irradiancia,</p>
+<div class="math notranslate nohighlight">
+\[I_{im} \propto | 1 + i \phi(x) |^2 \simeq 1\]</div>
+<p>donde se ha considerado que la fase <span class="math notranslate nohighlight">\(\phi(x)\)</span> es pequeña. Se puede ver por tanto que la irradiancia es básicamente constante en el plano imagen. Sin embargo, si actuamos sobre el plano focal cambiando la fase del orden cero de difracción, se puede demostrar que la irradiancia es entonces,</p>
+<div class="math notranslate nohighlight">
+\[I_{im} \propto | \pm i + i \phi(x) |^2 \simeq 1 \pm 2 \phi(x)\]</div>
+<p>Por tanto la irradiancia en el plano imagen cambia, siendo proporcional a los cambios de fase introducidos por el objeto. El signo del último término depende del desfase introducido por la lámina en el plano focal.</p>
+<p>Un desarrollo más profundo de este método queda fuera de los objetivos del presente curso, pero se puede consultar más sobre el método de contraste de fase por ejemplo en los siguientes enlaces y bibliografía:</p>
+<p><a class="reference external" href="http://www.microscopyu.com/articles/phasecontrast/phasemicroscopy.html">Introducción al método de contraste de fase (en Inglés)</a></p>
+<p><a class="reference external" href="http://www.leica-microsystems.com/fileadmin/downloads/Leica%20DM750%20P/Brochures/Leica_Theory_of_the_microscope_RvA-Booklet_ES.pdf">Teoría del Microscopio</a>[PDF]</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./TeoriaAbbe"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../RedDeDifraccion/PoderResolucionRed.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">17. </span>Poder de Resolucion de la Red de difraccion</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">19. </span>Experimento de Young. Trabajo en Grupo.</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
