@@ -1,7 +1,0 @@
-{"backend_state":"running","kernel":"python3","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":73605120},"trust":true,"type":"settings"}
-{"cell_type":"markdown","id":"dc0c84","input":"### Desarrollo teórico de la expresión y sus caracterísiticas","pos":0.5,"state":"done","type":"cell"}
-{"cell_type":"markdown","id":"e5e5b3","input":"# Interferencia de dos ondas de luz","pos":0,"state":"done","type":"cell"}
-{"end":1548101262055,"exec_count":1,"id":"1f5d53","input":"#####################################################\n# PUEDES CAMBIAR LOS VALORES DE LAS DOS IRRADIANCIAS\n###################################################\nI_1 = 1\nI_2 = 1\n#################################\n# NO TOCAR LO SIGUIENTE\n###############################\nfrom numpy import *\nfrom matplotlib.pyplot import *\nstyle.use('fivethirtyeight')\ndelta = arange(0,8*pi,0.1)\n############\nI_T = I_1 + I_2 + 2*sqrt(I_1*I_2)*cos(delta)\n#fig = plt.figure(figsize=(10,6))\nplot(delta,I_T)\nylim(0,4)\nxlabel('$\\delta$ (rad.)')\nylabel('I$_t$');","kernel":"python3","output":{"0":{"data":{"image/png":"0b20628cb2087b72d876cecdd9b358c590462a86"},"metadata":{"image/png":{"height":291,"width":437}}}},"pos":1,"start":1548101261106,"state":"done","type":"cell"}
-{"id":"f6b02b","input":"","pos":2,"state":"done","type":"cell"}
-{"id":0,"time":1548245543451,"type":"user"}
-{"last_load":1548085486341,"type":"file"}
