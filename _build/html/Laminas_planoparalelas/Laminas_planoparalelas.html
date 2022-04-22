@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6. Interferencia en láminas planoparalelas. Franjas de igual inclinación &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="7. Tratamientos Antirreflejantes" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html" />
+    <link rel="prev" title="5. Biprisma de Fresnel" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Optica Fisica. Interferencias y Difraccion</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teoria
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
+   1. Interferencia entre 2 ondas electromagnéticas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
+   2. Interferencia de dos ondas de luz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
+   3. Experimento de Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
+   4. Experimento de Young con trenes de ondas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
+   5. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   6. Interferencia en láminas planoparalelas. Franjas de igual inclinación
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
+   7. Tratamientos Antirreflejantes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
+   8. Interferencia por haces múltiples. Filtros interferenciales.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor-1.html">
+   9. Franjas de igual espesor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
+   10. Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
+   11. Interferómetro de Michelson
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
+   12. Tomografía de coherencia óptica. Puntos básicos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
+   13. Difracción de Fraunhofer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
+   14. Introduccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
+   17. Red de difracción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
+   18. Poder de Resolucion de la Red de difraccion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
+   19. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trabajos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
+   20. Experimento de Young. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
+   21. Biprisma de Fresnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
+   22. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
+   23. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
+   24. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
+   25. Láminas delgadas caseras. Trabajo en Grupo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
+   26. Resolución limitada por difracción. Trabajo en Grupo.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ecabreragranado/LibroOFII"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/ecabreragranado/LibroOFII/issues/new?title=Issue%20on%20page%20%2FLaminas_planoparalelas/Laminas_planoparalelas.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/master?urlpath=tree/docs/Laminas_planoparalelas/Laminas_planoparalelas.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#irradiancia-de-las-ondas-que-interfieren-en-reflexion">
+   6.1. Irradiancia de las ondas que interfieren en reflexión
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#desfase-entre-las-ondas-que-interfieren">
+   6.2. Desfase entre las ondas que interfieren
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente">
+     6.2.1. Patron de franjas observado en el plano focal de una lente convergente
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#condicion-de-maximo-y-minimo-franjas-de-igual-inclinacion">
+     6.2.2. Condición de máximo y mínimo. Franjas de igual inclinación
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#video-leccion-virtual">
+   6.3. Vídeo lección virtual
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Interferencia en láminas planoparalelas. Franjas de igual inclinación</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#irradiancia-de-las-ondas-que-interfieren-en-reflexion">
+   6.1. Irradiancia de las ondas que interfieren en reflexión
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#desfase-entre-las-ondas-que-interfieren">
+   6.2. Desfase entre las ondas que interfieren
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente">
+     6.2.1. Patron de franjas observado en el plano focal de una lente convergente
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#condicion-de-maximo-y-minimo-franjas-de-igual-inclinacion">
+     6.2.2. Condición de máximo y mínimo. Franjas de igual inclinación
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#video-leccion-virtual">
+   6.3. Vídeo lección virtual
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="interferencia-en-laminas-planoparalelas-franjas-de-igual-inclinacion">
+<h1><span class="section-number">6. </span>Interferencia en láminas planoparalelas. Franjas de igual inclinación<a class="headerlink" href="#interferencia-en-laminas-planoparalelas-franjas-de-igual-inclinacion" title="Permalink to this headline">¶</a></h1>
+<p>Una de las formas habituales de obtener interferencias es mediante la división del frente de ondas de un haz procedente de una fuente para posteriormente recombinar ambas partes. A este tipo de interferómetros se les conoce como <strong>interferómetros por división del frente de ondas</strong> y ejemplos de ellos pueden ser el interferómetro de la doble rendija o el biprisma de Fresnel. Otra estrategia para disponer de dos ondas que guarden una relación de fase constante en el tiempo entre ellas y por tanto den lugar a interferencia, es utilizar la reflexión y transmisión parcial en una superficie o espejo para producir estas dos ondas. A este tipo de interferómetros se les denomina <strong>interferómetros por división de amplitud</strong>. El ejemplo quizás más sencillo lo podemos encontrar en una lamina planoparalela (lámina con caras paralelas y por tanto espesor fijo).</p>
+<p>Efectivamente, si iluminamos una lámina planoparalela, de índice de refracción <em>n</em> y grosor <em>h</em>, con un haz que proceda de una fuente puntual, parte de este haz se reflejará en la primera cara y parte se transmitirá al interior de la lámina. Vamos a fijarnos en una parte del haz que se propague en una determinada dirección (un rayo incidente que incide sobre la lámina con un ángulo <span class="math notranslate nohighlight">\(\theta_i\)</span>). El haz transmitido, al llegar a la segunda cara, sufrirá a su vez una reflexión interna, transmitiéndose parcialmente al siguiente medio. Si nos ocupamos ahora mismo del haz que se refleja internamente en la segunda cara, este haz llegará a continuación de nuevo a la primera cara, sufriendo otra reflexión interna y transmitiéndose a su vez parcialmente al medio exterior. Este proceso de reflexiones internas se repetirá, bien hasta que el haz salga de la lámina, o bien hasta que se quede sin energía.</p>
+<p>Tenemos por tanto una situación en la que la reflexión y la transmisión global de la lámina es un conjunto de ondas producidas por las continuas reflexiones internas. Además, observando la figura podemos apreciar que estas ondas se propagarán en la misma dirección (los rayos de salida son paralelos). Si hacemos coincidir estos haces, por ejemplo utilizando una lente convergente, en su plano focal imagen observaremos la interferencia de todas estas ondas.</p>
+<center>
+<img src="laminaRefleTransmi.png" height=200px style="max-width:60%">
+</center>
+<p>Por supuesto, las reflexiones y transmisiones producidas en cada paso, llevan consigo que el haz que se propaga por el interior de la lámina sea cada vez mas débil, por lo que los haces reflejados internamente más de una vez contribuirán cada vez menos a la irradiancia total. Este hecho nos permite, como primera aproximación al problema, considerar únicamente la interferencia de las dos primeras ondas reflejadas/transmitidas en la lámina. De este modo podremos aplicar la expresión de la irradiancia total vista anteriormente para el caso de dos ondas, es decir,</p>
+<div class="math notranslate nohighlight">
+\[I_t = I_1 + I_2 + 2\sqrt{I_1 I_2} \cos(\delta)\]</div>
+<p>en donde en la expresión anterior, <span class="math notranslate nohighlight">\(I_1\)</span> ahora será la irradiancia de la primera onda reflejada/transmitida (según estemos considerando la interferencia en reflexión o transmisión), <span class="math notranslate nohighlight">\(I_2\)</span> será la irradiancia de la segunda onda reflejada/transmitida, <span class="math notranslate nohighlight">\(\delta\)</span> es el desfase total entre estas ondas, que debemos calcular. Por último, hay que apuntar que en la ecuación anterior se ha supuesto que los haces que interfieren se propagan con igual polarización.</p>
+<p>A continuación vamos a analizar la interferencia que se produce en reflexión. Para ello, primero tenemos que obtener la irradiancia de cada onda que participa en la interferencia, así como el desfase entre ellas.</p>
+<div class="section" id="irradiancia-de-las-ondas-que-interfieren-en-reflexion">
+<h2><span class="section-number">6.1. </span>Irradiancia de las ondas que interfieren en reflexión<a class="headerlink" href="#irradiancia-de-las-ondas-que-interfieren-en-reflexion" title="Permalink to this headline">¶</a></h2>
+<p>Para calcular la irradiancia de las dos primeras ondas reflejadas por la lámina tenemos que observar que procesos de reflexión y transmisión sufren dichas ondas hasta que convergen en el plano de observación.</p>
+<center>
+<img src="laminaRefleInten.png" height=200px style="max-width:60%">
+</center>
+<p>La primera onda reflejada (cuya irradiancia hemos denominado <span class="math notranslate nohighlight">\(I_1\)</span>), sufre únicamente una reflexión en la primera cara de la lámina. Tendremos por lo tanto que,</p>
+<div class="math notranslate nohighlight">
+\[I_1 = R_1 I_0\]</div>
+<p>siendo <span class="math notranslate nohighlight">\(R_1\)</span> la reflectancia en esa primera cara e <span class="math notranslate nohighlight">\(I_0\)</span> la irradiancia del haz incidente en la lámina. Por otro lado, la reflectancia la podemos escribir en función del coeficiente de reflexión <span class="math notranslate nohighlight">\(r_1\)</span> como <span class="math notranslate nohighlight">\(R_1 = | r_1|^2\)</span> donde la expresión del coeficiente de reflexión depende tanto de la polarización del haz incidente (paralela al plano de incidencia o perpendicular al mismo), así como del ángulo de incidencia y de los índices de refracción de la lámina y del medio exterior. Por ejemplo, para el caso en el que la polarización del haz incidente sea perpendicular al plano de incidencia, y el medio desde el que incide la onda sea aire, el coeficiente de reflexión <span class="math notranslate nohighlight">\(r_1\)</span> toma la siguiente expresión:</p>
+<div class="math notranslate nohighlight">
+\[
+r_1 = \frac{\cos(\theta_i) - n \cos(\theta_t)}{\cos(\theta_i) + n \cos(\theta_t)}
+\]</div>
+<p>Por otro lado, la segunda onda reflejada (cuya irradiancia hemos denominado <span class="math notranslate nohighlight">\(I_2\)</span>) sufre una transmisión en la primera cara de la lámina, una reflexión en la segunda cara, y finalmente otra transmisión, de nuevo en la primera cara, desde el interior de la lámina hacia el exterior. Por tanto, podemos expresar <span class="math notranslate nohighlight">\(I_2\)</span>  en función de <span class="math notranslate nohighlight">\(I_0\)</span> mediante los coeficientes de transmisión y reflexión del siguiente modo:</p>
+<div class="math notranslate nohighlight">
+\[
+I_2 = (t_1 r_2 t_1')^2 I_0
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(t_1\)</span> es el coeficiente transmisión de la primera cara cuando la luz incide desde el exterior, <span class="math notranslate nohighlight">\(r_2\)</span> el coeficiente de reflexión en la segunda cara y <span class="math notranslate nohighlight">\(t_1'\)</span> es el coeficiente de transmisión en la primera cara cuando la luz incide desde el interior de la lámina. Estos coeficientes, al igual que en el caso de <span class="math notranslate nohighlight">\(r_1\)</span>, dependen de la polarización del haz incidente, del ángulo de incidencia y de los índices de los medios que separan las interfases de la lámina. Para el caso particular en que la polarización del haz sea perpendicular al plano de incidencia y el medio que rodea la lámina sea aire, tenemos que,</p>
+<div class="math notranslate nohighlight">
+\[
+t_1= \frac{2 \cos(\theta_i)}{\cos(\theta_i) + n \cos(\theta_t)}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+r_2= \frac{n \cos(\theta_t) - \cos(\theta_i)}{\cos(\theta_i) + n \cos(\theta_t)}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+t_1'= \frac{2 n \cos(\theta_t)}{\cos(\theta_i) + n \cos(\theta_t)}
+\]</div>
+<p>Como vemos, la irradiancia de la onda que se refleja en la segunda cara será, en general, significativamente menor que la irradiancia de la onda reflejada en la primera cara (<span class="math notranslate nohighlight">\(I_2 &lt; I_1\)</span>). Esa diferencia de irradiancias se traducirá en que el contraste del patrón de interferencias se reducirá y no alcanzará el valor de 1, tomando los mínimos de interferencia valores mayores que 0.</p>
+<p>Irradiancia de las ondas que interfieren en transmision</p>
+<p>Como se aprecia en la gráfica, las ondas que interfieren en transmisión sufren más reflexiones o transmisiones en las caras de la lámina que las que interfieren en reflexión. Esto va a dar lugar a que la irradiancia total sea menor en este caso. Aparte de ello, las irradiancias tampoco serán iguales por lo que el contraste del digrama interferencial también en este caso será menor que 1. Más concretamente, y observando la figura anterior, podemos calcular las irradiancias <span class="math notranslate nohighlight">\(I_1\)</span> e <span class="math notranslate nohighlight">\(I_2\)</span> de las ondas que interfieren según las siguientes expresiones:</p>
+<div class="math notranslate nohighlight">
+\[
+I_1 = (t_1 t_2') ^2 I_0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+I_2 = (t_1 r_2 r_1 t_2')^2 I_0
+\]</div>
+</div>
+<div class="section" id="desfase-entre-las-ondas-que-interfieren">
+<h2><span class="section-number">6.2. </span>Desfase entre las ondas que interfieren<a class="headerlink" href="#desfase-entre-las-ondas-que-interfieren" title="Permalink to this headline">¶</a></h2>
+<center>
+<img src="laminaplanoparalela2.png" height=200px style="max-width:60%">
+</center>
+<p>El desfase entre las ondas que interfieren <strong>en reflexión</strong>  vendrá dado por dos contribuciones. La primera de ellas es, simplemente, el desfase debido a la diferencia de camino recorrida por cada una de las dos ondas. Efectivamente, si miramos el diagrama anterior, vemos que la segunda onda, al penetrar en la lámina y reflejarse en la segunda cara, recorre más camino óptico que la primera hasta llegar al punto en el que se solapan, que puede ser, como hemos comentado anteriormente, el plano focal de una lente convergente. Esta diferencia de camino la podemos expresar del siguiente modo.</p>
+<div class="math notranslate nohighlight">
+\[\Delta = n(\overline{AB} + \overline{BC}) - \overline{AD}\]</div>
+<p>donde se ha considerado que el índice del medio exterior es 1. Ahora estos segmentos los queremos escribir en función del grosor de la lámina <span class="math notranslate nohighlight">\(h\)</span> o el ángulo de incidencia <span class="math notranslate nohighlight">\(\theta_i\)</span>, que son parámetros que podemos controlar en un supuesto experimento.  Para ello, y con algo de trigonometría, podemos darnos cuenta de que,</p>
+<div class="math notranslate nohighlight">
+\[\overline{AB} = \overline{BC} = \frac{h}{\cos(\theta_t)}\]</div>
+<div class="math notranslate nohighlight">
+\[\overline{AD} = \overline{AC} \sin(\theta_i) = 2 h \tan(\theta_t) \sin(\theta_i) \]</div>
+<p>Es decir, <span class="math notranslate nohighlight">\(\Delta = 2 n h / \cos(\theta_t) + 2 h \tan(\theta_t) \sin(\theta_i)\)</span>. Ahora utilizando la ley de Snell, <span class="math notranslate nohighlight">\(\sin(\theta_i) = n \sin(\theta_t)\)</span>, y las relaciones entre las funciones trigonométricas, podemos transformar esta expresión en,</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\Delta = 2 n h \cos(\theta_t)$$.\\Por tanto, el desfase debido a esta diferencia de camino, que llamaremos *desfase geométrico* y denotaremos como $\delta_G$ , será \\$$\delta_G = k \Delta =  \frac{2 \pi}{\lambda} 2 n h \cos(\theta_t)\end{aligned}\end{align} \]</div>
+<p>Como hemos comentado anteriormente, este no es el único desfase que tenemos que considerar en la expresión de la irradiancia total. El motivo es que los coeficientes de reflexión en la primera y segunda cara, que afectan respectivamente a la onda 1 y a la onda 2, pueden ser de distinto signo. Efectivamente, si consideramos la expresión general del coeficiente de reflexión para, por ejemplo, un haz polarizado linealmente perpendicular al plano de incidencia tenemos,</p>
+<div class="math notranslate nohighlight">
+\[r = \frac{n_i \cos(\theta_i) - n_t \cos(\theta_t)}{n_i \cos(\theta_i) + n_t \cos(\theta_t)}\]</div>
+<p>en donde <span class="math notranslate nohighlight">\(n_i/n_t\)</span> son los índices de los medios desde el que incide la luz y al que pasa, respectivamente. Y <span class="math notranslate nohighlight">\(\theta_i/\theta_t\)</span> son los ángulos de incidencia y transmisión en la interfase respectivamente. Como vemos, en función de los valores de los índices, el signo del coeficiente de reflexión puede ser positivo (si <span class="math notranslate nohighlight">\(n_i &gt; n_t\)</span>) o negativo (si <span class="math notranslate nohighlight">\(n_i &lt; n_t\)</span>). Este cambio de signo puede cambiar completamente el carácter de la interferencia, porque si afecta sólo a una de las ondas que interfieren, tendríamos que los campos tenderían a cancelarse en vez de a reforzarse cuando únicamente el desfase geométrico daría lugar a máximos. Es decir, de interferencia constructiva, pasaríamos a interferencia destructiva!.</p>
+<p>Afortunadamente, podemos incluir este cambio de signo de una forma sencilla en nuestro esquema de trabajo si nos damos cuenta de un signo negativo es equivalente a una fase adicional en la onda de <span class="math notranslate nohighlight">\(\pi\)</span> rad, ya que <span class="math notranslate nohighlight">\(e^{i\pi} = -1\)</span>. Por tanto, añadiremos al desfase total que sufren las dos ondas un nuevo desfase que denominaremos <em>desfase debido a las reflexiones</em> y denotaremos como <span class="math notranslate nohighlight">\(\delta_R\)</span>. Este desfase será igual a <span class="math notranslate nohighlight">\(\pi\)</span> rad cuando el signo de los dos coeficientes de reflexión no sea el mismo, y 0 rad, cuando sí que lo sea. Es decir,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \delta_R = \left\{ 
+  \begin{array}{ c l }
+    \pi \;\; \textrm{rad} &amp; \quad \textrm{si } n_i &gt; n \;\&amp; \;n &lt;n_s \;\; \textrm{ó}\;\;  n_i &lt;n \;\&amp; \; n &gt;n_s\\
+    0  \;\;   \textrm{rad}        &amp; \quad \textrm{en el resto de casos}
+  \end{array}
+\right.\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(n_i\)</span> es el índice del medio desde el que incide la luz, <span class="math notranslate nohighlight">\(n\)</span> es el índice de la lámina y <span class="math notranslate nohighlight">\(n_s\)</span> el índice del medio al que se transmite la luz después de la lámina. Podemos ver, por tanto, que en el caso anteriormente considerado de una lámina rodeada de aire, tendríamos que <span class="math notranslate nohighlight">\(\delta_R = \pi\)</span> rad.</p>
+<p>Finalmente, el desfase total de las dos ondas que interfieren en reflexión será <span class="math notranslate nohighlight">\(\delta_{tot} = \delta_G + \delta_R\)</span>.</p>
+<p>Para el caso de las ondas que interfieren en transmisión, podemos observar que el desfase debido a la diferencia de camino es el mismo que el calculado anteriormente, mientras que el desfase debido a las reflexiones es justo el opuesto que el caso anterior, al tener la segunda onda dos reflexiones internas, una en la segunda cara, y otra en la primera. La consecuencia es que en las condiciones en las que encontremos máximos en reflexión, encontraremos mínimos en la interferencia de las ondas que se transmiten, y al revés. Evidentemente, esto es algo esperable, ya que si la lámina no absorbe nada de energía, si la irradiacia es máxima en reflexión, ha de ser mínima en transmisión ya que la suma de ambas ha de ser igual a la irradiancia del haz incidente.</p>
+<div class="section" id="patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente">
+<h3><span class="section-number">6.2.1. </span>Patron de franjas observado en el plano focal de una lente convergente<a class="headerlink" href="#patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente" title="Permalink to this headline">¶</a></h3>
+<p>Anteriormente hemos comentado que las ondas reflejadas en ambas caras salen propagándose en direcciones paralelas pudiendo observar el patrón de interferencias en el plano focal de una lente convergente. ¿Pero cómo es este patrón?. Podemos deducir su forma observando las figuras anteriores y añadiendo una lente que recogería los haces reflejados en la lámina y que proceden, inicialmente, de la fuente S. Si esta fuente no es puntual, a distintos puntos de la superficie llegarán haces procedentes de distintos puntos de la fuente, cada uno de ellos con un ángulo de incidencia distinto, iluminando de este modo toda la superficie de la lámina. En términos de rayos (que nos marcan las direcciones de propagación de los haces), podemos decir que rayos que incidan con el mismo ángulo de incidencia en diferentes puntos darán lugar a dos rayos reflejados que llegarán a la lente subtendiendo el mismo ángulo, lo que finalmente los hará converger a la misma distancia del eje de la lente. Al incidir con el mismo ángulo de incidencia los pares de haces reflejados en cada punto tendrán el mismo desfase, y el carácter de la interferencia (constructiva o destructiva) será el mismo.</p>
+<p>Tenemos por tanto, que los rayos que incidan en diferentes puntos de la superficie de la lámina con un ángulo de incidencia que dé lugar a un máximo de interferencia distribuirán este máximo en una circunferencia con centro el eje de la lente, es decir, el patrón de interferencias consistirá en circunferencias concéntricas de máximos y mínimos. Si observamos una región pequeña de la lámina o si la fuente es muy pequeña, veremos arcos de circunferencia únicamente.</p>
+<p>MEJORAR! FIGURA??</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># MODIFICAR ESTE VALOR PARA VER COMO CAMBIA LA FIGURA</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c1">####################</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">Lambda</span> <span class="o">=</span><span class="mi">600</span> <span class="c1">#(nm)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">1.4</span> <span class="c1"># índice de refracción de la lámina </span>
+<span class="n">e</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">Lambda</span><span class="o">/</span><span class="n">n</span> <span class="c1"># escogemos el espesor de la lámina (en nm)</span>
+<span class="n">focal</span> <span class="o">=</span><span class="mi">30</span> <span class="c1"># focal de la lente (mm)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">400</span><span class="p">)</span>
+<span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">]</span> <span class="o">=</span> <span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+<span class="n">rho</span> <span class="o">=</span>  <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">X</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#(mm)</span>
+<span class="n">theta_i</span> <span class="o">=</span> <span class="n">arctan2</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span><span class="n">focal</span><span class="p">)</span>
+<span class="n">theta_t</span> <span class="o">=</span> <span class="n">arcsin</span><span class="p">((</span><span class="mf">1.0</span><span class="o">/</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">theta_i</span><span class="p">))</span>
+
+<span class="n">deltaG</span> <span class="o">=</span> <span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span><span class="p">)</span><span class="o">*</span><span class="n">n</span><span class="o">*</span><span class="n">e</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_t</span><span class="p">)</span>
+<span class="n">deltaR</span> <span class="o">=</span> <span class="n">pi</span>
+
+<span class="n">r1</span> <span class="o">=</span> <span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)</span> <span class="o">-</span> <span class="n">n</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_t</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)</span><span class="o">+</span><span class="n">n</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_t</span><span class="p">))</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)</span><span class="o">+</span><span class="n">n</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_t</span><span class="p">))</span>
+<span class="n">t1p</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_t</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)</span><span class="o">+</span><span class="n">n</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_t</span><span class="p">))</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_t</span><span class="p">)</span> <span class="o">-</span> <span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)</span><span class="o">+</span><span class="n">n</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_t</span><span class="p">))</span>
+
+<span class="c1">#i0=1;</span>
+<span class="n">i0</span><span class="o">=</span><span class="mi">1</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)</span>
+<span class="n">i1</span><span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)</span><span class="o">*</span><span class="n">i0</span><span class="o">*</span><span class="n">r1</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">i2</span> <span class="o">=</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_t</span><span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)</span><span class="o">*</span><span class="n">i0</span><span class="o">*</span><span class="p">(</span><span class="n">r2</span><span class="o">*</span><span class="n">t1</span><span class="o">*</span><span class="n">t1p</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">I_t</span> <span class="o">=</span> <span class="n">i1</span> <span class="o">+</span><span class="n">i2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">i1</span><span class="o">*</span><span class="n">i2</span><span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">deltaG</span> <span class="o">+</span> <span class="n">deltaR</span><span class="p">)</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pcolormesh</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">I_t</span><span class="p">,</span><span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="o">.</span><span class="n">copper</span><span class="p">,</span><span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">colorbar</span><span class="p">()</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">I_t</span><span class="p">[:,</span><span class="n">I_t</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">])</span>
+<span class="c1">## algo está mal porque en el centro debería ser un mínimo si no me equivoco..</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f5e4bcaa4d0&gt;]
+</pre></div>
+</div>
+<img alt="../_images/Laminas_planoparalelas_4_1.png" src="../_images/Laminas_planoparalelas_4_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="condicion-de-maximo-y-minimo-franjas-de-igual-inclinacion">
+<h3><span class="section-number">6.2.2. </span>Condición de máximo y mínimo. Franjas de igual inclinación<a class="headerlink" href="#condicion-de-maximo-y-minimo-franjas-de-igual-inclinacion" title="Permalink to this headline">¶</a></h3>
+<p>La condición para tener máximos de interferencia es, al igual que en otros casos, que el desfase total sea igual  a <span class="math notranslate nohighlight">\(2 m \pi\)</span> rad. Dependiendo de la relación entre los índices de la lámina, el medio desde el que incide la luz, y el medio al que se transmite tras la lámina, el desfase debido a las reflexiones tomará el valor 0 ó <span class="math notranslate nohighlight">\(\pi\)</span> rad, cambiando por tanto la condición de máximos. Si nos centramos en uno de los dos casos, por ejemplo cuando <span class="math notranslate nohighlight">\(\delta_R = \pi\)</span> rad, tendríamos como condición de máximo,</p>
+<div class="math notranslate nohighlight">
+\[\delta_G + \delta_R = 2 m \pi \Rightarrow   \frac{4 \pi}{\lambda} n h \cos(\theta_t) +  \pi = 2 m \pi \Rightarrow \frac{n h \cos(\theta_t)}{\lambda} = \frac{(2 m -1)}{4}\]</div>
+<p>Si realizamos una operación similar para el caso de los mínimos de interferencia, tendríamos (también para el caso particular en el que <span class="math notranslate nohighlight">\(\delta_R = \pi\)</span> rad),</p>
+<div class="math notranslate nohighlight">
+\[\delta_G + \delta_R = (2 m +1)\pi \Rightarrow   \frac{4 \pi}{\lambda} n h \cos(\theta_t) +  \pi = (2 m +1)\pi \Rightarrow \frac{n h \cos(\theta_t)}{\lambda} = \frac{m}{2}\]</div>
+<p>Vemos por tanto que para una determinada longitud de onda y, dada una lámina con un espesor definido, el único parámetro libre que nos queda en las anteriores expresiones, y que por tanto define la posición de los máximos y mínimos en el plano focal de la lente convergente es el ángulo de transmisión en la primera cara <span class="math notranslate nohighlight">\(\theta_t\)</span>. Este ángulo viene fijado a través de la ley de Snell por el ángulo de incidencia y la relación de los índices de la lámina y del medio desde el que incide la luz. De ahí que a este tipo de franjas observadas gracias a una lámina planoparalela se les denomine <strong>franjas de igual inclinación</strong>.</p>
+</div>
+</div>
+<div class="section" id="video-leccion-virtual">
+<h2><span class="section-number">6.3. </span>Vídeo lección virtual<a class="headerlink" href="#video-leccion-virtual" title="Permalink to this headline">¶</a></h2>
+<p>El siguiente vídeo muestra una explicación sobre las interferencias en láminas de caras planoparalelas y de las franjas de igual inclinación que aparecen como resultado de la interferencias de los haces reflejados en ambas caras de la lámina.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;LibroVirtual_LáminaPlanoParalela.mp4&quot;</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
+<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><video src="LibroVirtual_LáminaPlanoParalela.mp4" controls  >
+      Your browser does not support the <code>video</code> element.
+    </video></div></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Laminas_planoparalelas"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">5. </span>Biprisma de Fresnel</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Tratamientos Antirreflejantes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Eduardo Cabrera Granado y Oscar Gomez Calderon<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
