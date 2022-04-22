@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>10. Interferometro de Michelson &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    <title>11. Interferómetro de Michelson &#8212; Optica Fisica. Interferencias y Difraccion</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -53,8 +55,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="11. Tomografía de coherencia óptica. Puntos básicos." href="OCT_2020.html" />
-    <link rel="prev" title="9. Anillos de Newton" href="../AnillosDeNewton_widgets/AnillosDeNewton.html" />
+    <link rel="next" title="12. Tomografía de coherencia óptica." href="OCT_2020.html" />
+    <link rel="prev" title="10. Anillos de Newton" href="../AnillosDeNewton_widgets/AnillosDeNewton.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -121,7 +123,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
-   4. Experimento de Young con trenes de ondas
+   4. Experimento de Young con luz policromática
   </a>
  </li>
  <li class="toctree-l1">
@@ -130,43 +132,48 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../Laminas_planoparalelas/Laminas_planoparalelas.html">
+   6. Interferencia en láminas planoparalelas. Franjas de igual inclinación
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
-   6. Tratamientos Antirreflejantes
+   7. Tratamientos Antirreflejantes
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
-   7. Interferencia por haces múltiples. Filtros interferenciales.
+   8. Interferencia por haces múltiples. Filtros interferenciales.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
-   8. Franjas de igual espesor
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor-1.html">
+   9. Franjas de igual espesor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
-   9. Anillos de Newton
+   10. Anillos de Newton
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   10. Interferometro de Michelson
+   11. Interferómetro de Michelson
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="OCT_2020.html">
-   11. Tomografía de coherencia óptica. Puntos básicos.
+   12. Tomografía de coherencia óptica.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
-   12. Difracción de Fraunhofer
+   13. Difracción de Fraunhofer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
-   13. Introduccion
+   14. Poder de resolución de un sistema óptico
   </a>
  </li>
  <li class="toctree-l1">
@@ -181,7 +188,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
-   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+   18. Teoría de Abbe de la formación de la imagen con iluminación coherente
   </a>
  </li>
 </ul>
@@ -331,35 +338,40 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#de-que-se-compone">
-   10.1. De que se compone?
+  <a class="reference internal nav-link" href="#dispositivo">
+   11.1. Dispositivo
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#importancia-historica">
-   10.2. Importancia histórica
+   11.2. Importancia histórica
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#relacion-con-franjas-de-igual-espesor-y-franjas-de-igual-inclinacion-patrones-que-se-observan">
-   10.3. Relación con franjas de igual espesor y franjas de igual inclinación. Patrones que se observan
+   11.3. Relación con franjas de igual espesor y franjas de igual inclinación. Patrones que se observan
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#aplicaciones">
-   10.4. Aplicaciones
+   11.4. Aplicaciones
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#medida-de-la-longitud-de-onda">
-     10.4.1. Medida de la longitud de onda
+     11.4.1. Medida de la longitud de onda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion">
+     11.4.2. Medida de la longitud de coherencia de la radiación
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion">
-   10.5. Medida de la longitud de coherencia de la radiacion
+  <a class="reference internal nav-link" href="#video-leccion-virtual">
+   11.5. Vídeo lección virtual
   </a>
  </li>
 </ul>
@@ -372,7 +384,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Interferometro de Michelson</h1>
+                <h1>Interferómetro de Michelson</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -383,35 +395,40 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#de-que-se-compone">
-   10.1. De que se compone?
+  <a class="reference internal nav-link" href="#dispositivo">
+   11.1. Dispositivo
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#importancia-historica">
-   10.2. Importancia histórica
+   11.2. Importancia histórica
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#relacion-con-franjas-de-igual-espesor-y-franjas-de-igual-inclinacion-patrones-que-se-observan">
-   10.3. Relación con franjas de igual espesor y franjas de igual inclinación. Patrones que se observan
+   11.3. Relación con franjas de igual espesor y franjas de igual inclinación. Patrones que se observan
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#aplicaciones">
-   10.4. Aplicaciones
+   11.4. Aplicaciones
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#medida-de-la-longitud-de-onda">
-     10.4.1. Medida de la longitud de onda
+     11.4.1. Medida de la longitud de onda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion">
+     11.4.2. Medida de la longitud de coherencia de la radiación
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion">
-   10.5. Medida de la longitud de coherencia de la radiacion
+  <a class="reference internal nav-link" href="#video-leccion-virtual">
+   11.5. Vídeo lección virtual
   </a>
  </li>
 </ul>
@@ -424,24 +441,24 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="interferometro-de-michelson">
-<h1><span class="section-number">10. </span>Interferometro de Michelson<a class="headerlink" href="#interferometro-de-michelson" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="de-que-se-compone">
-<h2><span class="section-number">10.1. </span>De que se compone?<a class="headerlink" href="#de-que-se-compone" title="Permalink to this headline">¶</a></h2>
+<h1><span class="section-number">11. </span>Interferómetro de Michelson<a class="headerlink" href="#interferometro-de-michelson" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dispositivo">
+<h2><span class="section-number">11.1. </span>Dispositivo<a class="headerlink" href="#dispositivo" title="Permalink to this headline">¶</a></h2>
 <p>El esquema de un interferómetro de Michelson se ha dibujado a continuación.</p>
 <center>
 <img src=michelsonfiguretikz.jpg width=400px></img>
 </center>
 <p>Una fuente que puede ser extensa ilumina un divisor de haz, que puede ser una lamina plano-paralela de un material dieléctrico, aunque normalmente se aplica un tratamiento a una de las caras para aumentar la reflectividad de dicha cara e igualar las irradiancias de los dos haces que separa y que van a interferir. Tanto el haz reflejado como el transmitido por el divisor se reflejan en sendos espejos <span class="math notranslate nohighlight">\(M_1\)</span> y <span class="math notranslate nohighlight">\(M_2\)</span>, volviendo de nuevo al divisor. Parte de estos haces se reflejan de nuevo, yendo a un detector o al plano focal de una lente convergente, donde se observa la interferencia.</p>
-<p>En esta descripción falta aun el papel que juega la lamina compensadora <span class="math notranslate nohighlight">\(LC\)</span>. La presencia de esta lamina facilita la observación de interferencias con luz no monocromática ya que permite compensar la diferencia de camino que introduce el divisor de haz. Para entender el por que de su presencia, nos hemos de fijar en el camino total que realizan los rayos dentro de la lamina que sirve como divisor de haz. En nuestro caso, el haz marcado en azul recorre 3 veces el grosor de la lamina antes de llegar al detector, mientras que el haz marcado en rojo, lo recorrería 1 vez sin la presencia de la lamina compensadora. El doble paso por esta permite igualar los caminos ópticos de ambos haces cuando la distancia de los espejos al divisor del haz son iguales.</p>
-<p>Generalmente uno de los espejos es movil, lo que permite cambiar una de estas distancias, variando la diferencia de camino entre los haces que llegan al detector y por tanto, el carácter de la interferencia.</p>
+<p>En esta descripción falta aun el papel que juega la lamina compensadora <span class="math notranslate nohighlight">\(LC\)</span>. La presencia de esta lamina facilita la observación de interferencias con luz no monocromática ya que permite compensar la diferencia de camino que introduce el divisor de haz. Para entender el por que de su presencia, nos hemos de fijar en el camino total que realizan los rayos dentro de la lamina que sirve como divisor de haz. En nuestro caso, el haz marcado en azul recorre 3 veces el grosor de la lamina antes de llegar al detector, mientras que el haz marcado en rojo, lo recorrería 1 vez sin la presencia de la lámina compensadora. El doble paso por esta lámina permite igualar los caminos ópticos de ambos haces cuando la distancia de los espejos al divisor del haz son iguales.</p>
+<p>Generalmente uno de los espejos es móvil, lo que permite cambiar una de estas distancias, variando la diferencia de camino entre los haces que llegan al detector y por tanto, el carácter de la interferencia.</p>
 </div>
 <div class="section" id="importancia-historica">
-<h2><span class="section-number">10.2. </span>Importancia histórica<a class="headerlink" href="#importancia-historica" title="Permalink to this headline">¶</a></h2>
-<p>El interferómetro de Michelson es conocido por ser un elemento crucial en el desarrollo de la Teoría de la Relatividad Especial de Einstein. En el siglo XIX se consideraba que la luz no se podía propagar por el vacío, sino que, al igual que una onda en una cuerda o el sonido, necesita un medio por el que propagarse. A este medio, que debía ofrecer muy poca resistencia al movimiento (pues los planteas se mueven a través suyo) pero a la vez debía ser muy rígido (porque la luz se propaga a muy alta velocidad). A este medio se le llamaba <em>éter</em>. <a class="reference external" href="https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment">El experimento de Michelson-Morley</a> permitió establecer que el éter no existía y ser uno de los primeros resultados experimentales que llevaron finalmente a la Teoría de la Relatividad Especial.</p>
+<h2><span class="section-number">11.2. </span>Importancia histórica<a class="headerlink" href="#importancia-historica" title="Permalink to this headline">¶</a></h2>
+<p>El interferómetro de Michelson es conocido por ser un elemento crucial en el desarrollo de la Teoría de la Relatividad Especial de Einstein. En el siglo XIX se consideraba que la luz no se podía propagar por el vacío, sino que, al igual que una onda en una cuerda o el sonido, necesita un medio por el que propagarse. Este medio debía ofrecer muy poca resistencia al movimiento (pues los planetas se mueven a través suyo) pero a la vez debía ser muy rígido (porque la luz se propaga a muy alta velocidad). A este medio se le llamaba <em>éter</em>. <a class="reference external" href="https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment">El experimento de Michelson-Morley</a> permitió establecer que el éter no existía y ser uno de los primeros resultados experimentales que llevaron finalmente a la Teoría de la Relatividad Especial.</p>
 </div>
 <div class="section" id="relacion-con-franjas-de-igual-espesor-y-franjas-de-igual-inclinacion-patrones-que-se-observan">
-<h2><span class="section-number">10.3. </span>Relación con franjas de igual espesor y franjas de igual inclinación. Patrones que se observan<a class="headerlink" href="#relacion-con-franjas-de-igual-espesor-y-franjas-de-igual-inclinacion-patrones-que-se-observan" title="Permalink to this headline">¶</a></h2>
-<p>Como se ha comentado anteriormente, la diferencia de camino <span class="math notranslate nohighlight">\(\Delta\)</span> entre los haces depende de las posiciones de los espejos con respecto al divisor de haz <span class="math notranslate nohighlight">\(DH\)</span>. Mas concretamente, y como se observa en la siguiente figura, si llamamos <span class="math notranslate nohighlight">\(d\)</span> a la diferencia de distancias entre los espejos y el divisor de haz (<span class="math notranslate nohighlight">\(\overline{DHM_1} - \overline{DHM_2}\)</span>), entonces, la diferencia de camino para los rayos dibujados es <span class="math notranslate nohighlight">\(\Delta = 2 d\)</span>, ya que debemos considerar tanto la ida como la vuelta desde los espejos <span class="math notranslate nohighlight">\(M_1\)</span> y <span class="math notranslate nohighlight">\(M_2\)</span>.</p>
+<h2><span class="section-number">11.3. </span>Relación con franjas de igual espesor y franjas de igual inclinación. Patrones que se observan<a class="headerlink" href="#relacion-con-franjas-de-igual-espesor-y-franjas-de-igual-inclinacion-patrones-que-se-observan" title="Permalink to this headline">¶</a></h2>
+<p>Como se ha comentado anteriormente, la diferencia de camino óptico <span class="math notranslate nohighlight">\(\Delta\)</span> entre los haces depende de las posiciones de los espejos con respecto al divisor de haz <span class="math notranslate nohighlight">\(DH\)</span>. Más concretamente, y como se observa en la siguiente figura, si la diferencia entre las dos distancias espejo-divisor de haz (<span class="math notranslate nohighlight">\(\overline{DH-M_1} - \overline{DH-M_2}\)</span>) la llamamos <span class="math notranslate nohighlight">\(d\)</span>, entonces, la diferencia de camino óptico para los rayos dibujados es <span class="math notranslate nohighlight">\(\Delta = 2 d\)</span>, ya que debemos considerar tanto la ida como la vuelta desde los espejos <span class="math notranslate nohighlight">\(M_1\)</span> y <span class="math notranslate nohighlight">\(M_2\)</span>.</p>
 <center>
 <img src=michelsonfiguretikz2.jpg width=400px></img>
 </center>
@@ -457,9 +474,9 @@
 <img src = franjasmichelson.png width=300></img>
 </center></div>
 <div class="section" id="aplicaciones">
-<h2><span class="section-number">10.4. </span>Aplicaciones<a class="headerlink" href="#aplicaciones" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">11.4. </span>Aplicaciones<a class="headerlink" href="#aplicaciones" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="medida-de-la-longitud-de-onda">
-<h3><span class="section-number">10.4.1. </span>Medida de la longitud de onda<a class="headerlink" href="#medida-de-la-longitud-de-onda" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">11.4.1. </span>Medida de la longitud de onda<a class="headerlink" href="#medida-de-la-longitud-de-onda" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
@@ -474,30 +491,48 @@
 </div>
 <div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/j-u3IEgcTiQ?start=33" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
 </div>
-<p>Como se ha indicado anteriormente, la diferencia de camino en el punto central del patron de interferencias es <span class="math notranslate nohighlight">\(\Delta = 2 d\)</span>. Eso implica que el desfase entre los haces es <span class="math notranslate nohighlight">\(\delta = k \Delta = \frac{4 \pi}{\lambda} d\)</span>. Si observamos las distancias <span class="math notranslate nohighlight">\(d\)</span> de uno de los espejos al divisor de haz que nos dan maximos y minimos, tendremos,</p>
+<p>Como se ha indicado anteriormente, la diferencia de camino en el punto central del patron de interferencias es <span class="math notranslate nohighlight">\(\Delta = 2 d\)</span>. Eso implica que el desfase entre los haces es <span class="math notranslate nohighlight">\(\delta = k \Delta = \frac{2 \pi}{\lambda} 2 d\)</span>. La distancia <span class="math notranslate nohighlight">\(d\)</span> necesaria para obtener máximos y mínimos de luz será:</p>
 <ul class="simple">
-<li><p>Maximos: <span class="math notranslate nohighlight">\(\delta = 2 m \pi\)</span> rad <span class="math notranslate nohighlight">\(\Rightarrow d = m \lambda /2\)</span></p></li>
-<li><p>Minimos <span class="math notranslate nohighlight">\(\delta = (2 m +1) \pi\)</span> rad <span class="math notranslate nohighlight">\(\Rightarrow d = (2 m +1) \lambda /4\)</span></p></li>
+<li><p>Máximos: <span class="math notranslate nohighlight">\(\delta = 2 m \pi\)</span> rad <span class="math notranslate nohighlight">\(\Rightarrow d = m \lambda /2\)</span></p></li>
+<li><p>Mínimos <span class="math notranslate nohighlight">\(\delta = (2 m +1) \pi\)</span> rad <span class="math notranslate nohighlight">\(\Rightarrow d = (2 m +1) \lambda /4\)</span></p></li>
 </ul>
-<p>En ambos casos, lo que debemos desplazar el espejo para pasar de un maximo/minimo al siguiente es <span class="math notranslate nohighlight">\(\Delta d = \lambda/2\)</span>. Por ello, una forma de medir la longitud de onda de la radiacion consiste en observar por cuantos minimos/maximos pasamos en el centro del patron de interferencias al desplazar un espejo una cierta cantidad <span class="math notranslate nohighlight">\(L\)</span>. Si llamamos a este numero de maximos/minimos <span class="math notranslate nohighlight">\(N\)</span>, de las relaciones anteriores se obtiene que,</p>
+<p>En ambos casos, lo que debemos desplazar el espejo para pasar de un máximo/mínimo al siguiente es <span class="math notranslate nohighlight">\(\lambda/2\)</span>  ya que esto aumenta el la doferencia de camino en <span class="math notranslate nohighlight">\(\lambda\)</span> (ida y vuelta). Por ello, una forma de medir la longitud de onda de la radiación consiste en observar por cuantos mínimos/máximos pasamos en el centro del patrón de interferencias al desplazar un espejo una cierta cantidad <span class="math notranslate nohighlight">\(L\)</span>. Si llamamos a este número de máximos/mínimos <span class="math notranslate nohighlight">\(N\)</span>, de las relaciones anteriores se obtiene que,</p>
 <div class="math notranslate nohighlight">
 \[L = N \frac{\lambda}{2} \Rightarrow \lambda = \frac{2 L}{N}\]</div>
 <p>como aparece en el video anterior.</p>
 </div>
-</div>
 <div class="section" id="medida-de-la-longitud-de-coherencia-de-la-radiacion">
-<h2><span class="section-number">10.5. </span>Medida de la longitud de coherencia de la radiacion<a class="headerlink" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion" title="Permalink to this headline">¶</a></h2>
-<p>Quizas la aplicacion mas importante (dentro de la carrera de Optica y Optometria) del interferometro de Michelson es la OCT (Tomografia de Coherencia Optica), la cual se basa en el funcionamiento de un interferometro de Michelson bajo iluminacion por una fuente de muy baja longitud de coherencia (y por tanto, con una gran anchura espectral). Antes de ver la OCT, vamos a analizar lo que ocurre cuando iluminamos este interferometro con radiacion no monocromatica, y si podemos utilizarlo para medir, tanto la longitud de coherencia de la radiacion como la anchura espectral.</p>
-<p>En todo este apartado la presencia de la lamina compensadora resulta crucial, pues sin ella, la diferencia de camino entre los haces que van a los dos espejos seria desde el principio demasiado grande para observar interferencias (mayor que la longitud de coherencia de la radiacion).</p>
+<h3><span class="section-number">11.4.2. </span>Medida de la longitud de coherencia de la radiación<a class="headerlink" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion" title="Permalink to this headline">¶</a></h3>
+<p>Quizás la aplicación más importante (dentro del campo de la Óptica y la Optometría) del interferómetro de Michelson es la OCT (Tomografia de Coherencia Óptica), la cual se basa en el funcionamiento de un interferómetro de Michelson bajo iluminación por una fuente de muy baja longitud de coherencia (y por tanto, con una gran anchura espectral). Antes de ver la OCT, vamos a analizar lo que ocurre cuando iluminamos este interferómetro con radiación no monocromática, y si podemos utilizarlo para medir, tanto la longitud de coherencia de la radiación como la anchura espectral.</p>
+<p>En todo este apartado la presencia de la lámina compensadora resulta crucial, pues sin ella, la diferencia de camino entre los haces que van a los dos espejos seria desde el principio demasiado grande para observar interferencias (mayor que la longitud de coherencia de la radiación).</p>
 <center>
 <img src=michelsonfiguretikzlc.jpg width=400px></img>
 </center>
-<p>En cualquier caso, si la longitud de coherencia es finita, habra una distancia del espejo movil que provocara que <span class="math notranslate nohighlight">\(\Delta = 2 d &gt; l_c\)</span> a partir de la cual no veremos interferencia. Por tanto, anotando la distancia <span class="math notranslate nohighlight">\(D_{max}\)</span> al divisor del haz del espejo movil a partir de la cual ya no se observan interferencias, y sabiendo la distancia <span class="math notranslate nohighlight">\(D_0\)</span> del espejo fijo, tendremos que,</p>
+<p>En cualquier caso, si la longitud de coherencia es finita, habrá una distancia del espejo móvil que provocará que <span class="math notranslate nohighlight">\(\Delta = 2 d &gt; l_c\)</span> a partir de la cual no veremos interferencia. Por tanto, anotando la distancia <span class="math notranslate nohighlight">\(D_{max}\)</span> al divisor del haz del espejo móvil a partir de la cual ya no se observan interferencias, y sabiendo la distancia <span class="math notranslate nohighlight">\(D_0\)</span> del espejo fijo, tendremos que,</p>
 <div class="math notranslate nohighlight">
 \[d_{max} = D_{max} - D_0\]</div>
 <div class="math notranslate nohighlight">
 \[l_c = d_{max}/2\]</div>
-<p>y sabiendo <span class="math notranslate nohighlight">\(l_c\)</span>, sabemos la anchura espectral <span class="math notranslate nohighlight">\(\Delta \lambda = \frac{\lambda_0^2}{l_c}\)</span>.</p>
+<p>y sabiendo <span class="math notranslate nohighlight">\(l_c\)</span>, tendremos la anchura espectral <span class="math notranslate nohighlight">\(\Delta \lambda = \frac{\lambda_0^2}{l_c}\)</span>.</p>
+</div>
+</div>
+<div class="section" id="video-leccion-virtual">
+<h2><span class="section-number">11.5. </span>Vídeo lección virtual<a class="headerlink" href="#video-leccion-virtual" title="Permalink to this headline">¶</a></h2>
+<p>El siguiente vídeo muestra una explicación del interferómetro de Michelson</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;LibroVirtual_InterferómetrodeMichelson.mp4&quot;</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
+<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><video src="LibroVirtual_InterferómetrodeMichelson.mp4" controls  >
+      Your browser does not support the <code>video</code> element.
+    </video></div></div>
+</div>
 </div>
 </div>
 
@@ -530,13 +565,13 @@
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">9. </span>Anillos de Newton</p>
+            <p class="prev-next-title"><span class="section-number">10. </span>Anillos de Newton</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="OCT_2020.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">11. </span>Tomografía de coherencia óptica. Puntos básicos.</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Tomografía de coherencia óptica.</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

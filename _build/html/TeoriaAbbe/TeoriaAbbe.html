@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>18. Teoría difraccional de la imagen. Teoría de Abbe de la formación de la imagen con iluminación coherente &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    <title>18. Teoría de Abbe de la formación de la imagen con iluminación coherente &#8212; Optica Fisica. Interferencias y Difraccion</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -121,7 +123,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
-   4. Experimento de Young con trenes de ondas
+   4. Experimento de Young con luz policromática
   </a>
  </li>
  <li class="toctree-l1">
@@ -130,43 +132,48 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../Laminas_planoparalelas/Laminas_planoparalelas.html">
+   6. Interferencia en láminas planoparalelas. Franjas de igual inclinación
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
-   6. Tratamientos Antirreflejantes
+   7. Tratamientos Antirreflejantes
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
-   7. Interferencia por haces múltiples. Filtros interferenciales.
+   8. Interferencia por haces múltiples. Filtros interferenciales.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
-   8. Franjas de igual espesor
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor-1.html">
+   9. Franjas de igual espesor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
-   9. Anillos de Newton
+   10. Anillos de Newton
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
-   10. Interferometro de Michelson
+   11. Interferómetro de Michelson
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
-   11. Tomografía de coherencia óptica. Puntos básicos.
+   12. Tomografía de coherencia óptica.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
-   12. Difracción de Fraunhofer
+   13. Difracción de Fraunhofer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
-   13. Introduccion
+   14. Poder de resolución de un sistema óptico
   </a>
  </li>
  <li class="toctree-l1">
@@ -181,7 +188,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+   18. Teoría de Abbe de la formación de la imagen con iluminación coherente
   </a>
  </li>
 </ul>
@@ -332,7 +339,7 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#metodo-de-contraste-de-fase">
-   18.1. Método de Contraste de Fase.
+   18.1. Método de contraste de fase.
   </a>
  </li>
 </ul>
@@ -345,7 +352,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente</h1>
+                <h1>Teoría de Abbe de la formación de la imagen con iluminación coherente</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -357,7 +364,7 @@
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#metodo-de-contraste-de-fase">
-   18.1. Método de Contraste de Fase.
+   18.1. Método de contraste de fase.
   </a>
  </li>
 </ul>
@@ -369,8 +376,8 @@
             
               <div>
                 
-  <div class="section" id="teoria-difraccional-de-la-imagen-teoria-de-abbe-de-la-formacion-de-la-imagen-con-iluminacion-coherente">
-<h1><span class="section-number">18. </span>Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente<a class="headerlink" href="#teoria-difraccional-de-la-imagen-teoria-de-abbe-de-la-formacion-de-la-imagen-con-iluminacion-coherente" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="teoria-de-abbe-de-la-formacion-de-la-imagen-con-iluminacion-coherente">
+<h1><span class="section-number">18. </span>Teoría de Abbe de la formación de la imagen con iluminación coherente<a class="headerlink" href="#teoria-de-abbe-de-la-formacion-de-la-imagen-con-iluminacion-coherente" title="Permalink to this headline">¶</a></h1>
 <p>Durante el estudio de los efectos de la difracción, hemos visto que la presencia de una apertura con una cierta anchura modifica la irradiancia observada en una pantalla situada detrás de dicha apertura. Cuanto menor sea su tamaño, el frente de ondas de la luz incidente se verá más cortado, y el haz se alejará más de la propagación rectilínea. Más concretamente, si tenemos una apertura circular, el tamaño de la mancha de Airy en la pantalla será mayor cuando menor sea la apertura.</p>
 <p>Si trasladamos estas observaciones a la formación de la imagen por parte de un sistema óptico, podemos suponer ya que los efectos de la difracción jugarán un papel importante. Dado que todo sistema óptico, ya sea por la presencia de diafragmas o bien por la propia montura de las lentes, limita la extensión del haz que entra en él, la imagen de un punto no será otro punto tal y como predice la Óptica Geométrica para sistemas perfectos, sino una mancha de cierta extensión.</p>
 <p>En el presente notebook vamos a describir la teoría de Abbe de la formación de la imagen cuando el objeto es iluminado con luz coherente. Este caso se da especialmente en la visualización de objetos pequeños a través de un microscopio. De acuerdo con Abbe, el objeto actúa como una red de difracción, por lo que tenemos que tener en cuenta la interferencia entre las ondas secundarias emitidas por cada punto del objeto.</p>
@@ -390,6 +397,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">pylab</span> inline
+
 <span class="c1"># No se tiene en cuenta la diferente energía que lleva cada orden de difracción</span>
 <span class="n">Lambda</span> <span class="o">=</span> <span class="mf">555e-6</span> <span class="c1"># longitud de onda en mm</span>
 <span class="n">k</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="n">Lambda</span>
@@ -412,8 +420,10 @@
     <span class="n">fases</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="n">Delta</span>
 <span class="n">Etotal</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">fases</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="n">E0</span>
 <span class="n">Itotal</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Etotal</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
-
+<span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">x_p</span><span class="p">,</span><span class="n">Itotal</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;X (mm)&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;I (u.a.)&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -421,7 +431,7 @@
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Populating the interactive namespace from numpy and matplotlib
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0296f74190&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;I (u.a.)&#39;)
 </pre></div>
 </div>
 <img alt="../_images/TeoriaAbbe_2_2.png" src="../_images/TeoriaAbbe_2_2.png" />
@@ -447,12 +457,15 @@
 <span class="n">indzero</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">m_vec</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">Etotal</span> <span class="o">=</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">fases</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">-</span><span class="n">exp</span><span class="p">(</span><span class="n">fases</span><span class="p">[</span><span class="n">indzero</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],:]))</span><span class="o">*</span><span class="n">E0</span>
 <span class="n">Itotal</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Etotal</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">x_p</span><span class="p">,</span><span class="n">Itotal</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;X (mm)&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;I (u.a.)&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f029658a210&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;I (u.a.)&#39;)
 </pre></div>
 </div>
 <img alt="../_images/TeoriaAbbe_4_1.png" src="../_images/TeoriaAbbe_4_1.png" />
@@ -460,7 +473,7 @@
 </div>
 <p>Vemos que obtenemos una imagen de forma cosenoidal, es decir, franjas de interferencia. Este resultado era previsible ya que según la disposición que hemos fijado, tenemos dos fuentes puntuales separadas por una cierta distancia, es decir, un caso análogo al experimento de Young. La separación entre máximos (interfranja) se puede observar que es igual a <span class="math notranslate nohighlight">\(0.01 \;\;\)</span> mm. Hay que hacer notar que esta separación no es el periodo espacial esperable de la imagen final. Este periodo vendrá modificado por el aumento lateral del sistema y vendrá dado por <span class="math notranslate nohighlight">\(d' = \beta d\)</span>, donde <span class="math notranslate nohighlight">\(\beta = s' / s\)</span>. En nuestro caso, eso nos da un periodo espacial de la imagen <span class="math notranslate nohighlight">\(d' = 0.02\;\;\)</span> mm</p>
 <div class="section" id="metodo-de-contraste-de-fase">
-<h2><span class="section-number">18.1. </span>Método de Contraste de Fase.<a class="headerlink" href="#metodo-de-contraste-de-fase" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">18.1. </span>Método de contraste de fase.<a class="headerlink" href="#metodo-de-contraste-de-fase" title="Permalink to this headline">¶</a></h2>
 <p>Aunque el ejemplo anterior nos permite adivinar que actuando en el plano focal de la lente podemos modificar la imagen final, no da una idea clara de las aplicaciones que este procedimiento podría tener. Para ejemplificar estas aplicaciones vamos a ver muy brevemente en qué consiste el método de contraste de fase. Este método de observación fue introducido por Zernike y por él le fue otorgado el premio Nobel en 1953.</p>
 <p>El método de contraste de fase nos permite visualizar objetos transparentes en donde por tanto no hay cambios en la amplitud de la onda transmitida a través de ellos, aunque sí lo hay en la fase de dicha onda, debido a la diferencia de camino óptico que ha de recorrer al atravesar el objeto. Objetos de este tipo se encuentran frecuentemente en biología o cristalografía y debido a que no cambian hay cambios en la amplitud de la onda, no es posible observarlos con técnicas de microscopía tradicionales.</p>
 <p>En lo que consiste este método es en actuar en el plano focal imagen del sistema óptico para transformar esos cambios de fase en el objeto en cambios en la irradiancia en el plano imagen. Más concretamente, situamos una lámina delgada en el plano focal imagen de modo que introducimos un desfase de <span class="math notranslate nohighlight">\(\pi /2\)</span> en el orden cero de difracción situado en el eje. Se puede demostrar que este cambio en la fase del orden cero, provoca que los cambios de fase introducidos por el objeto se transformen en cambios en la irradiancia en la imagen final, permitiendo visualizar de este modo el objeto.</p>

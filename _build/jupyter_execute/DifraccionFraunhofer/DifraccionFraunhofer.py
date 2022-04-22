@@ -57,7 +57,7 @@
 # 
 # **La expresión de $E_P$ escrita de la manera anterior no es nada más que la transformada de Fourier del campo en la apertura $E_0(\chi, \eta)$**. Si la apertura tiene una cierta transmitancia $t(\chi,\eta)$, el campo inmediatamente después será $t(\chi, \eta)E_0(\chi,\eta)$ y será este producto el que tengamos que introducir en la expresión de $E_P$.
 
-# ## Difracción de Fraunhofer. Apertura rectangular.
+# ## Abertura rectangular.
 
 # <center>
 # 
@@ -121,49 +121,7 @@ def difraccion(focal,a,Color):
     xlabel("y_P (mm)")
     ylabel(r'I$_0$')
     subplot(122)
-    pcolormesh(yp,yp,IP2,cmap = 'hot');
-print('Tanto la focal como la anchura de la rendija a se expresan en mm')
-
-
-# In[2]:
-
-
-from numpy import *
-from matplotlib.pyplot import *
-import ipywidgets as widgets
-get_ipython().run_line_magic('matplotlib', 'inline')
-style.use('bmh')
-
-
-
-yp = linspace(-20,20,500) # vector de posiciones en la pantalla en mm
-I0 = 1 # en mW/cm^2
-[X,Y] = meshgrid(yp,yp)
-
-def difraccion(focal,a,Color):
-    if(Color=='Azul (400nm)'):
-        Lambda = 4e-4
-        cmapchosen = 'Blues'
-    elif(Color=='Verde (550 nm)'):
-        Lambda = 5.5e-4
-        cmapchosen = 'Greens'
-    elif(Color=='Rojo (650 nm)'):
-        Lambda = 6.5e-4
-        cmapchosen = 'Reds'
-    
-    k = 2.0*pi/Lambda
-    beta = k*a*yp/(2.0*focal)
-    IP = I0*(sin(beta)/beta)**2
-
-    # En 2D
-    beta2 = k*a*X/(2.0*focal)
-    IP2 = I0*(sin(beta2)/beta2)**2
-    fig = figure(figsize=(16,5))
-    subplot(121)
-    plot(yp,IP)
-    xlabel("y_P (mm)")
-    ylabel(r'I$_0$')
-    subplot(122)
+    grid(False)
     pcolormesh(yp,yp,IP2,cmap = 'hot');
 print('Tanto la focal como la anchura de la rendija a se expresan en mm')
 
@@ -172,9 +130,9 @@ lambdawidgets.height = 30
 widgets.interact(difraccion,focal=(300,700,50),a=(0.01,0.2,0.03),Color=lambdawidgets)#widgets.fixed(5.5e-7))
 
 
-# ### Minimos de irradiancia
+# ### Mínimos de irradiancia
 # 
-# Lo que observamos en la figura superior es que aparece un maximo central muy pronunciado y unos maximos y minimos laterales, cuyo espaciado depende de la anchura de la rendija. Veamos cuales son las posiciones de los minimos de irradiancia.Atendiendo a la expresion de la irradiancia en la pantalla, los minimos ocurriran en las posiciones que hagan nulo el numerador, es decir, cuando,
+# Lo que observamos en la figura superior es que aparece un máximo central muy pronunciado y unos máximos y mínimos laterales, cuyo espaciado depende de la anchura de la rendija. Veamos cuales son las posiciones de los mínimos de irradiancia.Atendiendo a la expresion de la irradiancia en la pantalla, los mínimos ocurriran en las posiciones que hagan nulo el numerador, es decir, cuando,
 # 
 # $$\sin(k a y_P/2D) = 0 \Rightarrow \frac{k a y_P}{2D} = m \pi \;\; rad$$
 # 
@@ -182,7 +140,7 @@ widgets.interact(difraccion,focal=(300,700,50),a=(0.01,0.2,0.03),Color=lambdawid
 # 
 # $$y_P^{min} = \frac{m \lambda D}{a} $$
 # 
-# En esta expresion hay que analizar en detalle que ocurre cuando $m = 0$. En este caso, el seno efectivamente es nulo,pero tambien lo es el denominador de la expresion de $I_P$, por lo que tenemos una indeterminacion. Si la resolvemos, observamos que la irradiancia en ese punto no es nula (minima) sino maxima. Es mas, es el maximo central mas alto de todos. Por tanto, las posiciones de los minimos hay que encontrarlas para $m = \pm 1, \pm 2, \pm 3 \ldots$.
+# En esta expresion hay que analizar en detalle que ocurre cuando $m = 0$. En este caso, el seno efectivamente es nulo,pero tambien lo es el denominador de la expresion de $I_P$, por lo que tenemos una indeterminacion. Si la resolvemos, observamos que la irradiancia en ese punto no es nula (minima) sino maxima. Es mas, es el máximo central mas alto de todos. Por tanto, las posiciones de los mínimos hay que encontrarlas para $m = \pm 1, \pm 2, \pm 3 \ldots$.
 
 # Hemos comentado anteriormente que la difracción de Fraunhofer no era más que la transformada de Fourier del campo en la apertura (mejor dicho, el campo es proporcional a la transformada de Fourier). Veamos esto. 
 # 
@@ -190,7 +148,7 @@ widgets.interact(difraccion,focal=(300,700,50),a=(0.01,0.2,0.03),Color=lambdawid
 # 
 # Podemos ver cómo la función obtenida es igual a la representada anteriormente. Aunque un análisis más detallado debería tener en cuenta la transformación entre las frecuencias utilizadas en el código y los valores de *y* en el plano de observación, no entraremos ahí. Nos basta por el momento con ejemplificar la relación entre la transformada de Fourier y la irradiancia obtenida en el régimen de Fraunhofer.
 
-# In[3]:
+# In[2]:
 
 
 def fun(x):
@@ -208,10 +166,10 @@ freq = fftfreq(y.shape[0],y[1]-y[0])
 tfcampo = fft(campoinc)
 tfcampo2 = abs(tfcampo)**2/max(abs(tfcampo))**2
 plot(freq,abs(fft(campoinc))**2/max(abs(fft(campoinc)))**2)
-ylabel("I")
+ylabel("I");
 
 
-# ## Difracción de Fraunhofer. Abertura circular
+# ## Abertura circular
 
 # En el caso de una apertura circular de diámetro $D_a$, la expresión del campo eléctrico en un punto $P$ que subtiende un ángulo $\theta$ con el eje, y bajo la aproximación considerada en el régimen de Fraunhofer es la siguiente, 
 # 
@@ -227,7 +185,7 @@ ylabel("I")
 # 
 # La forma de esta función la podemos ver en la siguiente figura.
 
-# In[4]:
+# In[3]:
 
 
 from numpy import *

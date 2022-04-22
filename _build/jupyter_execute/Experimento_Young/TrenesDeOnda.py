@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Experimento de Young con trenes de ondas
+# # Experimento de Young con luz policromática
 
-# ### Consideraciones iniciales
+# ## Consideraciones iniciales
 
 # In[1]:
 
@@ -27,7 +27,7 @@ Image(filename="ExperimentoYoung.jpg")
 # 
 # Como vemos en las fórmulas anteriores, la posición de los máximos y mínimos dependen de la longitud de onda $\lambda$. Cuando iluminamos el mismo experimento con radiación no monocromática, podemos considerar que cada longitud de onda que compone el espectro de la radiación forma su patrón de interferencias. Pero cada patrón de interferencias tendrá los máximos en posiciones ligeramente distintas. Esto va a llevar a una reducción del constraste y finalmente, a la desaparición de las franjas de interferencia. Vamos a estudiar este proceso con más detalle, viendo primero una mejor aproximación que una onda monocromática a la radiación que emiten la fuentes de luz reales, y posteriormente, cómo afecta este tipo de radiación a las interferencias en un experimento de Young
 
-# ### Trenes de onda
+# ## Trenes de onda
 
 # Aunque la abstracción de tratar una onda monocromática es extremadamente útil, las fuentes de luz reales no emiten tal radiación. La razón es sencilla: una onda monocromática pura (es decir, un seno o un coseno) no tiene ni principio ni final, por lo que para emitir una onda de este tipo se necesitaría energía infinita.
 # 
@@ -73,7 +73,7 @@ def campo(t,w,tau0):
 campo(time,omega,tau)
 
 
-# ### Longitud de coherencia
+# ## Longitud de coherencia
 # 
 # El tiempo en el que la fase de la onda permanece constante (tiempo entre saltos consecutivos) se llama **tiempo de coherencia** y nosotros lo denominaremos $t_c$. 
 # 
@@ -83,7 +83,7 @@ campo(time,omega,tau)
 # 
 # donde $c$ es la velocidad de la luz. 
 
-# ### Anchura espectral
+# ## Anchura espectral
 # 
 # Un tren de ondas deja de ser una radiación completamente monocromática, es decir, con una única longitud de onda o frecuencia, pasando a tener una cierta anchura espectral. Lo podemos entender observando que un tren de ondas deja de ser un coseno o un seno debido a esos saltos de fase aleatorios, pasando a tener una evolución temporal más compleja. 
 # 
@@ -141,7 +141,7 @@ def campofft(t,w,tau0):
 campofft(time,omega,tau)
 
 
-# ### ¿Qué ocurre si iluminamos el experimento de Young con este tipo de radiación?
+# ## ¿Qué ocurre si iluminamos el experimento de Young con este tipo de radiación?
 # 
 # Si iluminamos una doble rendija con un tren de ondas como el representado anteriormente, tendremos dos ondas llegando a un cierto punto de la pantalla con la misma evolución temporal pero una de ellas retrasada con respecto a la otra. Esto es debido a la diferencia de camino óptico recorrido por cada tren de onda. 
 # 

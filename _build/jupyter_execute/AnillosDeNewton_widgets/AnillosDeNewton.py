@@ -113,7 +113,7 @@ Image(filename="esquemaAnillosNewton2.jpg")
 # 
 # Ahora si queremos determinar el radio de la lente $R$ tenemos que tener cuidado, no podremos coger el radio de un anillo oscuro ya que normalmente no sabremos cual es el valor del desplazamiento vertical de la lente $h$. Por ello nos vemos obligados a representar gráficamente los radios al cuadrado frente al número del anillo y obtener el radio de la pendiente de la recta de ajuste que sigue siendo igual que antes  $pendiente = \lambda R$.
 
-# #### Ejecutar la siguiente celda de código para observar la distribución de luz correspodiente a los anillos de Newton
+# Ejecutar la siguiente celda de código para observar la distribución de luz correspodiente a los anillos de Newton
 
 # In[5]:
 

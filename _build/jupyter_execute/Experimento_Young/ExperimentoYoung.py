@@ -70,7 +70,7 @@ Image(filename="ExperimentoYoung.jpg")
 # $$I_T = 2 I_1 \left( 1 + cos\left( \frac{2 \pi a x}{\lambda D} \right) \; \right)$$
 # </div>
 
-# ### Distribución de luz. Patrón de interferencias
+# ## Distribución de luz. Patrón de interferencias
 # 
 # Ahora estamos en disposición de contestar a la pregunta que nos planteábamos antes, ¿cómo es la distribución de irradiancia en la pantalla de observación?. Vemos que el desfase depende de la altura en la pantalla $x$, por tanto al movernos en esa dirección el valor de la irradiancia cambiará. En particular el término que provoca esa variación es del tipo cosenoidal $cos( \frac{2 \pi a x}{\lambda D})$ por lo que veremos en la pantalla una distribución cosenoidal, con máximos de irradiancia cuando $\delta = 2 m \pi$, con $m = 0, \pm 1, \pm 2 ...$ y mínimos de irradiancia cuando $\delta = (2 m + 1) \pi$, con $m = 0, \pm 1, \pm 2 ...$. Las posiciones $x$ a las que corresponden estas condiciones serán, 
 # 
@@ -142,7 +142,7 @@ print ('Contraste=',C) # muestra el valor del contraste
 # 
 # * Disminuye el valor de $I_1$ o $I_2$ y observa cómo cambia el patrón de interferencias. ¿Cómo cambia el valor de la interfranja y del contraste?
 
-# #### ¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?
+# ### ¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?
 # 
 # Podemos verlo en la siguiente imagen
 
@@ -157,7 +157,8 @@ Image(filename="FranjasYoungWhiteLight.jpg")
 
 # ## Otros recursos
 # 
-# Los siguientes videos de Kahn Academy explican de una manera sencilla la interferencia de las ondas en el experimento de Young. Puedes ver el video dentro de la celda o pinchar en YouTube para abrir otra ventana del navegador
+# Los siguientes videos de Kahn Academy explican de una manera sencilla la interfere
+# ncia de las ondas en el experimento de Young. Puedes ver el video dentro de la celda o pinchar en YouTube para abrir otra ventana del navegador
 
 # In[6]:
 

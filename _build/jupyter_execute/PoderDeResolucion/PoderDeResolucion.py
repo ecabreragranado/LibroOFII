@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Introduccion
+# # Poder de resolución de un sistema óptico
+# 
+# ## Introducción
 # 
 # Hemos visto como la difraccion determina que la irradiancia en una pantalla situada tras una abertura, no tendra la distribucion espacial fijada por la sombra geometrica de dicha abertura. El haz se abre y presenta maximos y minimos en la pantalla. Esta observacion se puede interpretar aplicando el principio de Huygens-Fresnel, es decir, calculando la interferencia de las ondas secundarias emitidas por cada punto del frente de ondas que la abertura deja pasar. 
 # 
@@ -29,41 +31,41 @@
 # 
 # 
 
-# # Limitacion en la resolucion de dos objetos puntuales cercanos
+# ## Limitación en la resolución de dos objetos puntuales cercanos
 # 
 # <center>
 # 
-# ![poderfig](poderresolucionfig.png)
+# ![poderfig](poderresoluciónfig.png)
 # 
 # </center>
 # 
-# Podemos comprender facilmente que, si la imagen de un punto no es otro punto debido a la difraccion, sino que es una distribucion espacial de irradiancia con una cierta extension, las imagenes de dos puntos objetos cercanos pueden llegar a solaparse entre si en el plano imagen, resultando en una mancha un poco mas grande. De este modo, podemos llegar a no ser capaces de distinguir las imagenes de esos dos puntos cercanos. Dicho de otro modo, el hecho de que la difraccion imponga un cierto tamagno en la imagen de un punto objeto dada por un sistema optico, limita la capacidad del sistema de resolver dos puntos objeto cercanos.
+# Podemos comprender facilmente que, si la imagen de un punto no es otro punto debido a la difracción, sino que es una distribución espacial de irradiancia con una cierta extensión, las imágenes de dos puntos objetos cercanos pueden llegar a solaparse entre si en el plano imagen, resultando en una mancha un poco mas grande. De este modo, podemos llegar a no ser capaces de distinguir las imágenes de esos dos puntos cercanos. Dicho de otro modo, el hecho de que la difracción imponga un cierto tamaño en la imagen de un punto objeto dada por un sistema optico, limita la capacidad del sistema de resolver dos puntos objeto cercanos.
 # 
 # 
 # ## Criterio de Rayleigh
 # 
-# Aunque distinguir entre dos imagenes superpuestas puede ser algo subjetivo, se ha desarrollado un criterio para discriminar si dos imagenes se encuentran lo suficientemente separadas entre si para que podamos decir que el sistema resuelve esos dos puntos. Este criterio se denomina **Criterio de Rayleigh** y segun el 
+# Aunque distinguir entre dos imágenes superpuestas puede ser algo subjetivo, se ha desarrollado un criterio para discriminar si dos imágenes se encuentran lo suficientemente separadas entre sí para que podamos decir que el sistema resuelve esos dos puntos. Este criterio se denomina **Criterio de Rayleigh** y según el 
 # 
 # <div class-alert=info>
 #     
-# *dos imagenes se encuentran resueltas si, al menos, la separacion entre los maximos de las manchas de Airy es igual al radio del primer minimo*.
+# *dos imágenes se encuentran resueltas si, al menos, la separación entre los máximos de las manchas de Airy es igual al radio del primer mínimo*.
 # 
 # </div>
 # 
-# ### Angulo minimo de resolucion
+# ## Ángulo mínimo de resolución
 # 
-# Una magnitud util para valorar el poder de resolucion de un sistema optico es el *angulo minimo de resolucion*, entendido como el minimo angulo que pueden subtender dos objetos puntuales, vistos desde mi sistema optico, de tal forma que sus imagenes esten resueltas segun el criterio de Rayleigh. Es decir, este angulo $\theta_{min}$ hara que las imagenes se encuentren separadas de tal forma que el maximo de una de las manchas de Airy (correspondiente a una de las imagenes), se encuentre en el primer minimo de la otra (correspondiente a la imagen del otro punto objeto). Por tanto, 
+# Una magnitud útil para valorar el poder de resolución de un sistema optico es el *angulo mínimo de resolución*, entendido como el mínimo angulo que pueden subtender dos objetos puntuales, vistos desde mi sistema optico, de tal forma que sus imágenes esten resueltas según el criterio de Rayleigh. Es decir, este ángulo $\theta_{min}$ hara que las imágenes se encuentren separadas de tal forma que el maximo de una de las manchas de Airy (correspondiente a una de las imágenes), se encuentre en el primer mínimo de la otra (correspondiente a la imagen del otro punto objeto). Por tanto, 
 # 
 # $$\theta_{min} = \frac{1.22 \lambda}{D}$$
 # 
-# donde $D$ es el diametro de la lente o pupila que limite el haz de entrada al sistema optico. 
+# donde $D$ es el diametro de la lente o pupila que límite el haz de entrada al sistema optico. 
 # 
-# Las anteriores consideraciones pueden tambien plantearse de la siguiente forma: Si llamamos $\theta$ al angulo que subtienden dos puntos objeto cualesquiera desde el sistema optico, estos puntos objeto seran resueltos por el sistema si, 
+# Las anteriores consideraciónes pueden tambien plantearse de la siguiente forma: Si llamamos $\theta$ al angulo que subtienden dos puntos objeto cualesquiera desde el sistema optico, estos puntos objeto seran resueltos por el sistema si, 
 # 
 # $$\theta \ge \theta_{min}$$
 # 
 # 
-# El siguiente codigo calcula las imagenes dadas por una lente de dos puntos objetos cercanos. La distancia entre dichos puntos, la longitud de onda, la focal de la lente o la distancia a la lente se pueden modificar. En la figura, se muestra un perfil de la irradiancia en el plano imagen junto a la referencia que marca la separacion impuesta por el criterio de Rayleigh para que dos puntos esten resueltos. Tambien se muestra a la derecha la imagen 2D de lo que observariamos en la pantalla.
+# El siguiente codigo calcula las imágenes dadas por una lente de dos puntos objetos cercanos. La distancia entre dichos puntos, la longitud de onda, la focal de la lente o la distancia a la lente se pueden modificar. En la figura, se muestra un perfil de la irradiancia en el plano imagen junto a la referencia que marca la separación impuesta por el criterio de Rayleigh para que dos puntos esten resueltos. También se muestra a la derecha la imagen 2D de lo que observaríamos en la pantalla.
 
 # In[1]:
 

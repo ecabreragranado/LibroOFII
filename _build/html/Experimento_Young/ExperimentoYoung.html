@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -53,7 +55,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. Experimento de Young con trenes de ondas" href="TrenesDeOnda.html" />
+    <link rel="next" title="4. Experimento de Young con luz policromática" href="TrenesDeOnda.html" />
     <link rel="prev" title="2. Interferencia de dos ondas de luz" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -121,7 +123,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="TrenesDeOnda.html">
-   4. Experimento de Young con trenes de ondas
+   4. Experimento de Young con luz policromática
   </a>
  </li>
  <li class="toctree-l1">
@@ -130,43 +132,48 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../Laminas_planoparalelas/Laminas_planoparalelas.html">
+   6. Interferencia en láminas planoparalelas. Franjas de igual inclinación
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
-   6. Tratamientos Antirreflejantes
+   7. Tratamientos Antirreflejantes
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
-   7. Interferencia por haces múltiples. Filtros interferenciales.
+   8. Interferencia por haces múltiples. Filtros interferenciales.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
-   8. Franjas de igual espesor
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor-1.html">
+   9. Franjas de igual espesor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
-   9. Anillos de Newton
+   10. Anillos de Newton
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
-   10. Interferometro de Michelson
+   11. Interferómetro de Michelson
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
-   11. Tomografía de coherencia óptica. Puntos básicos.
+   12. Tomografía de coherencia óptica.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
-   12. Difracción de Fraunhofer
+   13. Difracción de Fraunhofer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
-   13. Introduccion
+   14. Poder de resolución de un sistema óptico
   </a>
  </li>
  <li class="toctree-l1">
@@ -181,7 +188,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
-   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+   18. Teoría de Abbe de la formación de la imagen con iluminación coherente
   </a>
  </li>
 </ul>
@@ -334,29 +341,27 @@
   <a class="reference internal nav-link" href="#teoria">
    3.1. Teoría
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#distribucion-de-luz-patron-de-interferencias">
-     3.1.1. Distribución de luz. Patrón de interferencias
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#distribucion-de-luz-patron-de-interferencias">
+   3.2. Distribución de luz. Patrón de interferencias
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preguntas-y-cuestiones">
-   3.2. Preguntas y Cuestiones
+   3.3. Preguntas y Cuestiones
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#que-diferencia-habria-si-en-vez-de-iluminar-con-luz-monocromatica-iluminamos-con-luz-blanca">
-     3.2.1. ¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?
+     3.3.1. ¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#otros-recursos">
-   3.3. Otros recursos
+   3.4. Otros recursos
   </a>
  </li>
 </ul>
@@ -383,29 +388,27 @@
   <a class="reference internal nav-link" href="#teoria">
    3.1. Teoría
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#distribucion-de-luz-patron-de-interferencias">
-     3.1.1. Distribución de luz. Patrón de interferencias
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#distribucion-de-luz-patron-de-interferencias">
+   3.2. Distribución de luz. Patrón de interferencias
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preguntas-y-cuestiones">
-   3.2. Preguntas y Cuestiones
+   3.3. Preguntas y Cuestiones
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#que-diferencia-habria-si-en-vez-de-iluminar-con-luz-monocromatica-iluminamos-con-luz-blanca">
-     3.2.1. ¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?
+     3.3.1. ¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#otros-recursos">
-   3.3. Otros recursos
+   3.4. Otros recursos
   </a>
  </li>
 </ul>
@@ -478,8 +481,9 @@ whenever the sun shines, and without any other apparatus than is at hand to ever
 que contiene a las fuentes y la pantalla de observación, donde se encuentra P. Podemos reescribir la irradiancia total en la pantalla empleando la expresión calculada del desfase</p>
 <div class="alert alert-success">
 $$I_T = 2 I_1 \left( 1 + cos\left( \frac{2 \pi a x}{\lambda D} \right) \; \right)$$
-</div><div class="section" id="distribucion-de-luz-patron-de-interferencias">
-<h3><span class="section-number">3.1.1. </span>Distribución de luz. Patrón de interferencias<a class="headerlink" href="#distribucion-de-luz-patron-de-interferencias" title="Permalink to this headline">¶</a></h3>
+</div></div>
+<div class="section" id="distribucion-de-luz-patron-de-interferencias">
+<h2><span class="section-number">3.2. </span>Distribución de luz. Patrón de interferencias<a class="headerlink" href="#distribucion-de-luz-patron-de-interferencias" title="Permalink to this headline">¶</a></h2>
 <p>Ahora estamos en disposición de contestar a la pregunta que nos planteábamos antes, ¿cómo es la distribución de irradiancia en la pantalla de observación?. Vemos que el desfase depende de la altura en la pantalla <span class="math notranslate nohighlight">\(x\)</span>, por tanto al movernos en esa dirección el valor de la irradiancia cambiará. En particular el término que provoca esa variación es del tipo cosenoidal <span class="math notranslate nohighlight">\(cos( \frac{2 \pi a x}{\lambda D})\)</span> por lo que veremos en la pantalla una distribución cosenoidal, con máximos de irradiancia cuando <span class="math notranslate nohighlight">\(\delta = 2 m \pi\)</span>, con <span class="math notranslate nohighlight">\(m = 0, \pm 1, \pm 2 ...\)</span> y mínimos de irradiancia cuando <span class="math notranslate nohighlight">\(\delta = (2 m + 1) \pi\)</span>, con <span class="math notranslate nohighlight">\(m = 0, \pm 1, \pm 2 ...\)</span>. Las posiciones <span class="math notranslate nohighlight">\(x\)</span> a las que corresponden estas condiciones serán,</p>
 <p>Máximos de irradiancia.  <span class="math notranslate nohighlight">\(\delta = 2 m \pi rad \implies \Delta = m \lambda \implies\)</span>
 $<span class="math notranslate nohighlight">\(x^{max}_m = \frac{m \lambda D}{a}\)</span>$</p>
@@ -555,16 +559,15 @@ Contraste= 0.5749506014973972
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="preguntas-y-cuestiones">
-<h2><span class="section-number">3.2. </span>Preguntas y Cuestiones<a class="headerlink" href="#preguntas-y-cuestiones" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.3. </span>Preguntas y Cuestiones<a class="headerlink" href="#preguntas-y-cuestiones" title="Permalink to this headline">¶</a></h2>
 <p>Emplear las dos celdas de código anteriores para analizar las siguientes cuestiones.</p>
 <ul class="simple">
 <li><p>Prueba a cambiar el valor de los parámetros <span class="math notranslate nohighlight">\(\lambda\)</span>, <span class="math notranslate nohighlight">\(D\)</span> y <span class="math notranslate nohighlight">\(a\)</span> (de uno en uno) y observa cómo cambia la distribución de luz. Observa como se modifica el valor de la interfranja y del contraste.</p></li>
 <li><p>Disminuye el valor de <span class="math notranslate nohighlight">\(I_1\)</span> o <span class="math notranslate nohighlight">\(I_2\)</span> y observa cómo cambia el patrón de interferencias. ¿Cómo cambia el valor de la interfranja y del contraste?</p></li>
 </ul>
 <div class="section" id="que-diferencia-habria-si-en-vez-de-iluminar-con-luz-monocromatica-iluminamos-con-luz-blanca">
-<h3><span class="section-number">3.2.1. </span>¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?<a class="headerlink" href="#que-diferencia-habria-si-en-vez-de-iluminar-con-luz-monocromatica-iluminamos-con-luz-blanca" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.3.1. </span>¿Qué diferencia habría si en vez de iluminar con luz monocromática iluminamos con luz blanca?<a class="headerlink" href="#que-diferencia-habria-si-en-vez-de-iluminar-con-luz-monocromatica-iluminamos-con-luz-blanca" title="Permalink to this headline">¶</a></h3>
 <p>Podemos verlo en la siguiente imagen</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -581,8 +584,9 @@ Contraste= 0.5749506014973972
 </div>
 </div>
 <div class="section" id="otros-recursos">
-<h2><span class="section-number">3.3. </span>Otros recursos<a class="headerlink" href="#otros-recursos" title="Permalink to this headline">¶</a></h2>
-<p>Los siguientes videos de Kahn Academy explican de una manera sencilla la interferencia de las ondas en el experimento de Young. Puedes ver el video dentro de la celda o pinchar en YouTube para abrir otra ventana del navegador</p>
+<h2><span class="section-number">3.4. </span>Otros recursos<a class="headerlink" href="#otros-recursos" title="Permalink to this headline">¶</a></h2>
+<p>Los siguientes videos de Kahn Academy explican de una manera sencilla la interfere
+ncia de las ondas en el experimento de Young. Puedes ver el video dentro de la celda o pinchar en YouTube para abrir otra ventana del navegador</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
@@ -645,7 +649,7 @@ Contraste= 0.5749506014973972
     <a class='right-next' id="next-link" href="TrenesDeOnda.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Experimento de Young con trenes de ondas</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Experimento de Young con luz policromática</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+# # Teoría de Abbe de la formación de la imagen con iluminación coherente
 
 # Durante el estudio de los efectos de la difracción, hemos visto que la presencia de una apertura con una cierta anchura modifica la irradiancia observada en una pantalla situada detrás de dicha apertura. Cuanto menor sea su tamaño, el frente de ondas de la luz incidente se verá más cortado, y el haz se alejará más de la propagación rectilínea. Más concretamente, si tenemos una apertura circular, el tamaño de la mancha de Airy en la pantalla será mayor cuando menor sea la apertura. 
 # 
@@ -32,6 +32,7 @@
 
 
 get_ipython().run_line_magic('pylab', 'inline')
+
 # No se tiene en cuenta la diferente energía que lleva cada orden de difracción
 Lambda = 555e-6 # longitud de onda en mm
 k = 2.0*pi/Lambda
@@ -54,8 +55,10 @@ for i in range(len(fases)):
     fases[i,:] = 1j*k*i*Delta
 Etotal = sum(exp(fases),axis=0)*E0
 Itotal = abs(Etotal)**2
-
+figure(figsize=(8,6))
 plot(x_p,Itotal)
+xlabel('X (mm)')
+ylabel('I (u.a.)')
 
 
 # Hemos visto anteriormente que el diámetro finito del sistema puede limitar los órdenes más altos, lo que puede conllevar una pérdida de fidelidad de la imagen final ya que la interferencia se realiza con un número menor de ondas. Sin embargo podemos también utilizar este enfoque para estudiar la formación de la imagen con iluminación coherente para modificar a nuestra voluntad la imagen final. Es decir, ¿qué ocurre por ejemplo si bloqueamos el orden 0 y mantenemos únicamente el orden 1 y -1?
@@ -81,12 +84,15 @@ Etotal = sum(exp(fases),axis=0)*E0
 indzero = np.where(m_vec==0)
 Etotal = (sum(exp(fases),axis=0)-exp(fases[indzero[0][0],:]))*E0
 Itotal = abs(Etotal)**2
+figure(figsize=(8,6))
 plot(x_p,Itotal)
+xlabel('X (mm)')
+ylabel('I (u.a.)')
 
 
 # Vemos que obtenemos una imagen de forma cosenoidal, es decir, franjas de interferencia. Este resultado era previsible ya que según la disposición que hemos fijado, tenemos dos fuentes puntuales separadas por una cierta distancia, es decir, un caso análogo al experimento de Young. La separación entre máximos (interfranja) se puede observar que es igual a $0.01 \;\;$ mm. Hay que hacer notar que esta separación no es el periodo espacial esperable de la imagen final. Este periodo vendrá modificado por el aumento lateral del sistema y vendrá dado por $d' = \beta d$, donde $\beta = s' / s$. En nuestro caso, eso nos da un periodo espacial de la imagen $d' = 0.02\;\;$ mm
 
-# ### Método de Contraste de Fase.
+# ## Método de contraste de fase.
 
 # Aunque el ejemplo anterior nos permite adivinar que actuando en el plano focal de la lente podemos modificar la imagen final, no da una idea clara de las aplicaciones que este procedimiento podría tener. Para ejemplificar estas aplicaciones vamos a ver muy brevemente en qué consiste el método de contraste de fase. Este método de observación fue introducido por Zernike y por él le fue otorgado el premio Nobel en 1953.
 # 

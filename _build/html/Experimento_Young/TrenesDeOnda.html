@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4. Experimento de Young con trenes de ondas &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    <title>4. Experimento de Young con luz policromática &#8212; Optica Fisica. Interferencias y Difraccion</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -121,7 +123,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   4. Experimento de Young con trenes de ondas
+   4. Experimento de Young con luz policromática
   </a>
  </li>
  <li class="toctree-l1">
@@ -130,43 +132,48 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../Laminas_planoparalelas/Laminas_planoparalelas.html">
+   6. Interferencia en láminas planoparalelas. Franjas de igual inclinación
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
-   6. Tratamientos Antirreflejantes
+   7. Tratamientos Antirreflejantes
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
-   7. Interferencia por haces múltiples. Filtros interferenciales.
+   8. Interferencia por haces múltiples. Filtros interferenciales.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor.html">
-   8. Franjas de igual espesor
+  <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor-1.html">
+   9. Franjas de igual espesor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
-   9. Anillos de Newton
+   10. Anillos de Newton
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
-   10. Interferometro de Michelson
+   11. Interferómetro de Michelson
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
-   11. Tomografía de coherencia óptica. Puntos básicos.
+   12. Tomografía de coherencia óptica.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
-   12. Difracción de Fraunhofer
+   13. Difracción de Fraunhofer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
-   13. Introduccion
+   14. Poder de resolución de un sistema óptico
   </a>
  </li>
  <li class="toctree-l1">
@@ -181,7 +188,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
-   18. Teoría difraccional de la imagen.  Teoría de Abbe de la formación de la imagen con iluminación coherente
+   18. Teoría de Abbe de la formación de la imagen con iluminación coherente
   </a>
  </li>
 </ul>
@@ -365,7 +372,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Experimento de Young con trenes de ondas</h1>
+                <h1>Experimento de Young con luz policromática</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -409,8 +416,8 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="experimento-de-young-con-trenes-de-ondas">
-<h1><span class="section-number">4. </span>Experimento de Young con trenes de ondas<a class="headerlink" href="#experimento-de-young-con-trenes-de-ondas" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="experimento-de-young-con-luz-policromatica">
+<h1><span class="section-number">4. </span>Experimento de Young con luz policromática<a class="headerlink" href="#experimento-de-young-con-luz-policromatica" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="consideraciones-iniciales">
 <h2><span class="section-number">4.1. </span>Consideraciones iniciales<a class="headerlink" href="#consideraciones-iniciales" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">

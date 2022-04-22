@@ -13,9 +13,10 @@ parts:
    - file: Experimento_Young/ExperimentoYoung.ipynb
    - file: Experimento_Young/TrenesDeOnda.ipynb
    - file: Biprisma_Teoria/BiprismaDeFresnel_Teoria.ipynb
+   - file: Laminas_planoparalelas/Laminas_planoparalelas.ipynb
    - file: TratamientoAntirreflejante/TratamientosAntirreflejantes.ipynb
    - file: InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.ipynb
-   - file: FranjasIgualEspesor/FranjasIgualEspesor.ipynb
+   - file: FranjasIgualEspesor/FranjasIgualEspesor-1.ipynb
    - file: AnillosDeNewton_widgets/AnillosDeNewton.ipynb
    - file: InterferometroMichelson_OCT/Michelson.ipynb
    - file: InterferometroMichelson_OCT/OCT_2020.ipynb
