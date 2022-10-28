@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Interferencia en láminas planoparalelas. Franjas de igual inclinación &#8212; Optica Fisica. Interferencias y Difraccion</title>
+    <title>5. Interferencia en láminas planoparalelas. Franjas de igual inclinación &#8212; Optica Fisica. Interferencias y Difraccion</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,8 +42,10 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -53,8 +55,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="7. Tratamientos Antirreflejantes" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html" />
-    <link rel="prev" title="5. Biprisma de Fresnel" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html" />
+    <link rel="next" title="6. Tratamientos Antirreflejantes" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html" />
+    <link rel="prev" title="4. Biprisma de Fresnel" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -105,88 +107,83 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../Interferencia2Ondas/Interferencia2Ondas.html">
-   1. Interferencia entre 2 ondas electromagnéticas
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../Interferencia2OndasLuz/Interferencia2Ondasdeluz.html">
-   2. Interferencia de dos ondas de luz
+   1. Interferencia de dos ondas de luz
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Experimento_Young/ExperimentoYoung.html">
-   3. Experimento de Young
+   2. Experimento de Young
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Experimento_Young/TrenesDeOnda.html">
-   4. Experimento de Young con luz policromática
+   3. Experimento de Young con luz policromática
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Biprisma_Teoria/BiprismaDeFresnel_Teoria.html">
-   5. Biprisma de Fresnel
+   4. Biprisma de Fresnel
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   6. Interferencia en láminas planoparalelas. Franjas de igual inclinación
+   5. Interferencia en láminas planoparalelas. Franjas de igual inclinación
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html">
-   7. Tratamientos Antirreflejantes
+   6. Tratamientos Antirreflejantes
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.html">
-   8. Interferencia por haces múltiples. Filtros interferenciales.
+   7. Interferencia por haces múltiples. Filtros interferenciales.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../FranjasIgualEspesor/FranjasIgualEspesor-1.html">
-   9. Franjas de igual espesor
+   8. Franjas de igual espesor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../AnillosDeNewton_widgets/AnillosDeNewton.html">
-   10. Anillos de Newton
+   9. Anillos de Newton
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferometroMichelson_OCT/Michelson.html">
-   11. Interferómetro de Michelson
+   10. Interferómetro de Michelson
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../InterferometroMichelson_OCT/OCT_2020.html">
-   12. Tomografía de coherencia óptica.
+   11. Tomografía de coherencia óptica.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../DifraccionFraunhofer/DifraccionFraunhofer.html">
-   13. Difracción de Fraunhofer
+   12. Difracción de Fraunhofer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../PoderDeResolucion/PoderDeResolucion.html">
-   14. Poder de resolución de un sistema óptico
+   13. Poder de resolución de un sistema óptico
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../RedDeDifraccion/RedDeDifraccion.html">
-   16. Red de difracción
+   15. Red de difracción
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../RedDeDifraccion/PoderResolucionRed.html">
-   17. Poder de Resolucion de la Red de difraccion
+   16. Poder de Resolucion de la Red de difraccion
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TeoriaAbbe/TeoriaAbbe.html">
-   18. Teoría de Abbe de la formación de la imagen con iluminación coherente
+   17. Teoría de Abbe de la formación de la imagen con iluminación coherente
   </a>
  </li>
 </ul>
@@ -198,37 +195,37 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../TrabajoExperimentoYoung/Trabajo_ExpYoung.html">
-   19. Experimento de Young. Trabajo en Grupo.
+   18. Experimento de Young. Trabajo en Grupo.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Biprisma_Entregable/Biprisma_de_Fresnel.html">
-   20. Biprisma de Fresnel
+   19. Biprisma de Fresnel
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TrabajoTratamientoAntirreflejante/Tratamiento_Antirreflejante.html">
-   21. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
+   20. Diseño y caracterización de un tratamiento antirreflejante para una lente oftálmica
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TrabajoFiltroInterferencial/Filtro_Interferencial.html">
-   22. Filtro interferencial para evitar el daño ocular causado por un puntero láser
+   21. Filtro interferencial para evitar el daño ocular causado por un puntero láser
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TrabajoAnillosDeNewton/Anillos_de_Newton.html">
-   23. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
+   22. Caracterización de una lente oftálmica mediante la técnica de los Anillos de Newton
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TrabajoLaminasDelgadasCaseras/LaminasDelgadasCaseras.html">
-   24. Láminas delgadas caseras. Trabajo en Grupo.
+   23. Láminas delgadas caseras. Trabajo en Grupo.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../TrabajoResolucionLimitadaPorDifraccion/ResolucionDifraccion.html">
-   25. Resolución limitada por difracción. Trabajo en Grupo.
+   24. Resolución limitada por difracción. Trabajo en Grupo.
   </a>
  </li>
 </ul>
@@ -270,11 +267,14 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+        <a class="dropdown-buttons"
+            href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo de cuaderno" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -337,29 +337,29 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#irradiancia-de-las-ondas-que-interfieren-en-reflexion">
-   6.1. Irradiancia de las ondas que interfieren en reflexión
+   5.1. Irradiancia de las ondas que interfieren en reflexión
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#desfase-entre-las-ondas-que-interfieren">
-   6.2. Desfase entre las ondas que interfieren
+   5.2. Desfase entre las ondas que interfieren
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente">
-     6.2.1. Patron de franjas observado en el plano focal de una lente convergente
+     5.2.1. Patron de franjas observado en el plano focal de una lente convergente
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#condicion-de-maximo-y-minimo-franjas-de-igual-inclinacion">
-     6.2.2. Condición de máximo y mínimo. Franjas de igual inclinación
+     5.2.2. Condición de máximo y mínimo. Franjas de igual inclinación
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#video-leccion-virtual">
-   6.3. Vídeo lección virtual
+   5.3. Vídeo lección virtual
   </a>
  </li>
 </ul>
@@ -384,29 +384,29 @@
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#irradiancia-de-las-ondas-que-interfieren-en-reflexion">
-   6.1. Irradiancia de las ondas que interfieren en reflexión
+   5.1. Irradiancia de las ondas que interfieren en reflexión
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#desfase-entre-las-ondas-que-interfieren">
-   6.2. Desfase entre las ondas que interfieren
+   5.2. Desfase entre las ondas que interfieren
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente">
-     6.2.1. Patron de franjas observado en el plano focal de una lente convergente
+     5.2.1. Patron de franjas observado en el plano focal de una lente convergente
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#condicion-de-maximo-y-minimo-franjas-de-igual-inclinacion">
-     6.2.2. Condición de máximo y mínimo. Franjas de igual inclinación
+     5.2.2. Condición de máximo y mínimo. Franjas de igual inclinación
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#video-leccion-virtual">
-   6.3. Vídeo lección virtual
+   5.3. Vídeo lección virtual
   </a>
  </li>
 </ul>
@@ -419,7 +419,7 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="interferencia-en-laminas-planoparalelas-franjas-de-igual-inclinacion">
-<h1><span class="section-number">6. </span>Interferencia en láminas planoparalelas. Franjas de igual inclinación<a class="headerlink" href="#interferencia-en-laminas-planoparalelas-franjas-de-igual-inclinacion" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">5. </span>Interferencia en láminas planoparalelas. Franjas de igual inclinación<a class="headerlink" href="#interferencia-en-laminas-planoparalelas-franjas-de-igual-inclinacion" title="Permalink to this headline">¶</a></h1>
 <p>Una de las formas habituales de obtener interferencias es mediante la división del frente de ondas de un haz procedente de una fuente para posteriormente recombinar ambas partes. A este tipo de interferómetros se les conoce como <strong>interferómetros por división del frente de ondas</strong> y ejemplos de ellos pueden ser el interferómetro de la doble rendija o el biprisma de Fresnel. Otra estrategia para disponer de dos ondas que guarden una relación de fase constante en el tiempo entre ellas y por tanto den lugar a interferencia, es utilizar la reflexión y transmisión parcial en una superficie o espejo para producir estas dos ondas. A este tipo de interferómetros se les denomina <strong>interferómetros por división de amplitud</strong>. El ejemplo quizás más sencillo lo podemos encontrar en una lamina planoparalela (lámina con caras paralelas y por tanto espesor fijo).</p>
 <p>Efectivamente, si iluminamos una lámina planoparalela, de índice de refracción <em>n</em> y grosor <em>h</em>, con un haz que proceda de una fuente puntual, parte de este haz se reflejará en la primera cara y parte se transmitirá al interior de la lámina. Vamos a fijarnos en una parte del haz que se propague en una determinada dirección (un rayo incidente que incide sobre la lámina con un ángulo <span class="math notranslate nohighlight">\(\theta_i\)</span>). El haz transmitido, al llegar a la segunda cara, sufrirá a su vez una reflexión interna, transmitiéndose parcialmente al siguiente medio. Si nos ocupamos ahora mismo del haz que se refleja internamente en la segunda cara, este haz llegará a continuación de nuevo a la primera cara, sufriendo otra reflexión interna y transmitiéndose a su vez parcialmente al medio exterior. Este proceso de reflexiones internas se repetirá, bien hasta que el haz salga de la lámina, o bien hasta que se quede sin energía.</p>
 <p>Tenemos por tanto una situación en la que la reflexión y la transmisión global de la lámina es un conjunto de ondas producidas por las continuas reflexiones internas. Además, observando la figura podemos apreciar que estas ondas se propagarán en la misma dirección (los rayos de salida son paralelos). Si hacemos coincidir estos haces, por ejemplo utilizando una lente convergente, en su plano focal imagen observaremos la interferencia de todas estas ondas.</p>
@@ -432,7 +432,7 @@
 <p>en donde en la expresión anterior, <span class="math notranslate nohighlight">\(I_1\)</span> ahora será la irradiancia de la primera onda reflejada/transmitida (según estemos considerando la interferencia en reflexión o transmisión), <span class="math notranslate nohighlight">\(I_2\)</span> será la irradiancia de la segunda onda reflejada/transmitida, <span class="math notranslate nohighlight">\(\delta\)</span> es el desfase total entre estas ondas, que debemos calcular. Por último, hay que apuntar que en la ecuación anterior se ha supuesto que los haces que interfieren se propagan con igual polarización.</p>
 <p>A continuación vamos a analizar la interferencia que se produce en reflexión. Para ello, primero tenemos que obtener la irradiancia de cada onda que participa en la interferencia, así como el desfase entre ellas.</p>
 <div class="section" id="irradiancia-de-las-ondas-que-interfieren-en-reflexion">
-<h2><span class="section-number">6.1. </span>Irradiancia de las ondas que interfieren en reflexión<a class="headerlink" href="#irradiancia-de-las-ondas-que-interfieren-en-reflexion" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.1. </span>Irradiancia de las ondas que interfieren en reflexión<a class="headerlink" href="#irradiancia-de-las-ondas-que-interfieren-en-reflexion" title="Permalink to this headline">¶</a></h2>
 <p>Para calcular la irradiancia de las dos primeras ondas reflejadas por la lámina tenemos que observar que procesos de reflexión y transmisión sufren dichas ondas hasta que convergen en el plano de observación.</p>
 <center>
 <img src="laminaRefleInten.png" height=200px style="max-width:60%">
@@ -476,7 +476,7 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 \]</div>
 </div>
 <div class="section" id="desfase-entre-las-ondas-que-interfieren">
-<h2><span class="section-number">6.2. </span>Desfase entre las ondas que interfieren<a class="headerlink" href="#desfase-entre-las-ondas-que-interfieren" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.2. </span>Desfase entre las ondas que interfieren<a class="headerlink" href="#desfase-entre-las-ondas-que-interfieren" title="Permalink to this headline">¶</a></h2>
 <center>
 <img src="laminaplanoparalela2.png" height=200px style="max-width:60%">
 </center>
@@ -507,7 +507,7 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 <p>Finalmente, el desfase total de las dos ondas que interfieren en reflexión será <span class="math notranslate nohighlight">\(\delta_{tot} = \delta_G + \delta_R\)</span>.</p>
 <p>Para el caso de las ondas que interfieren en transmisión, podemos observar que el desfase debido a la diferencia de camino es el mismo que el calculado anteriormente, mientras que el desfase debido a las reflexiones es justo el opuesto que el caso anterior, al tener la segunda onda dos reflexiones internas, una en la segunda cara, y otra en la primera. La consecuencia es que en las condiciones en las que encontremos máximos en reflexión, encontraremos mínimos en la interferencia de las ondas que se transmiten, y al revés. Evidentemente, esto es algo esperable, ya que si la lámina no absorbe nada de energía, si la irradiacia es máxima en reflexión, ha de ser mínima en transmisión ya que la suma de ambas ha de ser igual a la irradiancia del haz incidente.</p>
 <div class="section" id="patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente">
-<h3><span class="section-number">6.2.1. </span>Patron de franjas observado en el plano focal de una lente convergente<a class="headerlink" href="#patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.2.1. </span>Patron de franjas observado en el plano focal de una lente convergente<a class="headerlink" href="#patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente" title="Permalink to this headline">¶</a></h3>
 <p>Anteriormente hemos comentado que las ondas reflejadas en ambas caras salen propagándose en direcciones paralelas pudiendo observar el patrón de interferencias en el plano focal de una lente convergente. ¿Pero cómo es este patrón?. Podemos deducir su forma observando las figuras anteriores y añadiendo una lente que recogería los haces reflejados en la lámina y que proceden, inicialmente, de la fuente S. Si esta fuente no es puntual, a distintos puntos de la superficie llegarán haces procedentes de distintos puntos de la fuente, cada uno de ellos con un ángulo de incidencia distinto, iluminando de este modo toda la superficie de la lámina. En términos de rayos (que nos marcan las direcciones de propagación de los haces), podemos decir que rayos que incidan con el mismo ángulo de incidencia en diferentes puntos darán lugar a dos rayos reflejados que llegarán a la lente subtendiendo el mismo ángulo, lo que finalmente los hará converger a la misma distancia del eje de la lente. Al incidir con el mismo ángulo de incidencia los pares de haces reflejados en cada punto tendrán el mismo desfase, y el carácter de la interferencia (constructiva o destructiva) será el mismo.</p>
 <p>Tenemos por tanto, que los rayos que incidan en diferentes puntos de la superficie de la lámina con un ángulo de incidencia que dé lugar a un máximo de interferencia distribuirán este máximo en una circunferencia con centro el eje de la lente, es decir, el patrón de interferencias consistirá en circunferencias concéntricas de máximos y mínimos. Si observamos una región pequeña de la lámina o si la fuente es muy pequeña, veremos arcos de circunferencia únicamente.</p>
 <p>MEJORAR! FIGURA??</p>
@@ -552,7 +552,7 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f5e4bcaa4d0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f3920500c10&gt;]
 </pre></div>
 </div>
 <img alt="../_images/Laminas_planoparalelas_4_1.png" src="../_images/Laminas_planoparalelas_4_1.png" />
@@ -560,7 +560,7 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 </div>
 </div>
 <div class="section" id="condicion-de-maximo-y-minimo-franjas-de-igual-inclinacion">
-<h3><span class="section-number">6.2.2. </span>Condición de máximo y mínimo. Franjas de igual inclinación<a class="headerlink" href="#condicion-de-maximo-y-minimo-franjas-de-igual-inclinacion" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.2.2. </span>Condición de máximo y mínimo. Franjas de igual inclinación<a class="headerlink" href="#condicion-de-maximo-y-minimo-franjas-de-igual-inclinacion" title="Permalink to this headline">¶</a></h3>
 <p>La condición para tener máximos de interferencia es, al igual que en otros casos, que el desfase total sea igual  a <span class="math notranslate nohighlight">\(2 m \pi\)</span> rad. Dependiendo de la relación entre los índices de la lámina, el medio desde el que incide la luz, y el medio al que se transmite tras la lámina, el desfase debido a las reflexiones tomará el valor 0 ó <span class="math notranslate nohighlight">\(\pi\)</span> rad, cambiando por tanto la condición de máximos. Si nos centramos en uno de los dos casos, por ejemplo cuando <span class="math notranslate nohighlight">\(\delta_R = \pi\)</span> rad, tendríamos como condición de máximo,</p>
 <div class="math notranslate nohighlight">
 \[\delta_G + \delta_R = 2 m \pi \Rightarrow   \frac{4 \pi}{\lambda} n h \cos(\theta_t) +  \pi = 2 m \pi \Rightarrow \frac{n h \cos(\theta_t)}{\lambda} = \frac{(2 m -1)}{4}\]</div>
@@ -571,22 +571,9 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 </div>
 </div>
 <div class="section" id="video-leccion-virtual">
-<h2><span class="section-number">6.3. </span>Vídeo lección virtual<a class="headerlink" href="#video-leccion-virtual" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.3. </span>Vídeo lección virtual<a class="headerlink" href="#video-leccion-virtual" title="Permalink to this headline">¶</a></h2>
 <p>El siguiente vídeo muestra una explicación sobre las interferencias en láminas de caras planoparalelas y de las franjas de igual inclinación que aparecen como resultado de la interferencias de los haces reflejados en ambas caras de la lámina.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;LibroVirtual_LáminaPlanoParalela.mp4&quot;</span>
-
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
-<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><video src="LibroVirtual_LáminaPlanoParalela.mp4" controls  >
-      Your browser does not support the <code>video</code> element.
-    </video></div></div>
-</div>
+<p><video src="/home/edu/docencia/OFII/LibroOFII/_static/videos/LibroVirtual_LaminaPlanoParalela.mp4"></video></p>
 </div>
 </div>
 
@@ -619,13 +606,13 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">5. </span>Biprisma de Fresnel</p>
+            <p class="prev-next-title"><span class="section-number">4. </span>Biprisma de Fresnel</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../TratamientoAntirreflejante/TratamientosAntirreflejantes.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Tratamientos Antirreflejantes</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Tratamientos Antirreflejantes</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

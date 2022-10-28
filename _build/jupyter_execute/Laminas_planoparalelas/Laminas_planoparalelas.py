@@ -20,8 +20,6 @@
 # en donde en la expresión anterior, $I_1$ ahora será la irradiancia de la primera onda reflejada/transmitida (según estemos considerando la interferencia en reflexión o transmisión), $I_2$ será la irradiancia de la segunda onda reflejada/transmitida, $\delta$ es el desfase total entre estas ondas, que debemos calcular. Por último, hay que apuntar que en la ecuación anterior se ha supuesto que los haces que interfieren se propagan con igual polarización.
 # 
 # A continuación vamos a analizar la interferencia que se produce en reflexión. Para ello, primero tenemos que obtener la irradiancia de cada onda que participa en la interferencia, así como el desfase entre ellas.
-# 
-# 
 
 # ## Irradiancia de las ondas que interfieren en reflexión
 # 
@@ -81,8 +79,6 @@
 # $$
 # I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 # $$
-# 
-# 
 
 # ## Desfase entre las ondas que interfieren
 # 
@@ -129,7 +125,6 @@
 # 
 # 
 # Para el caso de las ondas que interfieren en transmisión, podemos observar que el desfase debido a la diferencia de camino es el mismo que el calculado anteriormente, mientras que el desfase debido a las reflexiones es justo el opuesto que el caso anterior, al tener la segunda onda dos reflexiones internas, una en la segunda cara, y otra en la primera. La consecuencia es que en las condiciones en las que encontremos máximos en reflexión, encontraremos mínimos en la interferencia de las ondas que se transmiten, y al revés. Evidentemente, esto es algo esperable, ya que si la lámina no absorbe nada de energía, si la irradiacia es máxima en reflexión, ha de ser mínima en transmisión ya que la suma de ambas ha de ser igual a la irradiancia del haz incidente.
-# 
 
 # ### Patron de franjas observado en el plano focal de una lente convergente
 # 
@@ -139,7 +134,6 @@
 # Tenemos por tanto, que los rayos que incidan en diferentes puntos de la superficie de la lámina con un ángulo de incidencia que dé lugar a un máximo de interferencia distribuirán este máximo en una circunferencia con centro el eje de la lente, es decir, el patrón de interferencias consistirá en circunferencias concéntricas de máximos y mínimos. Si observamos una región pequeña de la lámina o si la fuente es muy pequeña, veremos arcos de circunferencia únicamente.
 # 
 # MEJORAR! FIGURA??
-# 
 
 # In[1]:
 
@@ -181,7 +175,6 @@ plot(x,I_t[:,I_t.shape[1]//2])
 ## algo está mal porque en el centro debería ser un mínimo si no me equivoco..
 
 
-# 
 # ### Condición de máximo y mínimo. Franjas de igual inclinación
 # 
 # La condición para tener máximos de interferencia es, al igual que en otros casos, que el desfase total sea igual  a $2 m \pi$ rad. Dependiendo de la relación entre los índices de la lámina, el medio desde el que incide la luz, y el medio al que se transmite tras la lámina, el desfase debido a las reflexiones tomará el valor 0 ó $\pi$ rad, cambiando por tanto la condición de máximos. Si nos centramos en uno de los dos casos, por ejemplo cuando $\delta_R = \pi$ rad, tendríamos como condición de máximo, 
@@ -194,22 +187,8 @@ plot(x,I_t[:,I_t.shape[1]//2])
 # 
 # 
 # Vemos por tanto que para una determinada longitud de onda y, dada una lámina con un espesor definido, el único parámetro libre que nos queda en las anteriores expresiones, y que por tanto define la posición de los máximos y mínimos en el plano focal de la lente convergente es el ángulo de transmisión en la primera cara $\theta_t$. Este ángulo viene fijado a través de la ley de Snell por el ángulo de incidencia y la relación de los índices de la lámina y del medio desde el que incide la luz. De ahí que a este tipo de franjas observadas gracias a una lámina planoparalela se les denomine **franjas de igual inclinación**.
-# 
 
 # ## Vídeo lección virtual
 # El siguiente vídeo muestra una explicación sobre las interferencias en láminas de caras planoparalelas y de las franjas de igual inclinación que aparecen como resultado de la interferencias de los haces reflejados en ambas caras de la lámina.
-
-# In[2]:
-
-
-nombre_archivo_video = "LibroVirtual_LáminaPlanoParalela.mp4"
-
-from IPython.display import Video
-Video(nombre_archivo_video)
-
-
-# In[ ]:
-
-
-
-
+# 
+# <video src="/home/edu/docencia/OFII/LibroOFII/_static/videos/LibroVirtual_LaminaPlanoParalela.mp4"></video>

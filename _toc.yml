@@ -8,23 +8,22 @@ defaults:
 parts:
 - caption: Teoria
   chapters:
-   - file: Interferencia2Ondas/Interferencia2Ondas.ipynb
-   - file: Interferencia2OndasLuz/Interferencia2Ondasdeluz.ipynb
-   - file: Experimento_Young/ExperimentoYoung.ipynb
-   - file: Experimento_Young/TrenesDeOnda.ipynb
-   - file: Biprisma_Teoria/BiprismaDeFresnel_Teoria.ipynb
-   - file: Laminas_planoparalelas/Laminas_planoparalelas.ipynb
-   - file: TratamientoAntirreflejante/TratamientosAntirreflejantes.ipynb
-   - file: InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.ipynb
-   - file: FranjasIgualEspesor/FranjasIgualEspesor-1.ipynb
-   - file: AnillosDeNewton_widgets/AnillosDeNewton.ipynb
-   - file: InterferometroMichelson_OCT/Michelson.ipynb
-   - file: InterferometroMichelson_OCT/OCT_2020.ipynb
-   - file: DifraccionFraunhofer/DifraccionFraunhofer.ipynb
-   - file: PoderDeResolucion/PoderDeResolucion.ipynb
-   - file: RedDeDifraccion/RedDeDifraccion.ipynb
-   - file: RedDeDifraccion/PoderResolucionRed.ipynb
-   - file: TeoriaAbbe/TeoriaAbbe.ipynb
+   - file: Interferencia2OndasLuz/Interferencia2Ondasdeluz.md
+   - file: Experimento_Young/ExperimentoYoung.md
+   - file: Experimento_Young/TrenesDeOnda.md
+   - file: Biprisma_Teoria/BiprismaDeFresnel_Teoria.md
+   - file: Laminas_planoparalelas/Laminas_planoparalelas.md
+   - file: TratamientoAntirreflejante/TratamientosAntirreflejantes.md
+   - file: InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.md
+   - file: FranjasIgualEspesor/FranjasIgualEspesor-1.md
+   - file: AnillosDeNewton_widgets/AnillosDeNewton.md
+   - file: InterferometroMichelson_OCT/Michelson.md
+   - file: InterferometroMichelson_OCT/OCT_2020.md
+   - file: DifraccionFraunhofer/DifraccionFraunhofer.md
+   - file: PoderDeResolucion/PoderDeResolucion.md
+   - file: RedDeDifraccion/RedDeDifraccion.md
+   - file: RedDeDifraccion/PoderResolucionRed.md
+   - file: TeoriaAbbe/TeoriaAbbe.md
 - caption: Trabajos
   chapters:
    - file: TrabajoExperimentoYoung/Trabajo_ExpYoung.ipynb

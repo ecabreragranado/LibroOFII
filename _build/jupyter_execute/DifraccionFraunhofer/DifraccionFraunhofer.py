@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Difracción de Fraunhofer 
+# # Difracción de Fraunhofer
 
 # La difracción es la tendencia de toda onda a apartarse de la propagación rectilínea mientras se propaga o pasa a través de una apertura u obstáculo.
 # 
@@ -256,8 +256,6 @@ widgets.interact(circ,D=(500,3000,100),Da=(0.05,0.2,0.02),Color=lambdawidgets)#w
 # Este angulo asi hallado es el angulo que subtiende el primer minimo en la pantalla con el eje del sistema visto desde la apertura circular. Como normalmente es pequeno, tenemos que $\sin(\theta) \sim \theta \sim \tan(\theta) = r_1/D$, donde aqui $r_1$ representa el radio de ese primer anillo oscuro y $D$ la distancia entre la apertura y la pantalla de observacion. Tenemos por tanto, que el radio del primer anillo oscuro, es igual a, 
 # 
 # $$r_1 = \frac{1.22 \lambda D}{D_a}$$
-# 
-# 
 
 # In[ ]:
 

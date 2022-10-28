@@ -15,7 +15,7 @@ Image(filename="YoungTwoSlitExperiment.JPG")
 #     
 # Así comenzó Thomas Young su famoso experimento el 24 de noviembre de 1803 en la Real Sociedad de Londres. Ante una audencia mayoritariamente defensora de la teoría corpuscular de la luz (apoyada por Isaac Newton), Thomas Young llevó a cabo el primer experimento de interferencias de luz, demostrando la naturaleza ondulatoria de la luz. Dejó pasar un rayo de sol por un pequeño orificio de la ventana de la habitación e hizo incidir el haz de luz sobre el canto de una tarjeta diviendo el haz en dos. Estos dos haces al solaparse en una pantalla generaban unas franjas oscuras y brillantes de luz.
 # 
-# [1] Thomas Young, "Experimental Demonstration of the General Law of the Interference of Light", Philosophical Transactions of the Royal Society of London vol. 94 (1804). 
+# [1] Thomas Young, "Experimental Demonstration of the General Law of the Interference of Light", Philosophical Transactions of the Royal Society of London vol. 94 (1804).
 
 # ## Teoría
 # 
@@ -57,7 +57,7 @@ Image(filename="ExperimentoYoung.jpg")
 
 # Según la figura, $\Delta = r_2 - r_1$ lo podemos escribir como $\Delta = a sen(\theta)$, siendo $a$ la separación entre las rendijas. Si éste ángulo es pequeño (lo que significa que la distancia entre las fuentes y la pantalla de observación sea grande comparada con la separación entre las fuentes, $D \gg a$), esta expresión la podemos simplificar, 
 # 
-# $$ \Delta = a \; sen(\theta) \simeq a \; tan(\theta) = a \frac{x}{D}$$.
+# $$\Delta = a \; sen(\theta) \simeq a \; tan(\theta) = a \frac{x}{D}$$
 # 
 # Y por tanto, 
 # 
@@ -66,9 +66,7 @@ Image(filename="ExperimentoYoung.jpg")
 # En estas expresiones, $x$ es la distancia del punto P de observación al eje mientras que $D$ es la distancia entre el plano
 # que contiene a las fuentes y la pantalla de observación, donde se encuentra P. Podemos reescribir la irradiancia total en la pantalla empleando la expresión calculada del desfase 
 # 
-# <div class="alert alert-success">
 # $$I_T = 2 I_1 \left( 1 + cos\left( \frac{2 \pi a x}{\lambda D} \right) \; \right)$$
-# </div>
 
 # ## Distribución de luz. Patrón de interferencias
 # 

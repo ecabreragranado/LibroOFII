@@ -27,15 +27,13 @@
 # </center>
 # ----------
 # 
-# Esta distribucion de irradiancia provocada por una abertura circular toma gran importancia al introducir los efectos de la difraccion en la formacion de la imagen de un sistema optico. Efectivamente, todo sistema optico posee una dimension transversal finita, normalmente dada por el tamaño de las lentes o diafragmas incluidos. Este tamaño finito provoca que el haz procedente de un objeto del cual se quiera formar su imagen sea cortado en su entrada al sistema, apareciendo por tanto los efectos de la difracción comentados en este tema. El resultado es que la predicción realizada por la Optica Geometrica para un sistema optico perfecto por la cual la imagen de un punto es un punto deja de tener validez por la difracción. Al incluir sus efectos, la imagen de un punto será una mancha de difracción. Por otro lado, y dado que la mayoria de las lentes y diafragmas utilizados tienen forma circular, esta mancha sera la mancha de Airy comentada anteriormente. 
-# 
-# 
+# Esta distribucion de irradiancia provocada por una abertura circular toma gran importancia al introducir los efectos de la difraccion en la formacion de la imagen de un sistema optico. Efectivamente, todo sistema optico posee una dimension transversal finita, normalmente dada por el tamaño de las lentes o diafragmas incluidos. Este tamaño finito provoca que el haz procedente de un objeto del cual se quiera formar su imagen sea cortado en su entrada al sistema, apareciendo por tanto los efectos de la difracción comentados en este tema. El resultado es que la predicción realizada por la Optica Geometrica para un sistema optico perfecto por la cual la imagen de un punto es un punto deja de tener validez por la difracción. Al incluir sus efectos, la imagen de un punto será una mancha de difracción. Por otro lado, y dado que la mayoria de las lentes y diafragmas utilizados tienen forma circular, esta mancha sera la mancha de Airy comentada anteriormente.
 
 # ## Limitación en la resolución de dos objetos puntuales cercanos
 # 
 # <center>
 # 
-# ![poderfig](poderresoluciónfig.png)
+# ![poderfig](poderresolucionfig.png)
 # 
 # </center>
 # 

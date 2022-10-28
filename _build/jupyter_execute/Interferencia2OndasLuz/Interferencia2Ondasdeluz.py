@@ -53,9 +53,7 @@
 # 
 # Así llegamos a la siguiente expresión general de la irradiancia total:
 # 
-# <div class="alert alert-success">
 # $$I_T = I_1 + I_2 + 2 \sqrt{I_1 I_2} (\vec{e_{1}}\cdot\vec{e_{2}})  \cos(\delta)$$
-# </div>
 # 
 # donde $\delta$ es la **diferencia de fase o desfase** (resta) entre las dos ondas que interfieren.
 # 
