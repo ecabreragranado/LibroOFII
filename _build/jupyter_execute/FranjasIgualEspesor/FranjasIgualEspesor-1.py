@@ -260,12 +260,5 @@ display(interactive_plot2)
 
 # ## Vídeo lección virtual
 # El siguiente vídeo muestra una explicación del tema de interferencias en láminas delgadas de espesor variable con forma de cuña
-
-# In[3]:
-
-
-nombre_archivo_video = "LibroVirtual_LáminaEspesorVariable_cuña.mp4"
-
-from IPython.display import Video
-Video(nombre_archivo_video)
-
+# 
+# <video src="../_static/videos/LibroVirtual_LaminaEspesorVariable_cuña.mp4"></video>
