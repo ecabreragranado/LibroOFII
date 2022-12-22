@@ -47,4 +47,6 @@ html:
 launch_buttons:
   colab_url: "https://colab.research.google.com"
 
-
+# Add Thebe
+launch_buttons:
+  thebe: true
