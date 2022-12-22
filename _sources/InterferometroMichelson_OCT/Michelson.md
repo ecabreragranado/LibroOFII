@@ -1,20 +1,20 @@
 ---
-jupyter:
-  jupytext:
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.11.5
-  kernelspec:
-    display_name: Python 3
-    language: python
-    name: python3
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.11.5
+kernelspec:
+  display_name: Python 3 (ipykernel)
+  language: python
+  name: python3
 ---
 
 # Interferómetro de Michelson
 
-<!-- #region -->
++++
+
 ### Dispositivo
 
 
@@ -45,25 +45,26 @@ Como se ha comentado anteriormente, la diferencia de camino óptico $\Delta$ ent
 
 Sin embargo, este valor de la diferencia de camino es valido únicamente para ese punto en el que se sitúa el detector, que se correspondería con el punto central del perfil transversal de los haces que interfieren. Para ver que patrón de interferencias tenemos cuando miramos otros rayos que no se propagan por el eje del sistema, podemos añadir una lente convergente y observar dicho patrón en su plano focal. En este caso, podemos hallar el patrón de interferencias si nos damos cuenta de que, desde este punto en el que observamos, nuestro sistema es equivalente a dos superficies planas con una distancia entre ellas y que reflejan los haces que van a interferir. Esta equivalencia la vemos si proyectamos el espejo $M_2$ sobre el camino que lleva a $M_1$, lo cual seria observar la imagen $M'_2$ de $M_2$ dada por el divisor de haz y la lamina compensadora, como aparece en la figura anterior. Al hacerlo, vemos que las franjas que observemos en el plano focal de la lente convergente pueden ser de dos tipos:
 
-<center>
-<img src=michelsonfiguretikzlineal.jpg width=400px></img>
-</center>
+
+<img src=michelsonfiguretikzlineal.png width=400px></img>
+
 
 1. En el caso en el que las superficies de $M_1$ y $M'_2$ sean paralelas entre si el sistema es equivalente a una lamina planoparalela, observando anillos brillantes y oscuros, al igual que nos ocurría cuando estudiamos ese caso. A este tipo de franjas las denominamos *franjas de igual inclinación*.
 
 2. En el caso en el que las superficies de $M_1$ y $M'_2$ **no** sean paralelas entre si el sistema es equivalente a una cuña, observando franjas rectas equiespaciadas brillantes y oscuras. A este tipo de franjas las denominamos *franjas de igual espesor*.
 
-<center>
+
 <img src = franjasmichelson.png width=300></img>
-</center>
-<!-- #endregion -->
+
++++
 
 ## Aplicaciones
 
++++
 
 ### Medida de la longitud de onda
 
-```python
+```{code-cell} ipython3
 from IPython.display import HTML
 HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/j-u3IEgcTiQ?start=33" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
 ```
@@ -80,17 +81,19 @@ $$L = N \frac{\lambda}{2} \Rightarrow \lambda = \frac{2 L}{N}$$
 
 como aparece en el video anterior.
 
++++
 
 ### Medida de la longitud de coherencia de la radiación
 
-<!-- #region -->
++++
+
 Quizás la aplicación más importante (dentro del campo de la Óptica y la Optometría) del interferómetro de Michelson es la OCT (Tomografia de Coherencia Óptica), la cual se basa en el funcionamiento de un interferómetro de Michelson bajo iluminación por una fuente de muy baja longitud de coherencia (y por tanto, con una gran anchura espectral). Antes de ver la OCT, vamos a analizar lo que ocurre cuando iluminamos este interferómetro con radiación no monocromática, y si podemos utilizarlo para medir, tanto la longitud de coherencia de la radiación como la anchura espectral.
 
 En todo este apartado la presencia de la lámina compensadora resulta crucial, pues sin ella, la diferencia de camino entre los haces que van a los dos espejos seria desde el principio demasiado grande para observar interferencias (mayor que la longitud de coherencia de la radiación). 
 
-<center>
-<img src=michelsonfiguretikzlc.jpg width=400px></img>
-</center>
+
+<img src=michelsonfiguretikzlc.png width=400px></img>
+
 
 En cualquier caso, si la longitud de coherencia es finita, habrá una distancia del espejo móvil que provocará que $\Delta = 2 d > l_c$ a partir de la cual no veremos interferencia. Por tanto, anotando la distancia $D_{max}$ al divisor del haz del espejo móvil a partir de la cual ya no se observan interferencias, y sabiendo la distancia $D_0$ del espejo fijo, tendremos que,
 
@@ -100,18 +103,16 @@ $$d_{max} = D_{max} - D_0$$
 $$l_c = d_{max}/2$$
 
 y sabiendo $l_c$, tendremos la anchura espectral $\Delta \lambda = \frac{\lambda_0^2}{l_c}$.
-<!-- #endregion -->
+
++++
 
 ## Vídeo lección virtual
 El siguiente vídeo muestra una explicación del interferómetro de Michelson
 
-```python
-nombre_archivo_video = "LibroVirtual_InterferómetrodeMichelson.mp4"
+<video controls>
+    <source src="../_static/videos/LibroVirtual_InterferometrodeMichelson.mp4">
+       </video>
 
-from IPython.display import Video
-Video(nombre_archivo_video)
-```
-
-```python
+```{code-cell} ipython3
 
 ```
