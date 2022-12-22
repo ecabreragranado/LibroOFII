@@ -44,9 +44,9 @@
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -313,6 +313,9 @@
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Lanzamiento Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -423,38 +426,38 @@ El trabajo consistirá en diseñar un optotipo cuyo standard u ojo patrón sea e
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">054</span><span class="n">ca5457015</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_20456</span><span class="o">/</span><span class="mf">1686082799.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1">#NO TOCAR</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
 <span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 
 <span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">__init__</span><span class="nt">(self, data, url, filename, format, embed, width, height, retina, unconfined, metadata)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1223</span>         <span class="bp">self</span><span class="o">.</span><span class="n">unconfined</span> <span class="o">=</span> <span class="n">unconfined</span>
-<span class="g g-Whitespace">   </span><span class="mi">1224</span>         <span class="nb">super</span><span class="p">(</span><span class="n">Image</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> 
-<span class="ne">-&gt; </span><span class="mi">1225</span>                 <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1226</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1227</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="p">{}):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1230</span>         <span class="bp">self</span><span class="o">.</span><span class="n">unconfined</span> <span class="o">=</span> <span class="n">unconfined</span>
+<span class="g g-Whitespace">   </span><span class="mi">1231</span>         <span class="nb">super</span><span class="p">(</span><span class="n">Image</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> 
+<span class="ne">-&gt; </span><span class="mi">1232</span>                 <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1233</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1234</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="p">{}):</span>
 
 <span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">__init__</span><span class="nt">(self, data, url, filename, metadata)</span>
-<span class="g g-Whitespace">    </span><span class="mi">628</span>             <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="g g-Whitespace">    </span><span class="mi">629</span> 
-<span class="ne">--&gt; </span><span class="mi">630</span>         <span class="bp">self</span><span class="o">.</span><span class="n">reload</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">631</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_check_data</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">632</span> 
+<span class="g g-Whitespace">    </span><span class="mi">635</span>             <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="g g-Whitespace">    </span><span class="mi">636</span> 
+<span class="ne">--&gt; </span><span class="mi">637</span>         <span class="bp">self</span><span class="o">.</span><span class="n">reload</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">638</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_check_data</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">639</span> 
 
 <span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">reload</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1254</span>         <span class="sd">&quot;&quot;&quot;Reload the raw data from file or URL.&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1255</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">embed</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1256</span>             <span class="nb">super</span><span class="p">(</span><span class="n">Image</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">reload</span><span class="p">()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1257</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">retina</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1258</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_retina_shape</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1261</span>         <span class="sd">&quot;&quot;&quot;Reload the raw data from file or URL.&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1262</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">embed</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1263</span>             <span class="nb">super</span><span class="p">(</span><span class="n">Image</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">reload</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1264</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">retina</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1265</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_retina_shape</span><span class="p">()</span>
 
 <span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">reload</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">653</span>         <span class="sd">&quot;&quot;&quot;Reload the raw data from file or URL.&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">654</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">655</span>             <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_flags</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">656</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">657</span>         <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">660</span>         <span class="sd">&quot;&quot;&quot;Reload the raw data from file or URL.&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">661</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">662</span>             <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_flags</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">663</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">664</span>         <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 
 <span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;nombre.jpg&#39;
 </pre></div>
@@ -507,8 +510,8 @@ El trabajo consistirá en diseñar un optotipo cuyo standard u ojo patrón sea e
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "ecabreragranado/LibroOFII",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",

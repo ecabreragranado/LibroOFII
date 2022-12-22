@@ -42,13 +42,13 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -265,11 +265,14 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+        <a class="dropdown-buttons"
+            href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo de cuaderno" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -316,6 +319,9 @@
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Lanzamiento Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -547,7 +553,7 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f5e4bcaa4d0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f3920500c10&gt;]
 </pre></div>
 </div>
 <img alt="../_images/Laminas_planoparalelas_4_1.png" src="../_images/Laminas_planoparalelas_4_1.png" />
@@ -568,20 +574,7 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 <div class="section" id="video-leccion-virtual">
 <h2><span class="section-number">5.3. </span>Vídeo lección virtual<a class="headerlink" href="#video-leccion-virtual" title="Permalink to this headline">¶</a></h2>
 <p>El siguiente vídeo muestra una explicación sobre las interferencias en láminas de caras planoparalelas y de las franjas de igual inclinación que aparecen como resultado de la interferencias de los haces reflejados en ambas caras de la lámina.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;LibroVirtual_LáminaPlanoParalela.mp4&quot;</span>
-
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
-<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><video src="LibroVirtual_LáminaPlanoParalela.mp4" controls  >
-      Your browser does not support the <code>video</code> element.
-    </video></div></div>
-</div>
+<p><video src="/home/edu/docencia/OFII/LibroOFII/_static/videos/LibroVirtual_LaminaPlanoParalela.mp4"></video></p>
 </div>
 </div>
 
@@ -589,8 +582,8 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "ecabreragranado/LibroOFII",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",

@@ -42,13 +42,13 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -265,11 +265,14 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+        <a class="dropdown-buttons"
+            href="../_sources/InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo de cuaderno" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/InterferenciaMultiplesOndas/InterferenciaMultiplesOndas.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -316,6 +319,9 @@
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Lanzamiento Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -566,7 +572,12 @@ $<span class="math notranslate nohighlight">\(I_0 - I_t = I_0 - \frac{I_0}{1 + F
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Populating the interactive namespace from numpy and matplotlib
 </pre></div>
 </div>
-<img alt="../_images/InterferenciaMultiplesOndas_14_1.png" src="../_images/InterferenciaMultiplesOndas_14_1.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/IPython/core/magics/pylab.py:160: UserWarning: pylab import has clobbered these variables: [&#39;draw_if_interactive&#39;]
+`%matplotlib` prevents importing * from pylab and numpy
+  &quot;\n`%matplotlib` prevents importing * from pylab and numpy&quot;
+</pre></div>
+</div>
+<img alt="../_images/InterferenciaMultiplesOndas_14_2.png" src="../_images/InterferenciaMultiplesOndas_14_2.png" />
 </div>
 </div>
 <p>Lo que vemos en la anterior figura es que si <span class="math notranslate nohighlight">\(F\)</span> es suficientemente grande, podemos utilizar la lámina como un filtro espectral, ya que la transmitancia cae a valores muy cercanos a cero fuera de los picos que dan los máximos. Para aumentar <span class="math notranslate nohighlight">\(F\)</span>, se suelen usar recubrimientos metálicos (entonces los desfases debido a las reflexiones no son ya 0 ó <span class="math notranslate nohighlight">\(\pi\)</span>).</p>
@@ -608,7 +619,6 @@ $<span class="math notranslate nohighlight">\(I_0 - I_t = I_0 - \frac{I_0}{1 + F
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/IPython/core/magics/pylab.py:160: UserWarning: pylab import has clobbered these variables: [&#39;e&#39;]
 `%matplotlib` prevents importing * from pylab and numpy
   &quot;\n`%matplotlib` prevents importing * from pylab and numpy&quot;
-/home/edu/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:21: MatplotlibDeprecationWarning: Auto-removal of grids by pcolor() and pcolormesh() is deprecated since 3.5 and will be removed two minor releases later; please call grid(False) first.
 </pre></div>
 </div>
 <img alt="../_images/InterferenciaMultiplesOndas_17_2.png" src="../_images/InterferenciaMultiplesOndas_17_2.png" />
@@ -669,13 +679,10 @@ $<span class="math notranslate nohighlight">\(I_0 - I_t = I_0 - \frac{I_0}{1 + F
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:25: MatplotlibDeprecationWarning: Auto-removal of grids by pcolor() and pcolormesh() is deprecated since 3.5 and will be removed two minor releases later; please call grid(False) first.
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(5.0, 15.0)
 </pre></div>
 </div>
-<img alt="../_images/InterferenciaMultiplesOndas_20_2.png" src="../_images/InterferenciaMultiplesOndas_20_2.png" />
+<img alt="../_images/InterferenciaMultiplesOndas_20_1.png" src="../_images/InterferenciaMultiplesOndas_20_1.png" />
 </div>
 </div>
 </div>
@@ -689,8 +696,8 @@ $<span class="math notranslate nohighlight">\(I_0 - I_t = I_0 - \frac{I_0}{1 + F
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "ecabreragranado/LibroOFII",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",

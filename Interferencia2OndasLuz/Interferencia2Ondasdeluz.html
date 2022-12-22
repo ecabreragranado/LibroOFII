@@ -42,13 +42,13 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -265,11 +265,14 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Interferencia2OndasLuz/Interferencia2Ondasdeluz.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+        <a class="dropdown-buttons"
+            href="../_sources/Interferencia2OndasLuz/Interferencia2Ondasdeluz.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo de cuaderno" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Interferencia2OndasLuz/Interferencia2Ondasdeluz.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -316,6 +319,9 @@
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Lanzamiento Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -428,9 +434,8 @@
 <div class="math notranslate nohighlight">
 \[ 2 \epsilon_0 c n &lt;\vec{E_1} \cdot \vec{E_2}&gt; =  2 \sqrt{\frac{1}{2} \epsilon_0 c n E_{01}^2} \sqrt{\frac{1}{2} \epsilon_0 c n E_{02}^2} (\vec{e_{1}}\cdot\vec{e_{2}})  \cos[ (\vec{k_1} -  \vec{k_2}) \vec{r}   + \phi_1 - \phi_2]  =  2 \sqrt{I_1 I_2} (\vec{e_{1}}\cdot\vec{e_{2}})  \cos[ (\vec{k_1} -  \vec{k_2}) \vec{r}   + \phi_1 - \phi_2] \]</div>
 <p>Así llegamos a la siguiente expresión general de la irradiancia total:</p>
-<div class="alert alert-success">
-$$I_T = I_1 + I_2 + 2 \sqrt{I_1 I_2} (\vec{e_{1}}\cdot\vec{e_{2}})  \cos(\delta)$$
-</div>
+<div class="math notranslate nohighlight">
+\[I_T = I_1 + I_2 + 2 \sqrt{I_1 I_2} (\vec{e_{1}}\cdot\vec{e_{2}})  \cos(\delta)\]</div>
 <p>donde <span class="math notranslate nohighlight">\(\delta\)</span> es la <strong>diferencia de fase o desfase</strong> (resta) entre las dos ondas que interfieren.</p>
 <p>De la anterior expresión podemos extraer varias conclusiones:</p>
 <ul class="simple">
@@ -497,7 +502,7 @@ $$I_T = I_1 + I_2 + 2 \sqrt{I_1 I_2} (\vec{e_{1}}\cdot\vec{e_{2}})  \cos(\delta)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/IPython/core/display.py:717: UserWarning: Consider using IPython.display.IFrame instead
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/IPython/core/display.py:724: UserWarning: Consider using IPython.display.IFrame instead
   warnings.warn(&quot;Consider using IPython.display.IFrame instead&quot;)
 </pre></div>
 </div>
@@ -510,8 +515,8 @@ $$I_T = I_1 + I_2 + 2 \sqrt{I_1 I_2} (\vec{e_{1}}\cdot\vec{e_{2}})  \cos(\delta)
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "ecabreragranado/LibroOFII",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",

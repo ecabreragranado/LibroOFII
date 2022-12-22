@@ -42,13 +42,13 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -265,11 +265,14 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/RedDeDifraccion/PoderResolucionRed.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+        <a class="dropdown-buttons"
+            href="../_sources/RedDeDifraccion/PoderResolucionRed.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo de cuaderno" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/RedDeDifraccion/PoderResolucionRed.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -316,6 +319,9 @@
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Lanzamiento Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -519,7 +525,7 @@
 <div class="section" id="poder-de-resolucion-de-un-monocromador">
 <h2><span class="section-number">16.2. </span>Poder de resolución de un monocromador<a class="headerlink" href="#poder-de-resolucion-de-un-monocromador" title="Permalink to this headline">¶</a></h2>
 <center>
-<p><img src=./monocromador4.jpg width=500px></img></p>
+<p><a class="reference internal" href="../_images/monocromador4.jpg"><img alt="../_images/monocromador4.jpg" src="../_images/monocromador4.jpg" style="width: 500px;" /></a></img></p>
 </center>
 <p>Como hemos visto, las características de la red de difracción imponen un límite en su capacidad para resolver dos longitudes de onda cercanas. Sin embargo, este no es el único límite que tenemos que considerar si hablamos de la capacidad de un <em>dispositivo</em> para resolver dos longitudes de onda cercanas.</p>
 <p>La clave, es qué compone un <em>dispositivo</em> de medida de espectros. Por supuesto uno de los componentes será la red de difracción como elemento que separa espacialmente el espectro de la radiación (podría ser un prisma con una alta dispersión, pero en este tema nos centramos en las propiedades de la red de difracción). Pero a su vez, necesitamos <em>preparar</em> la luz que incide en la red para que entre un haz colimado a un cierto ángulo <span class="math notranslate nohighlight">\(\varepsilon\)</span> con respecto a la normal a la red. Para ello normalmente se utiliza una lente convergente antes de la red y colocamos la fuente en el foco objeto de dicha lente. Por otro lado, necesitamos otra lente convergente detrás de la red para observar el espectro en su plano focal imagen. De este modo, ya tenemos casi nuestro espectrómetro o monocromador.</p>
@@ -626,8 +632,8 @@
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "ecabreragranado/LibroOFII",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",

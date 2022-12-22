@@ -42,13 +42,13 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -267,9 +267,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/InterferometroMichelson_OCT/Michelson.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/InterferometroMichelson_OCT/Michelson.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -302,23 +302,6 @@
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ecabreragranado/LibroOFII/main?urlpath=tree/docs/InterferometroMichelson_OCT/Michelson.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
 
         </div>
 
@@ -435,6 +418,7 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="interferometro-de-michelson">
 <h1><span class="section-number">10. </span>Interferómetro de Michelson<a class="headerlink" href="#interferometro-de-michelson" title="Permalink to this headline">¶</a></h1>
+<!-- #region -->
 <div class="section" id="dispositivo">
 <h2><span class="section-number">10.1. </span>Dispositivo<a class="headerlink" href="#dispositivo" title="Permalink to this headline">¶</a></h2>
 <p>El esquema de un interferómetro de Michelson se ha dibujado a continuación.</p>
@@ -465,24 +449,16 @@
 </ol>
 <center>
 <img src = franjasmichelson.png width=300></img>
-</center></div>
+</center>
+<!-- #endregion -->
+</div>
 <div class="section" id="aplicaciones">
 <h2><span class="section-number">10.4. </span>Aplicaciones<a class="headerlink" href="#aplicaciones" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="medida-de-la-longitud-de-onda">
 <h3><span class="section-number">10.4.1. </span>Medida de la longitud de onda<a class="headerlink" href="#medida-de-la-longitud-de-onda" title="Permalink to this headline">¶</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
 <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/j-u3IEgcTiQ?start=33&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/edu/anaconda3/lib/python3.7/site-packages/IPython/core/display.py:717: UserWarning: Consider using IPython.display.IFrame instead
-  warnings.warn(&quot;Consider using IPython.display.IFrame instead&quot;)
-</pre></div>
-</div>
-<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/j-u3IEgcTiQ?start=33" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
 </div>
 <p>Como se ha indicado anteriormente, la diferencia de camino en el punto central del patron de interferencias es <span class="math notranslate nohighlight">\(\Delta = 2 d\)</span>. Eso implica que el desfase entre los haces es <span class="math notranslate nohighlight">\(\delta = k \Delta = \frac{2 \pi}{\lambda} 2 d\)</span>. La distancia <span class="math notranslate nohighlight">\(d\)</span> necesaria para obtener máximos y mínimos de luz será:</p>
 <ul class="simple">
@@ -496,6 +472,7 @@
 </div>
 <div class="section" id="medida-de-la-longitud-de-coherencia-de-la-radiacion">
 <h3><span class="section-number">10.4.2. </span>Medida de la longitud de coherencia de la radiación<a class="headerlink" href="#medida-de-la-longitud-de-coherencia-de-la-radiacion" title="Permalink to this headline">¶</a></h3>
+<!-- #region -->
 <p>Quizás la aplicación más importante (dentro del campo de la Óptica y la Optometría) del interferómetro de Michelson es la OCT (Tomografia de Coherencia Óptica), la cual se basa en el funcionamiento de un interferómetro de Michelson bajo iluminación por una fuente de muy baja longitud de coherencia (y por tanto, con una gran anchura espectral). Antes de ver la OCT, vamos a analizar lo que ocurre cuando iluminamos este interferómetro con radiación no monocromática, y si podemos utilizarlo para medir, tanto la longitud de coherencia de la radiación como la anchura espectral.</p>
 <p>En todo este apartado la presencia de la lámina compensadora resulta crucial, pues sin ella, la diferencia de camino entre los haces que van a los dos espejos seria desde el principio demasiado grande para observar interferencias (mayor que la longitud de coherencia de la radiación).</p>
 <center>
@@ -507,24 +484,20 @@
 <div class="math notranslate nohighlight">
 \[l_c = d_{max}/2\]</div>
 <p>y sabiendo <span class="math notranslate nohighlight">\(l_c\)</span>, tendremos la anchura espectral <span class="math notranslate nohighlight">\(\Delta \lambda = \frac{\lambda_0^2}{l_c}\)</span>.</p>
+<!-- #endregion -->
 </div>
 </div>
 <div class="section" id="video-leccion-virtual">
 <h2><span class="section-number">10.5. </span>Vídeo lección virtual<a class="headerlink" href="#video-leccion-virtual" title="Permalink to this headline">¶</a></h2>
 <p>El siguiente vídeo muestra una explicación del interferómetro de Michelson</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;LibroVirtual_InterferómetrodeMichelson.mp4&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;LibroVirtual_InterferómetrodeMichelson.mp4&quot;</span>
 
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
 <span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><video src="LibroVirtual_InterferómetrodeMichelson.mp4" controls  >
-      Your browser does not support the <code>video</code> element.
-    </video></div></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
 </div>
 </div>
 </div>
@@ -533,8 +506,8 @@
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "ecabreragranado/LibroOFII",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",

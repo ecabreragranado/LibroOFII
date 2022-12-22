@@ -42,13 +42,13 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -265,11 +265,14 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/RedDeDifraccion/RedDeDifraccion.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+        <a class="dropdown-buttons"
+            href="../_sources/RedDeDifraccion/RedDeDifraccion.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo de cuaderno" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/RedDeDifraccion/RedDeDifraccion.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -316,6 +319,9 @@
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Lanzamiento Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -383,9 +389,8 @@
 <h1><span class="section-number">15. </span>Red de difracción<a class="headerlink" href="#red-de-difraccion" title="Permalink to this headline">¶</a></h1>
 <p>En el estudio de los efectos de difracción, hemos considerado anteriormente qué ocurre cuando una onda electromagnética incide sobre una abertura de cierto tamaño. Vamos ahora a deducir la irradiancia que observaríamos si en vez de una única abertura, tuviésemos un número muy grande <span class="math notranslate nohighlight">\(N\)</span> de ellas. En lo que sigue vamos a considerar por tanto que tenemos un haz plano monocromático, de longitud de onda <span class="math notranslate nohighlight">\(\lambda\)</span>, que incide perpendicularmente a un conjunto de rendijas con un cierto tamaño <span class="math notranslate nohighlight">\(b\)</span> y una separación entre ellas <span class="math notranslate nohighlight">\(d\)</span>. A este último parámetro le denominaremos <em>paso de la red</em>.</p>
 <center>
-<p><img src ='RedDif_general.png' width=300px></img></p>
-</center>
-<p>Antes de deducir las expresiones del campo y la irradiancia para este caso, vamos a intentar averiguar qué podríamos esperar en este caso. Si tenemos un cierto número de rendijas sobre las que incide una onda plana, cada una de ellas, producirá un campo eléctrico en un punto <span class="math notranslate nohighlight">\(P\)</span> suficientemente alejado de la rendija (es decir, trabajamos en el régimen de Fraunhofer), el cual sabemos cuál es su expresión.</p>
+<p><a class="reference internal" href="../_images/RedDif_general.png"><img alt="../_images/RedDif_general.png" src="../_images/RedDif_general.png" style="width: 300px;" /></a></img></p>
+</center><p>Antes de deducir las expresiones del campo y la irradiancia para este caso, vamos a intentar averiguar qué podríamos esperar en este caso. Si tenemos un cierto número de rendijas sobre las que incide una onda plana, cada una de ellas, producirá un campo eléctrico en un punto <span class="math notranslate nohighlight">\(P\)</span> suficientemente alejado de la rendija (es decir, trabajamos en el régimen de Fraunhofer), el cual sabemos cuál es su expresión.</p>
 <p>Como en vez de una única rendija, tenemos en esta ocasión <span class="math notranslate nohighlight">\(N\)</span> de ellas, los campos producidos por cada una de las rendijas se sumarán (o dicho de otro modo, interferirán) en <span class="math notranslate nohighlight">\(P\)</span>, con una diferencia de fase entre ellos dada por la diferencia de camino que tienen que recorrer para llegar a <span class="math notranslate nohighlight">\(P\)</span>. Por tanto, obtendremos máximos de irradiancia cuando todas estas ondas emitidas por cada una de las rendijas lleguen en fase entre sí, o lo que es lo mismo, cuando la diferencia de camino entre dos de ellas sea un múltiplo entero de <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[ \Delta = m \lambda\]</div>
@@ -527,8 +532,8 @@ Sin embargo, podemos analizar cualitativamente cómo van a ser esos máximos. Al
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "ecabreragranado/LibroOFII",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
