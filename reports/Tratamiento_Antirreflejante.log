@@ -24,7 +24,7 @@ lambda0 = int(np.random.rand()*150 +475)
 print "Longitud de onda para la que optimizamos el tratamiento = ",lambda0, " nm"
 ------------------
 
-[0;36m  File [0;32m"/tmp/ipykernel_548399/1992368028.py"[0;36m, line [0;32m5[0m
+[0;36m  File [0;32m"/tmp/ipykernel_574399/1992368028.py"[0;36m, line [0;32m5[0m
 [0;31m    print "Longitud de onda para la que optimizamos el tratamiento = ",lambda0, " nm"[0m
 [0m                                                                     ^[0m
 [0;31mSyntaxError[0m[0;31m:[0m Missing parentheses in call to 'print'. Did you mean print("Longitud de onda para la que optimizamos el tratamiento = ",lambda0, " nm")?
