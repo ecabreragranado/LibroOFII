@@ -216,5 +216,13 @@ Vemos por tanto que para una determinada longitud de onda y, dada una lámina co
 ## Vídeo lección virtual
 El siguiente vídeo muestra una explicación sobre las interferencias en láminas de caras planoparalelas y de las franjas de igual inclinación que aparecen como resultado de la interferencias de los haces reflejados en ambas caras de la lámina.
 
-<video src="/home/edu/docencia/OFII/LibroOFII/_static/videos/LibroVirtual_LaminaPlanoParalela.mp4"></video>
+```{code-cell} ipython3
+nombre_archivo_video = "LibroVirtual_LáminaPlanoParalela.mp4"
 
+from IPython.display import Video
+Video(nombre_archivo_video)
+```
+
+```{code-cell} ipython3
+
+```
