@@ -426,47 +426,8 @@ El trabajo consistirá en diseñar un optotipo cuyo standard u ojo patrón sea e
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;nombre.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
 <span class="c1">#NO TOCAR</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
-<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_574379</span><span class="o">/</span><span class="mf">1686082799.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1">#NO TOCAR</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
-
-<span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">__init__</span><span class="nt">(self, data, url, filename, format, embed, width, height, retina, unconfined, metadata)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1230</span>         <span class="bp">self</span><span class="o">.</span><span class="n">unconfined</span> <span class="o">=</span> <span class="n">unconfined</span>
-<span class="g g-Whitespace">   </span><span class="mi">1231</span>         <span class="nb">super</span><span class="p">(</span><span class="n">Image</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> 
-<span class="ne">-&gt; </span><span class="mi">1232</span>                 <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1233</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1234</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="p">{}):</span>
-
-<span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">__init__</span><span class="nt">(self, data, url, filename, metadata)</span>
-<span class="g g-Whitespace">    </span><span class="mi">635</span>             <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="g g-Whitespace">    </span><span class="mi">636</span> 
-<span class="ne">--&gt; </span><span class="mi">637</span>         <span class="bp">self</span><span class="o">.</span><span class="n">reload</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">638</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_check_data</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">639</span> 
-
-<span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">reload</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1261</span>         <span class="sd">&quot;&quot;&quot;Reload the raw data from file or URL.&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1262</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">embed</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1263</span>             <span class="nb">super</span><span class="p">(</span><span class="n">Image</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">reload</span><span class="p">()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1264</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">retina</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1265</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_retina_shape</span><span class="p">()</span>
-
-<span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">reload</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">660</span>         <span class="sd">&quot;&quot;&quot;Reload the raw data from file or URL.&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">661</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">662</span>             <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_flags</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">663</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">664</span>         <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;nombre.jpg&#39;
+<span class="k">if</span><span class="p">(</span><span class="n">nombre_fichero_imagen</span> <span class="o">!=</span> <span class="s2">&quot;nombre.jpg&quot;</span><span class="p">):</span>
+    <span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -481,7 +442,8 @@ El trabajo consistirá en diseñar un optotipo cuyo standard u ojo patrón sea e
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;nombre.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
 <span class="c1">#NO TOCAR</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
-<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+<span class="k">if</span><span class="p">(</span><span class="n">nombre_fichero_imagen</span> <span class="o">!=</span> <span class="s2">&quot;nombre.jpg&quot;</span><span class="p">):</span>
+    <span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -495,7 +457,8 @@ El trabajo consistirá en diseñar un optotipo cuyo standard u ojo patrón sea e
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;nombre.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
 <span class="c1">#NO TOCAR</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
-<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+<span class="k">if</span><span class="p">(</span><span class="n">nombre_fichero_imagen</span> <span class="o">!=</span> <span class="s2">&quot;nombre.jpg&quot;</span><span class="p">):</span>
+    <span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -505,7 +468,8 @@ El trabajo consistirá en diseñar un optotipo cuyo standard u ojo patrón sea e
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_fichero_imagen</span><span class="o">=</span><span class="s2">&quot;nombre.jpg&quot;</span>  <span class="c1"># Incluir el nombre completo con extensión del fichero imagen dentro de las comillas</span>
 <span class="c1">#NO TOCAR</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span><span class="n">display</span>
-<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+<span class="k">if</span><span class="p">(</span><span class="n">nombre_fichero_imagen</span> <span class="o">!=</span> <span class="s2">&quot;nombre.jpg&quot;</span><span class="p">):</span>
+    <span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">nombre_fichero_imagen</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
