@@ -4,4 +4,4 @@ ipywidgets
 scipy
 warnings
 io
-base64
+IPython
