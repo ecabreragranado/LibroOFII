@@ -267,14 +267,11 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Descargar archivo de cuaderno" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Laminas_planoparalelas/Laminas_planoparalelas.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -320,6 +317,11 @@
                     alt="Interact on binder">Binder</button></a>
         
         
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/ecabreragranado/LibroOFII/blob/main/docs/Laminas_planoparalelas/Laminas_planoparalelas.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Lanzamiento Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
         
         <button type="button" class="btn btn-secondary topbarbtn"
             onclick="initThebeSBT()" title="Lanzamiento Thebe" data-toggle="tooltip" data-placement="left"><i
@@ -426,9 +428,7 @@
 <p>Una de las formas habituales de obtener interferencias es mediante la división del frente de ondas de un haz procedente de una fuente para posteriormente recombinar ambas partes. A este tipo de interferómetros se les conoce como <strong>interferómetros por división del frente de ondas</strong> y ejemplos de ellos pueden ser el interferómetro de la doble rendija o el biprisma de Fresnel. Otra estrategia para disponer de dos ondas que guarden una relación de fase constante en el tiempo entre ellas y por tanto den lugar a interferencia, es utilizar la reflexión y transmisión parcial en una superficie o espejo para producir estas dos ondas. A este tipo de interferómetros se les denomina <strong>interferómetros por división de amplitud</strong>. El ejemplo quizás más sencillo lo podemos encontrar en una lamina planoparalela (lámina con caras paralelas y por tanto espesor fijo).</p>
 <p>Efectivamente, si iluminamos una lámina planoparalela, de índice de refracción <em>n</em> y grosor <em>h</em>, con un haz que proceda de una fuente puntual, parte de este haz se reflejará en la primera cara y parte se transmitirá al interior de la lámina. Vamos a fijarnos en una parte del haz que se propague en una determinada dirección (un rayo incidente que incide sobre la lámina con un ángulo <span class="math notranslate nohighlight">\(\theta_i\)</span>). El haz transmitido, al llegar a la segunda cara, sufrirá a su vez una reflexión interna, transmitiéndose parcialmente al siguiente medio. Si nos ocupamos ahora mismo del haz que se refleja internamente en la segunda cara, este haz llegará a continuación de nuevo a la primera cara, sufriendo otra reflexión interna y transmitiéndose a su vez parcialmente al medio exterior. Este proceso de reflexiones internas se repetirá, bien hasta que el haz salga de la lámina, o bien hasta que se quede sin energía.</p>
 <p>Tenemos por tanto una situación en la que la reflexión y la transmisión global de la lámina es un conjunto de ondas producidas por las continuas reflexiones internas. Además, observando la figura podemos apreciar que estas ondas se propagarán en la misma dirección (los rayos de salida son paralelos). Si hacemos coincidir estos haces, por ejemplo utilizando una lente convergente, en su plano focal imagen observaremos la interferencia de todas estas ondas.</p>
-<center>
-<img src="laminaRefleTransmi.png" height=200px style="max-width:60%">
-</center>
+<p><a class="reference internal" href="../_images/laminaRefleTransmi.png"><img alt="../_images/laminaRefleTransmi.png" src="../_images/laminaRefleTransmi.png" style="width: 400px; height: 300px;" /></a></img></p>
 <p>Por supuesto, las reflexiones y transmisiones producidas en cada paso, llevan consigo que el haz que se propaga por el interior de la lámina sea cada vez mas débil, por lo que los haces reflejados internamente más de una vez contribuirán cada vez menos a la irradiancia total. Este hecho nos permite, como primera aproximación al problema, considerar únicamente la interferencia de las dos primeras ondas reflejadas/transmitidas en la lámina. De este modo podremos aplicar la expresión de la irradiancia total vista anteriormente para el caso de dos ondas, es decir,</p>
 <div class="math notranslate nohighlight">
 \[I_t = I_1 + I_2 + 2\sqrt{I_1 I_2} \cos(\delta)\]</div>
@@ -437,9 +437,7 @@
 <div class="section" id="irradiancia-de-las-ondas-que-interfieren-en-reflexion">
 <h2><span class="section-number">5.1. </span>Irradiancia de las ondas que interfieren en reflexión<a class="headerlink" href="#irradiancia-de-las-ondas-que-interfieren-en-reflexion" title="Permalink to this headline">¶</a></h2>
 <p>Para calcular la irradiancia de las dos primeras ondas reflejadas por la lámina tenemos que observar que procesos de reflexión y transmisión sufren dichas ondas hasta que convergen en el plano de observación.</p>
-<center>
-<img src="laminaRefleInten.png" height=200px style="max-width:60%">
-</center>
+<a class="reference internal image-reference" href="../_images/laminaRefleInten.png"><img alt="../_images/laminaRefleInten.png" src="../_images/laminaRefleInten.png" style="height: 300px;" /></a>
 <p>La primera onda reflejada (cuya irradiancia hemos denominado <span class="math notranslate nohighlight">\(I_1\)</span>), sufre únicamente una reflexión en la primera cara de la lámina. Tendremos por lo tanto que,</p>
 <div class="math notranslate nohighlight">
 \[I_1 = R_1 I_0\]</div>
@@ -480,9 +478,7 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 </div>
 <div class="section" id="desfase-entre-las-ondas-que-interfieren">
 <h2><span class="section-number">5.2. </span>Desfase entre las ondas que interfieren<a class="headerlink" href="#desfase-entre-las-ondas-que-interfieren" title="Permalink to this headline">¶</a></h2>
-<center>
-<img src="laminaplanoparalela2.png" height=200px style="max-width:60%">
-</center>
+<p><a class="reference internal" href="../_images/laminaplanoparalela2.png"><img alt="../_images/laminaplanoparalela2.png" src="../_images/laminaplanoparalela2.png" style="height: 300px;" /></a></img></p>
 <p>El desfase entre las ondas que interfieren <strong>en reflexión</strong>  vendrá dado por dos contribuciones. La primera de ellas es, simplemente, el desfase debido a la diferencia de camino recorrida por cada una de las dos ondas. Efectivamente, si miramos el diagrama anterior, vemos que la segunda onda, al penetrar en la lámina y reflejarse en la segunda cara, recorre más camino óptico que la primera hasta llegar al punto en el que se solapan, que puede ser, como hemos comentado anteriormente, el plano focal de una lente convergente. Esta diferencia de camino la podemos expresar del siguiente modo.</p>
 <div class="math notranslate nohighlight">
 \[\Delta = n(\overline{AB} + \overline{BC}) - \overline{AD}\]</div>
@@ -493,7 +489,10 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 \[\overline{AD} = \overline{AC} \sin(\theta_i) = 2 h \tan(\theta_t) \sin(\theta_i) \]</div>
 <p>Es decir, <span class="math notranslate nohighlight">\(\Delta = 2 n h / \cos(\theta_t) + 2 h \tan(\theta_t) \sin(\theta_i)\)</span>. Ahora utilizando la ley de Snell, <span class="math notranslate nohighlight">\(\sin(\theta_i) = n \sin(\theta_t)\)</span>, y las relaciones entre las funciones trigonométricas, podemos transformar esta expresión en,</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\Delta = 2 n h \cos(\theta_t)$$.\\Por tanto, el desfase debido a esta diferencia de camino, que llamaremos *desfase geométrico* y denotaremos como $\delta_G$ , será \\$$\delta_G = k \Delta =  \frac{2 \pi}{\lambda} 2 n h \cos(\theta_t)\end{aligned}\end{align} \]</div>
+\[\Delta = 2 n h \cos(\theta_t)\]</div>
+<p>Por tanto, el desfase debido a esta diferencia de camino, que llamaremos <em>desfase geométrico</em> y denotaremos como <span class="math notranslate nohighlight">\(\delta_G\)</span> , será</p>
+<div class="math notranslate nohighlight">
+\[\delta_G = k \Delta =  \frac{2 \pi}{\lambda} 2 n h \cos(\theta_t)\]</div>
 <p>Como hemos comentado anteriormente, este no es el único desfase que tenemos que considerar en la expresión de la irradiancia total. El motivo es que los coeficientes de reflexión en la primera y segunda cara, que afectan respectivamente a la onda 1 y a la onda 2, pueden ser de distinto signo. Efectivamente, si consideramos la expresión general del coeficiente de reflexión para, por ejemplo, un haz polarizado linealmente perpendicular al plano de incidencia tenemos,</p>
 <div class="math notranslate nohighlight">
 \[r = \frac{n_i \cos(\theta_i) - n_t \cos(\theta_t)}{n_i \cos(\theta_i) + n_t \cos(\theta_t)}\]</div>
@@ -513,7 +512,6 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 <h3><span class="section-number">5.2.1. </span>Patron de franjas observado en el plano focal de una lente convergente<a class="headerlink" href="#patron-de-franjas-observado-en-el-plano-focal-de-una-lente-convergente" title="Permalink to this headline">¶</a></h3>
 <p>Anteriormente hemos comentado que las ondas reflejadas en ambas caras salen propagándose en direcciones paralelas pudiendo observar el patrón de interferencias en el plano focal de una lente convergente. ¿Pero cómo es este patrón?. Podemos deducir su forma observando las figuras anteriores y añadiendo una lente que recogería los haces reflejados en la lámina y que proceden, inicialmente, de la fuente S. Si esta fuente no es puntual, a distintos puntos de la superficie llegarán haces procedentes de distintos puntos de la fuente, cada uno de ellos con un ángulo de incidencia distinto, iluminando de este modo toda la superficie de la lámina. En términos de rayos (que nos marcan las direcciones de propagación de los haces), podemos decir que rayos que incidan con el mismo ángulo de incidencia en diferentes puntos darán lugar a dos rayos reflejados que llegarán a la lente subtendiendo el mismo ángulo, lo que finalmente los hará converger a la misma distancia del eje de la lente. Al incidir con el mismo ángulo de incidencia los pares de haces reflejados en cada punto tendrán el mismo desfase, y el carácter de la interferencia (constructiva o destructiva) será el mismo.</p>
 <p>Tenemos por tanto, que los rayos que incidan en diferentes puntos de la superficie de la lámina con un ángulo de incidencia que dé lugar a un máximo de interferencia distribuirán este máximo en una circunferencia con centro el eje de la lente, es decir, el patrón de interferencias consistirá en circunferencias concéntricas de máximos y mínimos. Si observamos una región pequeña de la lámina o si la fuente es muy pequeña, veremos arcos de circunferencia únicamente.</p>
-<p>MEJORAR! FIGURA??</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># MODIFICAR ESTE VALOR PARA VER COMO CAMBIA LA FIGURA</span>
@@ -555,7 +553,7 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fbfab036b50&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fba7fbef0d0&gt;]
 </pre></div>
 </div>
 <img alt="../_images/Laminas_planoparalelas_4_1.png" src="../_images/Laminas_planoparalelas_4_1.png" />
@@ -576,37 +574,9 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 <div class="section" id="video-leccion-virtual">
 <h2><span class="section-number">5.3. </span>Vídeo lección virtual<a class="headerlink" href="#video-leccion-virtual" title="Permalink to this headline">¶</a></h2>
 <p>El siguiente vídeo muestra una explicación sobre las interferencias en láminas de caras planoparalelas y de las franjas de igual inclinación que aparecen como resultado de la interferencias de los haces reflejados en ambas caras de la lámina.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_video</span> <span class="o">=</span> <span class="s2">&quot;LibroVirtual_LáminaPlanoParalela.mp4&quot;</span>
-
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
-<span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_548175</span><span class="o">/</span><span class="mf">1656576960.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">Video</span><span class="p">(</span><span class="n">nombre_archivo_video</span><span class="p">)</span>
-
-<span class="nn">~/anaconda3/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">__init__</span><span class="nt">(self, data, url, filename, embed, mimetype, width, height, html_attributes)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1408</span>                 <span class="s2">&quot;Consider passing Video(url=&#39;...&#39;)&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1409</span>             <span class="p">])</span>
-<span class="ne">-&gt; </span><span class="mi">1410</span>             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1411</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1412</span>         <span class="bp">self</span><span class="o">.</span><span class="n">mimetype</span> <span class="o">=</span> <span class="n">mimetype</span>
-
-<span class="ne">ValueError</span>: To embed videos, you must pass embed=True (this may make your notebook files huge)
-<span class="n">Consider</span> <span class="n">passing</span> <span class="n">Video</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;...&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
+<video controls>
+    <source src="../_static/videos/LibroVirtual_LaminaPlanoParalela.mp4">
+</video></div>
 </div>
 
     <script type="text/x-thebe-config">

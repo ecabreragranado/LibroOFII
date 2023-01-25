@@ -267,14 +267,11 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/Experimento_Young/TrenesDeOnda.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Descargar archivo de cuaderno" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Experimento_Young/TrenesDeOnda.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Experimento_Young/TrenesDeOnda.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -320,6 +317,11 @@
                     alt="Interact on binder">Binder</button></a>
         
         
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/ecabreragranado/LibroOFII/blob/main/docs/Experimento_Young/TrenesDeOnda.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Lanzamiento Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
         
         <button type="button" class="btn btn-secondary topbarbtn"
             onclick="initThebeSBT()" title="Lanzamiento Thebe" data-toggle="tooltip" data-placement="left"><i
@@ -508,10 +510,10 @@ Mínimos de irradiancia.  $\delta = (2 m + 1)\pi \implies \frac{a x}{D} = (m +1/
 <div class="math notranslate nohighlight">
 \[t_c \simeq \frac{1}{\Delta \nu}\]</div>
 <p>Teniendo en cuenta que <span class="math notranslate nohighlight">\(\nu = c/\lambda\)</span> podemos llegar a la relación entre la longitud de coherencia y la anchura espectral expresada en longitudes de onda,</p>
-<div class="alert alert-success">
-$$l_c \simeq \frac{\lambda^2}{\Delta \lambda}$$
-</div>
-La anterior relación nos dice que a mayor longitud de coherencia, menor anchura espectral de la radiación, o lo que es lo mismo, más monocromática será o más coherente.<div class="cell docutils container">
+<div class="math notranslate nohighlight">
+\[l_c \simeq \frac{\lambda^2}{\Delta \lambda}\]</div>
+<p>La anterior relación nos dice que a mayor longitud de coherencia, menor anchura espectral de la radiación, o lo que es lo mismo, más monocromática será o más coherente.</p>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -575,10 +577,9 @@ La anterior relación nos dice que a mayor longitud de coherencia, menor anchura
 \[I_t = I_1 + I_2\]</div>
 <p>Es decir, se pierden las franjas de interferencia. Esta situación ocurrirá cuando la diferencia de camino sea suficiente como para que no se solapen las zonas de los trenes de ondas que interfieren con la misma fase. Desde el centro de la pantalla (diferencia de fase igual a cero entre las ondas que interfieren) veremos entonces cómo las franjas se van perdiendo gradualmente a medida que nos alejamos a puntos exteriores (el contraste disminuye progresivamente) hasta que se pierden por completo (contraste igual a cero). En este punto, la irradiancia total será simplemente la suma de las irradiancias de los haces que interfieren.</p>
 <p>El punto en el que las franjas se pierden por completo será, como se ha comentado, aquel que haga que no haya solapamiento entre las zonas de los trenes de ondas con la misma fase. Es decir, la diferencia de camino ha de ser mayor que la distancia característica de cada una de estas zonas. Esta distancia es simplemente la longitud de coherencia. Por tanto, perderemos la interferencia si,</p>
-<div class="alert alert-success">
-$$\Delta > l_c$$
-</div>
-donde $\Delta$ denota la diferencia de camino entre los haces.
+<div class="math notranslate nohighlight">
+\[\Delta &gt; l_c\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\Delta\)</span> denota la diferencia de camino entre los haces.</p>
 <p>El siguiente código muestra el patrón de interferencias cuando iluminamos el experimento de Young con un tren de ondas.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

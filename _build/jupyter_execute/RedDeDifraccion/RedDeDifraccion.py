@@ -10,7 +10,9 @@
 # <img src ='RedDif_general.png' width=300px></img>
 #     
 # </center>
+# 
 
+# 
 # Antes de deducir las expresiones del campo y la irradiancia para este caso, vamos a intentar averiguar qué podríamos esperar en este caso. Si tenemos un cierto número de rendijas sobre las que incide una onda plana, cada una de ellas, producirá un campo eléctrico en un punto $P$ suficientemente alejado de la rendija (es decir, trabajamos en el régimen de Fraunhofer), el cual sabemos cuál es su expresión.
 # 
 # Como en vez de una única rendija, tenemos en esta ocasión $N$ de ellas, los campos producidos por cada una de las rendijas se sumarán (o dicho de otro modo, interferirán) en $P$, con una diferencia de fase entre ellos dada por la diferencia de camino que tienen que recorrer para llegar a $P$. Por tanto, obtendremos máximos de irradiancia cuando todas estas ondas emitidas por cada una de las rendijas lleguen en fase entre sí, o lo que es lo mismo, cuando la diferencia de camino entre dos de ellas sea un múltiplo entero de $\lambda$.
@@ -59,7 +61,7 @@
 # 
 # El anterior análisis se ha basado únicamente en la interferencia entre las ondas emitidas por cada rendija. Vamos a continuación a hacer una deducción más completa de las expresiones que rigen el campo y la irradiancia en función de la posición del punto $P$ de observación.
 
-# #### Campo producido por una red de difracción en régimen de Fraunhofer
+# #### Campo producido por una red de difracción en régimen de Fraunhofer 
 
 # Para obtener la irradiancia en la pantalla primero calcularemos el campo eléctrico en un punto $P$ arbitrario. Este campo será el resultado de la interferencia de todas las ondas procedentes de las rendijas que componen la red, o dicho de otro modo, será la suma de dichos campos. El campo producido por una única rendija en un punto $P$ que subtiende un ángulo $\theta$ con el eje del sistema se ha visto anteriormente, y toma la siguiente expresión, 
 # 
@@ -136,8 +138,10 @@
 # * Cómo afecta el número de rendijas iluminadas $N$ a la anchura de cada máximo?
 # 
 # * Qué ocurre con la posición de un máximo particular al incrementar la longitud de onda (variable Lambda)? (Relacionarlo con la ecuación de la red)
+# 
 
 # In[1]:
+
 
 
 # Parametros que se pueden modificar

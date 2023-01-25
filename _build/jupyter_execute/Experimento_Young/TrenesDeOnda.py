@@ -33,7 +33,7 @@ Image(filename="ExperimentoYoung.jpg")
 # 
 # Lo más próximo que podemos obtener a una onda monocromática es una sucesión de trenes de ondas armónicos separados unos de otros por saltos aleatorios en la fase de la onda. 
 # 
-# El siguiente código muestra un ejemplo de este tipo de trenes de onda.
+# El siguiente código muestra un ejemplo de este tipo de trenes de onda.  
 
 # In[2]:
 
@@ -81,7 +81,7 @@ campo(time,omega,tau)
 # 
 # $$l_c = c t_c$$
 # 
-# donde $c$ es la velocidad de la luz.
+# donde $c$ es la velocidad de la luz. 
 
 # ## Anchura espectral
 # 
@@ -92,11 +92,11 @@ campo(time,omega,tau)
 # $$t_c \simeq \frac{1}{\Delta \nu}$$
 # 
 # 
-# Teniendo en cuenta que $\nu = c/\lambda$ podemos llegar a la relación entre la longitud de coherencia y la anchura espectral expresada en longitudes de onda, 
-# <div class="alert alert-success">
+# Teniendo en cuenta que $\nu = c/\lambda$ podemos llegar a la relación entre la longitud de coherencia y la anchura espectral expresada en longitudes de onda,
+# 
 # $$l_c \simeq \frac{\lambda^2}{\Delta \lambda}$$
-# </div>
-# La anterior relación nos dice que a mayor longitud de coherencia, menor anchura espectral de la radiación, o lo que es lo mismo, más monocromática será o más coherente.
+# 
+# La anterior relación nos dice que a mayor longitud de coherencia, menor anchura espectral de la radiación, o lo que es lo mismo, más monocromática será o más coherente. 
 
 # In[3]:
 
@@ -145,7 +145,7 @@ campofft(time,omega,tau)
 # 
 # Si iluminamos una doble rendija con un tren de ondas como el representado anteriormente, tendremos dos ondas llegando a un cierto punto de la pantalla con la misma evolución temporal pero una de ellas retrasada con respecto a la otra. Esto es debido a la diferencia de camino óptico recorrido por cada tren de onda. 
 # 
-# Cuando superponemos ambos trenes (uno con un cierto retraso con respecto al otro), la diferencia entre las fases iniciales de cada onda dependerá del tiempo. Además, como los saltos de fase en el tren de ondas son aleatorios, esa diferencia de fase cambiara a su vez aleatoriamente.
+# Cuando superponemos ambos trenes (uno con un cierto retraso con respecto al otro), la diferencia entre las fases iniciales de cada onda dependerá del tiempo. Además, como los saltos de fase en el tren de ondas son aleatorios, esa diferencia de fase cambiara a su vez aleatoriamente. 
 
 # Esta diferencia aleatoria tiene un gran efecto en la irradiancia total del patron de interferencias.
 # 
@@ -166,9 +166,9 @@ campofft(time,omega,tau)
 # 
 # El punto en el que las franjas se pierden por completo será, como se ha comentado, aquel que haga que no haya solapamiento entre las zonas de los trenes de ondas con la misma fase. Es decir, la diferencia de camino ha de ser mayor que la distancia característica de cada una de estas zonas. Esta distancia es simplemente la longitud de coherencia. Por tanto, perderemos la interferencia si, 
 # 
-# <div class="alert alert-success">
+# 
 # $$\Delta > l_c$$
-# </div>
+# 
 # donde $\Delta$ denota la diferencia de camino entre los haces.
 # 
 # El siguiente código muestra el patrón de interferencias cuando iluminamos el experimento de Young con un tren de ondas.

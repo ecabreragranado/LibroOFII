@@ -62,6 +62,7 @@ ylabel('I (u.a.)')
 
 
 # Hemos visto anteriormente que el diámetro finito del sistema puede limitar los órdenes más altos, lo que puede conllevar una pérdida de fidelidad de la imagen final ya que la interferencia se realiza con un número menor de ondas. Sin embargo podemos también utilizar este enfoque para estudiar la formación de la imagen con iluminación coherente para modificar a nuestra voluntad la imagen final. Es decir, ¿qué ocurre por ejemplo si bloqueamos el orden 0 y mantenemos únicamente el orden 1 y -1?
+# 
 
 # In[2]:
 
@@ -114,6 +115,7 @@ ylabel('I (u.a.)')
 # [Introducción al método de contraste de fase (en Inglés)](http://www.microscopyu.com/articles/phasecontrast/phasemicroscopy.html)
 # 
 # [Teoría del Microscopio](http://www.leica-microsystems.com/fileadmin/downloads/Leica%20DM750%20P/Brochures/Leica_Theory_of_the_microscope_RvA-Booklet_ES.pdf)[PDF]
+# 
 
 # In[ ]:
 

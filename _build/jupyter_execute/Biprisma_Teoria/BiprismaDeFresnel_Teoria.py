@@ -12,9 +12,9 @@
 # En esta ecuación, $\alpha$ es el ángulo de desviación, o ángulo entre el rayo de salida del prisma y la continuación del rayo de entrada, $n$ es el índice de refracción del material que forma el prisma, y finalmente, $\gamma$ es el ángulo del prisma. En principio, consideraremos que ambos prismas son iguales, del mismo material y con el mismo ángulo.
 # 
 # El efecto que produce el biprisma es generar dos imágenes virtuales de la fuente real $S$, una por cada prisma, localizadas en el plano perpendicular al eje y que pasa por $S$. Estas dos imágenes virtuales actúan como dos fuentes secundarias de radiación, equivalentes a las dos rendijas del dispositivo de Young. La luz que emerge por la parte superior del biprisma lo hace tal como si procediera de $S_1$, mientras que la parte del haz refractada por la parte inferior del biprisma se propaga como si procediera de $S_2$. Por lo tanto, a la derecha del biprisma tenemos la superposición de dos ondas esféricas procedentes de $S_1$ y $S_2$, respectivamente. El plano donde se encuentran estas fuentes virtuales es equivalente al plano de las rendijas en el experimento de Young. 
-# <center>
-# <img src="./biprismaFig1.jpg", width=500,height=300>
-# </center>
+# 
+# <img src=biprismaFig1.png width=500 height=300>
+# 
 # 
 # 
 # 
@@ -28,9 +28,9 @@
 # 
 # Como hemos visto, la separación entre las fuentes virtuales, que hemos denominado $a$, determina la interfranja. Vamos a ver que el dispositivo del biprisma de Fresnel permite modificar fácilmente esta distancia. Para ello, vamos a ver de qué depende esta magnitud. 
 # 
-# <center>
-# <img src="./figbiprisma2.png", width=500, height=400>
-# </center>
+# 
+# <img src=figbiprisma2.png width=500, height=400></img>
+# 
 # 
 # Las fuentes virtuales $S_1$ y $S_2$ son las imágenes de la fuente real $S$ que proporcionan los prismas que componen el biprisma. Esto quiere decir que, desde el punto de vista de la Óptica Geométrica, la prolongación de los rayos de salida de cada prisma se cortan en los puntos donde están situadas estas imágenes. Concretamente, nos podemos fijar en el rayo que, pasando por el prisma superior, lo hace justo pegado a la base del mismo y por tanto al eje del sistema. Este rayo se desviará, al igual que el resto, un ángulo $\alpha$. Es evidente en la figura que este ángulo es también el que forma la prolongación del rayo de salida con el eje. De este modo, vemos que:
 # 
@@ -50,9 +50,9 @@
 # 
 # La extensión total del patrón, será, por supuesto $2 z_{ext}$.
 # 
-# <center>
-# <img src="./biprismaFig3.jpg", width=500,height=300>
-# </center>
+# 
+# <img src=biprismaFig3.png width=500 height=300></img>
+# 
 # 
 # 
 # 
@@ -197,7 +197,7 @@ def repfringes(x,Itotal):
 Positionwidg = widgets.FloatSlider(value=0.3,min=0.08,max=0.35,step=0.02,description='Fuente-Biprisma (m)',orientation='horizontal')
 changepos = widgets.interactive(changeBiprism,x0=Positionwidg)
 resultswidg = widgets.HBox([figbox,Interfwidg])
-display(changepos,resultswidg)
+display(changepos,resultswidg);
 
 
 # In[ ]:

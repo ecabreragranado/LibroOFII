@@ -18,6 +18,7 @@
 # El dispositivo experimental con el que vamos a trabajar consiste en un láser de He-Ne, un objetivo de microscopio, un biprisma y una pantalla de observación situada al final del banco óptico. La luz procedente del láser se hace incidir sobre el objetivo de microscopio, $OM$, cuya función consiste en focalizar el haz de luz y obtener así una fuente casi puntual, $S$, como se muestra en la figura.
 # 
 # ![biprisma2](Biprisma2.jpg)
+# 
 
 # Nuestro objetivo es hallar la longitud de onda $\lambda$ de la radiacion que ilumina el Biprisma de Fresnel utilizando la expresion de la interfranja,
 # 

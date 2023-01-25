@@ -57,6 +57,7 @@ Image("./580px-Multiple_beam_interference.png")
 # $$E_{rN} = E_0 t t' r'^{(2N-3)} e^{i[ \omega t - (N-1) \delta_G ]}$$
 # 
 # --------------------------------
+# 
 
 # Si la lámina es suficientemente larga o el ángulo de incidencia no muy grande, tendremos muchas ondas interfiriendo ($N \rightarrow \infty$). Sumando todas, tendremos el campo total en transmisión o reflexión. Esta suma puede realizarse y se obtiene, 
 # 
@@ -85,6 +86,8 @@ Image("./580px-Multiple_beam_interference.png")
 # 
 # 
 # A la función $A(\delta) = \frac{1}{1 + F sen^2(\delta/2)} \;\;\;\;\;$ se le denomina **función de Airy**
+# 
+# 
 
 # #### Análisis de las expresiones
 
@@ -102,6 +105,8 @@ Image("./580px-Multiple_beam_interference.png")
 # 3. ¿Cuál es la forma de la función $I_t / I_0$?. 
 # 
 #     Depende del valor de $F$. Vamos a dibujarla para varios valores del coeficiente de fineza
+# 
+# 
 
 # In[2]:
 
@@ -257,3 +262,4 @@ xlim(5,15)
 # #### Para saber más
 # 
 # [Interferómetro de Fabry-Perot en RP-Photonics](https://www.rp-photonics.com/fabry_perot_interferometers.html)
+# 

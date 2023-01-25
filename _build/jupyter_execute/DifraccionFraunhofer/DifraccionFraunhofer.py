@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Difracción de Fraunhofer
+# # Difracción de Fraunhofer 
 
 # La difracción es la tendencia de toda onda a apartarse de la propagación rectilínea mientras se propaga o pasa a través de una apertura u obstáculo.
 # 
@@ -181,7 +181,7 @@ ylabel("I");
 # 
 # A esta función se le denomina *mancha de Airy* y es fundamental para comprender la formación de la imagen de sistemas ópticos incluyendo la naturaleza ondulatoria de la luz, así como su poder de resolución.
 # 
-# Si observamos el patrón de difracción en una pantalla situada a una distancia $D$ de la apertura, y llamamos $r$ a la distancia del punto de observación $P$ al eje del sistema óptico, tendremos que $tan(\theta) = r/D$. Por otro lado, si consideramos que el ángulo subtendido por el punto $P$ es pequeño, $sen(\theta) \simeq tan(\theta) = r/D$, pudiendo sustituir el seno en las expresiones anteriores por este cociente.
+# Si observamos el patrón de difracción en una pantalla situada a una distancia $D$ de la apertura, y llamamos $r$ a la distancia del punto de observación $P$ al eje del sistema óptico, tendremos que $tan(\theta) = r/D$. Por otro lado, si consideramos que el ángulo subtendido por el punto $P$ es pequeño, $\sin(\theta) \simeq \tan(\theta) = r/D$, pudiendo sustituir el seno en las expresiones anteriores por este cociente.
 # 
 # La forma de esta función la podemos ver en la siguiente figura.
 
@@ -251,11 +251,13 @@ widgets.interact(circ,D=(500,3000,100),Da=(0.05,0.2,0.02),Color=lambdawidgets)#w
 # 
 # Como se puede observar en la figura superior, los maximos laterales tienen una altura mucho menor que el pico central, o lo que es lo mismo, el primer maximo contiene la mayor parte de la energia del haz. Es por ello que en esta distribucion de irradiancia toma mucha importancia el primer minimo, mas que los minimos de ordenes mas altos. Para hallarlo, tenemos que encontrar el primer minimo de la funcion de Bessel $J_1$ del numerador en la expresion de la irradiancia en la pantalla. Estos minimos los podemos encontrar en cualquier libro de tablas, obteniendo que, 
 # 
-# $$ k \frac{D_a}{2} \sin(\theta) \sim 3.4 \Rightarrow \sin(theta) \simeq \frac{1.22 \lambda}{D_a}$$
+# $$ k \frac{D_a}{2} \sin(\theta) \sim 3.4 \Rightarrow \sin(\theta) \simeq \frac{1.22 \lambda}{D_a}$$
 # 
 # Este angulo asi hallado es el angulo que subtiende el primer minimo en la pantalla con el eje del sistema visto desde la apertura circular. Como normalmente es pequeno, tenemos que $\sin(\theta) \sim \theta \sim \tan(\theta) = r_1/D$, donde aqui $r_1$ representa el radio de ese primer anillo oscuro y $D$ la distancia entre la apertura y la pantalla de observacion. Tenemos por tanto, que el radio del primer anillo oscuro, es igual a, 
 # 
 # $$r_1 = \frac{1.22 \lambda D}{D_a}$$
+# 
+# 
 
 # In[ ]:
 

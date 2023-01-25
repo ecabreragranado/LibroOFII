@@ -4,7 +4,9 @@
 # # Tomografía de coherencia óptica.
 # 
 # 
-# ![oct](OCT.png)
+# <center>
+# <img src="OCT.png" height=200px style="max-width:60%">
+# </center>
 
 # *La tomografía de coherencia óptica (TCO) es una técnica de imagen tomográfica óptica, no invasiva e interferométrica, que ofrece una penetración de milímetros (aproximadamente 2-3 mm en el tejido o material de que se trate) con resolución axial y lateral de escala micrométrica. La técnica fue demostrada por primera vez en 1991 con una resolución axial de ~30µm. En 2001 la TCO alcanzó una resolución submicrométrica debido a la introducción de fuentes de luz de banda amplia (fuentes que emiten longitudes de onda sobre un rango de ~100 nm). Ahora la TCO es una técnica de imagen ampliamente aceptada, especialmente en oftalmología, otras aplicaciones biomédicas, y la conservación de obras de arte.*
 # 
@@ -54,6 +56,7 @@ Image("Principe_OCT2.png")
 # Al seguir moviendo el espejo, llegará un punto en el que la diferencia de camino entre el haz reflejado en el espejo y el haz reflejado por la primera superficie de la muestra sea menor que $l_c$. Entonces veremos interferencia y la irradiancia detectada oscilará entre unos valores máximos y mínimos a medida que movemos el espejo. Si continuamos moviendo el espejo alejándonos del divisor de haz, nos saldremos de la zona en la que la diferencia de camino entre el haz reflejado en el espejo y el haz reflejado por la primera superficie de la muestra es menor que $l_c$, volviendo a una irradiancia constante. Un posterior movimiento del espejo provocará que se cumpla esta condición (diferencia de camino menor que $l_c$) pero entre el haz reflejado por el espejo y el reflejado por la segunda superficie. Entonces veremos la segunda zona de interferencia en la señal captada por el detector. Lo mismo ocurrirá con la tercera superficie.
 # 
 # Según el esquema que hemos visto por cada superficie en uno de los brazos del interferómetro, tendremos una zona de interferencia con máximos y mínimos registrada por el detector. **La extensión de esta zona de interferencias será igual a la longitud de coherencia**. Si esta longitud de coherencia tiene un valor muy bajo (el laser de Ti:Al2O3 tiene una longitud de coherencia del orden de 2 $\mu$m.) esta zona será muy estrecha.
+# 
 
 # ### Visualización de la interferencia en OCT
 
@@ -151,7 +154,9 @@ widg.interact(oct,z=(0,60,1),zshow=widg.fixed(zshow),int_array=widg.fixed(int_ar
 # Efectivamente, tengamos una lámina de espesor $L$ e índice de refracción $n$ en uno de los brazos del interferómetro, mientras que en el otro brazo disponemos de un espejo móvil, cuya distancia al divisor del haz llamamos $z$. Además, llamamos $H$ a la distancia entre el divisor de haz y la primera cara de la lámina.
 # 
 # 
-# ![oct2](michelsonfiguretikzOCT.jpg)
+# <center>
+# <img src=michelsonfiguretikzOCT.jpg width=600px></img>
+# </center>
 # 
 # En el centro de la primera zona de interferencia se cumple que $\Delta_{12} = 0$, donde llamamos $\Delta_{12}$ a la diferencia de camino óptico entre el haz que se refleja en el espejo movil (haz $1$), y el haz reflejado en la primera cara de la lamina (haz $2$). En ese punto, estos haces se solapan por completo, y además, tenemos un máximo de interferencia. Por otro lado, en el centro de la segunda zona de interferencia, $\Delta_{13} = 0$, donde $\Delta_{13}$ es ahora la diferencia de camino entre el haz que se refleja en el espejo móvil (haz $1$) y el que se refleja en la segunda cara de la lamina (haz $3$).
 # 
@@ -166,4 +171,21 @@ widg.interact(oct,z=(0,60,1),zshow=widg.fixed(zshow),int_array=widg.fixed(int_ar
 # ## Vídeo lección virtual
 # El siguiente vídeo muestra una explicación sobre la interferometría de baja coherencia, centrado en la medida de la longitud axial de un ojo.
 # 
-# <video src="/home/edu/docencia/OFII/LibroOFII/_static/videos/LibroVirtual_InterferometriaBajaCoherencia.mp4"></video>
+# <video controls>
+#     <source src ="../_static/videos/LibroVirtual_InterferometriaBajaCoherencia.mp4">
+#     </video>
+
+# In[3]:
+
+
+nombre_archivo_video = "LibroVirtual_InterferometríaBajaCoherencia.mp4"
+
+from IPython.display import Video
+Video(nombre_archivo_video)
+
+
+# In[ ]:
+
+
+
+

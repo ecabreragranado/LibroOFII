@@ -3,9 +3,9 @@
 
 # # Franjas de igual espesor
 # 
-# <center>
-# <img src="thinfilmsoap.gif" height=300px style="max-width:60%">
-# </center>
+# 
+# <img src="thinfilmsoap.png" height=300px style="max-width:60%">
+# 
 
 #   Hasta ahora hemos visto la interferencia entre las ondas reflejadas o transmitidas en una lámina planoparalela, es decir, una lámina cuyas caras son paralelas y por tanto tiene un espesor o grosor fijo $h$. Si $n$ es el índice de refracción de la lámina y $\theta_t$ el ángulo transmitido o refractado en la primera cara, el desfase debido a la diferencia de camino entre ambas ondas (desfase geometrico $\delta_G$) es, 
 # 
@@ -261,4 +261,11 @@ display(interactive_plot2)
 # ## Vídeo lección virtual
 # El siguiente vídeo muestra una explicación del tema de interferencias en láminas delgadas de espesor variable con forma de cuña
 # 
-# <video src="../_static/videos/LibroVirtual_LaminaEspesorVariable_cuña.mp4"></video>
+# <video controls>
+#     <source src="../_static/videos/LibroVirtual_LaminaEspesorVariable_cuña.mp4"></video>
+
+# In[ ]:
+
+
+
+

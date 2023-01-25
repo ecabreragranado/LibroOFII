@@ -36,7 +36,8 @@ Image(filename=nombre_fichero_imagen,width=400)
 nombre_fichero_imagen="nombre.jpg"  # Incluir el nombre completo con extensión del fichero imagen dentro de las comillas
 #NO TOCAR
 from IPython.core.display import Image,display
-Image(filename=nombre_fichero_imagen,width=600)
+if(nombre_fichero_imagen != "nombre.jpg"):
+    Image(filename=nombre_fichero_imagen,width=600)
 
 
 # ### Cuestión 2
@@ -45,33 +46,36 @@ Image(filename=nombre_fichero_imagen,width=600)
 
 # *Editar esta línea haciendo doble click en ella para contestar a la pregunta*
 
-# In[ ]:
+# In[3]:
 
 
 nombre_fichero_imagen="nombre.jpg"  # Incluir el nombre completo con extensión del fichero imagen dentro de las comillas
 #NO TOCAR
 from IPython.core.display import Image,display
-Image(filename=nombre_fichero_imagen,width=600)
+if(nombre_fichero_imagen != "nombre.jpg"):
+    Image(filename=nombre_fichero_imagen,width=600)
 
 
 # ### Cuestión 3
 # 
 # Dibujar en una hoja a tamaño real e indicando con cotas las distancias más importantes, una E de Snellen con las dimensiones adecuadas para que se correspondan a las agudezas visuales fijadas en el apartado anterior. Realizar una fotografía del dibujo junto a una regla o escala al lado de las letras E dibujadas. Incluir dos fotos, una donde se vea con claridad la hoja y otra donde aparezca el alumno junto con la hoja.
 
-# In[ ]:
+# In[4]:
 
 
 nombre_fichero_imagen="nombre.jpg"  # Incluir el nombre completo con extensión del fichero imagen dentro de las comillas
 #NO TOCAR
 from IPython.core.display import Image,display
-Image(filename=nombre_fichero_imagen,width=600)
+if(nombre_fichero_imagen != "nombre.jpg"):
+    Image(filename=nombre_fichero_imagen,width=600)
 
 
-# In[ ]:
+# In[5]:
 
 
 nombre_fichero_imagen="nombre.jpg"  # Incluir el nombre completo con extensión del fichero imagen dentro de las comillas
 #NO TOCAR
 from IPython.core.display import Image,display
-Image(filename=nombre_fichero_imagen,width=600)
+if(nombre_fichero_imagen != "nombre.jpg"):
+    Image(filename=nombre_fichero_imagen,width=600)
 

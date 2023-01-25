@@ -88,7 +88,7 @@ Image(filename="esquemaAnillosNewton1.jpg")
 # $(x_2-x_1 \simeq 0.4 \sqrt{\lambda R} )$  es mayor que la distancia entre anillos oscuros lejos del centro 
 # $(x_{12}-x_{11} \simeq 0.15 \sqrt{\lambda R} )$. Es decir, que los anillos se juntan al alejarnos del centro, tal y como ya habíamos explicado al inico de este documento.
 # 
-# Esta técnica interferométrica permite determinar el radio de curvatura de la lente $R$ midiendo los radios de los anillos oscuros $x_m$. Por ejemplo, con el radio del primer anillo  oscuro: $ R =  x_1^2 / \lambda$. La forma habitual consiste en representar gráficamente el radio al cuadrado de los anillos oscuros en función del orden o número del anillo ($m$). Mediante un ajuste lineal, la pendiente de la recta de ajuste nos permitirá obtener el valor del radio de la lente, $pendiente = \lambda R$.
+# Esta técnica interferométrica permite determinar el radio de curvatura de la lente $R$ midiendo los radios de los anillos oscuros $x_m$. Por ejemplo, con el radio del primer anillo  oscuro: $ R =  x_1^2 / \lambda$. La forma habitual consiste en representar gráficamente el radio al cuadrado de los anillos oscuros en función del orden o número del anillo ($m$). Mediante un ajuste lineal, la pendiente de la recta de ajuste nos permitirá obtener el valor del radio de la lente, $pendiente = \lambda R$. 
 
 # ## Desplazamiento vertical de la lente
 

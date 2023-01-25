@@ -16,7 +16,7 @@
 # 
 # y por tanto, 
 # 
-# $$R = r_1^2 + (t_1 r_2 t'_1)^2$$.
+# $$R = r_1^2 + (t_1 r_2 t'_1)^2$$
 # 
 # Ahora de los coeficientes de Fresnel, 
 # 
