@@ -55,9 +55,9 @@ from IPython.display import Image
 Image(filename="ExperimentoYoung.jpg")
 
 
-# Según la figura, $\Delta = r_2 - r_1$ lo podemos escribir como $\Delta = a sen(\theta)$, siendo $a$ la separación entre las rendijas. Si éste ángulo es pequeño (lo que significa que la distancia entre las fuentes y la pantalla de observación sea grande comparada con la separación entre las fuentes, $D \gg a$), esta expresión la podemos simplificar, 
+# Según la figura, $\Delta = r_2 - r_1$ lo podemos escribir como $\Delta = a \sin(\theta)$, siendo $a$ la separación entre las rendijas. Si éste ángulo es pequeño (lo que significa que la distancia entre las fuentes y la pantalla de observación sea grande comparada con la separación entre las fuentes, $D \gg a$), esta expresión la podemos simplificar, 
 # 
-# $$ \Delta = a \; sen(\theta) \simeq a \; tan(\theta) = a \frac{x}{D}$$.
+# $$ \Delta = a \; \sin(\theta) \simeq a \; \tan(\theta) = a \frac{x}{D}$$
 # 
 # Y por tanto, 
 # 
@@ -66,13 +66,13 @@ Image(filename="ExperimentoYoung.jpg")
 # En estas expresiones, $x$ es la distancia del punto P de observación al eje mientras que $D$ es la distancia entre el plano
 # que contiene a las fuentes y la pantalla de observación, donde se encuentra P. Podemos reescribir la irradiancia total en la pantalla empleando la expresión calculada del desfase 
 # 
-# <div class="alert alert-success">
-# $$I_T = 2 I_1 \left( 1 + cos\left( \frac{2 \pi a x}{\lambda D} \right) \; \right)$$
-# </div>
+# 
+# $$I_T = 2 I_1 \left( 1 + \cos\left( \frac{2 \pi a x}{\lambda D} \right) \; \right)$$
+# 
 
 # ## Distribución de luz. Patrón de interferencias
 # 
-# Ahora estamos en disposición de contestar a la pregunta que nos planteábamos antes, ¿cómo es la distribución de irradiancia en la pantalla de observación?. Vemos que el desfase depende de la altura en la pantalla $x$, por tanto al movernos en esa dirección el valor de la irradiancia cambiará. En particular el término que provoca esa variación es del tipo cosenoidal $cos( \frac{2 \pi a x}{\lambda D})$ por lo que veremos en la pantalla una distribución cosenoidal, con máximos de irradiancia cuando $\delta = 2 m \pi$, con $m = 0, \pm 1, \pm 2 ...$ y mínimos de irradiancia cuando $\delta = (2 m + 1) \pi$, con $m = 0, \pm 1, \pm 2 ...$. Las posiciones $x$ a las que corresponden estas condiciones serán, 
+# Ahora estamos en disposición de contestar a la pregunta que nos planteábamos antes, ¿cómo es la distribución de irradiancia en la pantalla de observación?. Vemos que el desfase depende de la altura en la pantalla $x$, por tanto al movernos en esa dirección el valor de la irradiancia cambiará. En particular el término que provoca esa variación es del tipo cosenoidal $\cos( \frac{2 \pi a x}{\lambda D})$ por lo que veremos en la pantalla una distribución cosenoidal, con máximos de irradiancia cuando $\delta = 2 m \pi$, con $m = 0, \pm 1, \pm 2 ...$ y mínimos de irradiancia cuando $\delta = (2 m + 1) \pi$, con $m = 0, \pm 1, \pm 2 ...$. Las posiciones $x$ a las que corresponden estas condiciones serán, 
 # 
 # Máximos de irradiancia.  $\delta = 2 m \pi rad \implies \Delta = m \lambda \implies$
 # $$x^{max}_m = \frac{m \lambda D}{a}$$
@@ -117,10 +117,14 @@ xlabel("x (mm)"); ylabel("Irradiancia total normalizada")
 
 
 # Como podemos ver, los máximos están equiespaciados (lo mismo sucede con los míminos), siendo la distancia entre dos máximos consecutivos
-# $$ \text{Interfranja} = \frac{\lambda D}{a} $$
+# 
+# $$ Interfranja = \frac{\lambda D}{a} $$
+# 
 # Dicha magnitud se conoce con el nombre de interfranja y nos da información sobre el tamaño característico del patrón de franjas. 
 # Además del tamaño, para poder observar con claridad las franjas es necesario que estén bien contrastadas. Para ello se define el contraste o visibilidad de las franjas
+# 
 # $$ C = \frac{I_T^{max}-I_T^{min}}{I_T^{max}+I_T^{min}}$$
+# 
 # que nos dice cuanto están separados los máximos de luz respecto de los mínimos. 
 # 
 # El valor de estas dos magnitudes para el caso representado en la figura anterior se muestra en la siguiente celda (ejecutar dicha celda después de haber ejecutado la anterior celda de código)

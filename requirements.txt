@@ -2,3 +2,7 @@ matplotlib
 numpy
 ipywidgets
 scipy
+warnings
+io
+IPython
+base64
