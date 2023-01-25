@@ -3,5 +3,3 @@ numpy
 ipywidgets
 scipy
 io
-IPython
-base64
