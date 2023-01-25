@@ -267,14 +267,11 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/Experimento_Young/ExperimentoYoung.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Descargar archivo de cuaderno" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Experimento_Young/ExperimentoYoung.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Experimento_Young/ExperimentoYoung.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -320,6 +317,11 @@
                     alt="Interact on binder">Binder</button></a>
         
         
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/ecabreragranado/LibroOFII/blob/main/docs/Experimento_Young/ExperimentoYoung.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Lanzamiento Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
         
         <button type="button" class="btn btn-secondary topbarbtn"
             onclick="initThebeSBT()" title="Lanzamiento Thebe" data-toggle="tooltip" data-placement="left"><i
@@ -477,15 +479,12 @@ whenever the sun shines, and without any other apparatus than is at hand to ever
 </div>
 <p>Según la figura, <span class="math notranslate nohighlight">\(\Delta = r_2 - r_1\)</span> lo podemos escribir como <span class="math notranslate nohighlight">\(\Delta = a sen(\theta)\)</span>, siendo <span class="math notranslate nohighlight">\(a\)</span> la separación entre las rendijas. Si éste ángulo es pequeño (lo que significa que la distancia entre las fuentes y la pantalla de observación sea grande comparada con la separación entre las fuentes, <span class="math notranslate nohighlight">\(D \gg a\)</span>), esta expresión la podemos simplificar,</p>
 <div class="math notranslate nohighlight">
-\[\Delta = a \; sen(\theta) \simeq a \; tan(\theta) = a \frac{x}{D}\]</div>
-<p>Y por tanto,</p>
-<div class="math notranslate nohighlight">
-\[\delta = k \frac{a x }{D} = \frac{2 \pi a x}{\lambda D}\]</div>
+\[ \begin{align}\begin{aligned} \Delta = a \; sen(\theta) \simeq a \; tan(\theta) = a \frac{x}{D}$$.\\Y por tanto, \\$$\delta = k \frac{a x }{D} = \frac{2 \pi a x}{\lambda D}\end{aligned}\end{align} \]</div>
 <p>En estas expresiones, <span class="math notranslate nohighlight">\(x\)</span> es la distancia del punto P de observación al eje mientras que <span class="math notranslate nohighlight">\(D\)</span> es la distancia entre el plano
 que contiene a las fuentes y la pantalla de observación, donde se encuentra P. Podemos reescribir la irradiancia total en la pantalla empleando la expresión calculada del desfase</p>
-<div class="math notranslate nohighlight">
-\[I_T = 2 I_1 \left( 1 + cos\left( \frac{2 \pi a x}{\lambda D} \right) \; \right)\]</div>
-</div>
+<div class="alert alert-success">
+$$I_T = 2 I_1 \left( 1 + cos\left( \frac{2 \pi a x}{\lambda D} \right) \; \right)$$
+</div></div>
 <div class="section" id="distribucion-de-luz-patron-de-interferencias">
 <h2><span class="section-number">2.2. </span>Distribución de luz. Patrón de interferencias<a class="headerlink" href="#distribucion-de-luz-patron-de-interferencias" title="Permalink to this headline">¶</a></h2>
 <p>Ahora estamos en disposición de contestar a la pregunta que nos planteábamos antes, ¿cómo es la distribución de irradiancia en la pantalla de observación?. Vemos que el desfase depende de la altura en la pantalla <span class="math notranslate nohighlight">\(x\)</span>, por tanto al movernos en esa dirección el valor de la irradiancia cambiará. En particular el término que provoca esa variación es del tipo cosenoidal <span class="math notranslate nohighlight">\(cos( \frac{2 \pi a x}{\lambda D})\)</span> por lo que veremos en la pantalla una distribución cosenoidal, con máximos de irradiancia cuando <span class="math notranslate nohighlight">\(\delta = 2 m \pi\)</span>, con <span class="math notranslate nohighlight">\(m = 0, \pm 1, \pm 2 ...\)</span> y mínimos de irradiancia cuando <span class="math notranslate nohighlight">\(\delta = (2 m + 1) \pi\)</span>, con <span class="math notranslate nohighlight">\(m = 0, \pm 1, \pm 2 ...\)</span>. Las posiciones <span class="math notranslate nohighlight">\(x\)</span> a las que corresponden estas condiciones serán,</p>
@@ -520,6 +519,7 @@ $<span class="math notranslate nohighlight">\(x^{min}_m = \frac{(2m + 1) \lambda
 <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
 <span class="n">pcolormesh</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="n">x</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="n">Itotal</span><span class="p">,</span><span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span><span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">vmax</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x (mm)&quot;</span><span class="p">);</span> <span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;y (mm)&quot;</span><span class="p">)</span>
 <span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mf">1e3</span><span class="p">,</span><span class="n">Itotal</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">),:])</span>
