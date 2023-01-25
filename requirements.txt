@@ -3,5 +3,4 @@ numpy
 ipywidgets
 scipy
 warnings
-io
 IPython
