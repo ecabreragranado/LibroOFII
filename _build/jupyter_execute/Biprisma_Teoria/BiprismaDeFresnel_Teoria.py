@@ -62,7 +62,7 @@
 # -------------
 # 
 # 
-# Ejecutando el siguiente código se genera una figura interactiva en donde, con un desplazador, se puede variar la distancia entre la fuente y el biprisma (distancia $d$ en nuestro desarrollo anterior). Observa cómo cambia el patrón de franjas:
+# Ejecutando el siguiente código se genera una figura interactiva en donde,  se puede variar la distancia entre la fuente y el biprisma (distancia $d$ en nuestro desarrollo anterior) escribiendo el valor que se desea en el cuadro de texto. Observa cómo cambia el patrón de franjas:
 # 
 # 1. ¿Cambia la Interfranja?. Fija un valor de la distancia fuente-biprisma y calcular con las expresiones anteriores el valor de la interfranja esperado. ¿Obtienes el mismo valor? (Observa que el valor de la interfranja viene calculado directamente en la caja de la derecha que aparece con la figura).
 # 
@@ -83,9 +83,6 @@ import matplotlib.pyplot as plt
 #%matplotlib inline
 plt.style.use('ggplot')
 import ipywidgets as widgets
-from IPython.display import display
-import io
-import base64
 from IPython.display import clear_output
 
 
@@ -93,9 +90,7 @@ from IPython.display import clear_output
 ###################33
 D = 1 # Distancia fuente-pantalla
 Lambda = 6.33e-7 # longitud de onda de la radiación
-
 alpha = 0.7*np.pi/180 # ang. del biprisma
-
 I1 = 1 # Consideramos irradiancias normalizadas a un cierto valor.
 I2 = 1
 ###########################
@@ -112,23 +107,41 @@ ax.set_xlabel("x (m)")
 ax.set_ylabel("y (mm)")
 ax.set_title('Esquema del montaje experimental')
 line1, = ax.plot(np.linspace(-1,D,50),np.zeros(50),'k')
-buf = io.BytesIO()
-plt.savefig(buf, format='png')
-buf.seek(0)
-figwidg = widgets.HTML("""<img src='data:image/png;base64,{}'/>""".format(base64.b64encode(buf.getvalue()).decode('ascii')))
+#buf = io.BytesIO()
+plt.savefig("fig1.png", format='png')
+#buf.seek(0)
+#figwidg = widgets.HTML("""<img src='data:image/png;base64,{}'/>""".format(base64.b64encode(buf.getvalue()).decode('ascii')))
 plt.close(fig)
+file = open("fig1.png", "rb")
+image = file.read()
+figwidg = widgets.Image(
+    value=image,
+    format='png',
+    width=400,
+    height=200,
+)
+
 
 fig2,ax2 = plt.subplots(1,1)
 ax2.set_xlabel("x (mm)")
 ax2.set_ylabel("y (mm)")
 ax2.set_title('Pantalla')
 ax2.pcolormesh(np.zeros((500,500)))
-buf2 = io.BytesIO()
-plt.savefig(buf2, format='png')
-buf2.seek(0)
-figwidg2 = widgets.HTML("""<img src='data:image/png;base64,{}'/>""".format(base64.b64encode(buf2.getvalue()).decode('ascii')))
-figbox = widgets.HBox([figwidg,figwidg2])
+plt.savefig("fig2.png", format='png')
 plt.close(fig2)
+file = open("fig2.png", "rb")
+image = file.read()
+figwidg2 = widgets.Image(
+    value=image,
+    format='png',
+    width=200,
+    height=300,
+)
+#buf2.seek(0)
+#figwidg2 = widgets.HTML("""<img src='data:image/png;base64,{}'/>""".format(base64.b64encode(buf2.getvalue()).decode('ascii')))
+
+
+figbox = widgets.HBox([figwidg,figwidg2])
 clear_output()
 
 
@@ -136,7 +149,8 @@ clear_output()
 #########
 Interfwidg = widgets.FloatText(0,description='Int. (mm)',color='#C13535')
 
-def changeBiprism(x0=0.1):
+def changeBiprism(x0=10):
+    x0 = x0/100 #(pasamos a metros)
     a = 2*x0*np.tan((n-1)*alpha) #separacion entre fuentes virtuales
     interfranja = Lambda*D/a 
     xlimit = (D-x0)*np.tan((n-1)*alpha) # distancia desde el eje que ocupa el patron de interferencias
@@ -168,12 +182,11 @@ def repsetup(x0):
     ax.vlines(D,-y0*3,y0*3,lw=4)
     ax.plot(np.linspace(x0,x0+.01,3),(-y0/.01)*np.linspace(x0,x0+.01,3) + y0*(1+x0/.01),'r',lw=2)
     ax.plot(np.linspace(x0,x0+.01,3),(y0/.01)*np.linspace(x0,x0+.01,3) - y0*(1+x0/.01),'r',lw=2)
-    buf = io.BytesIO()
-    plt.savefig(buf, format='png')
-    buf.seek(0)
+    plt.savefig("fig1.png", format='png')
     clear_output()
-    figwidg.value ="""<img src='data:image/png;base64,{}'/>""".format(base64.b64encode(buf.getvalue()).decode('ascii'))
-    clear_output()
+    file = open("fig1.png", "rb")
+    image = file.read()
+    figwidg.value =image
     plt.close(fig)
     return
 
@@ -184,24 +197,26 @@ def repfringes(x,Itotal):
     ax2.set_ylim(-yrepres,yrepres)
     ax2.set_title('Pantalla (mm)')
     ax2.pcolormesh(x*1e3,x*1e3,Itotal.T,cmap = 'gray',vmin=0,vmax=4)
-    buf2 = io.BytesIO()
-    plt.savefig(buf2, format='png')
-    buf2.seek(0)
+    plt.savefig("fig2.png", format='png')
+    file = open("fig2.png", "rb")
+    image = file.read()
     clear_output()
-    figwidg2.value ="""<img src='data:image/png;base64,{}'/>""".format(base64.b64encode(buf2.getvalue()).decode('ascii'))
+    figwidg2.value =image
     clear_output()
     plt.close(fig2)
     return
 
 
-Positionwidg = widgets.FloatSlider(value=0.3,min=0.08,max=0.35,step=0.02,description='Fuente-Biprisma (m)',orientation='horizontal')
+
+Positionwidg = widgets.BoundedFloatText(
+    value=17,
+    min=8,
+    max=35.0,
+    step=0.1,
+    description='F-Bip (cm):',
+    disabled=False
+)    
 changepos = widgets.interactive(changeBiprism,x0=Positionwidg)
 resultswidg = widgets.HBox([figbox,Interfwidg])
 display(changepos,resultswidg);
-
-
-# In[ ]:
-
-
-
 

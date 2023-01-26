@@ -142,15 +142,18 @@
 # In[1]:
 
 
-# MODIFICAR ESTE VALOR PARA VER COMO CAMBIA LA FIGURA
+
 from numpy import *
 from matplotlib.pyplot import *
 ####################
 fig = figure(figsize=(16,6))
+# MODIFICAR ESTOS VALORES PARA VER COMO CAMBIA LA FIGURA
+#################
 Lambda =600 #(nm)
 n = 1.4 # índice de refracción de la lámina 
-e = 20*Lambda/n # escogemos el espesor de la lámina (en nm)
+e = 16*Lambda/n # escogemos el espesor de la lámina (en nm)
 focal =30 # focal de la lente (mm)
+################
 x = np.linspace(-30,30,400)
 [X,Y] = meshgrid(x,x)
 rho =  np.sqrt(X**2 + Y**2) #(mm)
@@ -176,7 +179,6 @@ pcolormesh(X,Y,I_t,cmap=cm.copper,vmin=0,vmax=1);
 colorbar()
 subplot(1,2,2)
 plot(x,I_t[:,I_t.shape[1]//2])
-## algo está mal porque en el centro debería ser un mínimo si no me equivoco..
 
 
 # 
