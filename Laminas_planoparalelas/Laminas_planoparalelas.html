@@ -514,15 +514,17 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 <p>Tenemos por tanto, que los rayos que incidan en diferentes puntos de la superficie de la lámina con un ángulo de incidencia que dé lugar a un máximo de interferencia distribuirán este máximo en una circunferencia con centro el eje de la lente, es decir, el patrón de interferencias consistirá en circunferencias concéntricas de máximos y mínimos. Si observamos una región pequeña de la lámina o si la fuente es muy pequeña, veremos arcos de circunferencia únicamente.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># MODIFICAR ESTE VALOR PARA VER COMO CAMBIA LA FIGURA</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="c1">####################</span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="c1"># MODIFICAR ESTOS VALORES PARA VER COMO CAMBIA LA FIGURA</span>
+<span class="c1">#################</span>
 <span class="n">Lambda</span> <span class="o">=</span><span class="mi">600</span> <span class="c1">#(nm)</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mf">1.4</span> <span class="c1"># índice de refracción de la lámina </span>
-<span class="n">e</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">Lambda</span><span class="o">/</span><span class="n">n</span> <span class="c1"># escogemos el espesor de la lámina (en nm)</span>
+<span class="n">e</span> <span class="o">=</span> <span class="mi">16</span><span class="o">*</span><span class="n">Lambda</span><span class="o">/</span><span class="n">n</span> <span class="c1"># escogemos el espesor de la lámina (en nm)</span>
 <span class="n">focal</span> <span class="o">=</span><span class="mi">30</span> <span class="c1"># focal de la lente (mm)</span>
+<span class="c1">################</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">400</span><span class="p">)</span>
 <span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">]</span> <span class="o">=</span> <span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
 <span class="n">rho</span> <span class="o">=</span>  <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">X</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#(mm)</span>
@@ -548,12 +550,11 @@ I_2 = (t_1 r_2 r_1 t_2')^2 I_0
 <span class="n">colorbar</span><span class="p">()</span>
 <span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">I_t</span><span class="p">[:,</span><span class="n">I_t</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">])</span>
-<span class="c1">## algo está mal porque en el centro debería ser un mínimo si no me equivoco..</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fba7fbef0d0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f6c30a527d0&gt;]
 </pre></div>
 </div>
 <img alt="../_images/Laminas_planoparalelas_4_1.png" src="../_images/Laminas_planoparalelas_4_1.png" />
