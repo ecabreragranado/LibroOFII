@@ -99,7 +99,7 @@
 # 
 
 # ----
-# La siguiente celda de código genera una figura interactiva donde se puede ver el efecto en el diagrama interferencial de cambiar, tanto el índice de la lámina, como el ángulo $\alpha$ de la cuña. 
+# La siguiente celda de código genera una figura  donde se puede ver el efecto en el diagrama interferencial de cambiar, tanto el índice de la lámina, como el ángulo $\alpha$ de la cuña o el valor de la longitud de onda (cambiar en el código los valores de estos parámetros para generar una nueva figura).
 # 
 # Como sugerencia, 
 # 
@@ -113,14 +113,16 @@
 
 
 import numpy as np
-import ipywidgets as widgets
 import matplotlib.pyplot as plt
 
-
+# PARÁMETROS QUE SE PUEDEN MODIFICAR
 Lambda = 4.1e-7
 n = 1.45
-alpha = 2*np.pi/180
+alpha = 1 # mrad
+##########################
+# PARÁMETROS FIJOS
 D = 0.1e-2
+############
 r = (n-1)/(1+n)
 t = 2/(1+n)
 tp = 2*n/(1+n)
@@ -129,6 +131,7 @@ I1 = I0*r**2
 I2 = I0*(t*r*tp)**2
 
 def fun(n,alpha):
+    alpha = alpha*1e-3 # se pasa a rad
     fig = plt.figure(figsize=(16,7))
     fig.tight_layout()
     x = np.linspace(0,D,400)
@@ -169,14 +172,7 @@ def fun(n,alpha):
     plt.axis('off')
     plt.show()
                      
-                     
-    
-interactive_plot = widgets.interactive(fun, n=(1.05, 2.0),  alpha=(5e-4, 5e-3, 5e-4))
-interactive_plot.children[1].readout_format='.4f'
-output = interactive_plot.children[-1]
-output.layout.height = '400px'
-
-display(interactive_plot)   
+fun(n,alpha)                    
 
 
 # ### Efecto de una longitud de coherencia $l_c$ finita (fuente cuasimonocromática)
@@ -211,15 +207,16 @@ display(interactive_plot)
 # In[2]:
 
 
-
 import numpy as np
-import ipywidgets as widgets
 import matplotlib.pyplot as plt
 
 
-
+# PARÁMETROS QUE SE PUEDEN MODIFICAR
 n = 1.45
-alpha = 2*np.pi/180
+alpha = 1 # en mrad
+Lambda = 500 # en nm
+Deltalambda = Lambda/5 # anchura espectral
+###############
 D = 0.1e-2
 r = (n-1)/(1+n)
 t = 2/(1+n)
@@ -229,8 +226,9 @@ I1 = I0*r**2
 I2 = I0*(t*r*tp)**2
 
 
-def fun(Deltalambda,Lambda,alpha):
-    fig = plt.figure(figsize=(10,4))
+def fun(Deltalambda,Lambda,n,alpha):
+    alpha = alpha*1e-3 # en mrad
+    fig = plt.figure(figsize=(8,3))
     x = np.linspace(0,D,500)
     y = np.linspace(0,D/2,20)
     X,Y = np.meshgrid(x,y)
@@ -244,18 +242,13 @@ def fun(Deltalambda,Lambda,alpha):
     Itot = I1 + I2 + (2*np.sqrt(I1*I2)*np.cos(deltatot))*(Difcamino<lc)
     Itot=Itot
     plt.pcolormesh(X,Y,Itot,cmap='gray',shading='auto')
-    plt.text(D*1.05,D/2*1.05,'lc = '+str(np.round(lc*1e9,2))+' nm',fontsize=15)
+    plt.text(D*1.05,D/2*1.05,'lc = '+str(np.round(lc*1e9,2))+' nm',fontsize=12)
     plt.axis('off')
     plt.show()
                      
 
     
-interactive_plot2 = widgets.interactive(fun, Deltalambda=(20,100,2),Lambda=(400,600,20),  alpha=(5e-4, 5e-3, 5e-4))
-interactive_plot2.children[2].readout_format='.4f'
-output = interactive_plot2.children[-1]
-output.layout.height = '600px'
-
-display(interactive_plot2)   
+fun(Deltalambda,Lambda,n,alpha)
 
 
 # ## Vídeo lección virtual
